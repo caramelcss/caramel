@@ -3,6 +3,8 @@ Caramel
 
 A CSS Framework that's as pure as Caramel.
 
+Want a live demo? [Click Here!](http://kurisubrooks.github.io/Caramel/)
+
 =========
 
 ##License
@@ -14,6 +16,7 @@ Creative Commons - Attribution, Non Commercial - 3.0 Australia
 
 ### YOU CAN:
 
+* Use this in Non-Commercial Projects
 * Redistribute modified works
 
 ### YOU CAN'T:
@@ -25,5 +28,3 @@ Creative Commons - Attribution, Non Commercial - 3.0 Australia
 ### YOU MUST:
 
 * Include Copyright
-
-=========
