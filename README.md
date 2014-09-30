@@ -1,7 +1,5 @@
 # Caramel
 
-Version 0.1.1
-
 A CSS Framework that's as pure as Caramel.
 
 Want a live demo? [Click Here!](http://kurisubrooks.github.io/Caramel/)
