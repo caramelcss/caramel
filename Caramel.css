@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/*
+ *	© 2014
+ *	KURISUBROOKS.COM
+ *	ALL RIGHTS RESERVED
+ *
+ *	PUBLISHED UNDER CC-NC 3.0 AU
+ *	https://creativecommons.org/licenses/by-nc/3.0/au/
+ * 
+ */
+
+html {
+	made: false;
+	by: semi-true;
+	kurisubrooks: true;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.4;
+	background-color: #FFF;
+	color: #777;
+	margin: 0;
+}
+
+a {
+	color: #42A2B2;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #429BB3;
+	text-decoration: none;
+}
+
+b, strong {
+	font-weight: bold;
+	font-weight: 600;
+}
+
+i, italic {
+	font-style: italic;
+	font-weight: 400italic;
+}
+
+lite, .lite {
+	font-weight: 300;
+}
+
+norm, .norm {
+	font-weight: 400;
+}
+
+small {
+	font-size: 80%;
+}
+
+sup {
+	top: -.5em;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+h1, .h1 {font-size: 36px;font-weight: 400;line-height: 1.1;}
+h2, .h2 {font-size: 30px;font-weight: 400;line-height: 1.1;}
+h3, .h3 {font-size: 24px;font-weight: 400;line-height: 1.1;}
+h4, .h4 {font-size: 18px;font-weight: 400;line-height: 1.1;}
+h5, .h5 {font-size: 14px;font-weight: 400;line-height: 1.1;}
+h6, .h6 {font-size: 12px;font-weight: 400;line-height: 1.1;}
+
+sub, sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline;
+}
+
+img {
+	border: 0;
+}
+
+.img-responsive {
+	display: block;
+	width: 100% \9;
+	max-width: 100%;
+	height: auto;
+}
+
+.img-thumbnail {
+	display: inline-block;
+	width: 100% \9;
+	max-width: 100%;
+	height: auto;
+	padding: 4px;
+	line-height: 1.42857143;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+		 -o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+}
+
+.img-round {
+	border-radius: 30%;
+}
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.code {
+	font-family: 'Anonymous Pro', Monospace;
+	color: #777;
+	background-color: #EEE;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 0;
+}
+
+.well {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+small, .small {
+	font-size: 85%;
+}
+
+
+.color-disabled {
+	color: #CCCCCC;
+}
+
+.color-default {
+	color: #42A2B2;
+}
+
+.color-success {
+	color: #5cb85c;
+}
+
+.color-error {
+	color: #D9534F;
+}
+
+.color-info {
+	color: #52B7D6;
+}
+
+.color-warn {
+	color: #F0AD4E;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	
+	background-image: none;
+	border: 1px solid #42A2B2;
+	border-radius: 4px;
+}
+
+.div-success {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+
+.div-success:hover,
+.div-success:active {
+	color: #fff;
+	background-color: #4FAD4F;
+	border-color: #398439;
+}
+
+.div-error {
+	color: #fff;
+	background-color: #D9534F;
+	border-color: #D3433E;
+}
+
+.div-error:hover,
+.div-error:active {
+	color: #fff;
+	background-color: #D44743;
+	border-color: #CE3F3A;
+}
+
+.div-info {
+	color: #fff;
+	background-color: #52B7D6;
+	border-color: #44ACCC;
+}
+
+.div-info:hover,
+.div-info:active {
+	color: #fff;
+	background-color: #45ADCC;
+	border-color: #369FBF;
+}
+
+.div-warn {
+	color: #fff;
+	background-color: #F0AD4E;
+	border-color: #EDA744;
+}
+
+.div-warn:hover,
+.div-warn:active {
+	color: #fff;
+	background-color: #E19D3E;
+	border-color: #D99537;
+}
+
+.navbar {
+	width: inherit;
+	background-color: #EDEDED;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	max-height: 50px;
+	position:relative;
+}
+
+.navbar li {
+	display: inline-block;
+	text-decoration: none;
+	width: inherit;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #666;
+}
+
+.navbar li:hover {
+	background-color: #E2E2E2;
+}
+
+.navbar a {
+	text-decoration:none;
+	color: #fff;
+}
+
+.navbar .brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
