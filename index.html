@@ -45,9 +45,11 @@
   </head>
 <body>
 
+<div class="container">
+
 	<div class="header">
 
-		<h1>Framework Showcase</h1>
+		<h1>Caramel CSS Showcase</h1>
 
 	</div>
     
@@ -74,13 +76,23 @@
         
         <hr>
         
-        <h3>Navbar:</h3>
+        <h3>Navbar: <sup>WIP</sup></h3>
         
-        <div class="navbar">
+        <div class="nav-bar">
 			<a href=""><li>Title 1</li></a>
             <a href=""><li>About 2</li></a>
             <a href=""><li>Contact 3</li></a>
             <a href=""><li>Other 4</li></a>
+        </div>
+        
+        <br>
+        
+        <div class="code">
+        	&lt;div class="nav-page"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;&lt;li&gt;1&lt;/li&gt;&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;&lt;li&gt;2&lt;/li&gt;&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;&lt;li&gt;3&lt;/li&gt;&lt;/a&gt;<br>
+            &lt;/div&gt;
         </div>
         
         <hr>
@@ -88,23 +100,40 @@
         <h3>Text Colors:</h3>
         
         <table>
-        
         	<tr><td><p class="color-default">Default</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-default</p></td></tr>
         	<tr><td><p class="color-success">Success</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-success</p></td></tr>
         	<tr><td><p class="color-error">Error</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-error</p></td></tr>
         	<tr><td><p class="color-warn">Warning</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-warning</p></td></tr>
         	<tr><td><p class="color-info">Info</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-info</p></td></tr>
-            
         </table>
+        
+        <br>
+        
+        <div class="code">
+        &lt;p class="<span class="color-error">color-error</span>"&gt;
+        <span class="color-error"> java.lang.NullPointerException </span>&lt;/p&gt;
+        </div>
         
         <hr>
         
-        <h3>Examples:</h3>
+        <h3>Pagination: <sup>WIP</sup></h3>
+
+        <div class="nav-page">
+        	<a href=""><li>&lt;</li></a>
+        	<a href=""><li>1</li></a>
+            <a href=""><li>2</li></a>
+            <a href=""><li>3</li></a>
+            <a href=""><li>&gt;</li></a>
+        </div>
+        
+        <br>
         
         <div class="code">
-        
-        	&lt;p class="<span class="color-error">color-error</span>"&gt;<span class="color-error"> java.lang.NullPointerException </span>&lt;/p&gt;
-            
+        	&lt;div class="nav-page"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;&lt;li&gt;1&lt;/li&gt;&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;&lt;li&gt;2&lt;/li&gt;&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;&lt;li&gt;3&lt;/li&gt;&lt;/a&gt;<br>
+            &lt;/div&gt;
         </div>
         
 	</div>
@@ -113,9 +142,12 @@
     
 	<div class="footer">
 	
-		<p><a href="http://kurisubrooks.com/" class="color-info">KURISUBROOKS.COM</a><br>© 2014 : CC-NC 3.0 AU</p>
+		<p><a href="http://kurisubrooks.com/" class="color-info">KURISUBROOKS.COM</a>
+        <br>© 2014 : CC-NC 3.0 AU</p>
 		
 	</div>
+    
+</div>
   
 </body>
 

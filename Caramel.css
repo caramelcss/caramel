@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@license "CC-NC";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
 
@@ -9,14 +10,11 @@
  *
  *	PUBLISHED UNDER CC-NC 3.0 AU
  *	https://creativecommons.org/licenses/by-nc/3.0/au/
+ *
+ *	CURRENT VERSION:
+ *	Pre 0.1.1
  * 
  */
-
-html {
-	made: false;
-	by: semi-true;
-	kurisubrooks: true;
-}
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -41,6 +39,13 @@ a:hover, a:focus {
 b, strong {
 	font-weight: bold;
 	font-weight: 600;
+}
+
+.container {
+	width: inherit;
+	max-width: 800px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 i, italic {
@@ -125,6 +130,7 @@ hr {
 	background-color: #EEE;
 	border-radius: 4px;
 	padding: 10px;
+	width:auto;
 }
 
 table {
@@ -248,7 +254,7 @@ small, .small {
 	border-color: #D99537;
 }
 
-.navbar {
+.nav-bar {
 	width: inherit;
 	background-color: #EDEDED;
 	border: 1px solid #CCC;
@@ -257,7 +263,7 @@ small, .small {
 	position:relative;
 }
 
-.navbar li {
+.nav-bar li {
 	display: inline-block;
 	text-decoration: none;
 	width: inherit;
@@ -269,28 +275,37 @@ small, .small {
 	color: #666;
 }
 
-.navbar li:hover {
+.nav-bar li:hover {
 	background-color: #E2E2E2;
 }
 
-.navbar a {
+.nav-bar a {
 	text-decoration:none;
 	color: #fff;
 }
 
-.navbar .brand {
-  float: left;
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+.nav-page {
+	background-color: #EDEDED;
+	border-radius: 4px;
+	border: 1px solid #CCC;
+	margin-left: auto;
+	margin-right: auto;
+	width: inherit;
+	max-width: 256px;
 }
 
+.nav-page li {
+	display: inline-block;
+	text-decoration:none;
+	width: inherit;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #666;
+}
 
-
-
-
-
-
-
-
+.nav-page li:hover {
+	background-color: #E2E2E2;
+}
