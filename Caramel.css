@@ -156,6 +156,8 @@ hr {
 
 .code {
 	font-family: 'Anonymous Pro', Monospace;
+	font-size: 14px;
+	font-weight: 400;
 	color: #777;
 	background-color: #FAFAFA;
 	border: 1px solid #E6E6E6;
