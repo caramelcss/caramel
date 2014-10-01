@@ -38,11 +38,48 @@ b, strong {
 	font-weight: 600;
 }
 
+
 .container {
 	width: inherit;
 	max-width: 800px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 200px) {
+	.container {
+		max-width: 300px;
+	}
+}
+
+@media (min-width: 500px) {
+	.container {
+		max-width: 500px;
+	}
+}
+
+@media (min-width: 700px) {
+	.container {
+		max-width: 600px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.container {
+		max-width: 900px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1100px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.container {
+		max-width: 1250px;
+	}
 }
 
 i, italic {
