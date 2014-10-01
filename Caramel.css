@@ -40,51 +40,49 @@ b, strong {
 
 
 .container {
-	width: inherit;
-	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 @media (min-width: 200px) {
 	.container {
-		max-width: 300px;
+		width: 300px;
 	}
 }
 
 @media (min-width: 4000px) {
 	.container {
-		max-width: 300px;
+		width: 300px;
 	}
 }
 
 @media (min-width: 600px) {
 	.container {
-		max-width: 500px;
+		width: 500px;
 	}
 }
 
 @media (min-width: 800px) {
 	.container {
-		max-width: 700px;
+		width: 700px;
 	}
 }
 
 @media (min-width: 1000px) {
 	.container {
-		max-width: 900px;
+		width: 900px;
 	}
 }
 
 @media (min-width: 1200px) {
 	.container {
-		max-width: 1100px;
+		width: 1100px;
 	}
 }
 
 @media (min-width: 1500px) {
 	.container {
-		max-width: 1250px;
+		width: 1250px;
 	}
 }
 
@@ -103,14 +101,6 @@ norm, .norm {
 
 small {
 	font-size: 80%;
-}
-
-sup {
-	top: -.5em;
-}
-
-sub {
-	bottom: -.25em;
 }
 
 h1, .h1 {font-size: 36px;font-weight: 400;line-height: 1.1;}
@@ -302,6 +292,12 @@ small, .small {
 	border-radius: 4px;
 	max-height: 50px;
 	position:relative;
+}
+
+@media (min-width: 600px) {
+	.nav-bar {
+		
+	}
 }
 
 .nav-bar li {
