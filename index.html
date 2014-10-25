@@ -19,23 +19,12 @@
 	-->
 
 	<meta charset="UTF-8">
-	<meta name="description" content="i make stuff, i put them here.">
 	<meta name="author" content="kurisubrooks">
 	
 	<title>kurisubrooks</title>
-	<link rel="icon" href=".../favicon.ico">
+	<link rel="icon" href="../favicon.ico">
 
 	<link href="Caramel.css" rel="stylesheet">
-    
-    <style>
-	.footer {
-		background-color:#fff;
-		margin-top: 25px;
-		padding-bottom:5px;
-		padding-top:5px;
-		width:100%;
-	}
-	</style>
 
   </head>
 <body>
@@ -54,51 +43,48 @@
 		
         <h3>Buttons:</h3>
         
-        <a href="#" class="btn btn-default">
+        <a href="#" class="btn default">
         <b>Default:</b> Kinda Plain..</a>
         
-        <a href="#" class="btn btn-success">
+        <a href="#" class="btn success">
         <b>Success!</b> It works!</a>
         
-        <a href="#" class="btn btn-error">
-        <b>Error.</b> Nevermind.</a>
+        <a href="#" class="btn error">
+        <b>Error.</b> It's broke.</a>
         
-        <a href="#" class="btn btn-warn">
+        <a href="#" class="btn warn">
         <b>Warning:</b> Uh-oh..</a>
         
-        <a href="#" class="btn btn-info">
+        <a href="#" class="btn info">
         <b>Info:</b> Guess What!</a>
         
-        <br><br>
-        
-        <div class="code">
-            &lt;a href="<span class="color-success">#</span>" class="btn <span class="color-default">btn-default</span>"&gt;<span class="color-default">Default</span>&lt;/a&gt;<br>
-          &lt;a href=&quot;<span class="color-success">#</span>&quot; class=&quot;btn <span class="color-success">div-success</span>&quot;&gt;<span class="color-success">Success!</span>&lt;/a&gt;<br>
-          &lt;a href=&quot;<span class="color-success">#</span>&quot; class=&quot;btn <span class="color-error">div-error</span>&quot;&gt;<span class="color-error">Error.</span>&lt;/a&gt;<br>
-          &lt;a href=&quot;<span class="color-success">#</span>&quot; class=&quot;btn <span class="color-warn">div-warn</span>&quot;&gt;<span class="color-warn">Warning:</span>&lt;/a&gt;<br>
-          &lt;a href=&quot;<span class="color-success">#</span>&quot; class=&quot;btn <span class="color-info">div-info</span>&quot;&gt;<span class="color-info">Info:</span>&lt;/a&gt;
-          </div>
+        <a href="#" class="btn dark">
+        <b>Dark:</b> Inversion!</a>
         
   <hr>
         
         <h3>Navbar: <sup>WIP</sup></h3>
         
-        <div class="nav-bar">
-			<a href=""><li>Title 1</li></a>
-            <a href=""><li>About 2</li></a>
-            <a href=""><li>Contact 3</li></a>
-            <a href=""><li>Other 4</li></a>
+        <div class="nav bar">
+			<a href="#"><li>Title 1</li></a>
+            <a href="#"><li>About 2</li></a>
+            <a href="#"><li>Contact 3</li></a>
+            <a href="#"><li>Other 4</li></a>
         </div>
         
-        <br>
+        <hr>
         
-        <div class="code">
-        	&lt;div class="nav-bar"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;a href="<span class="color-success">#</span>"&gt;&lt;li&gt;<span class="color-success">1</span>&lt;/li&gt;&lt;/a&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;a href="<span class="color-success">#</span>"&gt;&lt;li&gt;<span class="color-success">2</span>&lt;/li&gt;&lt;/a&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;a href="<span class="color-success">#</span>"&gt;&lt;li&gt;<span class="color-success">3</span>&lt;/li&gt;&lt;/a&gt;<br>
-            &lt;/div&gt;
-        </div>
+        <h3>Image Formatting:</h3>
+        
+        <img src="http://placehold.it/150x150" class="img responsive" />
+        
+        <img src="http://placehold.it/150x150" class="img thumbnail" />
+        
+        <img src="http://placehold.it/150x150" class="img circle" />
+        
+        <img src="http://placehold.it/150x150" class="img thumbnail circle" />
+        
+        <img src="http://placehold.it/150x150" class="img round" />
         
         <hr>
         
@@ -109,40 +95,19 @@
         	<tr><td><p class="color-success">Success</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-success</p></td></tr>
         	<tr><td><p class="color-error">Error</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-error</p></td></tr>
         	<tr><td><p class="color-warn">Warning</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-warning</p></td></tr>
-        	<tr><td><p class="color-info">Info</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-info</p></td></tr>
+        	<tr><td><p class="color-info">Info</p></td><td>&nbsp;&nbsp;&nbsp;</td><td>color-color-info</p></td></tr>
         </table>
-        
-        <br>
-        
-        <div class="code">
-        &lt;p class="<span class="color-default">color-default</span>"&gt;<span class="color-default"> System.out.println("Hello, Caramel!"); </span>&lt;/p&gt;<br>
-        &lt;p class="<span class="color-success">color-success</span>"&gt;<span class="color-success"> Compiled Successfully </span>&lt;/p&gt;<br>
-        &lt;p class="<span class="color-error">color-error</span>"&gt;<span class="color-error"> java.lang.NullPointerException </span>&lt;/p&gt;<br>
-        &lt;p class="<span class="color-warn">color-warn</span>"&gt;<span class="color-warn"> Exception.printStackTrace() </span>&lt;/p&gt;<br>
-        &lt;p class="<span class="color-info">color-info</span>"&gt;<span class="color-info"> Main.java:8: ';' expected </span>&lt;/p&gt;
-        
-        </div>
         
         <hr>
         
         <h3>Pagination: <sup>WIP</sup></h3>
 
-        <div class="nav-page">
+        <div class="nav page">
         	<a href=""><li>&lt;</li></a>
         	<a href=""><li>1</li></a>
             <a href=""><li>2</li></a>
             <a href=""><li>3</li></a>
             <a href=""><li>&gt;</li></a>
-        </div>
-        
-        <br>
-        
-        <div class="code">
-        	&lt;div class="nav-page"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;a href="<span class="color-success">#</span>"&gt;&lt;li&gt;<span class="color-success">1</span>&lt;/li&gt;&lt;/a&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;a href="<span class="color-success">#</span>"&gt;&lt;li&gt;<span class="color-success">2</span>&lt;/li&gt;&lt;/a&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;a href="<span class="color-success">#</span>"&gt;&lt;li&gt;<span class="color-success">3</span>&lt;/li&gt;&lt;/a&gt;<br>
-            &lt;/div&gt;
         </div>
         
 	</div>
@@ -151,7 +116,7 @@
     
 	<div class="footer">
 	
-		<p><a href="http://kurisubrooks.com/" class="color-info">KURISUBROOKS.COM</a>
+		<p><a href="http://kurisubrooks.com/" class="color info">KURISUBROOKS.COM</a>
         <br>© 2014 : CC-NC 3.0 AU</p>
 		
 	</div>
