@@ -1,13 +1,16 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
 @license "CC-NC 3.0-AU";
 /*
- *	© 2014
- *	KURISUBROOKS.COM
- *	ALL RIGHTS RESERVED
+ *	Caramel © 2014 : ALL RIGHTS RESERVED
  *
- *	PUBLISHED UNDER CC-NC 3.0 AU
+ *	PUBLISHED UNDER [ CC-NC 3.0 AU ]
  *	https://creativecommons.org/licenses/by-nc/3.0/au/
+ *
+ *  HTML/CSS    - @kurisubrooks
+ *  JAVASCRIPT  - @Penagwin
+ *  FONTAWESOME - @DaveGandy - http://fontawesome.io/
  */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -112,6 +115,15 @@ table {
   .bar li a {
     text-decoration: none;
     color: #FFF; }
+
+.collapse {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 20px; }
+  .collapse:hover, .collapse:active {
+    background-color: #F2F2F2; }
 
 .page {
   margin-left: auto;
