@@ -22,6 +22,15 @@
     text-decoration: none;
     color: #FFF; }
 
+.collapse {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 20px; }
+  .collapse:hover, .collapse:active {
+    background-color: #F2F2F2; }
+
 .page {
   margin-left: auto;
   margin-right: auto;
