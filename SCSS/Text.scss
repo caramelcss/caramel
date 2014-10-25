@@ -1,0 +1,92 @@
+@import "Variables";
+// Text.scss
+
+a {
+	color: $info;
+	text-decoration: none;
+
+    &:hover, 
+    &:focus {
+	   color: $info-active;
+	   text-decoration: none;
+    }
+}
+
+.color-default {
+    color: $default;
+}
+
+.color-success {
+    color: $success;
+}
+
+.color-error {
+    color: $error;
+}
+
+.color-info {
+    color: $info;
+}
+
+.color-warn {
+    color: $warn;
+}
+
+.color-dark {
+    color: $dark;
+}
+
+b, 
+strong {
+	font-weight: bold;
+    font-weight: $weight-bold;
+}
+
+i, 
+.italic {
+	font-style: italic;
+	font-weight: $weight-italic;
+}
+
+lite, 
+.lite {
+	font-weight: $weight-light;
+}
+
+norm, 
+.norm {
+	font-weight: $weight-normal;
+}
+
+sml {
+	font-size: 80%;
+}
+
+s, strike,
+.strike {
+    text-decoration: line-through;
+}
+
+h1, .h1 {font-size: 36px;font-weight: $weight-normal;line-height: 1.1;}
+h2, .h2 {font-size: 30px;font-weight: $weight-normal;line-height: 1.1;}
+h3, .h3 {font-size: 24px;font-weight: $weight-normal;line-height: 1.1;}
+h4, .h4 {font-size: 18px;font-weight: $weight-normal;line-height: 1.1;}
+h5, .h5 {font-size: 14px;font-weight: $weight-normal;line-height: 1.1;}
+h6, .h6 {font-size: 12px;font-weight: $weight-normal;line-height: 1.1;}
+
+sub, 
+sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline;
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+small, 
+.small {
+	font-size: 85%;
+}

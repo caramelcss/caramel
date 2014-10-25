@@ -1,0 +1,64 @@
+@import "Variables";
+// Navigation.scss
+
+.nav {
+    width: inherit;
+    background-color: $color-light-grey;
+    border: 1px solid $color-grey;
+    border-radius: 4px;
+    max-height: 50px;
+    position:relative;
+}
+
+.bar {
+
+    li {
+        display: inline-block;
+        text-decoration: none;
+        width: inherit;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: $color-dark-grey;
+
+        &:hover, 
+        &:active {
+            background-color: $color-grey;
+        }
+
+        a {
+            text-decoration:none;
+            color: $color-white;
+        }
+    }
+}
+    
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 256px;
+        
+    li {
+        display: inline-block;
+        text-decoration:none;
+        width: inherit;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: $color-dark-grey;
+            
+        &:hover, 
+        &:active {
+            background-color: $color-grey;
+        }
+            
+        a {
+        text-decoration:none;
+        color: $color-white;
+        }
+     }
+}

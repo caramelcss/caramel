@@ -1,0 +1,45 @@
+.nav {
+  width: inherit;
+  background-color: #FAFAFA;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  max-height: 50px;
+  position: relative; }
+
+.bar li {
+  display: inline-block;
+  text-decoration: none;
+  width: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #6E6E6E; }
+  .bar li:hover, .bar li:active {
+    background-color: #F2F2F2; }
+  .bar li a {
+    text-decoration: none;
+    color: #FFF; }
+
+.page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 256px; }
+  .page li {
+    display: inline-block;
+    text-decoration: none;
+    width: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #6E6E6E; }
+    .page li:hover, .page li:active {
+      background-color: #F2F2F2; }
+    .page li a {
+      text-decoration: none;
+      color: #FFF; }
+
+/*# sourceMappingURL=Navigation.css.map */

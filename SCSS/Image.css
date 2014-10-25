@@ -1,0 +1,28 @@
+.img {
+  margin: 0; }
+
+.responsive {
+  width: 100% \9;
+  max-width: 100%;
+  height: auto; }
+
+.thumbnail {
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857;
+  background-color: #FFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.round {
+  border-radius: 30%; }
+
+.circle {
+  border-radius: 50%; }
+
+/*# sourceMappingURL=Image.css.map */

@@ -1,0 +1,60 @@
+// Variables.scss
+
+$default-font: 'Open Sans', sans-serif;
+$code-font: 'Anonymous Pro', Monospace;
+
+$weight-normal: 400;
+$weight-italic: 400italic;
+$weight-light: 300;
+$weight-bold: 600;
+
+$disabled: #CCCCCC;
+
+$default: #42A2B2;
+$default-border: #42A2B2;
+$default-active: #3D97A6;
+$default-active-border: #3D97A6;
+
+$success: #5CB85C;
+$success-border: #4CAE4C;
+$success-active: #4FAD4F;
+$success-active-border: #398439;
+
+$error: #D9534F;
+$error-border: #D3433E;
+$error-active: #D44743;
+$error-active-border: #CE3F3A;
+
+
+$warn: #F0AD4E;
+$warn-border: #EDA744;
+$warn-active: #E19D3E;
+$warn-active-border: #D99537;
+
+$info: #52B7D6;
+$info-border: #44ACCC;
+$info-active: #45ADCC;
+$info-active-border: #369FBF;
+
+$dark: #525252;
+$dark-border: #3C3C3C;
+$dark-active: #3C3C3C;
+$dark-active-border: #555555;
+
+$code: #FAFAFA;
+$code-border: #E6E6E6;
+
+$color-black: #000;
+$color-white: #FFF;
+$color-grey: #F2F2F2;
+$color-light-grey: #FAFAFA;
+$color-dark-grey: #6E6E6E;
+
+$color-red: $error;
+$color-orange: $warn;
+$color-green: $success;
+$color-blue: #58ACFA;
+$color-light-blue: $info;
+$color-dark-blue: #2E64FE;
+$color-purple: #D358F7;
+$color-pink: #F781F3;
