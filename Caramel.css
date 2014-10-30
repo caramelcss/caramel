@@ -263,7 +263,7 @@ b, strong {
 
 i, .italic {
   font-style: italic;
-  font-weight: 400italic; }
+  font-weight: 400; }
 
 lite, .lite {
   font-weight: 300; }
