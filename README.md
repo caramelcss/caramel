@@ -1,4 +1,4 @@
-![image](https://raw.githubusercontent.com/kurisubrooks/Caramel/gh-pages/inc/Logo.png)
+![image](https://raw.githubusercontent.com/kurisubrooks/Caramel/gh-pages/inc/logo.png)
 
 A CSS Framework that's as pure as Caramel.
 
