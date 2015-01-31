@@ -13,8 +13,8 @@ then
 	echo "[*] Incorrect File Type, Must be .SCSS"
 else
 	F2=${1%%.*}
-	CMD1="sass $1 $F2.css"
-	CMD2="sass $F2.css:$F2.min.css --style compressed --scss"
+	CMD1="sass $1 $F2.css --cache"
+	CMD2="sass $F2.css:$F2.min.css --style compressed --scss --cache"
 	echo "[*] Compiling..."
 	$CMD1
 	echo "[*] Minifying..."
