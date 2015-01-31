@@ -1,29 +1,9 @@
-Caramel
-=========
+[![](https://raw.githubusercontent.com/kurisubrooks/Caramel/gh-pages/inc/logo.png)
+](http://caramel.ga)
 
-A CSS Framework that's as pure as Caramel.
+A Beautiful, Simple, Modern Website Framework. 
 
-=========
+Click the logo for a live preview!
 
-##License
-
-Creative Commons - Attribution, Non Commercial - 3.0 Australia
-(CC BY-NC 3.0 AU)
-
-=========
-
-### YOU CAN:
-
-* Redistribute modified works
-
-### YOU CAN'T:
-
-* Use this Commercially (Make Money off it)
-* Sublicense
-* Give a Warranty/Guarantee
-
-### YOU MUST:
-
-* Include Copyright
-
-=========
+## License
+Creative Commons - CC BY-NC 3.0 AU
