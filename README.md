@@ -1,9 +1,32 @@
-[![](https://raw.githubusercontent.com/kurisubrooks/Caramel/gh-pages/inc/logo.png)
-](http://caramel.ga)
+# Caramel
+A Simple, Beautiful, Modern Website Framework.
 
-A Beautiful, Simple, Modern Website Framework. 
+## Features
+Feature Complete with Simplicity in mind;
 
-Click the logo for a live preview!
+ * Buttons
+ * Nav-bars & Pagination
+ * Alerts / Banners
+ * Image Formatting
+ * Text Colours
+ * Responsive Grid System
+ * Forms & Input
+
+## Compiling Caramel
+With the help of our included Bash script, compiling Caramel is a breeze! Make sure you have [Sass Command Line](http://sass-lang.com/install) installed before you read on, or the script won't work.
+
+### Syntax:
+
+	path/to/Compile.sh  path/to/Caramel.scss
+    
+### Errors:
+
+	-bash: path/to/Compile.sh: Permission denied
+* Solution: `chmod +x path/to/compile.sh`
 
 ## License
-Creative Commons - CC BY-NC 3.0 AU
+
+ * Creative Commons - CC BY-NC 3.0 AU
+  * Modification & Redistribution is allowed.
+  * Non Commercial Use Only.
+  * Do not remove the Copyright.
