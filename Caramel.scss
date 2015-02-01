@@ -58,6 +58,13 @@ body {
     padding-right: 35px;
 }
 
+@media (max-width: $max-width) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .footer {
     margin-top: 25px;
     padding-top:5px;

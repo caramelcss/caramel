@@ -22,6 +22,10 @@ body {
   padding-left: 35px;
   padding-right: 35px; }
 
+@media (max-width: 800px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0; } }
 .footer {
   margin-top: 25px;
   padding-top: 5px;
@@ -459,5 +463,3 @@ p {
 small,
 .small {
   font-size: 85%; }
-
-/*# sourceMappingURL=Caramel.css.map */
