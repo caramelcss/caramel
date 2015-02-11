@@ -4,7 +4,7 @@
 if [ -z "$1" ]
 then
 	echo "[*] Syntax Error - Usage:"
-	echo "[*] Compiler.sh input.scss"
+	echo "[*] Compile.sh input.scss"
 	exit
 fi
 
