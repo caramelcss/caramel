@@ -1,5 +1,5 @@
 # Caramel Framework Compiler
-# Written by Toma678
+# By Toma678 for kurisubrooks
 
 if [ -z "$1" ]
 then
