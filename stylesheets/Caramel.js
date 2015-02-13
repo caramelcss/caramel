@@ -1,4 +1,4 @@
-// Caramel 2014  - CC-NC 3.0 AU
+// Caramel 2015  - CC-NC 3.0 AU
 // Javascript    - http://dev.penagw.in
 
 $(document).ready(function() {
@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(".nav .bar").css({"display": "block"});   
      //On resize style the nav bars
         $(window).resize(function() {
-            if ($(window).width() >= 600) {
+            if ($(window).width() >= 800) {
                 $(".bar li").css({
                     "display": "inline-block"
                 });
