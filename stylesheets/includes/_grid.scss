@@ -42,5 +42,7 @@ $base-box-width: 7 / 120 * 100%;
 @media (max-width: $width) { 
     .box { 
         width: 100% !important; 
+        margin-left: auto;
+        margin-right: auto;
     } 
 }
