@@ -23,10 +23,3 @@ With the help of our included Bash script, compiling Caramel is a breeze! Make s
 
 	-bash: path/to/Compile.sh: Permission denied
 * Solution: `chmod +x path/to/compile.sh`
-
-## License
-
- * Creative Commons - CC BY-NC 3.0 AU
-  * Modification & Redistribution is allowed.
-  * Non Commercial Use Only.
-  * Do not remove the Copyright.
