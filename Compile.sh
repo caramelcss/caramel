@@ -14,7 +14,7 @@ then
 else
 	F2=${1%%.*}
 	CMD1="sass --sourcemap=none --cache=none $1 $F2.css"
-	CMD2="sass --sourcemap=none --cache=none $F2.css:$F2.min.css --style compressed"
+	CMD2="sass --sourcemap=none --cache=none $1:$F2.min.css --style compressed"
 	echo "[*] Compiling..."
 	$CMD1
 	echo "[*] Minifying..."
