@@ -1,0 +1,101 @@
+.btn {
+    display: inline-block;
+    
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    line-height: 1.42;
+    text-align: center;
+    vertical-align: middle;
+    @include border-radius;
+    
+    color: $default;
+    border: 1px solid darken($light, 5);
+    background: $light;
+    
+    &:hover,
+    &:active {
+        border: 1px solid darken($light, 5);
+        background: darken($light, 5);
+    }
+}
+
+.btn.sml {
+    padding: 5px 7px;
+    font-size: 10px;
+}
+
+.btn.default {
+    color: $default;
+    border: 1px solid darken($light, 5);
+    background: $light;
+        
+    &:hover,
+    &:active {
+        border: 1px solid $light;
+        background: darken($light, 5);
+    }
+}
+
+.btn.success {
+    color: white;
+    border: 1px solid darken($success, 5);
+    background: $success;
+        
+    &:hover,
+    &:active {
+        border: 1px solid $success;
+        background: lighten($success, 5);
+    }
+}
+
+.btn.error {
+    color: white;
+    border: 1px solid darken($error, 5);
+    background: $error;
+    
+    &:hover,
+    &:active {
+        border: 1px solid $error;
+        background: lighten($error, 5);
+    }
+}
+
+.btn.warn {
+    color: white;
+    border: 1px solid darken($warn, 5);
+    background: $warn;
+    
+    &:hover,
+    &:active {
+        border: 1px solid $warn;
+        background: lighten($warn, 5);
+    }
+}
+
+.btn.info {
+    color: white;
+    border: 1px solid darken($info, 5);
+    background: $info;
+    
+    &:hover,
+    &:active {
+        border: 1px solid $info;
+        background: lighten($info, 5)
+    }
+}
+
+.btn.dark {
+    color: white;
+    border: 1px solid darken($dark, 5);
+    background: $dark;
+    
+    &:hover,
+    &:active {
+        border: 1px solid $dark;
+        background: darken($dark, 5)
+    }
+}
+
+.dropdown {
+    cursor: pointer;
+}

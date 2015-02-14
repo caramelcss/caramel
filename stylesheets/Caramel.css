@@ -1,10 +1,8 @@
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
-@framework "Caramel";
-@license "CC-NC 3.0-AU";
-/* Variables */
-/* Formatting */
+/*  Framework by Caramel.ga
+    License: CC-NC 3.0-AU */
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600";
+@import "http://fonts.googleapis.com/css?family=Anonymous+Pro";
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -14,7 +12,7 @@ body {
   color: #5F5F5F;
   margin: 0; }
 
-.container {
+.container, main {
   width: inherit;
   max-width: 1200px;
   margin-left: auto;
@@ -23,10 +21,12 @@ body {
   padding-right: 35px; }
 
 @media (max-width: 800px) {
-  .container {
-    padding-left: 0;
-    padding-right: 0; } }
-.footer {
+  .container, main {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px; } }
+.footer, footer {
   margin-top: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -45,28 +45,19 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #F2F2F2; }
+  border-top: 1px solid #ededed; }
 
-code,
-.code {
+.code, code {
   font-family: "Anonymous Pro", Monospace;
   color: #5F5F5F;
   background-color: #FAFAFA;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #ededed;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px;
   padding: 10px;
   width: auto; }
-
-well,
-.well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #FAFAFA;
-  border: 1px solid #F2F2F2;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 table {
   border-spacing: 0;
@@ -74,114 +65,122 @@ table {
   table td, table th {
     padding: 0; }
 
-/* Alerts */
 .alert {
   display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px;
   vertical-align: middle;
   padding: 20px;
   margin-bottom: 10px;
   color: #5F5F5F;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #ededed;
   background: #FAFAFA; }
 
 .alert.default {
   color: #5F5F5F;
-  border: #F2F2F2;
+  border: 1px solid #ededed;
   background: #FAFAFA; }
 
 .alert.success {
-  color: #FFF;
+  color: white;
   border: #4cae4c;
   background: #6ec06e; }
 
 .alert.error {
-  color: #FFF;
+  color: white;
   border: #d43f3a;
   background: #de6764; }
 
 .alert.warn {
-  color: #FFF;
+  color: white;
   border: #eea236;
   background: #f2b866; }
 
 .alert.info {
-  color: #FFF;
+  color: white;
   border: #3daed1;
   background: #67c0db; }
 
 .alert.dark {
-  color: #FFF;
+  color: white;
   border: #454545;
   background: #5f5f5f; }
 
-/* Buttons */
 .btn {
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px 15px;
   margin-bottom: 5px;
   line-height: 1.42;
   text-align: center;
   vertical-align: middle;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px;
   color: #5F5F5F;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #ededed;
   background: #FAFAFA; }
+  .btn:hover, .btn:active {
+    border: 1px solid #ededed;
+    background: #ededed; }
 
 .btn.sml {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 5px 7px;
   font-size: 10px; }
 
+.btn.default {
+  color: #5F5F5F;
+  border: 1px solid #ededed;
+  background: #FAFAFA; }
+  .btn.default:hover, .btn.default:active {
+    border: 1px solid #FAFAFA;
+    background: #ededed; }
+
 .btn.success {
-  color: #FFF;
-  border: #4cae4c;
+  color: white;
+  border: 1px solid #4cae4c;
   background: #5CB85C; }
   .btn.success:hover, .btn.success:active {
-    border: #5CB85C;
+    border: 1px solid #5CB85C;
     background: #6ec06e; }
 
 .btn.error {
-  color: #FFF;
-  border: #d43f3a;
+  color: white;
+  border: 1px solid #d43f3a;
   background: #D9534F; }
   .btn.error:hover, .btn.error:active {
-    border: #D9534F;
+    border: 1px solid #D9534F;
     background: #de6764; }
 
 .btn.warn {
-  color: #FFF;
-  border: #eea236;
+  color: white;
+  border: 1px solid #eea236;
   background: #F0AD4E; }
   .btn.warn:hover, .btn.warn:active {
-    border: #F0AD4E;
+    border: 1px solid #F0AD4E;
     background: #f2b866; }
 
 .btn.info {
-  color: #FFF;
-  border: #3daed1;
+  color: white;
+  border: 1px solid #3daed1;
   background: #52B7D6; }
   .btn.info:hover, .btn.info:active {
-    border: #52B7D6;
+    border: 1px solid #52B7D6;
     background: #67c0db; }
 
 .btn.dark {
-  color: #FFF;
-  border: #3daed1;
+  color: white;
+  border: 1px solid #454545;
   background: #525252; }
   .btn.dark:hover, .btn.dark:active {
-    border: #525252;
+    border: 1px solid #525252;
     background: #454545; }
 
 .dropdown {
   cursor: pointer; }
 
-/* Forms */
 input {
   font: inherit; }
 
@@ -195,8 +194,8 @@ input[type=tel],
 input[type=time],
 input[type=url],
 input[type=week] {
-  background: #FFF;
-  border: #CCC 1px solid;
+  background: white;
+  border: 1px solid #ededed;
   color: inherit;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -215,8 +214,8 @@ input[type=submit] {
   border: none; }
 
 textarea {
-  background: #FFF;
-  border: #CCC 1px solid;
+  background: white;
+  border: 1px solid #ededed;
   color: inherit;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -232,7 +231,7 @@ textarea {
   border-radius: 4px; }
 
 /*  Grid
-    Made by github/gratimax */
+    Made by gratimax */
 .row:before, .row:after {
   content: " ";
   display: table; }
@@ -289,23 +288,15 @@ textarea {
 @media (max-width: 800px) {
   .box {
     width: 100% !important; } }
-/* Images */
-.img {
+.img, img {
   margin: 0; }
 
-.responsive {
-  width: 100% \9;
-  max-width: 100%;
-  height: auto; }
-
 .thumbnail {
-  width: 100% \9;
-  max-width: 100%;
   height: auto;
   padding: 4px;
   line-height: 1.42;
-  background-color: #FFF;
-  border: 1px solid #F2F2F2;
+  background-color: white;
+  border: 1px solid #ededed;
   border-radius: 4px; }
 
 .round {
@@ -314,10 +305,12 @@ textarea {
 .circle {
   border-radius: 50%; }
 
-/* Navigation */
 .nav {
   background-color: #FAFAFA;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #ededed;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px;
   max-height: 50px; }
 
@@ -325,41 +318,36 @@ textarea {
   display: block;
   text-decoration: none;
   width: inherit;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
   line-height: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #5F5F5F; }
+  color: #5F5F5F;
+  margin-right: -5px; }
   .nav.bar li:hover, .nav.bar li:active {
-    background-color: #F2F2F2; }
+    background-color: #ededed; }
 
 .collapse {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
   line-height: 20px; }
   .collapse:hover, .collapse:active {
-    background-color: #F2F2F2; }
+    background-color: #FAFAFA; }
   .collapse li {
     display: inline-block; }
 
 .nav.page {
   display: inline-block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px; }
   .nav.page li {
-    margin-left: -5px;
     display: inline-block;
     text-decoration: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
+    margin-right: -5px;
     line-height: 20px;
     color: #5F5F5F; }
     .nav.page li:hover, .nav.page li:active {
-      background-color: #F2F2F2; }
+      background-color: #ededed; }
     .nav.page li a {
       text-decoration: none;
       display: block; }
@@ -367,15 +355,14 @@ textarea {
 .bar.dark {
   background-color: #525252;
   border-color: #454545;
-  color: #FFF; }
+  color: white; }
   .bar.dark .collapse:hover, .bar.dark .collapse:active {
     background-color: #454545; }
   .bar.dark li {
-    color: #FFF; }
+    color: white; }
     .bar.dark li:hover, .bar.dark li:active {
       background-color: #454545; }
 
-/* Text Formatting */
 a {
   color: #52B7D6;
   text-decoration: none; }
@@ -383,75 +370,63 @@ a {
     color: #67c0db;
     text-decoration: none; }
 
-.color.default {
-  color: #525252; }
+.disabled {
+  color: #5F5F5F;
+  cursor: not-allowed; }
 
-.color.success {
+.color.success, *[color=success] {
   color: #5CB85C; }
 
-.color.error {
+.color.error, *[color=error] {
   color: #D9534F; }
 
-.color.info {
+.color.info, *[color=info] {
   color: #52B7D6; }
 
-.color.warn {
+.color.warn, *[color=warn] {
   color: #F0AD4E; }
 
-.color.dark {
+.color.dark, *[color=dark] {
   color: #525252; }
 
-b,
-strong {
+.color.light, *[color=light] {
+  color: #FAFAFA; }
+
+b, bold, strong {
   font-weight: bold; }
 
-i,
-.italic {
+i, italic, .italic {
   font-style: italic; }
 
-lite,
-.lite {
-  font-weight: 300; }
-
-sml {
+.sml, small {
   font-size: 80%; }
 
-s, strike,
-.strike {
+s, strike, .strike {
   text-decoration: line-through; }
 
-h1, .h1 {
-  font-size: 36px;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.1; }
 
-h2, .h2 {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.1; }
+h1 {
+  font-size: 36px; }
 
-h3, .h3 {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.1; }
+h2 {
+  font-size: 30px; }
 
-h4, .h4 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.1; }
+h3 {
+  font-size: 24px; }
 
-h5, .h5 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.1; }
+h4 {
+  font-size: 18px; }
 
-h6, .h6 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.1; }
+h5 {
+  font-size: 14px; }
 
-sub,
-sup {
+h6 {
+  font-size: 12px; }
+
+sub, sup {
   position: relative;
   font-size: 75%;
   line-height: 0;
@@ -459,7 +434,3 @@ sup {
 
 p {
   margin: 0 0 10px; }
-
-small,
-.small {
-  font-size: 85%; }
