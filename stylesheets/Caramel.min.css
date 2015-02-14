@@ -1,0 +1,36 @@
+/*
+Error: Invalid @import: expected end of line, was ";".
+        on line 3 of /Users/Kurisu/Dropbox/Code/Github/Caramel/_new/master/stylesheets/Caramel.css
+
+1: /*  Framework by Caramel.ga
+2:     License: CC-NC 3.0-AU *\/
+3: @import "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+4: @import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600";
+5: @import "http://fonts.googleapis.com/css?family=Anonymous+Pro";
+6: body {
+7:   font-family: "Open Sans", sans-serif;
+8:   font-size: 14px;
+
+Backtrace:
+/Users/Kurisu/Dropbox/Code/Github/Caramel/_new/master/stylesheets/Caramel.css:3
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:986:in `parse_import_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:788:in `parse_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:635:in `parse_line'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:525:in `build_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:544:in `block in append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:543:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:543:in `append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:396:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/engine.rb:268:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/exec/sass_scss.rb:404:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.6/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid @import: expected end of line, was \";\".\A         on line 3 of /Users/Kurisu/Dropbox/Code/Github/Caramel/_new/master/stylesheets/Caramel.css\A \A 1: /*  Framework by Caramel.ga\A 2:     License: CC-NC 3.0-AU */\A 3: @import \"http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\";\A 4: @import \"http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600\";\A 5: @import \"http://fonts.googleapis.com/css?family=Anonymous+Pro\";\A 6: body {\A 7:   font-family: \"Open Sans\", sans-serif;\A 8:   font-size: 14px;"; }

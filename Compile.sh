@@ -1,24 +1,23 @@
-# SASS compiler.
-# Written by Toma678.
+# Caramel Framework Compiler
+# By Toma678 for kurisubrooks
+
 if [ -z "$1" ]
 then
-	echo "[*] Input file not supplied... Cancelling."
-	exit
-elif [ -z "$2" ]
-then
-	echo "[*] Output file not supplied... Cancelling."
+	echo "[*] Syntax Error - Usage:"
+	echo "[*] Compile.sh input.scss"
 	exit
 fi
 
 if [[ $1 != *.scss ]]
 then
-	echo "[*] Incorrect file extension on supplied input... Cancelling."
-elif [[ $2 != *.css ]]
-then
-	echo "[*] Incorrect file extension on supplied output... Cancelling."
+	echo "[*] Incorrect File Type, Must be .SCSS"
 else
-CMD="sass $1 $2"
-echo "[*] Compiling $1 into $2."
-$CMD
-exit
+	F2=${1%%.*}
+	CMD1="sass --sourcemap=none --cache=none $1 $F2.css"
+	CMD2="sass --sourcemap=none --cache=none $F2.css:$F2.min.css --style compressed"
+	echo "[*] Compiling..."
+	$CMD1
+	echo "[*] Minifying..."
+	$CMD2
+	echo "[*] Done!"
 fi
