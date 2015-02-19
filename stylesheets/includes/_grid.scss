@@ -27,6 +27,9 @@ $base-box-width: 7 / 120 * 100%;
 
 @media (max-width: $width) {
     .box {
+        width: 100% !important; 
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 5px;
         display: block;
         float: none;
@@ -34,15 +37,7 @@ $base-box-width: 7 / 120 * 100%;
 }
 
 @for $i from 1 through $sz {
-  .box.col-#{$i} {
+  .box.col-#{$i}{
     width: $base-box-width * $i + $box-margin * 2 * ($i - 1);
   }
-}
-
-@media (max-width: $width) { 
-    .box { 
-        width: 100% !important; 
-        margin-left: auto;
-        margin-right: auto;
-    } 
 }

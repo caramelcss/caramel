@@ -38,11 +38,15 @@
   </head>
 <body>
 
-<div class="container">
+<main>
 	
 	<h1>Caramel - <sub>Simple, Beautiful, Modern.</sub></h1>
 	
 	<hr>
+    
+    <div class="notice warn"><h4>Notice:</h4>Caramel always undergoes changes, and no code examples are ever final.</div>
+    
+    <br>
 	
 	<div class="row">
 		<h3>Buttons</h3>
@@ -110,7 +114,7 @@
 				<div class="collapse">
 				<i class="fa fa-bars"></i></div>
 					<a href=""><li>Home</li></a>
-					<a href=""><li>About</li></a>
+					<a href=""><li class="active">About</li></a>
 					<a href=""><li>FAQ</li></a>
 					<a href=""><li>Contact</li></a>
 			</div>
@@ -121,7 +125,7 @@
 				<div class="collapse">
 				<i class="fa fa-bars"></i></div>
 					<a href=""><li>Home</li></a>
-					<a href=""><li>About</li></a>
+					<a href=""><li class="active">About</li></a>
 					<a href=""><li>FAQ</li></a>
 					<a href=""><li>Contact</li></a>
 			</div>
@@ -160,6 +164,27 @@
 			</div>
 		</div>
 	</div>
+    
+    <hr>
+
+	<div class="row">
+		<h3>Notices</h3>
+		<div class="box col-7">
+			<div class="notice default"><b>Default:</b> A little plain, isn't it?</div>
+   			<div class="notice success"><b>Success!</b> Congratulations, it works!</div>
+			<div class="notice error"><b>Error.</b> You broke it. You have no one to blame but yourself!</div>
+			<div class="notice warn"><b>Warning:</b> Something went wrong!</div>
+			<div class="notice info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
+			<div class="notice dark"><b>Dark:</b> Deep Space Nine.</div>
+		</div>
+
+		<div class="box col-5">
+			<div class="code">
+				&lt;div class="notice default"&gt;<br>
+				&lt;b&gt;Default:&lt;/b&gt;A little plain, isn't it?&lt;/div&gt;
+			</div>
+		</div>
+	</div>
 
 	<hr>
 
@@ -188,53 +213,53 @@
 		<h3>Grid</h3>
 		<div class="box col-7">
 			<div class="row" id="example">
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<div class="box col-1">.box .col-1</div>
-				<br><br><br>
-
-				<div class="box col-2">.box .col-2</div>
-				<div class="box col-2">.box .col-2</div>
-				<div class="box col-2">.box .col-2</div>
-				<div class="box col-2">.box .col-2</div>
-				<div class="box col-2">.box .col-2</div>
-				<div class="box col-2">.box .col-2</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
+				<div class="box col-1">col-1</div>
 				<br><br>
 
-				<div class="box col-3">.box .col-3</div>
-				<div class="box col-6">.box .col-6</div>
-				<div class="box col-3">.box .col-3</div>
+				<div class="box col-2">col-2</div>
+				<div class="box col-2">col-2</div>
+				<div class="box col-2">col-2</div>
+				<div class="box col-2">col-2</div>
+				<div class="box col-2">col-2</div>
+				<div class="box col-2">col-2</div>
 				<br><br>
 
-				<div class="box col-3">.box .col-3</div>
-				<div class="box col-3">.box .col-3</div>
-				<div class="box col-3">.box .col-3</div>
-				<div class="box col-3">.box .col-3</div>
+				<div class="box col-3">col-3</div>
+				<div class="box col-6">col-6</div>
+				<div class="box col-3">col-3</div>
 				<br><br>
 
-				<div class="box col-4">.box .col-4</div>
-				<div class="box col-4">.box .col-4</div>
-				<div class="box col-4">.box .col-4</div>
+				<div class="box col-3">col-3</div>
+				<div class="box col-3">col-3</div>
+				<div class="box col-3">col-3</div>
+				<div class="box col-3">col-3</div>
 				<br><br>
 
-				<div class="box col-6">.box .col-6</div>
-				<div class="box col-6">.box .col-6</div>
+				<div class="box col-4">col-4</div>
+				<div class="box col-4">col-4</div>
+				<div class="box col-4">col-4</div>
 				<br><br>
 
-				<div class="box col-8">.box .col-8</div>
-				<div class="box col-4">.box .col-4</div>
+				<div class="box col-6">col-6</div>
+				<div class="box col-6">col-6</div>
 				<br><br>
 
-				<div class="box col-12">.box .col-12</div>
+				<div class="box col-8">col-8</div>
+				<div class="box col-4">col-4</div>
+				<br><br>
+
+				<div class="box col-12">col-12</div>
 				<br>
 			</div>
 		</div>
@@ -317,32 +342,41 @@
 	<hr>
 
 	<div class="row">
-		<h3>Forms</h3>
+		
 		<div class="box col-7">
+            <h3>Forms</h3>
 			<form>
 				<input type="text" placeholder="Username">
 				<input type="password" placeholder="Password">
 				<input type="submit" class="btn info">
 			</form> 
-		</div>
 
-		<div class="box col-5">
-			<div class="code">
+            <div class="code">
 				&lt;input type="text" placeholder="Username"&gt;<br>
 				&lt;input type="password" placeholder="Password"&gt;<br>
 				&lt;input type="submit" class="btn info"&gt;
 			</div>
 		</div>
+        
+        <div class="box col-5">
+            <h3>Labels</h3>
+            <h1>Example <span class="label default">default</span></h1>
+            <h2>Example <span class="label success">success</span></h2>
+            <h3>Example <span class="label error">error</span></h3>
+            <h4>Example <span class="label warn">warn</span></h4>
+            <h5>Example <span class="label info">info</span></h5>
+            <h6>Example <span class="label dark">dark</span></h6>
+        </div>
 	</div>
 
 	<hr>
 
-	<div class="footer">
+	<footer>
 		<p><a href="http://kurisubrooks.com/" class="color info">KURISUBROOKS.COM</a>
 		<br>© 2015 : CC-NC 3.0 AU</p>
-	</div>
+	</footer>
 
-</div>
+</main>
   
 </body>
 </html>

@@ -1,0 +1,66 @@
+.notice {
+    display: block;
+    @include border-radius;
+    vertical-align: middle;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+    border: 1px solid darken($light, 5);
+    border-left-width: 5px;
+    background-color: white;
+    
+    h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    
+}
+
+.notice.default {
+    border-left-color: $default;
+    
+    b, bold, strong, h4 {
+        color: $default;
+    }
+}
+
+.notice.success {
+    border-left-color: $success;
+    
+    b, bold, strong, h4 {
+        color: darken($success, 5);
+    }
+}
+
+.notice.error {
+    border-left-color: $error;
+    
+    b, bold, strong, h4 {
+        color: darken($error, 5);
+    }
+}
+
+.notice.warn {
+    border-left-color: $warn;
+    
+    b, bold, strong, h4 {
+        color: darken($warn, 5);
+    }
+}
+
+.notice.info {
+    border-left-color: $info;
+    
+    b, bold, strong, h4 {
+        color: darken($info, 5);
+    }
+}
+
+.notice.dark {
+    border-left-color: $dark;
+    
+    b, bold, strong, h4 {
+        color: $dark;
+    }
+}

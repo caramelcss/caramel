@@ -26,8 +26,14 @@ body {
     }
 }
 
+.title {
+    h1,h2,h3,h4,h5,h6 {
+        margin: 5px 0;
+    }
+}
+
 .footer, footer {
-    margin-top: 25px;
+    margin: 15px 0;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
@@ -42,16 +48,6 @@ hr {
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid darken($light, 5);
-}
-
-.code, code {
-    font-family: $font-code;
-    color: $default;
-    background-color: $light;
-    border: 1px solid darken($light, 5);
-    @include border-radius;
-    padding: 10px;
-    width: auto;
 }
 
 table {

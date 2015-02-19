@@ -18,30 +18,30 @@
 
 .alert.success {
     color: white;
-    border: darken($success, 5);
+    border: 1px solid darken($success, 5);
     background: lighten($success, 5);
 }
 
 .alert.error {
     color: white;
-    border: darken($error, 5);
+    border: 1px solid darken($error, 5);
     background: lighten($error, 5);
 }
 
 .alert.warn {
     color: white;
-    border: darken($warn, 5);
+    border: 1px solid darken($warn, 5);
     background: lighten($warn, 5);
 }
 
 .alert.info {
     color: white;
-    border: darken($info, 5);
+    border: 1px solid darken($info, 5);
     background: lighten($info, 5);
 }
 
 .alert.dark {
     color: white;
-    border: darken($dark, 5);
+    border: 1px solid darken($dark, 5);
     background: lighten($dark, 5);
 }

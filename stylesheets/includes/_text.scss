@@ -14,36 +14,41 @@ a {
     cursor: not-allowed;
 }
 
-.color.success, *[color=success] {
-    color: $success;
-}
-
-.color.error, *[color=error] {
-    color: $error;
-}
-
-.color.info, *[color=info] {
-    color: $info;
-}
-
-.color.warn, *[color=warn] {
-    color: $warn;
-}
-
-.color.dark, *[color=dark] {
-    color: $dark;
-}
-
-.color.light, *[color=light] {
-    color: $light;
-}
+.color.success, *[color=success] {color: $success;}
+.color.error, *[color=error] {color: $error;}
+.color.info, *[color=info] {color: $info;}
+.color.warn, *[color=warn] {color: $warn;}
+.color.dark, *[color=dark] {color: $dark;}
+.color.light, *[color=light] {color: $light;}
 
 b, bold, strong {
     font-weight: bold;
 }
 
+.code {
+    font-family: $font-code;
+    color: $default;
+    background-color: $light;
+    border: 1px solid darken($light, 5);
+    @include border-radius;
+    padding: 10px;
+    width: auto;
+}
+
+code, highlight, .highlight, hi {
+    font-family: $font-code;
+    background-color: lighten($error, 40);
+    color: $error;
+    @include border-radius;
+    padding: 5px;
+}
+
 i, italic, .italic {
     font-style: italic;
+}
+
+p {
+    margin: 0 0 10px;
 }
 
 .sml, small {
@@ -52,6 +57,13 @@ i, italic, .italic {
 
 s, strike, .strike {
     text-decoration: line-through;
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,14 +77,3 @@ h3 {font-size: 24px;}
 h4 {font-size: 18px;}
 h5 {font-size: 14px;}
 h6 {font-size: 12px;}
-
-sub, sup {
-    position: relative;
-    font-size: 75%;
-    line-height: 0;
-    vertical-align: baseline;
-}
-
-p {
-    margin: 0 0 10px;
-}
