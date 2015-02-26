@@ -1,0 +1,96 @@
+.panel {
+    margin: 10px 0;
+}
+
+.panel-head {
+    @include border-radius-top(4px);
+    padding: 10px 20px;
+    border: 1px solid darken($light, 10);
+    background: darken($light, 5);
+    font-weight: bold;
+}
+    
+.panel-body {
+    @include border-radius-bottom(4px);
+    padding: 15px 20px;
+    border: 1px solid darken($light, 10);
+    background: $light;
+    border-top: none;
+}
+
+.panel.default {
+    .panel-head {
+        border: 1px solid darken($light, 10);
+        background: $light;
+    }
+    
+    .panel-body {
+        border: 1px solid darken($light, 10);
+        border-top: none;
+    } 
+}
+
+.panel.success {
+    .panel-head {
+        border: 1px solid darken($success, 10);
+        background: $success;
+        color: white;
+    }
+    
+    .panel-body {
+        border: 1px solid darken($success, 10);
+        border-top: none;
+    } 
+}
+
+.panel.error {
+    .panel-head {
+        border: 1px solid darken($error, 10);
+        background: $error;
+        color: white;
+    }
+    
+    .panel-body {
+        border: 1px solid darken($error, 10);
+        border-top: none;
+    } 
+}
+
+.panel.warn {
+    .panel-head {
+        border: 1px solid darken($warn, 10);
+        background: $warn;
+        color: white;
+    }
+    
+    .panel-body {
+        border: 1px solid darken($warn, 10);
+        border-top: none;
+    } 
+}
+
+.panel.info {
+    .panel-head {
+        border: 1px solid darken($info, 10);
+        background: $info;
+        color: white;
+    }
+    
+    .panel-body {
+        border: 1px solid darken($info, 10);
+        border-top: none;
+    } 
+}
+
+.panel.dark {
+    .panel-head {
+        border: 1px solid darken($dark, 10);
+        background: $dark;
+        color: white;
+    }
+    
+    .panel-body {
+        border: 1px solid darken($dark, 10);
+        border-top: none;
+    } 
+}

@@ -29,6 +29,19 @@ input[type=week] {
     border-radius: 4px; 
 }
 
+input.success {
+    border: 1px solid $success;
+}
+
+input.error {
+    border: 1px solid $error;
+}
+
+input.warn {
+    border: 1px solid $warn;
+}
+
+
 input[type=submit] {
     border: none; 
 }

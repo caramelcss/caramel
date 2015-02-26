@@ -26,6 +26,32 @@ $radius:    4px;
           border-radius: $radius;
 }
 
+@mixin margin-bottom {
+    margin-bottom: 5px;
+}
+
+@mixin border-radius-top($input) {
+    -webkit-border-top-left-radius: $input;
+    -webkit-border-top-right-radius:$input;
+    -moz-border-top-left-radius:    $input;
+    -moz-border-top-right-radius:   $input;
+    -ms-border-top-left-radius:     $input;
+    -ms-border-top-right-radius:    $input;
+    border-top-left-radius:         $input;
+    border-top-right-radius:        $input;
+}
+
+@mixin border-radius-bottom($input) {
+    -webkit-border-bottom-left-radius:  $input;
+    -webkit-border-bottom-right-radius: $input;
+    -moz-border-bottom-left-radius:     $input;
+    -moz-border-bottom-right-radius:    $input;
+    -ms-border-bottom-left-radius:      $input;
+    -ms-border-bottom-right-radius:     $input;
+    border-bottom-left-radius:          $input;
+    border-bottom-right-radius:         $input;
+}
+
 @import "includes/_base";
 @import "includes/_alert";
 @import "includes/_button";
@@ -35,4 +61,6 @@ $radius:    4px;
 @import "includes/_label.scss";
 @import "includes/_navigation.scss";
 @import "includes/_notice.scss";
+@import "includes/_panel.scss";
+@import "includes/_progress.scss";
 @import "includes/_text.scss";
