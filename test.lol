@@ -1,1 +1,0 @@
-Testing Github IRC hook
