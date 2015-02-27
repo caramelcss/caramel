@@ -1,0 +1,9 @@
+notifications:
+  irc:
+    channels:
+      - "irc.esper.net#kurisu"
+    template:
+      - "%{repository} (%{commit}) {branch}"
+      - "%{author} %{message}"
+    use_notice: true
+    skip_join: true
