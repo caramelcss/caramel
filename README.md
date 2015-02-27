@@ -1,4 +1,4 @@
-# Caramel
+# Caramel [![Build Status](https://travis-ci.org/kursiubrooks/caramel.svg?branch=master)](https://travis-ci.org/kursiubrooks/caramel)
 A Simple, Beautiful, Modern Website Framework.
 
 ## Features
