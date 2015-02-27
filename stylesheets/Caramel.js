@@ -6,7 +6,8 @@ $(document).ready(function() {
     $(".nav .bar").css({
         "display": "block"
     });
-    //On resize style the nav bars
+
+    // Navbar Window Resize
     $(window).resize(function() {
         if ($(window).width() >= 800) {
             $(".bar li").css({
@@ -30,7 +31,7 @@ $(document).ready(function() {
         }
     });
 
-    //On Expand Pressed
+    // On Expand Pressed
     $(".bar .collapse").click(function() {
         $(this).siblings('a').children('li').slideToggle('medium');
 
@@ -39,11 +40,14 @@ $(document).ready(function() {
         $(this).children('.hidden').slideToggle('medium');
 
     });
+
+    // Alert Dismissables
     $(".dismiss").click(function() {
-        $(this).parent().slideUp(100, function() {
+        $(this).parent().fadeOut(700, function() {
             $(".dismiss").remove();
         });
     });
+
     //Force a resize to init.
     $(window).resize();
 });
