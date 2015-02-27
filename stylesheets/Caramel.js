@@ -43,7 +43,7 @@ $(document).ready(function() {
 
     // Alert Dismissables
     $(".dismiss").click(function() {
-        $(this).parent().fadeOut(500, function() {
+        $(this).parent("#note").fadeOut(500, function() {
             $(this).remove();
         });
     });
