@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
     <script src="Caramel.js" type="text/javascript"></script>
     <link href="Caramel.css" rel="stylesheet">
-    <style>.row.example{background-color:#EEE;text-align:center;border-radius:2px;}</style>
+    <style>#example{background-color:#EEE;text-align:center;border-radius:2px;}</style>
   </head>
 <body>
 <main>
@@ -31,17 +31,17 @@
     
     <hr>
     
-    <div class="notice warn">
+    <div class="notice warn" id="note">
         <div class="dismiss"><i class="fa fa-close"></i></div>
         <b>Dismissable:</b> Click the button, click it!
     </div>
 
-    <div class="alert success">
+    <div class="alert success" id="note">
         <div class="dismiss"><i class="fa fa-close"></i></div>
         <b>Dismissable:</b> Click the button, click it!
     </div>
 
-    <div class="panel info">
+    <div class="panel info" id="note">
         <div class="panel-head">
             <div class="dismiss"><i class="fa fa-close"></i></div>
             <strong>Dismissable:</strong>
@@ -321,7 +321,7 @@
     
     <h2>Grid</h2>
     
-    <div class="row example">
+    <div class="row" id="example">
         <div class="box col-1">col-1</div>
         <div class="box col-1">col-1</div>
         <div class="box col-1">col-1</div>
