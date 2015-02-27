@@ -44,7 +44,7 @@ $(document).ready(function() {
     // Alert Dismissables
     $(".dismiss").click(function() {
         $(this).parent().fadeOut(500, function() {
-            $(".dismiss").remove();
+            $(this).remove();
         });
     });
 
