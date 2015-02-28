@@ -1,0 +1,33 @@
+.label {
+    color: white;
+    font-size: 80%;
+    background-color: lighten($default, 5);
+    @include border-radius;
+    padding: 5px 10px;
+    width: auto;
+    display: inline-block;
+}
+
+.label.default {
+    background-color: lighten($default, 5);
+}
+
+.label.success {
+    background-color: $success;
+}
+
+.label.error {
+    background-color: $error;
+}
+
+.label.warn {
+    background-color: $warn;
+}
+
+.label.info {
+    background-color: $info;
+}
+
+.label.dark {
+    background-color: $dark;
+}

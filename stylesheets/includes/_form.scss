@@ -1,5 +1,5 @@
 input {
-  font: inherit; 
+    font: inherit; 
 }
 
 input[type=text],
@@ -12,41 +12,56 @@ input[type=tel],
 input[type=time],
 input[type=url],
 input[type=week] {
-  background: white;
-  border: 1px solid darken($light, 5);
-  color: inherit;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  display: inline-block;
-  min-width: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 5px;
-  line-height: 1.42;
-  vertical-align: middle;
-  border-radius: 4px; 
+    background: white;
+    border: 1px solid darken($light, 5);
+    color: inherit;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+    line-height: 1.42;
+    vertical-align: middle;
+    border-radius: 4px; 
 }
 
+input.success {
+    border: 1px solid $success;
+}
+
+input.error {
+    border: 1px solid $error;
+}
+
+input.warn {
+    border: 1px solid $warn;
+}
+
+
 input[type=submit] {
-  border: none; 
+    border: none; 
 }
 
 textarea {
-  background: white;
-  border: 1px solid darken($light, 5);
-  color: inherit;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  display: inline-block;
-  min-width: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 5px;
-  line-height: 1.42;
-  vertical-align: middle;
-  border-radius: 4px; 
+    font: inherit; 
+    background: white;
+    border: 1px solid darken($light, 5);
+    color: inherit;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    min-width: 100px;
+    min-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+    line-height: 1.42;
+    vertical-align: middle;
+    border-radius: 4px; 
 }

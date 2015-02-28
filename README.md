@@ -1,4 +1,4 @@
-# Caramel [![Build Status](https://travis-ci.org/kursiubrooks/caramel.svg?branch=master)](https://travis-ci.org/kursiubrooks/caramel)
+# Caramel
 A Simple, Beautiful, Modern Website Framework.
 
 ## Features
@@ -23,8 +23,3 @@ With the help of our included Bash script, compiling Caramel is a breeze! Make s
 
 	-bash: path/to/Compile.sh: Permission denied
 * Solution: `chmod +x path/to/compile.sh`
-
-### Team:
-
- * kurisubrooks ー Design
- * Penagwin ー Javascript
