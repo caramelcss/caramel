@@ -1,11 +1,11 @@
 .progress {
+    @include border-radius;
+    @include margin-bottom;
     width: 100%;
     height: 30px;
-    border: 1px solid darken($light, 5);
-    @include border-radius;
     background-color: $light;
+    border: 1px solid darken($light, 5);
     display: block;
-    @include margin-bottom;
 }
 
 .progress-bar {
@@ -13,10 +13,8 @@
     border-bottom-left-radius: 2px;
     background-color: $info;
     text-align: center;
-    line-height: 20px;
-    color: white;
     height: 30px;
-    color: $default;
+    color: white;
 }
 
 #progress {
