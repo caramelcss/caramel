@@ -1,0 +1,33 @@
+{
+  name: 'caramel',
+  version: '0.2.3',
+  description: 'a beautiful, simple, modern website framework',
+  main: 'stylesheets/Caramel.css',
+  moduleType: [
+    'globals'
+  ],
+  keywords: [
+    'css',
+    'framework',
+    'modern',
+    'responsive',
+    'ui',
+    'website',
+    'clean',
+    'simple',
+    'grid',
+    'buttons'
+  ],
+  authors: [
+    'kurisubrooks'
+  ],
+  license: 'GPL-2',
+  homepage: 'caramel.ga',
+  ignore: [
+    '**/.*',
+    'node_modules',
+    'bower_components',
+    'test',
+    'tests'
+  ]
+}
