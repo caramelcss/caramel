@@ -1,7 +1,7 @@
 // Caramel 2015  - CC-NC 3.0 AU
 // Javascript    - http://dev.penagw.in
 
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function(e) {
     
     var script = document.createElement('script');
     script.setAttribute("src", 'http://code.jquery.com/jquery-2.1.1.min.js');
