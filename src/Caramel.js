@@ -1,12 +1,7 @@
 // Caramel 2015  - CC-NC 3.0 AU
 // Javascript    - http://dev.penagw.in
 
-var script = document.createElement('script');
-script.setAttribute("src", 'http://code.jquery.com/jquery-2.1.1.min.js');
-script.setAttribute("type", 'text/javascript');
-document.getElementsByTagName('head')[0].appendChild(script);
-
-document.addEventListener("DOMContentLoaded", function(e) {
+$(document).ready(function() {
 
     $(".nav .bar").css({
         "display": "block"
