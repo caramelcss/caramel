@@ -218,8 +218,7 @@ input.info {
 input.dark {
   border: 1px solid #525252; }
 
-/*  Grid
-    Made by gratimax */
+/*  github.com/gratimax */
 .row:before, .row:after {
   content: " ";
   display: table; }
@@ -275,7 +274,7 @@ input.dark {
 .box.col-12 {
   width: 97.5%; }
 
-.img, img {
+img {
   margin: 0; }
 
 .thumbnail {
@@ -337,10 +336,12 @@ input.dark {
   -ms-border-radius: 4px;
   border-radius: 4px;
   background-color: #ededed;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  margin-bottom: 10px; }
 
 .nav {
   background-color: #FAFAFA;
+  margin-bottom: 10px;
   border: 1px solid #ededed;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -528,7 +529,11 @@ input.dark {
   text-align: center;
   height: 30px;
   color: #5F5F5F;
-  background-color: #ededed; }
+  background-color: #ededed;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; }
 
 #progress {
   position: relative;
@@ -570,7 +575,7 @@ input.dark {
     background-color: #454545; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 5px 0;
+  margin: 15px 0;
   font-weight: 400;
   line-height: 1.1; }
 

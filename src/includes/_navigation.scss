@@ -2,10 +2,12 @@
     @include border-radius;
     background-color: darken($light, 5);
     padding: 10px 15px;
+    margin-bottom: 10px;
 }
 
 .nav {
     background-color: $light;
+    margin-bottom: 10px;
     border: 1px solid darken($light, 5);
     @include border-radius();
     max-height: 50px;

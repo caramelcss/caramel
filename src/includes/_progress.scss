@@ -15,6 +15,7 @@
     height: 30px;
     color: $default;
     background-color: darken($light, 5);
+    @include border-radius(2px);
 }
 
 #progress {
