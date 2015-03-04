@@ -1,3 +1,16 @@
+h1,h2,h3,h4,h5,h6 {
+    margin: 5px 0;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+h1 {font-size: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 24px;}
+h4 {font-size: 18px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
 a {
     color: $info;
     text-decoration: none;
@@ -14,36 +27,38 @@ a {
     cursor: not-allowed;
 }
 
-.color.success, *[color=success] {color: $success;}
-.color.error, *[color=error] {color: $error;}
-.color.info, *[color=info] {color: $info;}
-.color.warn, *[color=warn] {color: $warn;}
-.color.dark, *[color=dark] {color: $dark;}
-.color.light, *[color=light] {color: $light;}
+.color.success, [color=success] {color: $success;}
+.color.error, [color=error] {color: $error;}
+.color.info, [color=info] {color: $info;}
+.color.warn, [color=warn] {color: $warn;}
+.color.dark, [color=dark] {color: $dark;}
+.color.light, [color=light] {color: $light;}
 
-b, bold, strong {
+b, strong {
     font-weight: bold;
 }
 
 .code {
+    width: auto;
+    padding: 10px;
     font-family: $font-code;
     color: $default;
-    background-color: $light;
     border: 1px solid darken($light, 5);
-    @include border-radius;
-    padding: 10px;
-    width: auto;
+    background-color: $light;
+    
+    @include border-radius();
 }
 
-code, highlight, .highlight, hi {
-    font-family: $font-code;
-    background-color: lighten($error, 40);
-    color: $error;
-    @include border-radius;
+code, highlight, .highlight, {
     padding: 5px;
+    font-family: $font-code;
+    color: $error;
+    background-color: lighten($error, 40);
+    
+    @include border-radius();
 }
 
-i, italic, .italic {
+em, .italic {
     font-style: italic;
 }
 
@@ -55,7 +70,7 @@ p {
     font-size: 80%;
 }
 
-s, strike, .strike {
+s, .strike {
     text-decoration: line-through;
 }
 
@@ -65,15 +80,3 @@ sub, sup {
     line-height: 0;
     vertical-align: baseline;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    line-height: 1.1;
-}
-
-h1 {font-size: 36px;}
-h2 {font-size: 30px;}
-h3 {font-size: 24px;}
-h4 {font-size: 18px;}
-h5 {font-size: 14px;}
-h6 {font-size: 12px;}

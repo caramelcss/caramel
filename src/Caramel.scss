@@ -4,7 +4,9 @@
 @import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600";
 @import "http://fonts.googleapis.com/css?family=Anonymous+Pro";
 
-$disabled:  #CCCCCC;
+$white:     #fff;
+$black:     #000;
+$disabled:  #CCC;
 $default:   #5F5F5F;
 $success:   #5CB85C;
 $error:     #D9534F;
@@ -13,43 +15,59 @@ $info:      #52B7D6;
 $dark:      #525252;
 $light:     #FAFAFA;
 
-$font-default:  "Open Sans", sans-serif;
-$font-code:     "Anonymous Pro", Monospace;
+$open-sans: "Open Sans", sans-serif;
+$anonymous-pro: "Anonymous Pro", Monospace;
 
-$width:     800px;
-$radius:    4px;
+$font-default: $open-sans;
+$font-code: $anonymous-pro;
 
-@mixin border-radius {
+$breakpoint-width: 800px;
+$default-radius: 4px !default;
+
+$-states-map:(
+    success: (color-state: $success, text-color: $white),
+    error: (color-state: $error, text-color: $white),
+    warn: (color-state: $warn, text-color: $white),
+    info: (color-state: $info, text-color: $white),
+    dark: (color-state: $dark, text-color: $white)
+);
+
+@mixin inline-block() {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+@mixin border-radius($radius: $default-radius) {
+
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
+
 }
 
-@mixin margin-bottom {
-    margin-bottom: 5px;
+@mixin border-radius-top($radius: $default-radius) {
+    -webkit-border-top-left-radius: $radius;
+    -webkit-border-top-right-radius:$radius;
+    -moz-border-top-left-radius:    $radius;
+    -moz-border-top-right-radius:   $radius;
+    -ms-border-top-left-radius:     $radius;
+    -ms-border-top-right-radius:    $radius;
+    border-top-left-radius:         $radius;
+    border-top-right-radius:        $radius;
 }
 
-@mixin border-radius-top($input) {
-    -webkit-border-top-left-radius: $input;
-    -webkit-border-top-right-radius:$input;
-    -moz-border-top-left-radius:    $input;
-    -moz-border-top-right-radius:   $input;
-    -ms-border-top-left-radius:     $input;
-    -ms-border-top-right-radius:    $input;
-    border-top-left-radius:         $input;
-    border-top-right-radius:        $input;
-}
-
-@mixin border-radius-bottom($input) {
-    -webkit-border-bottom-left-radius:  $input;
-    -webkit-border-bottom-right-radius: $input;
-    -moz-border-bottom-left-radius:     $input;
-    -moz-border-bottom-right-radius:    $input;
-    -ms-border-bottom-left-radius:      $input;
-    -ms-border-bottom-right-radius:     $input;
-    border-bottom-left-radius:          $input;
-    border-bottom-right-radius:         $input;
+@mixin border-radius-bottom($radius: $default-radius) {
+    -webkit-border-bottom-left-radius:  $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-bottom-left-radius:     $radius;
+    -moz-border-bottom-right-radius:    $radius;
+    -ms-border-bottom-left-radius:      $radius;
+    -ms-border-bottom-right-radius:     $radius;
+    border-bottom-left-radius:          $radius;
+    border-bottom-right-radius:         $radius;
 }
 
 @import "includes/_base";

@@ -11,57 +11,36 @@ input[type=search],
 input[type=tel],
 input[type=time],
 input[type=url],
-input[type=week] {
-    background: white;
-    border: 1px solid darken($light, 5);
-    color: inherit;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    display: inline-block;
+input[type=week],
+textarea {
     min-width: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 5px;
+    margin: 0 5px 5px 0;
+    padding: 10px 15px;
+    font: inherit; 
+    color: inherit;
     line-height: 1.42;
     vertical-align: middle;
-    border-radius: 4px; 
-}
+    border: 1px solid darken($light, 5);
+    background: $white;
 
-input.success {
-    border: 1px solid $success;
+    @include border-radius();
+    @include inline-block();
 }
-
-input.error {
-    border: 1px solid $error;
-}
-
-input.warn {
-    border: 1px solid $warn;
-}
-
 
 input[type=submit] {
     border: none; 
 }
 
 textarea {
-    font: inherit; 
-    background: white;
-    border: 1px solid darken($light, 5);
-    color: inherit;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    display: inline-block;
-    min-width: 100px;
     min-height: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 5px;
-    line-height: 1.42;
-    vertical-align: middle;
-    border-radius: 4px; 
+}
+
+@each $state, $color-map in $-states-map {
+
+    $color-state: map-get($color-map, 'color-state');
+
+    input.#{$state} {
+        border: 1px solid $color-state;
+    }
+
 }

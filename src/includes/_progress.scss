@@ -1,20 +1,20 @@
 .progress {
-    @include border-radius;
-    @include margin-bottom;
     width: 100%;
     height: 30px;
+    margin-bottom: 5px;
     background-color: $light;
     border: 1px solid darken($light, 5);
     display: block;
+    overflow: hidden;
+
+    @include border-radius();
 }
 
 .progress-bar {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    background-color: $info;
     text-align: center;
     height: 30px;
-    color: white;
+    color: $default;
+    background-color: darken($light, 5);
 }
 
 #progress {
@@ -22,62 +22,19 @@
     top: 5px;
 }
 
-.progress.default {
-    border: 1px solid darken($light, 5);
-    background-color: $light;
-    
-    .progress-bar {
-        color: $default;
-        background-color: darken($light, 5);
-    }
-}
+@each $state, $color-map in $-states-map {
 
-.progress.success {
-    border: 1px solid darken($success, 5);
-    background-color: $light;
-    
-    .progress-bar {
-        color: white;
-        background-color: $success;
-    }
-}
+    $color: map-get($color-map, 'text-color');
+    $color-state: map-get($color-map, 'color-state');
 
-.progress.error {
-    border: 1px solid darken($error, 5);
-    background-color: $light;
-    
-    .progress-bar {
-        color: white;
-        background-color: $error;
+    .progress.#{$state} {
+        border: 1px solid darken($color-state, 5);
+        background-color: $light;
+        
+        .progress-bar {
+            color: $color;
+            background-color: darken($color-state, 5);
+        }
     }
-}
 
-.progress.warn {
-    border: 1px solid darken($warn, 5);
-    background-color: $light;
-    
-    .progress-bar {
-        color: white;
-        background-color: $warn;
-    }
-}
-
-.progress.info {
-    border: 1px solid darken($info, 5);
-    background-color: $light;
-    
-    .progress-bar {
-        color: white;
-        background-color: $info;
-    }
-}
-
-.progress.dark {
-    border: 1px solid darken($dark, 5);
-    background-color: $light;
-    
-    .progress-bar {
-        color: white;
-        background-color: $dark;
-    }
 }
