@@ -10,27 +10,41 @@
     margin-bottom: 10px;
     border: 1px solid darken($light, 5);
     @include border-radius();
-    max-height: 50px;
+
+    ul {
+        background-color: $light;
+    }
 }
 
 .nav.bar {
-    
-    .collapse {
-        &:hover,
-        &:active {
-            background-color: darken($light, 5);
-            cursor: pointer;
+
+    ul {
+        margin: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0;
+
+        &.open {
+            > li {
+                display: block;
+            }
         }
     }
 
     li {
-        display: block;
+        position: relative;
         text-decoration: none;
-        width: inherit;
-        padding: 10px 20px;
         line-height: 20px;
         color: $default;
-        margin-right: -5px;
+        vertical-align: middle;
+
+        @include inline-block();
+
+        @media (max-width: $breakpoint-width) {
+            display: none;
+        }
         
         .active {
             background-color: darken($light, 5);
@@ -39,6 +53,64 @@
         &:hover, 
         &:active {
             background-color: darken($light, 5);
+        }
+
+        &:hover {
+            > ul {
+                display: block;
+
+                @media (max-width: $breakpoint-width) {
+                    display: none;
+                }
+            }
+        }
+
+        a {
+            display: block;
+            padding: 10px 20px;
+            white-space: nowrap;
+        }
+
+        > ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            min-width: 150px;
+            z-index: 2;
+
+            @media (max-width: $breakpoint-width) {
+                position: relative;
+                top: 0;
+                width: 100%;
+            }
+
+            &.open {
+                display: block;
+
+                li {
+                    @media (max-width: $breakpoint-width) {
+                        padding-left: 25px;
+                    }
+                }
+            }
+
+            li {
+                display: block;
+            }
+        }
+    }
+
+    .collapse {
+        display: none;
+
+        @media (max-width: $breakpoint-width) {
+            display: block;            
+        }
+
+        &:hover,
+        &:active {
+            background-color: darken($light, 5);
+            cursor: pointer;
         }
     }
 }
@@ -54,6 +126,10 @@
             background-color: darken($dark, 5);
             cursor: pointer;
         }
+    }
+
+    ul {
+        background-color: $dark;
     }
     
     li {

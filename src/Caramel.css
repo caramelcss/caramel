@@ -346,24 +346,71 @@ img {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  border-radius: 4px;
-  max-height: 50px; }
+  border-radius: 4px; }
+  .nav ul {
+    background-color: #FAFAFA; }
 
-.nav.bar .collapse:hover, .nav.bar .collapse:active {
-  background-color: #ededed;
-  cursor: pointer; }
+.nav.bar ul {
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0; }
+  .nav.bar ul.open > li {
+    display: block; }
 .nav.bar li {
-  display: block;
+  position: relative;
   text-decoration: none;
-  width: inherit;
-  padding: 10px 20px;
   line-height: 20px;
   color: #5F5F5F;
-  margin-right: -5px; }
+  vertical-align: middle;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline; }
+  @media (max-width: 800px) {
+    .nav.bar li {
+      display: none; } }
   .nav.bar li .active {
     background-color: #ededed; }
   .nav.bar li:hover, .nav.bar li:active {
     background-color: #ededed; }
+  .nav.bar li:hover > ul {
+    display: block; }
+    @media (max-width: 800px) {
+      .nav.bar li:hover > ul {
+        display: none; } }
+  .nav.bar li a {
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap; }
+  .nav.bar li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 150px;
+    z-index: 2; }
+    @media (max-width: 800px) {
+      .nav.bar li > ul {
+        position: relative;
+        top: 0;
+        width: 100%; } }
+    .nav.bar li > ul.open {
+      display: block; }
+      @media (max-width: 800px) {
+        .nav.bar li > ul.open li {
+          padding-left: 25px; } }
+    .nav.bar li > ul li {
+      display: block; }
+.nav.bar .collapse {
+  display: none; }
+  @media (max-width: 800px) {
+    .nav.bar .collapse {
+      display: block; } }
+  .nav.bar .collapse:hover, .nav.bar .collapse:active {
+    background-color: #ededed;
+    cursor: pointer; }
 
 .bar.dark {
   background-color: #525252;
@@ -372,6 +419,8 @@ img {
   .bar.dark .collapse:hover, .bar.dark .collapse:active {
     background-color: #454545;
     cursor: pointer; }
+  .bar.dark ul {
+    background-color: #525252; }
   .bar.dark li {
     color: #fff; }
     .bar.dark li .active {
