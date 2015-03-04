@@ -2,13 +2,15 @@
 A Simple, Beautiful, Modern Website Framework.
 
 ## Features
-Feature Complete with Simplicity in mind;
+Feature Complete with Simplicity in mind. To name a few;
 
  * Buttons
  * Nav-bars & Pagination
- * Alerts / Banners
- * Image Formatting
- * Text Colours
+ * Alerts & Banners
+ * Panels
+ * Image Styling
+ * Progress Bars
+ * Labels
  * Responsive Grid System
  * Forms & Input
 
@@ -23,3 +25,14 @@ With the help of our included Bash script, compiling Caramel is a breeze! Make s
 
 	-bash: path/to/Compile.sh: Permission denied
 * Solution: `chmod +x path/to/compile.sh`
+
+## Team
+
+ * [kurisubrooks](http://github.com/kurisubrooks) — CSS / Design
+ * [whoiskenjackson](http://github.com/whoiskenjackson) — CSS / Design
+ * [penagwin](http://github.com/penagwin) — Javascript
+ * [hedgehog1029](http://github.com/hedgehog1029) — Javascript
+
+### Contributions
+ * [gratimax](http://github.com/gratimax) — Grid/Column System
+ * [toma678](http://github.com/toma678) — Bash Compiling Script
