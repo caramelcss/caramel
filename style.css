@@ -1,4 +1,6 @@
 .center {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: absolute;
     text-align: center;
@@ -6,6 +8,17 @@
     left: 50%;
     
     min-width: 600px;
+}
+
+@media (max-width: 800px) {
+    .center {
+        -webkit-transform: none;
+        -moz-transform: none;
+        transform: none;
+        position: inherit;
+        top: inherit;
+        left: inherit;
+    }
 }
 
 .header {
