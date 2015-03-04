@@ -348,22 +348,48 @@ img {
   -ms-border-radius: 4px;
   border-radius: 4px;
   max-height: 50px; }
+  .nav ul {
+    background-color: #FAFAFA; }
 
-.nav.bar .collapse:hover, .nav.bar .collapse:active {
-  background-color: #ededed;
-  cursor: pointer; }
+.nav.bar .collapse {
+  display: none; }
+  .nav.bar .collapse:hover, .nav.bar .collapse:active {
+    background-color: #ededed;
+    cursor: pointer; }
+.nav.bar ul {
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0; }
 .nav.bar li {
-  display: block;
+  position: relative;
   text-decoration: none;
-  width: inherit;
-  padding: 10px 20px;
   line-height: 20px;
   color: #5F5F5F;
-  margin-right: -5px; }
+  vertical-align: middle;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline; }
   .nav.bar li .active {
     background-color: #ededed; }
   .nav.bar li:hover, .nav.bar li:active {
     background-color: #ededed; }
+  .nav.bar li:hover > ul {
+    display: block; }
+  .nav.bar li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    min-width: 150px; }
+    .nav.bar li > ul li {
+      display: block; }
+  .nav.bar li a {
+    display: block;
+    padding: 10px 20px; }
 
 .bar.dark {
   background-color: #525252;
@@ -372,6 +398,8 @@ img {
   .bar.dark .collapse:hover, .bar.dark .collapse:active {
     background-color: #454545;
     cursor: pointer; }
+  .bar.dark ul {
+    background-color: #525252; }
   .bar.dark li {
     color: #fff; }
     .bar.dark li .active {

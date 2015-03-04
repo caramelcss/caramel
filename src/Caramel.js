@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
 
-    $(".nav .bar").css({
+    /*$(".nav .bar").css({
         "display": "block"
     });
 
@@ -29,17 +29,17 @@ $(document).ready(function() {
                 "max-height": "inherit"
             });
         }
-    });
+    });*/
 
     // On Expand Pressed
-    $(".bar .collapse").click(function() {
+    /*$(".bar .collapse").click(function() {
         $(this).siblings('a').children('li').slideToggle('medium');
 
     });
     $(".dropdown").click(function() {
         $(this).children('.hidden').slideToggle('medium');
 
-    });
+    });*/
 
     // Alert Dismissables
     $(".dismiss").click(function() {

@@ -11,11 +11,17 @@
     border: 1px solid darken($light, 5);
     @include border-radius();
     max-height: 50px;
+
+    ul {
+        background-color: $light;
+    }
 }
 
 .nav.bar {
     
     .collapse {
+        display: none;
+
         &:hover,
         &:active {
             background-color: darken($light, 5);
@@ -23,14 +29,23 @@
         }
     }
 
+    ul {
+        margin: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0;
+    }
+
     li {
-        display: block;
+        position: relative;
         text-decoration: none;
-        width: inherit;
-        padding: 10px 20px;
         line-height: 20px;
         color: $default;
-        margin-right: -5px;
+        vertical-align: middle;
+
+        @include inline-block();
         
         .active {
             background-color: darken($light, 5);
@@ -39,6 +54,29 @@
         &:hover, 
         &:active {
             background-color: darken($light, 5);
+        }
+
+        &:hover {
+            > ul {
+                display: block;
+            }
+        }
+
+        > ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            z-index: 2;
+            min-width: 150px;
+
+            li {
+                display: block;
+            }
+        }
+
+        a {
+            display: block;
+            padding: 10px 20px;
         }
     }
 }
@@ -54,6 +92,10 @@
             background-color: darken($dark, 5);
             cursor: pointer;
         }
+    }
+
+    ul {
+        background-color: $dark;
     }
     
     li {
