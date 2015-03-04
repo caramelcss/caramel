@@ -34,5 +34,5 @@ With the help of our included Bash script, compiling Caramel is a breeze! Make s
  * [hedgehog1029](http://github.com/hedgehog1029) — Javascript
 
 ### Contributions
- * [gratimax](http://github.com/gratimax) — Grid/Column System
+ * [gratimax](http://github.com/gratimax) — Grid / Column System
  * [toma678](http://github.com/toma678) — Bash Compiling Script
