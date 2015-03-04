@@ -1,6 +1,6 @@
 {
   name: 'caramel',
-  version: '0.2.3',
+  version: '0.1.2',
   description: 'a beautiful, simple, modern website framework',
   main: 'stylesheets/Caramel.css',
   moduleType: [
