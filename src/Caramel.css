@@ -351,11 +351,6 @@ img {
   .nav ul {
     background-color: #FAFAFA; }
 
-.nav.bar .collapse {
-  display: none; }
-  .nav.bar .collapse:hover, .nav.bar .collapse:active {
-    background-color: #ededed;
-    cursor: pointer; }
 .nav.bar ul {
   margin: 0;
   -webkit-margin-before: 0;
@@ -373,23 +368,35 @@ img {
   display: inline-block;
   *zoom: 1;
   *display: inline; }
+  @media (max-width: 800px) {
+    .nav.bar li {
+      display: none; } }
   .nav.bar li .active {
     background-color: #ededed; }
   .nav.bar li:hover, .nav.bar li:active {
     background-color: #ededed; }
   .nav.bar li:hover > ul {
     display: block; }
+  .nav.bar li a {
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap; }
   .nav.bar li > ul {
     display: none;
     position: absolute;
     top: 100%;
-    z-index: 2;
-    min-width: 150px; }
+    min-width: 150px;
+    z-index: 2; }
     .nav.bar li > ul li {
       display: block; }
-  .nav.bar li a {
-    display: block;
-    padding: 10px 20px; }
+.nav.bar .collapse {
+  display: none; }
+  @media (max-width: 800px) {
+    .nav.bar .collapse {
+      display: block; } }
+  .nav.bar .collapse:hover, .nav.bar .collapse:active {
+    background-color: #ededed;
+    cursor: pointer; }
 
 .bar.dark {
   background-color: #525252;

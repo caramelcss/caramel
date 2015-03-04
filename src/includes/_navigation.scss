@@ -18,16 +18,6 @@
 }
 
 .nav.bar {
-    
-    .collapse {
-        display: none;
-
-        &:hover,
-        &:active {
-            background-color: darken($light, 5);
-            cursor: pointer;
-        }
-    }
 
     ul {
         margin: 0;
@@ -46,6 +36,10 @@
         vertical-align: middle;
 
         @include inline-block();
+
+        @media (max-width: $breakpoint-width) {
+            display: none;
+        }
         
         .active {
             background-color: darken($light, 5);
@@ -62,21 +56,36 @@
             }
         }
 
+        a {
+            display: block;
+            padding: 10px 20px;
+            white-space: nowrap;
+        }
+
         > ul {
             display: none;
             position: absolute;
             top: 100%;
-            z-index: 2;
             min-width: 150px;
+            z-index: 2;
 
             li {
                 display: block;
             }
         }
+    }
 
-        a {
-            display: block;
-            padding: 10px 20px;
+    .collapse {
+        display: none;
+
+        @media (max-width: $breakpoint-width) {
+            display: block;            
+        }
+
+        &:hover,
+        &:active {
+            background-color: darken($light, 5);
+            cursor: pointer;
         }
     }
 }
