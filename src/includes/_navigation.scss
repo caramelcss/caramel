@@ -10,7 +10,6 @@
     margin-bottom: 10px;
     border: 1px solid darken($light, 5);
     @include border-radius();
-    max-height: 50px;
 
     ul {
         background-color: $light;
@@ -26,6 +25,12 @@
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
         -webkit-padding-start: 0;
+
+        &.open {
+            > li {
+                display: block;
+            }
+        }
     }
 
     li {
@@ -53,6 +58,10 @@
         &:hover {
             > ul {
                 display: block;
+
+                @media (max-width: $breakpoint-width) {
+                    display: none;
+                }
             }
         }
 
@@ -68,6 +77,22 @@
             top: 100%;
             min-width: 150px;
             z-index: 2;
+
+            @media (max-width: $breakpoint-width) {
+                position: relative;
+                top: 0;
+                width: 100%;
+            }
+
+            &.open {
+                display: block;
+
+                li {
+                    @media (max-width: $breakpoint-width) {
+                        padding-left: 25px;
+                    }
+                }
+            }
 
             li {
                 display: block;
