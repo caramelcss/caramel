@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.4;
-    background-color: #FFF;
+    background-color: $white;
     color: $default;
     margin: 0;
 }
@@ -11,32 +11,19 @@ body {
 .container, main {
     width: inherit;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 35px; 
-    padding-right: 35px;
+    margin: 0 auto;
+    padding: 0 35px;
 }
 
-@media (max-width: $width) {
+@media (max-width: $breakpoint-width) {
     .container, main {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 10px; 
-        padding-right: 10px;
-    }
-}
-
-.title {
-    h1,h2,h3,h4,h5,h6 {
-        margin: 5px 0;
+        padding: 0 10px;
     }
 }
 
 .footer, footer {
     margin: 15px 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 100%;
+    padding: 5px 0;
 }
 
 .hidden {   display:none; }
@@ -44,8 +31,7 @@ body {
 .right {    float:right; }
 
 hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border: 0;
     border-top: 1px solid darken($light, 5);
 }

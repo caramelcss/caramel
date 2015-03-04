@@ -7,7 +7,7 @@
 .nav {
     background-color: $light;
     border: 1px solid darken($light, 5);
-    @include border-radius;
+    @include border-radius();
     max-height: 50px;
 }
 
@@ -44,7 +44,7 @@
 .bar.dark {
     background-color: $dark;
     border-color: darken($dark, 5);
-    color: white;
+    color: $white;
     
     .collapse {
         &:hover,
@@ -55,7 +55,7 @@
     }
     
     li {
-        color: white;
+        color: $white;
         
         .active {
             background-color: darken($dark, 5);
@@ -69,11 +69,11 @@
 }
 
 .nav.page {
-  display: inline-block;
-  @include border-radius;
+    @include inline-block();
+    @include border-radius();
 
     li {
-        display: inline-block;
+        @include inline-block();
         text-decoration: none;
         padding: 10px 20px;
         line-height: 20px;
@@ -101,6 +101,6 @@
     }
     
     li {
-        display: inline-block;
+        @include inline-block();
     }
 }

@@ -1,33 +1,20 @@
 .label {
-    color: white;
+    width: auto;
+    padding: 5px 10px;
+    color: $white;
     font-size: 80%;
     background-color: lighten($default, 5);
-    @include border-radius;
-    padding: 5px 10px;
-    width: auto;
-    display: inline-block;
+    
+    @include border-radius();
+    @include inline-block();
 }
 
-.label.default {
-    background-color: lighten($default, 5);
-}
+@each $state, $color-map in $-states-map {
 
-.label.success {
-    background-color: $success;
-}
+    $color-state: map-get($color-map, 'color-state');
 
-.label.error {
-    background-color: $error;
-}
+    .label.#{$state} {
+        background-color: $color-state;
+    }
 
-.label.warn {
-    background-color: $warn;
-}
-
-.label.info {
-    background-color: $info;
-}
-
-.label.dark {
-    background-color: $dark;
 }

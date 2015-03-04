@@ -1,19 +1,20 @@
 .btn {
-    display: inline-block;
     
     padding: 8px 14px;
-    @include margin-bottom;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    color: $default;
     line-height: 1.42;
     text-align: center;
-    vertical-align: middle;
-    @include border-radius;
-    
-    color: $default;
     border: 1px solid darken($light, 5);
     background: $light;
     
+    @include border-radius();
+    @include inline-block();
+    
     &:hover,
     &:active {
+        color: $default;
         border: 1px solid darken($light, 5);
         background: darken($light, 5);
     }
@@ -24,78 +25,25 @@
     font-size: 10px;
 }
 
-.btn.default {
-    color: $default;
-    border: 1px solid darken($light, 5);
-    background: $light;
-        
-    &:hover,
-    &:active {
-        border: 1px solid darken($light, 5);
-        background: darken($light, 2);
-    }
-}
-
-.btn.success {
-    color: white;
-    border: 1px solid darken($success, 5);
-    background: $success;
-        
-    &:hover,
-    &:active {
-        border: 1px solid $success;
-        background: lighten($success, 5);
-    }
-}
-
-.btn.error {
-    color: white;
-    border: 1px solid darken($error, 5);
-    background: $error;
-    
-    &:hover,
-    &:active {
-        border: 1px solid $error;
-        background: lighten($error, 5);
-    }
-}
-
-.btn.warn {
-    color: white;
-    border: 1px solid darken($warn, 5);
-    background: $warn;
-    
-    &:hover,
-    &:active {
-        border: 1px solid $warn;
-        background: lighten($warn, 5);
-    }
-}
-
-.btn.info {
-    color: white;
-    border: 1px solid darken($info, 5);
-    background: $info;
-    
-    &:hover,
-    &:active {
-        border: 1px solid $info;
-        background: lighten($info, 5)
-    }
-}
-
-.btn.dark {
-    color: white;
-    border: 1px solid darken($dark, 5);
-    background: $dark;
-    
-    &:hover,
-    &:active {
-        border: 1px solid darken($dark, 5);
-        background: darken($dark, 2)
-    }
-}
-
 .dropdown {
     cursor: pointer;
+}
+
+@each $state, $color-map in $-states-map {
+
+    $color: map-get($color-map, 'text-color');
+    $color-state: map-get($color-map, 'color-state');
+
+    .btn.#{$state} {
+        color: $color;
+        border: 1px solid darken($color-state, 5);
+        background: $color-state;
+            
+        &:hover,
+        &:active {
+            border: 1px solid darken($color-state, 5);
+            background: lighten($color-state, 2);
+        }
+    }
+
 }
