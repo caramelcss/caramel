@@ -2,7 +2,8 @@
   name: 'caramel',
   version: '0.1.2',
   description: 'a beautiful, simple, modern website framework',
-  main: 'stylesheets/Caramel.css',
+  "dependencies": {
+    "caramel": "git@github.com:kurisubrooks/caramel.git",
   moduleType: [
     'globals'
   ],
