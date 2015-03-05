@@ -377,11 +377,13 @@ img {
     background-color: #ededed; }
   .nav.bar li:hover, .nav.bar li:active {
     background-color: #ededed; }
-  .nav.bar li:hover > ul {
+  .nav.bar li.dropdown-hover:hover > ul {
     display: block; }
     @media (max-width: 800px) {
-      .nav.bar li:hover > ul {
+      .nav.bar li.dropdown-hover:hover > ul {
         display: none; } }
+  .nav.bar li.dropdown-hover > ul.open {
+    display: block; }
   .nav.bar li a {
     display: block;
     padding: 10px 20px;
