@@ -55,13 +55,19 @@
             background-color: darken($light, 5);
         }
 
-        &:hover {
-            > ul {
-                display: block;
-
-                @media (max-width: $breakpoint-width) {
-                    display: none;
+        &.dropdown-hover{
+            &:hover {
+                > ul {
+                    display: block;
+    
+                    @media (max-width: $breakpoint-width) {
+                        display: none;
+                    }
                 }
+            }
+
+            > ul.open {
+                display: block;
             }
         }
 
