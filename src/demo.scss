@@ -1,0 +1,32 @@
+/*  Framework by Caramel.ga - License: CC-NC 3.0-AU */
+
+@import "includes/core";
+
+#example .box {
+	background-color: #EEE;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.header {
+	margin: 15px 0;
+	text-align: center;
+
+	h1 {
+		margin-top: 0;
+	}
+}
+
+.fill-80 { width: 80%; }
+.fill-19 { width: 19%; }
+.fill-32 { width: 32%; }
+.fill-64 { width: 64%; }
+.fill-100 { width: 100%; }
+.fill-9 { width: 9%; }
+
+.fa-heart-o { color:#D9534F; }
+
+.fa.fa-code {
+	color:#6EC06E;
+	font-size:16px;
+}

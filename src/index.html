@@ -9,12 +9,12 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet" type="text/css">
     <link href="Caramel.css" rel="stylesheet" type="text/css">
+    <link href="demo.css" rel="stylesheet" type="text/css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <style>#example .box {background-color: #EEE;text-align: center;border-radius: 2px;}</style>
   </head>
 <body>
     <main>
-        <div align="center" style="margin:15px 0">
+        <div class="header">
           <svg version="1.1" width="100px" height="100px" viewBox="0 0 48 48">
             <g transform="translate(0,-1004.3622)">
               <g transform="translate(-6,1003)">
@@ -26,7 +26,7 @@
             </g>
           </svg>
 
-          <h1 style="margin-top:0;">Caramel</h1>
+          <h1>Caramel</h1>
 
         </div>
         
@@ -34,21 +34,21 @@
         
         <h2>Buttons</h2>
 
-        <a href="" class="btn default">Default</a>
-        <a href="" class="btn success">Success</a>
-        <a href="" class="btn error">Error</a>
-        <a href="" class="btn warn">Warning</a>
-        <a href="" class="btn info">Info</a>
-        <a href="" class="btn dark">Dark</a>
+        <a href="#" class="btn default">Default</a>
+        <a href="#" class="btn success">Success</a>
+        <a href="#" class="btn error">Error</a>
+        <a href="#" class="btn warn">Warning</a>
+        <a href="#" class="btn info">Info</a>
+        <a href="#" class="btn dark">Dark</a>
         
         <br>
         
-        <a href="" class="btn default sml">Default</a>
-        <a href="" class="btn success sml">Success</a>
-        <a href="" class="btn error sml">Error</a>
-        <a href="" class="btn warn sml">Warning</a>
-        <a href="" class="btn info sml">Info</a>
-        <a href="" class="btn dark sml">Dark</a>
+        <a href="#" class="btn default sml">Default</a>
+        <a href="#" class="btn success sml">Success</a>
+        <a href="#" class="btn error sml">Error</a>
+        <a href="#" class="btn warn sml">Warning</a>
+        <a href="#" class="btn info sml">Info</a>
+        <a href="#" class="btn dark sml">Dark</a>
         
         <hr>
         
@@ -57,10 +57,10 @@
         <div class="nav bar">
             <ul>
                 <li class="collapse"><i class="fa fa-bars"></i></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="" class="dropdown">Dropdown <i class="fa fa-angle-down"></i></a>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#" class="dropdown">Dropdown <i class="fa fa-angle-down"></i></a>
                     <ul>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
@@ -73,10 +73,10 @@
         <div class="nav bar dark">
             <ul>
                 <li class="collapse"><i class="fa fa-bars"></i></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Link</a></li>
-                <li><a href="">Dropdown <i class="fa fa-angle-down"></i></a>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Dropdown <i class="fa fa-angle-down"></i></a>
                     <ul>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
@@ -184,7 +184,7 @@
         <h2>Breadcrumbs</h2>
         
         <div class="breadcrumbs">
-            Link &nbsp;/&nbsp; Link&nbsp;/&nbsp; <a href="">Link</a>
+            Link &nbsp;/&nbsp; Link&nbsp;/&nbsp; <a href="#">Link</a>
         </div>
         
         <hr>
@@ -203,7 +203,7 @@
         <div class="row">
             <div class="box col-4">
                 <div class="progress default">
-                    <div class="progress-bar" style="width:80%">
+                    <div class="progress-bar fill-80">
                         <span id="progress">80%</span>
                     </div>
                 </div>
@@ -211,7 +211,7 @@
             
             <div class="box col-4">
                 <div class="progress success">
-                    <div class="progress-bar" style="width:19%">
+                    <div class="progress-bar fill-19">
                         <span id="progress">19%</span>
                     </div>
                 </div>
@@ -219,7 +219,7 @@
             
             <div class="box col-4">
                 <div class="progress error">
-                    <div class="progress-bar" style="width:32%">
+                    <div class="progress-bar fill-32">
                         <span id="progress">32%</span>
                     </div>
                 </div>
@@ -227,7 +227,7 @@
             
             <div class="box col-4">
                 <div class="progress warn striped">
-                    <div class="progress-bar" style="width:64%">
+                    <div class="progress-bar fill-64">
                         <span id="progress">64%</span>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
             
             <div class="box col-4">
                 <div class="progress info">
-                    <div class="progress-bar" style="width:100%">
+                    <div class="progress-bar fill-100">
                         <span id="progress">100%</span>
                     </div>
                 </div>
@@ -243,7 +243,7 @@
             
             <div class="box col-4">
                 <div class="progress dark">
-                    <div class="progress-bar" style="width:9%">
+                    <div class="progress-bar fill-9">
                         <span id="progress">9%</span>
                     </div>
                 </div>
@@ -315,13 +315,13 @@
         <h2>Pagination</h2>
         
         <div class="nav page">
-          <a href=""><li><i class="fa fa-caret-left"></i></li></a>
-          <a href=""><li>1</li></a>
-          <a href=""><li>2</li></a>
-          <a href=""><li>3</li></a>
-          <a href=""><li>4</li></a>
-          <a href=""><li>5</li></a>
-          <a href=""><li><i class="fa fa-caret-right"></i></li></a>
+          <a href="#"><li><i class="fa fa-caret-left"></i></li></a>
+          <a href="#"><li>1</li></a>
+          <a href="#"><li>2</li></a>
+          <a href="#"><li>3</li></a>
+          <a href="#"><li>4</li></a>
+          <a href="#"><li>5</li></a>
+          <a href="#"><li><i class="fa fa-caret-right"></i></li></a>
         </div>
         
         <hr>
@@ -399,7 +399,7 @@
         
         <footer>
             <p>&copy; 2015 ー <a href="http://github.com/kurisubrooks/caramel">CARAMEL</a><br>
-            MADE WITH <i class="fa fa-heart-o fa-fw" style="color:#D9534F;"></i> &amp; <i class="fa fa-code fa-fw" style="color:#6EC06E;font-size:16px;"></i></p>
+            MADE WITH <i class="fa fa-heart-o fa-fw"></i> &amp; <i class="fa fa-code fa-fw"></i></p>
         </footer>
 
     </main>
