@@ -1,0 +1,10 @@
+/*  Framework by Caramel.ga - License: CC-NC 3.0-AU */
+
+
+$-states-map:(
+    success: (color-state: $success, text-color: $white),
+    error: (color-state: $error, text-color: $white),
+    warn: (color-state: $warn, text-color: $white),
+    info: (color-state: $info, text-color: $white),
+    dark: (color-state: $dark, text-color: $white)
+);
