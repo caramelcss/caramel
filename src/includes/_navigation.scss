@@ -69,6 +69,7 @@
             display: block;
             padding: 10px 20px;
             white-space: nowrap;
+            color: inherit;
         }
 
         > ul {
@@ -77,6 +78,10 @@
             top: 100%;
             min-width: 150px;
             z-index: 2;
+            border-left: 1px solid darken($light, 5);
+            border-bottom: 1px solid darken($light, 5);
+            border-right: 1px solid darken($light, 5);
+            @include border-radius-bottom();
 
             @media (max-width: $breakpoint-width) {
                 position: relative;
@@ -142,6 +147,13 @@
         &:hover,
         &:active {
             background-color: darken($dark, 5);
+        }
+        
+        > ul {
+            border-left: 1px solid darken($dark, 5);
+            border-bottom: 1px solid darken($dark, 5);
+            border-right: 1px solid darken($dark, 5);
+            @include border-radius-bottom();
         }
     }
 }
