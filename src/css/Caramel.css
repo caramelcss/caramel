@@ -286,38 +286,74 @@ input.dark {
 .box.col-1 {
   width: 5.83333%; }
 
+.box.col.nm-1 {
+  width: 5.83333%; }
+
 .box.col-2 {
   width: 14.16667%; }
+
+.box.col.nm-2 {
+  width: 11.66667%; }
 
 .box.col-3 {
   width: 22.5%; }
 
+.box.col.nm-3 {
+  width: 17.5%; }
+
 .box.col-4 {
   width: 30.83333%; }
+
+.box.col.nm-4 {
+  width: 23.33333%; }
 
 .box.col-5 {
   width: 39.16667%; }
 
+.box.col.nm-5 {
+  width: 29.16667%; }
+
 .box.col-6 {
   width: 47.5%; }
+
+.box.col.nm-6 {
+  width: 35%; }
 
 .box.col-7 {
   width: 55.83333%; }
 
+.box.col.nm-7 {
+  width: 40.83333%; }
+
 .box.col-8 {
   width: 64.16667%; }
+
+.box.col.nm-8 {
+  width: 46.66667%; }
 
 .box.col-9 {
   width: 72.5%; }
 
+.box.col.nm-9 {
+  width: 52.5%; }
+
 .box.col-10 {
   width: 80.83333%; }
+
+.box.col.nm-10 {
+  width: 58.33333%; }
 
 .box.col-11 {
   width: 89.16667%; }
 
+.box.col.nm-11 {
+  width: 64.16667%; }
+
 .box.col-12 {
   width: 97.5%; }
+
+.box.col.nm-12 {
+  width: 70%; }
 
 img {
   margin: 0; }
