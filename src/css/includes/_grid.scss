@@ -37,4 +37,7 @@ $base-box-width: 7 / 120 * 100%;
   .box.col-#{$i}{
     width: $base-box-width * $i + $box-margin * 2 * ($i - 1);
   }
+  .box.col.nm-#{$i}{
+    width: $base-box-width * $i;
+  }
 }
