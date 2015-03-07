@@ -1,5 +1,5 @@
 .btn {
-    
+    font: inherit;
     padding: 6px 14px;
     margin-bottom: 5px;
     vertical-align: middle;
@@ -8,6 +8,7 @@
     text-align: center;
     border: 1px solid darken($light, 5);
     background: $light;
+    cursor: pointer;
     
     @include border-radius();
     @include inline-block();
