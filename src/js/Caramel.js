@@ -14,11 +14,6 @@ $(document).ready(function() {
 
     $nav.on('click', '.dropdown', function(e){
         e.preventDefault();
-        $(this).parents('li').find('> ul').toggleClass('open');
-    });
-
-    $('.btn-dropdown').on('click', '.btn', function(e){
-        e.preventDefault();
         $(this).parent().find('> ul').toggleClass('open');
     });
 

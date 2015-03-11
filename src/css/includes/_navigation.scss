@@ -1,3 +1,16 @@
+@mixin navigation() {
+    
+    background-color: $light;
+    margin-bottom: 10px;
+    border: 1px solid darken($light, 5);
+    
+    @include border-radius();
+
+    ul {
+        background-color: $light;
+    }
+}
+
 .breadcrumbs, .crumbs {
     @include border-radius;
     background-color: darken($light, 5);
@@ -6,17 +19,12 @@
 }
 
 .nav {
-    background-color: $light;
-    margin-bottom: 10px;
-    border: 1px solid darken($light, 5);
-    @include border-radius();
-
-    ul {
-        background-color: $light;
-    }
+    position: relative;
 }
 
 .nav.bar {
+    @include navigation();
+    display: block;
 
     ul {
         margin: 0;
@@ -165,8 +173,9 @@
 }
 
 .nav.page {
+    
+    @include navigation();
     @include inline-block();
-    @include border-radius();
 
     li {
         @include inline-block();
@@ -187,10 +196,17 @@
     }
 }
 
-.btn-dropdown {
+.dropdown {
     position: relative;
-    display: inline-block;
-    ul {
+    @include inline-block;
+}
+
+.btn.dropdown {
+
+    outline: 0;
+    font-size: 14px;
+
+    + ul {
         display: none;
         position: absolute;
         top: 100%;
@@ -204,10 +220,6 @@
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
         -webkit-padding-start: 0;
-
-        &.open {
-            display: block;
-        }
 
         li {
             display: block;
@@ -223,6 +235,10 @@
             padding: 10px 20px;
             color: $default;
         }
+    }
+
+    &:focus + ul {
+        display: block;
     }
 
     .fa {
