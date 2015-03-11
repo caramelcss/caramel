@@ -23,3 +23,23 @@ With the help of our included Bash script, compiling Caramel is a breeze! Make s
 
 	-bash: path/to/Compile.sh: Permission denied
 * Solution: `chmod +x path/to/compile.sh`
+
+## Compatibility
+
+Caramel works on any browser that supports CSS3. Caramel is recommended for use on:
+
+* Chrome 40
+* Firefox 36
+* Safari 8
+* IE 9, 10, 11
+
+## Team
+
+ * [kurisubrooks](http://github.com/kurisubrooks) — CSS / Design
+ * [whoiskenjackson](http://github.com/whoiskenjackson) — CSS / Design
+ * [penagwin](http://github.com/penagwin) — Javascript
+ * [hedgehog1029](http://github.com/hedgehog1029) — Javascript
+
+### Contributions
+ * [gratimax](http://github.com/gratimax) — Grid / Column System
+ * [toma678](http://github.com/toma678) — Bash Compiling Script

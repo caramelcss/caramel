@@ -25,12 +25,6 @@
   font-weight: 400;
   font-weight: normal;
   font-style: italic; }
-.inline {
-  display: -moz-inline-stack;
-  display: inline-block;
-  *zoom: 1;
-  *display: inline; }
-
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -81,11 +75,31 @@ table {
 
 .center {
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
+  text-align: center;
+  top: 50%;
   left: 50%;
-  top: 50%; }
+  min-width: 600px; }
+
+@media (max-width: 800px) {
+  .center {
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    position: inherit;
+    top: inherit;
+    left: inherit; } }
+.center--noquery {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  min-width: 600px; }
 
 .alert {
   display: block;
@@ -126,6 +140,7 @@ table {
   background: #5f5f5f; }
 
 .btn {
+  font: inherit;
   padding: 6px 14px;
   margin-bottom: 5px;
   vertical-align: middle;
@@ -134,6 +149,7 @@ table {
   text-align: center;
   border: 1px solid #ededed;
   background: #FAFAFA;
+  cursor: pointer;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
