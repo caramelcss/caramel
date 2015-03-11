@@ -1,4 +1,26 @@
 /*  Framework by Caramel.ga - License: CC-NC 3.0-AU */
+/* Test */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans_regular/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/opensans_regular/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans_regular/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/opensans_regular/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans_bold/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/opensans_bold/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans_bold/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/opensans_bold/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/opensans_bold/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: 600;
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans_italic/OpenSans-Italic-webfont.eot");
+  src: url("../fonts/opensans_italic/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans_italic/OpenSans-Italic-webfont.woff") format("woff"), url("../fonts/opensans_italic/OpenSans-Italic-webfont.ttf") format("truetype"), url("../fonts/opensans_italic/OpenSans-Italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: italic; }
 #example .box {
   background-color: #EEE;
   text-align: center;

@@ -17,6 +17,11 @@ $(document).ready(function() {
         $(this).parents('li').find('> ul').toggleClass('open');
     });
 
+    $('.btn-dropdown').on('click', '.btn', function(e){
+        e.preventDefault();
+        $(this).parent().find('> ul').toggleClass('open');
+    });
+
     // Alert Dismissables
     $(".dismiss").click(function() {
         $(this).closest("#note").fadeOut(500, function() {
