@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $nav.on('click', '.dropdown', function(e){
         e.preventDefault();
-        $(this).parents('li').find('> ul').toggleClass('open');
+        $(this).parent().find('> ul').toggleClass('open');
     });
 
     // Alert Dismissables
