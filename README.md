@@ -2,15 +2,10 @@
 A Simple, Beautiful, Modern Website Framework.
 
 ## Features
-Feature Complete with Simplicity in mind;
+The latest list of features will always be available on our website. To take a look, [Click Here](http://caramel.ga/showcase.html)!
 
- * Buttons
- * Nav-bars & Pagination
- * Alerts / Banners
- * Image Formatting
- * Text Colours
- * Responsive Grid System
- * Forms & Input
+## Usage
+Need help? We have you covered! Go on over to our [GitHub Wiki](https://github.com/kurisubrooks/caramel/wiki) to take a look at Code Usage and Examples!
 
 ## Compiling Caramel
 With the help of our included Bash script, compiling Caramel is a breeze! Make sure you have [Sass Command Line](http://sass-lang.com/install) installed before you read on, or the script won't work.
