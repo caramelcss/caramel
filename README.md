@@ -4,7 +4,7 @@ A Simple, Beautiful, Modern Website Framework.
 ## Features
 The latest list of features will always be available on our website. To take a look, [Click Here](http://caramel.ga/showcase.html)!
 
-## Usage
+## Documentation
 Need help? We have you covered! Go on over to our [GitHub Wiki](https://github.com/kurisubrooks/caramel/wiki) to take a look at Code Usage and Examples!
 
 ## Compiling Caramel
