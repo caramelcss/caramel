@@ -14,7 +14,7 @@
     
 .panel-body {
     padding: 15px 20px;
-    background: $light;
+    background: $white;
 }
 
 @each $state, $color-map in $-states-map {
@@ -23,12 +23,12 @@
     $color-state: map-get($color-map, 'color-state');
 
     .panel.#{$state} {
-        border: 1px solid darken($color-state, 10);
+        border: 1px solid darken($color-state, 5);
 
         .panel-head {
             color: $color;
             background: $color-state;
-            border-bottom: 1px solid darken($color-state, 10);
+            border-bottom: 1px solid darken($color-state, 5);
         }
     }
 
