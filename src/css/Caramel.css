@@ -388,7 +388,8 @@ img {
 .label.dark {
   background-color: #525252; }
 
-.bar {
+.bar,
+.pag {
   background: #EEEEEE;
   border: 1px solid #e1e1e1;
   -webkit-border-radius: 4px;
@@ -396,13 +397,16 @@ img {
   -ms-border-radius: 4px;
   border-radius: 4px; }
   @media (max-width: 800px) {
-    .bar.open li {
+    .bar.open li,
+    .pag.open li {
       display: block; } }
-  .bar ul {
+  .bar ul,
+  .pag ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-  .bar li {
+  .bar li,
+  .pag li {
     position: relative;
     vertical-align: top;
     display: -moz-inline-stack;
@@ -410,22 +414,36 @@ img {
     *zoom: 1;
     *display: inline; }
     @media (max-width: 800px) {
-      .bar li {
+      .bar li,
+      .pag li {
         display: none; } }
-  .bar a {
+  .bar a,
+  .pag a {
     display: block;
     padding: 10px 20px;
     color: #5F5F5F;
     white-space: nowrap; }
-    .bar a:hover {
+    .bar a:hover,
+    .pag a:hover {
       background: #e1e1e1; }
-    .bar a:hover, .bar a:focus {
+    .bar a:hover, .bar a:focus,
+    .pag a:hover,
+    .pag a:focus {
       color: #5F5F5F; }
-  .bar .collapse {
+  .bar .collapse,
+  .pag .collapse {
     display: none; }
     @media (max-width: 800px) {
-      .bar .collapse {
+      .bar .collapse,
+      .pag .collapse {
         display: block; } }
+
+.pag {
+  width: auto;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline; }
 
 .nav.btn {
   position: relative;

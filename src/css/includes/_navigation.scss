@@ -74,7 +74,8 @@
 	.fa-angle-down { padding-left: 10px; }
 }
 
-.bar {
+.bar,
+.pag {
 	background: $light;
 	border: 1px solid darken($light, 5);
 	
@@ -85,6 +86,11 @@
 		display: none;
 		@include breakpoint(small) { display: block; }
 	}
+}
+
+.pag {
+	width: auto;
+	@include inline-block;
 }
 
 .nav.btn {
