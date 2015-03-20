@@ -82,7 +82,6 @@
 
 .bar,
 .pag {
-	
 	@include navigation;
 	@include border-radius(4px);
 
@@ -139,11 +138,5 @@
 
 		&:hover,
 		&:focus { color: $white; }
-	}
-
-	.dropdown {
-		> ul {
-			border-top: none;
-		}
 	}
 }

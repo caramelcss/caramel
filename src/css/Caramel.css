@@ -585,8 +585,6 @@ img {
     color: #FFF; }
     .dark a:hover, .dark a:focus {
       color: #FFF; }
-  .dark .dropdown > ul {
-    border-top: none; }
 
 .notice {
   display: block;
