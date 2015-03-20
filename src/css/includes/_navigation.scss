@@ -8,6 +8,13 @@
 		}
 	}
 
+	.collapse {
+		display: none;
+		@include breakpoint(small) { display: block; }
+	}
+
+	.dropdown { @include dropdown; }
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -84,11 +91,6 @@
 .pag {
 	@include navigation;
 	@include border-radius(4px);
-
-	.collapse {
-		display: none;
-		@include breakpoint(small) { display: block; }
-	}
 }
 
 .pag {
@@ -127,7 +129,6 @@
 	}
 }
 
-.nav .dropdown,
 .nav.dropdown { @include dropdown; }
 
 .dark {
@@ -138,5 +139,20 @@
 
 		&:hover,
 		&:focus { color: $white; }
+	}
+}
+
+.header {
+	&.fixed {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	.nav {
+		@include navigation($white);
+		@include border-radius(0);
+		border: none;
+		border-bottom: 1px solid darken($light, 5);
 	}
 }

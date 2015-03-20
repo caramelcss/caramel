@@ -6,7 +6,12 @@
 	border-radius: 2px;
 }
 
-.header {
+.header .logo a {
+	padding: 5px 20px 0;
+	&:hover { background: none; }
+}
+
+.main .header {
 	margin: 15px 0;
 	text-align: center;
 

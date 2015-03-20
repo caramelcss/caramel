@@ -400,6 +400,55 @@ img {
     .bar.open li,
     .pag.open li {
       display: block; } }
+  .bar .collapse,
+  .pag .collapse {
+    display: none; }
+    @media (max-width: 800px) {
+      .bar .collapse,
+      .pag .collapse {
+        display: block; } }
+  .bar .dropdown > ul,
+  .pag .dropdown > ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 2;
+    border-top: none;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+    @media (max-width: 800px) {
+      .bar .dropdown > ul,
+      .pag .dropdown > ul {
+        position: relative;
+        max-width: 100%; } }
+  .bar .dropdown li,
+  .pag .dropdown li {
+    display: block; }
+    @media (max-width: 800px) {
+      .bar .dropdown li a,
+      .pag .dropdown li a {
+        padding-left: 40px; } }
+  @media (max-width: 800px) {
+    .bar .dropdown.open > ul, .bar .dropdown.open:hover > ul,
+    .pag .dropdown.open > ul,
+    .pag .dropdown.open:hover > ul {
+      display: block; } }
+  .bar .dropdown:hover > ul,
+  .pag .dropdown:hover > ul {
+    display: block; }
+    @media (max-width: 800px) {
+      .bar .dropdown:hover > ul,
+      .pag .dropdown:hover > ul {
+        display: none; } }
+  .bar .dropdown .fa-angle-down,
+  .pag .dropdown .fa-angle-down {
+    padding-left: 10px; }
   .bar ul,
   .pag ul {
     margin: 0;
@@ -434,13 +483,6 @@ img {
     .pag a:hover,
     .pag a:focus {
       color: #5F5F5F; }
-  .bar .collapse,
-  .pag .collapse {
-    display: none; }
-    @media (max-width: 800px) {
-      .bar .collapse,
-      .pag .collapse {
-        display: block; } }
 
 .pag {
   width: auto;
@@ -459,6 +501,44 @@ img {
   @media (max-width: 800px) {
     .nav.btn.open li {
       display: block; } }
+  .nav.btn .collapse {
+    display: none; }
+    @media (max-width: 800px) {
+      .nav.btn .collapse {
+        display: block; } }
+  .nav.btn .dropdown > ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 2;
+    border-top: none;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+    @media (max-width: 800px) {
+      .nav.btn .dropdown > ul {
+        position: relative;
+        max-width: 100%; } }
+  .nav.btn .dropdown li {
+    display: block; }
+    @media (max-width: 800px) {
+      .nav.btn .dropdown li a {
+        padding-left: 40px; } }
+  @media (max-width: 800px) {
+    .nav.btn .dropdown.open > ul, .nav.btn .dropdown.open:hover > ul {
+      display: block; } }
+  .nav.btn .dropdown:hover > ul {
+    display: block; }
+    @media (max-width: 800px) {
+      .nav.btn .dropdown:hover > ul {
+        display: none; } }
+  .nav.btn .dropdown .fa-angle-down {
+    padding-left: 10px; }
   .nav.btn ul {
     margin: 0;
     padding: 0;
@@ -506,7 +586,6 @@ img {
   .nav.btn.dropdown a {
     text-align: left; }
 
-.nav .dropdown > ul,
 .nav.dropdown > ul {
   display: none;
   position: absolute;
@@ -522,30 +601,22 @@ img {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px; }
   @media (max-width: 800px) {
-    .nav .dropdown > ul,
     .nav.dropdown > ul {
       position: relative;
       max-width: 100%; } }
-.nav .dropdown li,
 .nav.dropdown li {
   display: block; }
   @media (max-width: 800px) {
-    .nav .dropdown li a,
     .nav.dropdown li a {
       padding-left: 40px; } }
 @media (max-width: 800px) {
-  .nav .dropdown.open > ul, .nav .dropdown.open:hover > ul,
-  .nav.dropdown.open > ul,
-  .nav.dropdown.open:hover > ul {
+  .nav.dropdown.open > ul, .nav.dropdown.open:hover > ul {
     display: block; } }
-.nav .dropdown:hover > ul,
 .nav.dropdown:hover > ul {
   display: block; }
   @media (max-width: 800px) {
-    .nav .dropdown:hover > ul,
     .nav.dropdown:hover > ul {
       display: none; } }
-.nav .dropdown .fa-angle-down,
 .nav.dropdown .fa-angle-down {
   padding-left: 10px; }
 
@@ -555,6 +626,44 @@ img {
   @media (max-width: 800px) {
     .dark.open li {
       display: block; } }
+  .dark .collapse {
+    display: none; }
+    @media (max-width: 800px) {
+      .dark .collapse {
+        display: block; } }
+  .dark .dropdown > ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 2;
+    border-top: none;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+    @media (max-width: 800px) {
+      .dark .dropdown > ul {
+        position: relative;
+        max-width: 100%; } }
+  .dark .dropdown li {
+    display: block; }
+    @media (max-width: 800px) {
+      .dark .dropdown li a {
+        padding-left: 40px; } }
+  @media (max-width: 800px) {
+    .dark .dropdown.open > ul, .dark .dropdown.open:hover > ul {
+      display: block; } }
+  .dark .dropdown:hover > ul {
+    display: block; }
+    @media (max-width: 800px) {
+      .dark .dropdown:hover > ul {
+        display: none; } }
+  .dark .dropdown .fa-angle-down {
+    padding-left: 10px; }
   .dark ul {
     margin: 0;
     padding: 0;
@@ -585,6 +694,87 @@ img {
     color: #FFF; }
     .dark a:hover, .dark a:focus {
       color: #FFF; }
+
+.header.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+.header .nav {
+  background: #FFF;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #e1e1e1; }
+  @media (max-width: 800px) {
+    .header .nav.open li {
+      display: block; } }
+  .header .nav .collapse {
+    display: none; }
+    @media (max-width: 800px) {
+      .header .nav .collapse {
+        display: block; } }
+  .header .nav .dropdown > ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 2;
+    border-top: none;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+    @media (max-width: 800px) {
+      .header .nav .dropdown > ul {
+        position: relative;
+        max-width: 100%; } }
+  .header .nav .dropdown li {
+    display: block; }
+    @media (max-width: 800px) {
+      .header .nav .dropdown li a {
+        padding-left: 40px; } }
+  @media (max-width: 800px) {
+    .header .nav .dropdown.open > ul, .header .nav .dropdown.open:hover > ul {
+      display: block; } }
+  .header .nav .dropdown:hover > ul {
+    display: block; }
+    @media (max-width: 800px) {
+      .header .nav .dropdown:hover > ul {
+        display: none; } }
+  .header .nav .dropdown .fa-angle-down {
+    padding-left: 10px; }
+  .header .nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .header .nav li {
+    position: relative;
+    vertical-align: top;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline; }
+    @media (max-width: 800px) {
+      .header .nav li {
+        display: none; } }
+    .header .nav li > ul {
+      background: #FFF;
+      border: 1px solid #f2f2f2; }
+  .header .nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #5F5F5F;
+    white-space: nowrap; }
+    .header .nav a:hover {
+      background: #f2f2f2; }
+    .header .nav a:hover, .header .nav a:focus {
+      color: #5F5F5F; }
 
 .notice {
   display: block;
