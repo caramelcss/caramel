@@ -1,22 +1,112 @@
 @mixin navigation() {
+	&.open {
+		li {
+			@include breakpoint(small) { display: block; }
+		}
+	}
+
 	ul {
 		margin: 0;
+		padding: 0;
 		list-style: none;
+	}
 
-		li {
-			float: left;
-		}
+	li {
+		position: relative;
+		vertical-align: top;
+		@include inline-block;
+		@include breakpoint(small) { display: none; }
+	}
+
+	a {
+		display: block;
+		padding: 10px 20px;
+		color: $default;
+		white-space: nowrap;
+
+		&:hover { background: darken($light, 5); }
+
+		&:hover,
+		&:focus { color: $default; }
 	}
 }
 
-.nav {
-	
-	
+@mixin dropdown() {
+	> ul {
+		display: none;
+		position: absolute;
+		min-width: 150px;
+		z-index: 2;
+		background: $light;		
+		border: 1px solid darken($light, 5);
+		border-top: none;
+
+		@include border-radius-bottom(4px);
+		
+		@include breakpoint(small) {
+			position: relative;
+			max-width: 100%;
+		}
+
+		li {
+			display: block;
+
+			a {
+				@include breakpoint(small) { padding-left: 40px; }
+			}
+		}
+	}
+
+	&.open,
+	&.open:hover {
+		> ul {
+			@include breakpoint(small) { display: block; }
+		}
+	}
+
+	&:hover {
+		> ul {
+			display: block;
+			@include breakpoint(small) { display: none; }
+		}
+	}
+
+	.fa-angle-down { padding-left: 10px; }
 }
 
 .bar {
-	background-color: $light;
-	border: 1px solid #ededed;
-
+	background: $light;
+	border: 1px solid darken($light, 5);
+	
+	@include navigation;
 	@include border-radius(4px);
+
+	.dropdown { @include dropdown; }
+
+	.collapse {
+		display: none;
+		@include breakpoint(small) { display: block; }
+	}
+
+	&.dark {
+		background: $dark;
+		border-color: lighten($dark, 5);
+
+		a {
+			color: $white;
+
+			&:hover { background: lighten($dark, 5); }
+
+			&:hover,
+			&:focus { color: $white; }
+		}
+
+		.dropdown {
+			> ul {
+				background: $dark;
+				border: 1px solid darken($dark, 5);
+				border-top: none;
+			}
+		}
+	}
 }
