@@ -1,4 +1,7 @@
-@mixin navigation() {
+@mixin navigation($theme: $light) {
+	background: $theme;
+	border: 1px solid darken($theme, 5);
+
 	&.open {
 		li {
 			@include breakpoint(small) { display: block; }
@@ -16,6 +19,11 @@
 		vertical-align: top;
 		@include inline-block;
 		@include breakpoint(small) { display: none; }
+
+		> ul {
+			background: $theme;		
+			border: 1px solid darken($theme, 5);
+		}
 	}
 
 	a {
@@ -24,7 +32,7 @@
 		color: $default;
 		white-space: nowrap;
 
-		&:hover { background: darken($light, 5); }
+		&:hover { background: darken($theme, 5); }
 
 		&:hover,
 		&:focus { color: $default; }
@@ -37,8 +45,6 @@
 		position: absolute;
 		min-width: 150px;
 		z-index: 2;
-		background: $light;		
-		border: 1px solid darken($light, 5);
 		border-top: none;
 
 		@include border-radius-bottom(4px);
@@ -76,8 +82,6 @@
 
 .bar,
 .pag {
-	background: $light;
-	border: 1px solid darken($light, 5);
 	
 	@include navigation;
 	@include border-radius(4px);
@@ -94,14 +98,14 @@
 }
 
 .nav.btn {
+	@include navigation;
+
 	position: relative;
 	padding: 0;
 	border: none;
 	background: none;
 
 	.btn { outline: 0; }
-
-	@include navigation;
 
 	&.dropdown {
 		&:hover {
@@ -115,7 +119,8 @@
 
 		> ul {
 			margin-top: -4px;
-			border-top: 1px solid darken($light, 5);
+			background: $light;
+			border: 1px solid darken($light, 5);
 			@include border-radius-top(4px);
 		}
 		
@@ -127,13 +132,10 @@
 .nav.dropdown { @include dropdown; }
 
 .dark {
-	background: $dark;
-	border-color: lighten($dark, 5);
+	@include navigation($dark);
 
 	a {
 		color: $white;
-
-		&:hover { background: lighten($dark, 5); }
 
 		&:hover,
 		&:focus { color: $white; }
@@ -141,8 +143,6 @@
 
 	.dropdown {
 		> ul {
-			background: $dark;
-			border: 1px solid darken($dark, 5);
 			border-top: none;
 		}
 	}
