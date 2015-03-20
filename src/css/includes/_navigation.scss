@@ -2,6 +2,8 @@
 	background: $theme;
 	border: 1px solid darken($theme, 5);
 
+	@include clearfix();
+
 	&.open {
 		li {
 			@include breakpoint(small) { display: block; }
@@ -14,6 +16,10 @@
 	}
 
 	.dropdown { @include dropdown; }
+
+	.right, .left {
+		@include breakpoint(small) { float: none; }
+	}
 
 	ul {
 		margin: 0;
@@ -73,7 +79,10 @@
 	&.open,
 	&.open:hover {
 		> ul {
-			@include breakpoint(small) { display: block; }
+			@include breakpoint(small) {
+				display: block;
+				border-bottom: none;
+			}
 		}
 	}
 
@@ -84,7 +93,10 @@
 		}
 	}
 
-	.fa-angle-down { padding-left: 10px; }
+	.fa-angle-down {
+		padding-left: 10px;
+		@include breakpoint(small) { float: right; }
+	}
 }
 
 .bar,
@@ -147,6 +159,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
+		z-index: 5;
 	}
 
 	.nav {
@@ -154,5 +167,9 @@
 		@include border-radius(0);
 		border: none;
 		border-bottom: 1px solid darken($light, 5);
+
+		&.open li.logo {
+			@include breakpoint(small) { display: none; }
+		}
 	}
 }

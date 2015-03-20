@@ -7,7 +7,7 @@
 
 // Clearfix Mixin
 
-@mixin self-clear() {
+@mixin clearfix() {
     &:before,
     &:after {
         content: " ";
