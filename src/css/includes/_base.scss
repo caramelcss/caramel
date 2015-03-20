@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+body.dark {
+    background-color: $dark;
+    color: $light;
+}
+
 .container, main {
     width: inherit;
     max-width: 1200px;

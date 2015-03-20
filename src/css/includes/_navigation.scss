@@ -1,8 +1,17 @@
-.nav {
+@mixin navigation() {
 	ul {
 		margin: 0;
 		list-style: none;
+
+		li {
+			float: left;
+		}
 	}
+}
+
+.nav {
+	
+	
 }
 
 .bar {
