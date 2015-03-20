@@ -47,13 +47,13 @@
 			position: relative;
 			max-width: 100%;
 		}
+	}
 
-		li {
-			display: block;
+	li {
+		display: block;
 
-			a {
-				@include breakpoint(small) { padding-left: 40px; }
-			}
+		a {
+			@include breakpoint(small) { padding-left: 40px; }
 		}
 	}
 
@@ -81,32 +81,63 @@
 	@include navigation;
 	@include border-radius(4px);
 
-	.dropdown { @include dropdown; }
-
 	.collapse {
 		display: none;
 		@include breakpoint(small) { display: block; }
 	}
+}
 
-	&.dark {
-		background: $dark;
-		border-color: lighten($dark, 5);
+.nav.btn {
+	position: relative;
+	padding: 0;
+	border: none;
+	background: none;
 
-		a {
-			color: $white;
+	.btn { outline: 0; }
 
-			&:hover { background: lighten($dark, 5); }
+	@include navigation;
 
-			&:hover,
-			&:focus { color: $white; }
+	&.dropdown {
+		&:hover {
+			> ul { display: none; }
 		}
 
-		.dropdown {
-			> ul {
-				background: $dark;
-				border: 1px solid darken($dark, 5);
-				border-top: none;
-			}
+		&.open,
+		&.open:hover {
+			> ul { display: block; }
+		}
+
+		> ul {
+			margin-top: -4px;
+			border-top: 1px solid darken($light, 5);
+			@include border-radius-top(4px);
+		}
+		
+		a { text-align: left; }
+	}
+}
+
+.nav .dropdown,
+.nav.dropdown { @include dropdown; }
+
+.dark {
+	background: $dark;
+	border-color: lighten($dark, 5);
+
+	a {
+		color: $white;
+
+		&:hover { background: lighten($dark, 5); }
+
+		&:hover,
+		&:focus { color: $white; }
+	}
+
+	.dropdown {
+		> ul {
+			background: $dark;
+			border: 1px solid darken($dark, 5);
+			border-top: none;
 		}
 	}
 }
