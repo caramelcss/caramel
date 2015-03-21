@@ -3,12 +3,12 @@ $black:     #000;
 $disabled:  #CCC;
 
 $default:   #5F5F5F;
-$success:   #5CB860;
-$error:     #E84F4C;
+$success:   #5CB85C;
+$error:     #DC4A47;
 $warn:      #F09E34;
 $info:      #52B7D6;
 $dark:      #525252;
-$light:     #EEEEEE;
+$light:     #FAFAFA;
 
 $default-border:    darken($default, 5);
 $success-border:    darken($success, 5);
@@ -17,8 +17,6 @@ $warn-border:       darken($warn, 5);
 $info-border:       darken($info, 5);
 $dark-border:       darken($dark, 5);
 $light-border:      darken($light, 5);
-
-
 
 /* OLD
 $default:   #5F5F5F;
