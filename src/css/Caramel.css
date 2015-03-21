@@ -509,6 +509,19 @@ img {
   *zoom: 1;
   *display: inline; }
 
+.breadcrumbs {
+  padding: 10px 20px; }
+  .breadcrumbs a {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    padding: 0;
+    color: #52B7D6; }
+    .breadcrumbs a:hover, .breadcrumbs a:focus {
+      color: #52B7D6;
+      background: none; }
+
 .nav.btn {
   background: #EEEEEE;
   border: 1px solid #e1e1e1;

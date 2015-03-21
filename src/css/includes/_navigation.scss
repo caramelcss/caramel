@@ -114,6 +114,22 @@
 	@include inline-block;
 }
 
+.breadcrumbs {
+	padding: 10px 20px;
+
+	a {
+		@include inline-block;
+		padding: 0;
+		color: $info;
+
+		&:hover,
+		&:focus {
+			color: $info;
+			background: none;
+		}
+	}
+}
+
 .nav.btn {
 	@include navigation;
 
