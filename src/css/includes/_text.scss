@@ -22,7 +22,7 @@ a {
 }
 
 .disabled {
-    color: $default;
+    color: darken($light, 20);
     cursor: not-allowed;
 }
 
