@@ -11,7 +11,7 @@
     <!-- Stylesheets -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/Caramel.min.css" rel="stylesheet" type="text/css">
-    <style>#example .box{background-color:#EEE;text-align:center;border-radius:2px}.header .logo a{padding:5px 20px 0}.header .logo a:hover{background:0 0}.main .header{margin:80px 0;text-align:center}.main .header h1{margin-top:0}.fa.fa-code{font-size:16px}</style>
+    <style>#example .box{background-color:#EEE;text-align:center;border-radius:2px}.header .logo a{padding:5px 20px 0}.header .logo a:hover{background:0 0}.main .header{margin:100px 0 70px;text-align:center}.main .header h1{margin-top:0}.fa.fa-code{font-size:16px}</style>
   </head>
 <body>
     <header class="header fixed">
@@ -36,6 +36,24 @@
             </ul>
             
             <ul class="right">
+                <li class="dropdown"><a href="#" class="dropdownitem"><i class="fa fa-chevron-down fa-fw"></i></a>
+                    <ul>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#navigation">Navigation</a></li>
+                        <li><a href="#button-dropdowns">Button Dropdowns</a></li>
+                        <li><a href="#alerts">Alerts</a></li>
+                        <li><a href="#notices">Notices</a></li>
+                        <li><a href="#panels">Panels</a></li>
+                        <li><a href="#dismissables">Dismissables</a></li>
+                        <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                        <li><a href="#images">Images</a></li>
+                        <li><a href="#progress-bars">Progress Bars</a></li>
+                        <li><a href="#labels">Labels</a></li>
+                        <li><a href="#pagination">Pagination</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#grid">Grid</a></li>
+                    </ul>
+                </li>
                 <li><a href="http://github.com/kurisubrooks/caramel"><i class="fa fa-github-alt fa-fw"></i></a></li>
             </ul>
         </nav>
@@ -60,7 +78,7 @@
         
         <hr>
         
-        <h2>Buttons</h2>
+        <h2 id="buttons">Buttons</h2>
 
         <a href="#" class="btn default">Default</a>
         <a href="#" class="btn success">Success</a>
@@ -80,7 +98,7 @@
         
         <hr>
         
-        <h2>Navigation</h2>
+        <h2 id="navigation">Navigation</h2>
 
         <nav class="nav bar">
             <ul>
@@ -118,7 +136,7 @@
         
         <hr>
 
-        <h2>Button Dropdowns</h2>
+        <h2 id="button-dropdowns">Button Dropdowns</h2>
 
         <div class="nav btn dropdown">
             <button class="btn dropdownitem default">Default<i class="fa fa-angle-down"></i></button>
@@ -163,7 +181,7 @@
 
         <hr>
         
-        <h2>Alerts</h2>
+        <h2 id="alerts">Alerts</h2>
         
         <div class="alert default"><b>Default:</b> A little plain, isn't it?</div>
         <div class="alert success"><b>Success!</b> Congratulations, it works!</div>
@@ -174,7 +192,7 @@
         
         <hr>
         
-        <h2>Notices</h2>
+        <h2 id="notices">Notices</h2>
         
         <div class="notice default"><b>Default:</b> A little plain, isn't it?</div>
         <div class="notice success"><b>Success!</b> Congratulations, it works!</div>
@@ -185,7 +203,7 @@
         
         <hr>
         
-        <h2>Panels</h2>
+        <h2 id="panels">Panels</h2>
         
         <div class="panel">
             <div class="panel-head">Default:</div>
@@ -231,7 +249,7 @@
         
         <hr>
 
-        <h2>Dismissables</h2>
+        <h2 id="dismissables">Dismissables</h2>
 
         <div class="notice warn" id="note">
             <div class="dismiss"><i class="fa fa-close"></i></div>
@@ -256,7 +274,7 @@
 
         <hr>
         
-        <h2>Breadcrumbs</h2>
+        <h2 id="breadcrumbs">Breadcrumbs</h2>
         
         <div class="nav bar breadcrumbs">
             <span class="disabled">Link &nbsp;/&nbsp; Link &nbsp;/&nbsp;</span> <a href="#">Link</a>
@@ -264,7 +282,7 @@
         
         <hr>
         
-        <h2>Images</h2>
+        <h2 id="images">Images</h2>
         
         <img src="http://placehold.it/150x150" class="img thumbnail" />
         <img src="http://placehold.it/150x150" class="img thumbnail circle" />
@@ -273,7 +291,7 @@
         
         <hr> 
 
-        <h2>Progress Bars</h2>
+        <h2 id="progress-bars">Progress Bars</h2>
         
         <div class="row">
             <div class="box col-4">
@@ -327,7 +345,7 @@
 
         <hr>
         
-        <h2>Labels</h2>
+        <h2 id="labels">Labels</h2>
         
         <div class="title">
             <h1>
@@ -387,7 +405,7 @@
         
         <hr>
         
-        <h2>Pagination</h2>
+        <h2 id="pagination">Pagination</h2>
         
         <nav class="nav pag">
         	<ul>
@@ -403,7 +421,7 @@
         
         <hr>
         
-        <h2>Forms</h2>
+        <h2 id="forms">Forms</h2>
         
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
@@ -419,7 +437,7 @@
         
         <hr>
         
-        <h2>Grid</h2>
+        <h2 id="grid">Grid</h2>
         
         <div class="row" id="example">
             <div class="box col-1">col-1</div>
