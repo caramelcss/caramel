@@ -27,6 +27,7 @@
 		position: relative;
 		vertical-align: top;
 		float: left;
+
 		@include breakpoint(small) {
 			display: none;
 			float: none;
@@ -40,6 +41,10 @@
 		> ul {
 			background: $theme;		
 			border: 1px solid darken($theme, 5);
+		}
+
+		li {
+			float: none;
 		}
 	}
 

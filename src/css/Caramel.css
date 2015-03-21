@@ -488,6 +488,9 @@ img {
     .pag li > ul {
       background: #EEEEEE;
       border: 1px solid #e1e1e1; }
+    .bar li li,
+    .pag li li {
+      float: none; }
   .bar a,
   .pag a {
     display: block;
@@ -599,6 +602,8 @@ img {
     .nav.btn li > ul {
       background: #EEEEEE;
       border: 1px solid #e1e1e1; }
+    .nav.btn li li {
+      float: none; }
   .nav.btn a {
     display: block;
     padding: 10px 20px;
@@ -740,6 +745,8 @@ img {
     .dark li > ul {
       background: #525252;
       border: 1px solid #454545; }
+    .dark li li {
+      float: none; }
   .dark a {
     display: block;
     padding: 10px 20px;
@@ -838,6 +845,8 @@ img {
     .header .nav li > ul {
       background: #FFF;
       border: 1px solid #f2f2f2; }
+    .header .nav li li {
+      float: none; }
   .header .nav a {
     display: block;
     padding: 10px 20px;
