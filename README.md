@@ -1,11 +1,14 @@
 # Caramel
 A Simple, Beautiful, Modern Website Framework.
 
-## Features
+### Features
 The latest list of features will always be available on our website. To take a look, [Click Here](http://caramel.ga/showcase.html)!
 
-## Documentation
+### Documentation
 Need help? We have you covered! Go on over to our [GitHub Wiki](https://github.com/kurisubrooks/caramel/wiki) to take a look at Code Usage and Examples!
+
+### IRC
+Got IRC? Great, so do we! Pop into **#caramel** on **irc.esper.net** and come have a chat! 
 
 ## Compiling Caramel
 With the help of our included Bash script, compiling Caramel is a breeze! Make sure you have [Sass Command Line](http://sass-lang.com/install) installed before you read on, or the script won't work.
