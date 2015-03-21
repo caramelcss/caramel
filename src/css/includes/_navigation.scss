@@ -1,261 +1,206 @@
-@mixin navigation() {
-    
-    background-color: $light;
-    margin-bottom: 10px;
-    border: 1px solid darken($light, 5);
-    
-    @include border-radius();
+@mixin navigation($theme: $light) {
+	background: $theme;
+	border: 1px solid darken($theme, 5);
 
-    ul {
-        background-color: $light;
-    }
+	@include clearfix();
+
+	&.open {
+		li {
+			@include breakpoint(small) { display: block; }
+		}
+	}
+
+	.collapse {
+		display: none;
+		@include breakpoint(small) { display: block; }
+	}
+
+	.dropdown { @include dropdown; }
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		&.right {
+			@include breakpoint(small) { float: none; }
+		}
+	}
+
+	li {
+		position: relative;
+		vertical-align: top;
+		float: left;
+
+		@include breakpoint(small) {
+			display: none;
+			float: none;
+		}
+
+		&.right {
+			float: right;
+			@include breakpoint(small) { float: none; }
+		}
+
+		> ul {
+			background: $theme;		
+			border: 1px solid darken($theme, 5);
+		}
+
+		li {
+			float: none;
+		}
+	}
+
+	a {
+		display: block;
+		padding: 10px 20px;
+		color: $default;
+		white-space: nowrap;
+
+		&:hover { background: darken($theme, 5); }
+
+		&:hover,
+		&:focus { color: $default; }
+	}
 }
 
-.breadcrumbs, .crumbs {
-    @include border-radius;
-    background-color: darken($light, 5);
-    padding: 10px 15px;
-    margin-bottom: 10px;
+@mixin dropdown() {
+	> ul {
+		display: none;
+		position: absolute;
+		min-width: 150px;
+		z-index: 2;
+		border-top: none;
+
+		@include border-radius-bottom(4px);
+		
+		@include breakpoint(small) {
+			position: relative;
+			max-width: 100%;
+		}
+	}
+
+	li {
+		display: block;
+
+		a {
+			@include breakpoint(small) { padding-left: 40px; }
+		}
+	}
+
+	&.open,
+	&.open:hover {
+		> ul {
+			@include breakpoint(small) {
+				display: block;
+				border-bottom: none;
+			}
+		}
+	}
+
+	&:hover {
+		> ul {
+			display: block;
+			@include breakpoint(small) { display: none; }
+		}
+	}
+
+	.fa-angle-down {
+		padding-left: 10px;
+		@include breakpoint(small) { float: right; }
+	}
 }
 
-.nav {
-    position: relative;
+.bar,
+.pag {
+	@include navigation;
+	@include border-radius(4px);
 }
 
-.nav.bar {
-    @include navigation();
-    display: block;
-
-    ul {
-        margin: 0;
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        -webkit-padding-start: 0;
-
-        &.open {
-            > li {
-                display: block;
-            }
-        }
-    }
-
-    li {
-        position: relative;
-        text-decoration: none;
-        line-height: 20px;
-        color: $default;
-        vertical-align: middle;
-
-        @include inline-block();
-
-        @media (max-width: $breakpoint-width) {
-            display: none;
-        }
-        
-        .active {
-            background-color: darken($light, 5);
-        }
-
-        &:hover, 
-        &:active {
-            background-color: darken($light, 5);
-        }
-
-        &.dropdown-hover{
-            &:hover {
-                > ul {
-                    display: block;
-    
-                    @media (max-width: $breakpoint-width) {
-                        display: none;
-                    }
-                }
-            }
-
-            > ul.open {
-                display: block;
-            }
-        }
-
-        a {
-            display: block;
-            padding: 10px 20px;
-            white-space: nowrap;
-            color: inherit;
-        }
-
-        > ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            min-width: 150px;
-            z-index: 2;
-            border-left: 1px solid darken($light, 5);
-            border-bottom: 1px solid darken($light, 5);
-            border-right: 1px solid darken($light, 5);
-            @include border-radius-bottom();
-
-            @media (max-width: $breakpoint-width) {
-                position: relative;
-                top: 0;
-                width: 100%;
-            }
-
-            &.open {
-                display: block;
-
-                li {
-                    @media (max-width: $breakpoint-width) {
-                        padding-left: 25px;
-                    }
-                }
-            }
-
-            li {
-                display: block;
-            }
-        }
-    }
-
-    .collapse {
-        display: none;
-
-        @media (max-width: $breakpoint-width) {
-            display: block;            
-        }
-
-        &:hover,
-        &:active {
-            background-color: darken($light, 5);
-            cursor: pointer;
-        }
-    }
+.pag {
+	width: auto;
+	@include inline-block;
 }
 
-.bar.dark {
-    background-color: $dark;
-    border-color: darken($dark, 5);
-    color: $white;
-    
-    .collapse {
-        &:hover,
-        &:active {
-            background-color: darken($dark, 5);
-            cursor: pointer;
-        }
-    }
+.breadcrumbs {
+	padding: 10px 20px;
 
-    ul {
-        background-color: $dark;
-    }
-    
-    li {
-        color: $white;
-        
-        .active {
-            background-color: darken($dark, 5);
-        }
-        
-        &:hover,
-        &:active {
-            background-color: darken($dark, 5);
-        }
-        
-        > ul {
-            border-left: 1px solid darken($dark, 5);
-            border-bottom: 1px solid darken($dark, 5);
-            border-right: 1px solid darken($dark, 5);
-            @include border-radius-bottom();
-        }
-    }
+	a {
+		@include inline-block;
+		padding: 0;
+		color: $info;
+
+		&:hover,
+		&:focus {
+			color: $info;
+			background: none;
+		}
+	}
 }
 
-.nav.page {
-    
-    @include navigation();
-    @include inline-block();
+.nav.btn {
+	@include navigation;
 
-    li {
-        @include inline-block();
-        text-decoration: none;
-        padding: 10px 20px;
-        line-height: 20px;
-        color: $default;
-        
-        &:hover, 
-        &:active {
-            background-color: darken($light, 5);
-        }
-        
-        a {
-            text-decoration: none;
-            display: block;
-        }
-    }
+	position: relative;
+	padding: 0;
+	border: none;
+	background: none;
+
+	.btn { outline: 0; }
+
+	li { float: none; }
+
+	&.dropdown {
+		&:hover {
+			> ul { display: none; }
+		}
+
+		&.open,
+		&.open:hover {
+			> ul { display: block; }
+		}
+
+		> ul {
+			margin-top: -4px;
+			background: $light;
+			border: 1px solid darken($light, 5);
+			@include border-radius-top(4px);
+		}
+		
+		a { text-align: left; }
+	}
 }
 
-.dropdown {
-    position: relative;
-    @include inline-block;
+.nav.dropdown { @include dropdown; }
+
+.dark {
+	@include navigation($dark);
+
+	a {
+		color: $white;
+
+		&:hover,
+		&:focus { color: $white; }
+	}
 }
 
-.btn.dropdown {
+.header {
+	&.fixed {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 5;
+	}
 
-    outline: 0;
-    font-size: 14px;
+	.nav {
+		@include navigation($white);
+		@include border-radius(0);
+		border: none;
+		border-bottom: 1px solid darken($light, 5);
 
-    + ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        min-width: 150px;
-        z-index: 2;
-        border: 1px solid darken($light, 5);
-        @include border-radius();
-
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        -webkit-padding-start: 0;
-
-        li {
-            display: block;
-            background-color: $light;
-            
-            &:hover {
-                background-color: darken($light, 5);
-            }
-        }
-
-        a {
-            display: block;
-            padding: 10px 20px;
-            color: $default;
-        }
-    }
-
-    &:focus + ul {
-        display: block;
-    }
-
-    .fa {
-        padding-left: 10px;
-    }
-}
-
-.collapse {
-    padding: 10px 20px;
-    line-height: 20px;
-    
-    &:hover,
-    &:active{
-        background-color: $light;
-    }
-    
-    li {
-        @include inline-block();
-    }
+		&.open li.logo {
+			@include breakpoint(small) { display: none; }
+		}
+	}
 }

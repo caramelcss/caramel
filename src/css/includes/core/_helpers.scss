@@ -1,9 +1,32 @@
+// Breakpoint Mixin
+
+@mixin breakpoint($breakpoint) {
+    $breakpoint: map-get($-breakpoints, $breakpoint);
+    @media ($breakpoint) { @content }
+}
+
+// Clearfix Mixin
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after { clear: both; }
+}
+
+// Inline Block Mixin
+
 @mixin inline-block() {
     display: -moz-inline-stack;
     display: inline-block;
     *zoom: 1;
     *display: inline;
 }
+
+// Border Radius Mixin
 
 @mixin border-radius($radius: $default-radius) {
 
@@ -13,6 +36,8 @@
           border-radius: $radius;
 
 }
+
+// TODO: See if we can merge all border-radius mixins into single mixin.
 
 @mixin border-radius-top($radius: $default-radius) {
     -webkit-border-top-left-radius: $radius;
