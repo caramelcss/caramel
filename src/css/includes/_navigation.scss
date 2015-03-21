@@ -149,6 +149,8 @@
 
 	.btn { outline: 0; }
 
+	li { float: none; }
+
 	&.dropdown {
 		&:hover {
 			> ul { display: none; }

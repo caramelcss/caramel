@@ -622,6 +622,8 @@ img {
       color: #5F5F5F; }
   .nav.btn .btn {
     outline: 0; }
+  .nav.btn li {
+    float: none; }
   .nav.btn.dropdown:hover > ul {
     display: none; }
   .nav.btn.dropdown.open > ul, .nav.btn.dropdown.open:hover > ul {
