@@ -11,9 +11,36 @@
     <!-- Stylesheets -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/Caramel.min.css" rel="stylesheet" type="text/css">
-    <link href="css/demo.min.css" rel="stylesheet" type="text/css">
+    <style>#example .box{background-color:#EEE;text-align:center;border-radius:2px}.header .logo a{padding:5px 20px 0}.header .logo a:hover{background:0 0}.main .header{margin:80px 0;text-align:center}.main .header h1{margin-top:0}.fa.fa-code{font-size:16px}</style>
   </head>
 <body>
+    <header class="header fixed">
+        <nav class="nav bar">
+            <ul>
+                <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
+                <li class="logo">
+                    <a href="http://caramel.ga/"><svg version="1.1" width="30px" height="30px" viewBox="0 0 48 48">
+                        <g transform="translate(0,-1004.3622)">
+                            <g transform="translate(-6,1003)">
+                                <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
+                                <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
+                                <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
+                                <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
+                            </g>
+                        </g>
+                    </svg></a>
+                </li>
+                <li><a href="http://caramel.ga/">Home</a></li>
+                <li><a href="http://caramel.ga/start.html">Get Started</a></li>
+                <li><a href="http://caramel.ga/showcase.html">Showcase</a></li>
+            </ul>
+            
+            <ul class="right">
+                <li><a href="http://github.com/kurisubrooks/caramel"><i class="fa fa-github-alt fa-fw"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main class="main">
         <div class="header">
           <svg version="1.1" width="100px" height="100px" viewBox="0 0 48 48">
@@ -61,7 +88,7 @@
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
-                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown Hover<i class="fa fa-angle-down"></i></a>
+                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown<i class="fa fa-angle-down"></i></a>
                     <ul>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
@@ -79,7 +106,7 @@
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
-                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown Hover<i class="fa fa-angle-down"></i></a>
+                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown<i class="fa fa-angle-down"></i></a>
                     <ul>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
@@ -232,7 +259,7 @@
         <h2>Breadcrumbs</h2>
         
         <div class="nav bar breadcrumbs">
-            Link &nbsp;/&nbsp; Link&nbsp;/&nbsp; <a href="#">Link</a>
+            <span class="disabled">Link &nbsp;/&nbsp; Link &nbsp;/&nbsp;</span> <a href="#">Link</a>
         </div>
         
         <hr>
@@ -449,7 +476,10 @@
         
         <footer>
             <p>&copy; 2015 ー <a href="http://github.com/kurisubrooks/caramel">CARAMEL</a><br>
-            MADE WITH <i class="fa fa-heart-o fa-fw"></i> &amp; <i class="fa fa-code fa-fw"></i></p>
+            MADE WITH 
+                <i class="fa fa-heart-o fa-fw" color="error"></i> &amp; 
+                <i class="fa fa-code fa-fw" color="success"></i>
+            </p>
         </footer>
     </main>
 </body>
