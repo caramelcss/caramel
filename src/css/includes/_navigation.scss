@@ -17,10 +17,6 @@
 
 	.dropdown { @include dropdown; }
 
-	.right, .left {
-		@include breakpoint(small) { float: none; }
-	}
-
 	ul {
 		margin: 0;
 		padding: 0;
@@ -30,8 +26,16 @@
 	li {
 		position: relative;
 		vertical-align: top;
-		@include inline-block;
-		@include breakpoint(small) { display: none; }
+		float: left;
+		@include breakpoint(small) {
+			display: none;
+			float: none;
+		}
+
+		&.right {
+			float: right;
+			@include breakpoint(small) { float: none; }
+		}
 
 		> ul {
 			background: $theme;		
