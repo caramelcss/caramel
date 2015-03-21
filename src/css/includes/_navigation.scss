@@ -21,6 +21,10 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+
+		&.right {
+			@include breakpoint(small) { float: none; }
+		}
 	}
 
 	li {

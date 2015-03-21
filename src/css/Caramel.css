@@ -467,6 +467,10 @@ img {
     margin: 0;
     padding: 0;
     list-style: none; }
+    @media (max-width: 800px) {
+      .bar ul.right,
+      .pag ul.right {
+        float: none; } }
   .bar li,
   .pag li {
     position: relative;
@@ -586,6 +590,9 @@ img {
     margin: 0;
     padding: 0;
     list-style: none; }
+    @media (max-width: 800px) {
+      .nav.btn ul.right {
+        float: none; } }
   .nav.btn li {
     position: relative;
     vertical-align: top;
@@ -729,6 +736,9 @@ img {
     margin: 0;
     padding: 0;
     list-style: none; }
+    @media (max-width: 800px) {
+      .dark ul.right {
+        float: none; } }
   .dark li {
     position: relative;
     vertical-align: top;
@@ -829,6 +839,9 @@ img {
     margin: 0;
     padding: 0;
     list-style: none; }
+    @media (max-width: 800px) {
+      .header .nav ul.right {
+        float: none; } }
   .header .nav li {
     position: relative;
     vertical-align: top;
