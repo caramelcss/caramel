@@ -8,13 +8,16 @@ $(document).ready(function() {
 
     var $nav = $('.nav');
 
-    $nav.on('click', '.collapse', function(){
-        $(this).parents('ul').toggleClass('open');
+    $nav.on('click', '.menu', function(e){
+        e.preventDefault();
+        var $this = $(this);
+        $this.parents($nav).toggleClass('open');
     });
 
-    $nav.on('click', '.dropdown', function(e){
+    $nav.on('click', '.dropdownitem', function(e){
         e.preventDefault();
-        $(this).parent().find('> ul').toggleClass('open');
+        var $this = $(this);
+        $this.parent('.dropdown').toggleClass('open');
     });
 
     // Alert Dismissables
