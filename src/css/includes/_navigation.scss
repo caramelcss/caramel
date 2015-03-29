@@ -1,7 +1,4 @@
-.bar,
-.pag,
-.nav.btn,
-.header.nav {
+.nav {
 	background: $light;
 	border: 1px solid darken($light, 5);
 
@@ -9,23 +6,14 @@
 	@include clearfix();
 }
 
-.bar.open li,
-.pag.open li,
-.nav.btn.open li,
-.header.nav.open li{ @media (max-width: $breakpoint-width) { display: block; } }
+.nav.open li { @media (max-width: $breakpoint-width) { display: block; } }
 
-.bar .collapse,
-.pag .collapse,
-.nav.btn .collapse,
-.header.nav .collapse {
+.nav .collapse  {
 	display: none;
 	@media (max-width: $breakpoint-width) { display: block; }
 }
 
-.bar ul,
-.pag ul,
-.nav.btn ul,
-.header.nav ul {
+.nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -35,10 +23,7 @@
 	}
 }
 
-.bar li,
-.pag li,
-.nav.btn li,
-.header.nav li {
+.nav li {
 	position: relative;
 	vertical-align: top;
 	float: left;
@@ -54,23 +39,15 @@
 	}
 }
 
-.bar li > ul,
-.pag li > ul,
-.nav.btn li > ul,
-.header.nav li > ul {
+.nav li > ul {
 	background: $light;		
 	border: 1px solid darken($light, 5);
 }
 
-.bar li li,
-.pag li li,
-.nav.btn li li,
-.header.nav li li { float: none; }
+.nav li li,
+.nav.btn li li { float: none; }
 
-.bar a,
-.pag a,
-.nav.btn a,
-.header.nav a {
+.nav a {
 	display: block;
 	padding: 10px 20px;
 	color: $default;
@@ -87,20 +64,23 @@
 	@include inline-block;
 }
 
-.breadcrumbs {
-	padding: 10px 20px;
+.pag li {
+	@media (max-width: $breakpoint-width) { @include inline-block; }
+}
 
-	a {
-		@include inline-block;
-		padding: 0;
+.breadcrumbs { padding: 10px 20px; }
+
+.breadcrumbs a {
+	padding: 0;
+	color: $info;
+
+	&:hover,
+	&:focus {
 		color: $info;
-
-		&:hover,
-		&:focus {
-			color: $info;
-			background: none;
-		}
+		background: none;
 	}
+
+	@include inline-block;
 }
 
 .nav.btn {
@@ -108,131 +88,113 @@
 	padding: 0;
 	border: none;
 	background: none;
+}
 
-	.btn { outline: 0; }
+.nav.btn .btn { outline: 0; }
 
-	li { float: none; }
+.nav.btn li { float: none; }
 
-	&.dropdown {
-		&:hover {
-			> ul { display: none; }
-		}
+.nav.btn.dropdown:hover > ul { display: none; }
 
-		&.open,
-		&.open:hover {
-			> ul { display: block; }
-		}
+.nav.btn.dropdown.open > ul,
+.nav.btn.dropdown.open:hover > ul { display: block; }
 
-		> ul {
-			margin-top: -4px;
-			background: $light;
-			border: 1px solid darken($light, 5);
-			@include border-radius-top(4px);
-		}
+.nav.btn.dropdown > ul {
+	margin-top: -4px;
+	background: $light;
+	border: 1px solid darken($light, 5);
+	@include border-radius-top(4px);
+}
 		
-		a { text-align: left; }
+.nav.btn.dropdown a { text-align: left; }
+
+
+.nav.dropdown > ul,
+.nav .dropdown > ul {
+	display: none;
+	position: absolute;
+	min-width: 150px;
+	z-index: 2;
+	border-top: none;
+
+	@include border-radius-bottom(4px);
+	
+	@media (max-width: $breakpoint-width) {
+		position: relative;
+		max-width: 100%;
 	}
 }
 
-.nav.dropdown,
-.bar .dropdown,
-.header.nav .dropdown { 
-	> ul {
-		display: none;
-		position: absolute;
-		min-width: 150px;
-		z-index: 2;
-		border-top: none;
+.nav.dropdown li,
+.nav .dropdown li { display: block; }
 
-		@include border-radius-bottom(4px);
-		
-		@media (max-width: $breakpoint-width) {
-			position: relative;
-			max-width: 100%;
-		}
-	}
+.nav.dropdown li a,
+.nav .dropdown li a {
+	@media (max-width: $breakpoint-width) { padding-left: 40px; }
+}
 
-	li {
+.nav.dropdown.open,
+.nav .dropdown.open,
+.nav.dropdown.open:hover > ul,
+.nav .dropdown.open:hover > ul {
+	@media (max-width: $breakpoint-width) {
 		display: block;
-
-		a {
-			@media (max-width: $breakpoint-width) { padding-left: 40px; }
-		}
+		border-bottom: none;
 	}
+}
 
-	&.open,
-	&.open:hover {
-		> ul {
-			@media (max-width: $breakpoint-width) {
-				display: block;
-				border-bottom: none;
-			}
-		}
-	}
+.nav.dropdown:hover > ul,
+.nav .dropdown:hover > ul {
+	display: block;
+	@media (max-width: $breakpoint-width) { display: none; }
+}
 
-	&:hover {
-		> ul {
-			display: block;
-			@media (max-width: $breakpoint-width) { display: none; }
-		}
-	}
-
-	.fa-angle-down {
-		padding-left: 10px;
-		@media (max-width: $breakpoint-width) { float: right; }
-	}
+.nav.dropdown .fa-angle-down,
+.nav .dropdown .fa-angle-down {
+	padding-left: 10px;
+	@media (max-width: $breakpoint-width) { float: right; }
 }
 
 .dark {
 	background: $dark;
 	border: 1px solid darken($dark, 5);
-
-	li {
-		> ul {
-			background: $dark;		
-			border: 1px solid darken($dark, 5);
-		}
-	}
-
-	a {
-		color: $white;
-
-		&:hover,
-		&:focus { color: $white; }
-
-		&:hover { background: darken($dark, 5); }
-	}
 }
 
-.header {
-	&.fixed {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 5;
-	}
+.dark li > ul {
+	background: $dark;		
+	border: 1px solid darken($dark, 5);
+}
 
-	.nav {
-		
-		background: $white;
-		border: none;
-		border-bottom: 1px solid darken($light, 5);
+.dark a {
+	color: $white;
 
-		@include border-radius(0);
+	&:hover,
+	&:focus { color: $white; }
+	&:hover { background: darken($dark, 5); }
+}
 
-		li {
-			> ul {
-				background: $white;		
-				border: 1px solid darken($white, 5);
-			}
-		}
+.header .fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
 
-		a {
-			&:hover { background: darken($white, 5); }
-		}
+.header .nav {
+	background: $white;
+	border: none;
+	border-bottom: 1px solid darken($light, 5);
 
-		&.open li.logo {
-			@media (max-width: $breakpoint-width) { display: none; }
-		}
-	}
+	@include border-radius(0);
+}
+
+.header .nav li > ul {
+	background: $white;		
+	border: 1px solid darken($white, 5);
+}
+
+.header .nav li a:hover { background: darken($white, 5); }
+
+.header .nav li.open li.logo {
+	@media (max-width: $breakpoint-width) { display: none; }
 }
