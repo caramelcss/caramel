@@ -419,6 +419,9 @@ img {
     .nav ul.right {
       float: none; } }
 
+.nav ul.right ul {
+  right: 0; }
+
 .nav li {
   position: relative;
   vertical-align: top;
