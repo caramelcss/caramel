@@ -36,7 +36,3 @@ $font-code: $anonymous-pro;
 
 $breakpoint-width: 800px;
 $default-radius: 4px !default;
-
-$-breakpoints: (
-    small: 'max-width: '+$breakpoint-width,
-) !default;

@@ -1,121 +1,85 @@
-@mixin navigation($theme: $light) {
-	background: $theme;
-	border: 1px solid darken($theme, 5);
-
-	@include clearfix();
-
-	&.open {
-		li {
-			@include breakpoint(small) { display: block; }
-		}
-	}
-
-	.collapse {
-		display: none;
-		@include breakpoint(small) { display: block; }
-	}
-
-	.dropdown { @include dropdown; }
-
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-
-		&.right {
-			@include breakpoint(small) { float: none; }
-		}
-	}
-
-	li {
-		position: relative;
-		vertical-align: top;
-		float: left;
-
-		@include breakpoint(small) {
-			display: none;
-			float: none;
-		}
-
-		&.right {
-			float: right;
-			@include breakpoint(small) { float: none; }
-		}
-
-		> ul {
-			background: $theme;		
-			border: 1px solid darken($theme, 5);
-		}
-
-		li {
-			float: none;
-		}
-	}
-
-	a {
-		display: block;
-		padding: 10px 20px;
-		color: $default;
-		white-space: nowrap;
-
-		&:hover { background: darken($theme, 5); }
-
-		&:hover,
-		&:focus { color: $default; }
-	}
-}
-
-@mixin dropdown() {
-	> ul {
-		display: none;
-		position: absolute;
-		min-width: 150px;
-		z-index: 2;
-		border-top: none;
-
-		@include border-radius-bottom(4px);
-		
-		@include breakpoint(small) {
-			position: relative;
-			max-width: 100%;
-		}
-	}
-
-	li {
-		display: block;
-
-		a {
-			@include breakpoint(small) { padding-left: 40px; }
-		}
-	}
-
-	&.open,
-	&.open:hover {
-		> ul {
-			@include breakpoint(small) {
-				display: block;
-				border-bottom: none;
-			}
-		}
-	}
-
-	&:hover {
-		> ul {
-			display: block;
-			@include breakpoint(small) { display: none; }
-		}
-	}
-
-	.fa-angle-down {
-		padding-left: 10px;
-		@include breakpoint(small) { float: right; }
-	}
-}
-
 .bar,
-.pag {
-	@include navigation;
+.pag,
+.nav.btn,
+.header.nav {
+	background: $light;
+	border: 1px solid darken($light, 5);
+
 	@include border-radius(4px);
+	@include clearfix();
+}
+
+.bar.open li,
+.pag.open li,
+.nav.btn.open li,
+.header.nav.open li{ @media (max-width: $breakpoint-width) { display: block; } }
+
+.bar .collapse,
+.pag .collapse,
+.nav.btn .collapse,
+.header.nav .collapse {
+	display: none;
+	@media (max-width: $breakpoint-width) { display: block; }
+}
+
+.bar ul,
+.pag ul,
+.nav.btn ul,
+.header.nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	&.right {
+		@media (max-width: $breakpoint-width) { float: none; }
+	}
+}
+
+.bar li,
+.pag li,
+.nav.btn li,
+.header.nav li {
+	position: relative;
+	vertical-align: top;
+	float: left;
+
+	@media (max-width: $breakpoint-width) {
+		display: none;
+		float: none;
+	}
+
+	&.right {
+		float: right;
+		@media (max-width: $breakpoint-width) { float: none; }
+	}
+}
+
+.bar li > ul,
+.pag li > ul,
+.nav.btn li > ul,
+.header.nav li > ul {
+	background: $light;		
+	border: 1px solid darken($light, 5);
+}
+
+.bar li li,
+.pag li li,
+.nav.btn li li,
+.header.nav li li { float: none; }
+
+.bar a,
+.pag a,
+.nav.btn a,
+.header.nav a {
+	display: block;
+	padding: 10px 20px;
+	color: $default;
+	white-space: nowrap;
+
+	&:hover { background: darken($light, 5); }
+
+	&:hover,
+	&:focus { color: $default; }
 }
 
 .pag {
@@ -140,8 +104,6 @@
 }
 
 .nav.btn {
-	@include navigation;
-
 	position: relative;
 	padding: 0;
 	border: none;
@@ -172,16 +134,73 @@
 	}
 }
 
-.nav.dropdown { @include dropdown; }
+.nav.dropdown,
+.bar .dropdown,
+.header.nav .dropdown { 
+	> ul {
+		display: none;
+		position: absolute;
+		min-width: 150px;
+		z-index: 2;
+		border-top: none;
+
+		@include border-radius-bottom(4px);
+		
+		@media (max-width: $breakpoint-width) {
+			position: relative;
+			max-width: 100%;
+		}
+	}
+
+	li {
+		display: block;
+
+		a {
+			@media (max-width: $breakpoint-width) { padding-left: 40px; }
+		}
+	}
+
+	&.open,
+	&.open:hover {
+		> ul {
+			@media (max-width: $breakpoint-width) {
+				display: block;
+				border-bottom: none;
+			}
+		}
+	}
+
+	&:hover {
+		> ul {
+			display: block;
+			@media (max-width: $breakpoint-width) { display: none; }
+		}
+	}
+
+	.fa-angle-down {
+		padding-left: 10px;
+		@media (max-width: $breakpoint-width) { float: right; }
+	}
+}
 
 .dark {
-	@include navigation($dark);
+	background: $dark;
+	border: 1px solid darken($dark, 5);
+
+	li {
+		> ul {
+			background: $dark;		
+			border: 1px solid darken($dark, 5);
+		}
+	}
 
 	a {
 		color: $white;
 
 		&:hover,
 		&:focus { color: $white; }
+
+		&:hover { background: darken($dark, 5); }
 	}
 }
 
@@ -194,13 +213,26 @@
 	}
 
 	.nav {
-		@include navigation($white);
-		@include border-radius(0);
+		
+		background: $white;
 		border: none;
 		border-bottom: 1px solid darken($light, 5);
 
+		@include border-radius(0);
+
+		li {
+			> ul {
+				background: $white;		
+				border: 1px solid darken($white, 5);
+			}
+		}
+
+		a {
+			&:hover { background: darken($white, 5); }
+		}
+
 		&.open li.logo {
-			@include breakpoint(small) { display: none; }
+			@media (max-width: $breakpoint-width) { display: none; }
 		}
 	}
 }
