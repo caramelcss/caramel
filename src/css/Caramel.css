@@ -491,6 +491,17 @@ img {
 .nav.btn li {
   float: none; }
 
+@media (max-width: 800px) {
+  .nav.btn.dropdown.open {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline; } }
+
+@media (max-width: 800px) {
+  .nav.btn.dropdown.open > ul {
+    position: absolute; } }
+
 .nav.btn.dropdown:hover > ul {
   display: none; }
 

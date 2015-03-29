@@ -94,6 +94,14 @@
 
 .nav.btn li { float: none; }
 
+.nav.btn.dropdown.open {
+	@media (max-width: $breakpoint-width) { @include inline-block; }
+}
+
+.nav.btn.dropdown.open > ul {
+	@media (max-width: $breakpoint-width) { position: absolute; }
+}
+
 .nav.btn.dropdown:hover > ul { display: none; }
 
 .nav.btn.dropdown.open > ul,
