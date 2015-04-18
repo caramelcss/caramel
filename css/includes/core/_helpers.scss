@@ -1,0 +1,77 @@
+// Clearfix Mixin
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after { clear: both; }
+}
+
+// Inline Block Mixin
+
+@mixin inline-block() {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+// Border Radius Mixin
+
+@mixin border-radius($radius: $default-radius) {
+
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+
+}
+
+// TODO: See if we can merge all border-radius mixins into single mixin.
+
+@mixin border-radius-top($radius: $default-radius) {
+    -webkit-border-top-left-radius: $radius;
+    -webkit-border-top-right-radius:$radius;
+    -moz-border-top-left-radius:    $radius;
+    -moz-border-top-right-radius:   $radius;
+    -ms-border-top-left-radius:     $radius;
+    -ms-border-top-right-radius:    $radius;
+    border-top-left-radius:         $radius;
+    border-top-right-radius:        $radius;
+}
+
+@mixin border-radius-left($radius: $default-radius) {
+    -webkit-border-top-left-radius:     $radius;
+    -webkit-border-bottom-left-radius:  $radius;
+    -moz-border-top-left-radius:        $radius;
+    -moz-border-bottom-left-radius:     $radius;
+    -ms-border-top-left-radius:         $radius;
+    -ms-border-bottom-left-radius:      $radius;
+    border-top-left-radius:             $radius;
+    border-bottom-left-radius:          $radius;
+}
+
+@mixin border-radius-right($radius: $default-radius) {
+    -webkit-border-top-right-radius:     $radius;
+    -webkit-border-bottom-right-radius:  $radius;
+    -moz-border-top-right-radius:        $radius;
+    -moz-border-bottom-right-radius:     $radius;
+    -ms-border-top-right-radius:         $radius;
+    -ms-border-bottom-right-radius:      $radius;
+    border-top-right-radius:             $radius;
+    border-bottom-right-radius:          $radius;
+}
+
+@mixin border-radius-bottom($radius: $default-radius) {
+    -webkit-border-bottom-left-radius:  $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-bottom-left-radius:     $radius;
+    -moz-border-bottom-right-radius:    $radius;
+    -ms-border-bottom-left-radius:      $radius;
+    -ms-border-bottom-right-radius:     $radius;
+    border-bottom-left-radius:          $radius;
+    border-bottom-right-radius:         $radius;
+}

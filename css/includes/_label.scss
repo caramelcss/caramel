@@ -1,0 +1,20 @@
+.label {
+    width: auto;
+    padding: 5px 10px;
+    color: $white;
+    font-size: 80%;
+    background-color: lighten($default, 5);
+    
+    @include border-radius();
+    @include inline-block();
+}
+
+@each $state, $color-map in $-states-map {
+
+    $color-state: map-get($color-map, 'color-state');
+
+    .label.#{$state} {
+        background-color: $color-state;
+    }
+
+}

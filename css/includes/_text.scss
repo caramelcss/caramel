@@ -1,0 +1,81 @@
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+h1 {font-size: 36px; margin: 16px 0;}
+h2 {font-size: 30px; margin: 12px 0;}
+h3 {font-size: 24px; margin: 10px 0;}
+h4 {font-size: 18px; margin: 8px 0;}
+h5 {font-size: 14px; margin: 6px 0;}
+h6 {font-size: 12px; margin: 4px 0;}
+
+a {
+    color: $info;
+    text-decoration: none;
+
+    &:hover, 
+    &:focus {
+       color: lighten($info, 5);
+       text-decoration: none;
+    }
+}
+
+.disabled {
+    color: darken($light, 20);
+    cursor: not-allowed;
+}
+
+.color.success, [color=success] {color: $success;}
+.color.error, [color=error] {color: $error;}
+.color.info, [color=info] {color: $info;}
+.color.warn, [color=warn] {color: $warn;}
+.color.dark, [color=dark] {color: $dark;}
+.color.light, [color=light] {color: $light;}
+
+b, strong {
+    font-weight: bold;
+}
+
+.code {
+    width: auto;
+    padding: 10px;
+    font-family: $font-code;
+    color: $default;
+    border: 1px solid darken($light, 5);
+    background-color: $light;
+    
+    @include border-radius();
+}
+
+code, highlight, .highlight, {
+    padding: 5px;
+    font-family: $font-code;
+    color: $error;
+    background-color: lighten($error, 40);
+    
+    @include border-radius();
+}
+
+em, .italic {
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.sml, small {
+    font-size: 80%;
+}
+
+s, .strike {
+    text-decoration: line-through;
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}

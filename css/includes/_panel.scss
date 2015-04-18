@@ -1,0 +1,35 @@
+.panel {
+    margin: 10px 0;
+    @include border-radius();
+    border: 1px solid darken($light, 10);
+    overflow: hidden;
+}
+
+.panel-head {
+    padding: 10px 20px;
+    border-bottom: 1px solid darken($light, 10);
+    background: darken($light, 5);
+    font-weight: bold;
+}
+    
+.panel-body {
+    padding: 15px 20px;
+    background: $white;
+}
+
+@each $state, $color-map in $-states-map {
+
+    $color: map-get($color-map, 'text-color');
+    $color-state: map-get($color-map, 'color-state');
+
+    .panel.#{$state} {
+        border: 1px solid darken($color-state, 5);
+
+        .panel-head {
+            color: $color;
+            background: $color-state;
+            border-bottom: 1px solid darken($color-state, 5);
+        }
+    }
+
+}
