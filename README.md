@@ -43,3 +43,8 @@ Caramel works on any browser that supports CSS3. Caramel is recommended for use 
  * [gratimax](http://github.com/gratimax) — Grid System
  * [penagwin](http://github.com/penagwin) — Javascript
  * [toma678](http://github.com/toma678) — Sass Compiler
+
+ 
+## Copyright / License
+
+Copyright &copy; 2014-2015 kurisubrooks // Code released under GPLv2 License.
