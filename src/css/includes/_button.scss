@@ -1,0 +1,50 @@
+.btn {
+    font: inherit;
+    padding: 6px 14px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    color: $default;
+    line-height: 1.42;
+    text-align: center;
+    border: 1px solid darken($light, 5);
+    background: $light;
+    cursor: pointer;
+    
+    @include border-radius();
+    @include inline-block();
+    
+    &:hover,
+    &:active {
+        color: $default;
+        border: 1px solid darken($light, 5);
+        background: darken($light, 5);
+    }
+}
+
+.btn.sml {
+    padding: 4px 10px 3px;
+    font-size: 10px;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+@each $state, $color-map in $-states-map {
+
+    $color: map-get($color-map, 'text-color');
+    $color-state: map-get($color-map, 'color-state');
+
+    .btn.#{$state} {
+        color: $color;
+        border: 1px solid darken($color-state, 5);
+        background: $color-state;
+            
+        &:hover,
+        &:active {
+            border: 1px solid darken($color-state, 5);
+            background: lighten($color-state, 2);
+        }
+    }
+
+}
