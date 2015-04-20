@@ -29,18 +29,6 @@ Caramel works on any browser that supports CSS3. Caramel is recommended for use 
 * Firefox 36
 * Safari 8
 * IE 9, 10, 11
-
-## Team
-
- * [kurisubrooks](http://github.com/kurisubrooks) — CSS / Design
- * [whoiskenjackson](http://github.com/whoiskenjackson) — CSS / Javascript
- * [hedgehog1029](http://github.com/hedgehog1029) — Javascript
-
-### Contributions
- * [gratimax](http://github.com/gratimax) — Grid System
- * [penagwin](http://github.com/penagwin) — Javascript
- * [toma678](http://github.com/toma678) — Sass Compiler
-
  
 ## Copyright / License
 
