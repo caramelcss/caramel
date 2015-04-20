@@ -13,16 +13,13 @@ Need further help? Pop into ```#caramel``` on ```irc.esper.net``` and state your
 ## Modification
 Modifying Caramel is easy with Sass, and our Compiling Script. Make your changes to Caramel, then run our Compiling Script to recompile your new code into CSS. 
 
-**Please Note:** The Compiling Script only works on Linux and Mac OS X. Additionally, [Ruby](https://www.ruby-lang.org/) and [Sass Command Line](http://sass-lang.com/install) must be installed for our Compiling Script to work.
+**Please Note:** [Ruby](https://www.ruby-lang.org/) and [Sass Command Line](http://sass-lang.com/install) must both be installed for the Compiling Script to work. Without either, the other will not work.
 
 ### Syntax:
 
-	path/to/compile.sh  path/to/caramel.scss
-    
-### Errors:
-
-	-bash: path/to/compile.sh: Permission denied
-* Solution: `chmod +x path/to/compile.sh`
+```ruby
+ruby path/to/compile.rb  path/to/caramel.scss
+```
 
 ## Compatibility
 
