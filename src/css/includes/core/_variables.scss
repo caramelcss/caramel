@@ -2,13 +2,13 @@ $white:     #FFF;
 $black:     #000;
 $disabled:  #CCC;
 
-$default:   #5F5F5F;
-$success:   #5CB85C;
-$error:     #DC4A47;
-$warn:      #F09E34;
-$info:      #52B7D6;
-$dark:      #525252;
-$light:     #FAFAFA;
+$default:   #5F5F5F; /*AA*/
+$success:   #53A653; /*AAA*/
+$error:     #DC4A47; /*AAA*/
+$warn:      #F09E34; /* $ */
+$info:      #52B7D6; /* $ */
+$dark:      #525252; /*AAA*/
+$light:     #FAFAFA; /*AAA*/
 
 $default-border:    darken($default, 5);
 $success-border:    darken($success, 5);

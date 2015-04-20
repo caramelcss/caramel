@@ -1,0 +1,25 @@
+swatch {
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+    width: 100px;
+    height: 100px;
+                
+    color: white;
+    padding: 20px;
+                
+    border-radius: 6px;
+}
+
+@each $state, $color-map in $-states-map {
+
+    $color-state: map-get($color-map, 'color-state');
+
+    swatch.#{$state} {
+        background: $color-state;
+            
+        &:hover {
+            background: lighten($color-state, 2);
+        }
+    }
+
+}
