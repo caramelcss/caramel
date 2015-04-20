@@ -11,7 +11,7 @@ Need help? We've got you covered! Go on over to our [GitHub Wiki](https://github
 Need further help? Pop into ```#caramel``` on ```irc.esper.net``` and state your question. We may take a while to answer your question (as we're not always available), so make sure to hang around until we're able to give you a reply!
 
 ## Modification
-Modifying Caramel is easy with Sass, and our Compiling Script. Make your changes to Caramel, then run our Compiling Script to recompile your new code into CSS. 
+Modifying Caramel is easy with Sass, and our Compiling Script. Make your changes to Caramel, then run our Compiling Script to recompile your new code back into CSS. 
 
 **Please Note:** [Ruby](https://www.ruby-lang.org/) and [Sass Command Line](http://sass-lang.com/install) must both be installed for the Compiling Script to work. Without either, the other will not work.
 
