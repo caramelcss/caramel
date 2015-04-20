@@ -2,13 +2,13 @@ $white:     #FFF;
 $black:     #000;
 $disabled:  #CCC;
 
-$default:   #5F5F5F; /*AA*/
-$success:   #53A653; /*AAA*/
-$error:     #DC4A47; /*AAA*/
-$warn:      #F09E34; /* $ */
-$info:      #52B7D6; /* $ */
-$dark:      #525252; /*AAA*/
-$light:     #FAFAFA; /*AAA*/
+$default:   #5F5F5F;
+$success:   #5CB85C;
+$error:     #DC4A47;
+$warn:      #F09E34;
+$info:      #52B7D6;
+$dark:      #525252;
+$light:     #FAFAFA;
 
 $default-border:    darken($default, 5);
 $success-border:    darken($success, 5);
@@ -17,16 +17,6 @@ $warn-border:       darken($warn, 5);
 $info-border:       darken($info, 5);
 $dark-border:       darken($dark, 5);
 $light-border:      darken($light, 5);
-
-/* OLD
-$default:   #5F5F5F;
-$success:   #5CB85C;
-$error:     #D9534F;
-$warn:      #F0AD4E;
-$info:      #52B7D6;
-$dark:      #525252;
-$light:     #FAFAFA;
-*/
 
 $open-sans: "Open Sans", sans-serif;
 $anonymous-pro: "Anonymous Pro", Monospace;
