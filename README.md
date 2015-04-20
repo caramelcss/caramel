@@ -13,7 +13,7 @@ Need further help? Pop into ```#caramel``` on ```irc.esper.net``` and state your
 ## Modification
 Modifying Caramel is easy with Sass, and our Compiling Script. Make your changes to Caramel, then run our Compiling Script to recompile your new code back into CSS. 
 
-**Please Note:** [Ruby](https://www.ruby-lang.org/) and [Sass Command Line](http://sass-lang.com/install) must both be installed for the Compiling Script to work. Without either, the other will not work.
+**Please Note:** Our Sass compiler runs on [Ruby](https://www.ruby-lang.org/), and requires [Sass Command Line](http://sass-lang.com/install) to be installed. Both must be installed for the Compiling Script to work.
 
 ### Syntax:
 
