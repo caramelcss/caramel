@@ -1,5 +1,5 @@
 # Caramel — Sass Compiling Script
-# Created by toma678 & kurisubrooks
+# Created by toma678, kurisubrooks & joshhartigan
 
 puts ("[*] Caramel Sass Compiler")
 puts ("[*] Syntax: 'ruby path/to/compile.rb path/to/caramel.scss'")
