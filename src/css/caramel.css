@@ -105,6 +105,18 @@ table {
   left: 50%;
   min-width: 600px; }
 
+.no-round {
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  border-radius: none; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.no-border {
+  border: none !important; }
+
 .alert {
   display: block;
   vertical-align: middle;
@@ -230,7 +242,7 @@ input[type=week],
 textarea {
   min-width: 100px;
   margin: 0 5px 5px 0;
-  padding: 10px 15px;
+  padding: 6px 14px;
   font: inherit;
   color: inherit;
   line-height: 1.42;
@@ -391,6 +403,23 @@ img {
     display: table; }
   .nav:after {
     clear: both; }
+
+.nav input[type=text],
+.nav input[type=email],
+.nav input[type=password],
+.nav input[type=search],
+.nav input[type=url] {
+  margin: 2px;
+  padding: 0 15px;
+  height: 33px; }
+  @media (max-width: 800px) {
+    .nav input[type=text],
+    .nav input[type=email],
+    .nav input[type=password],
+    .nav input[type=search],
+    .nav input[type=url] {
+      margin: 5px 20px;
+      height: 35px; } }
 
 @media (max-width: 800px) {
   .nav.open li {
