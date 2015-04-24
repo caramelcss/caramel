@@ -91,3 +91,15 @@ table {
     
     min-width: 600px;
 }
+
+.no-round {
+    @include border-radius(none);
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-border {
+    border: none !important;
+}
