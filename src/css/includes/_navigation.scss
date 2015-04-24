@@ -6,6 +6,21 @@
 	@include clearfix();
 }
 
+.nav input[type=text],
+.nav input[type=email],
+.nav input[type=password],
+.nav input[type=search],
+.nav input[type=url] {
+    margin: 2px;
+    padding: 0 15px;
+    height: 33px;
+    
+    @media (max-width: $breakpoint-width) {
+        margin: 5px 20px;
+        height: 35px;
+    }
+}
+
 .nav.open li { @media (max-width: $breakpoint-width) { display: block; } }
 
 .nav .collapse  {
