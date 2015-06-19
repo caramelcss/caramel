@@ -6,6 +6,10 @@
 	@include clearfix();
 }
 
+.nav.no-round {
+    @include border-radius(4px);
+}
+
 .nav input[type=text],
 .nav input[type=email],
 .nav input[type=password],
@@ -130,7 +134,10 @@
 	border: 1px solid darken($light, 5);
 	@include border-radius-top(4px);
 }
-		
+.nav.btn.dropdown > ul.no-round {		
+    @include border-radius(4px);
+}
+
 .nav.btn.dropdown a { text-align: left; }
 
 .nav.dropdown > ul,
