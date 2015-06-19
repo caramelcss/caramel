@@ -1,0 +1,7 @@
+﻿#FAFAFA - Light - (White)
+#525252 - Dark	- (Black)
+
+#57AB57 - Success
+#E44C46 - Error
+#F0AD4E - Warn
+#24AFD9 - Info
