@@ -55,15 +55,15 @@
 	<path fill="#050000" d="M4460,2760v-100h100h100v100v100h-100h-100V2760z"/>
 	<path fill="#050000" d="M6460,2760v-100h100h100v100v100h-100h-100V2760z"/>
 </g>
-<g id="layer1" transform="translate(0,-1004.3622)" inkscape:label="Layer 1" inkscape:groupmode="layer">
+<g id="layer1" transform="translate(0,-1004.3622)">
 	<g id="g3000" transform="translate(-6,1003)">
-		<path id="path2987" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="#B7806C" d="M562-24.9l-80.7,40.4
+		<path id="path2987" fill="#B7806C" d="M562-24.9l-80.7,40.4
 			L562,55.8l80.7-40.4L562-24.9z"/>
-		<path id="path2989" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="#B7785C" d="M562,55.2v100.9l80.7-40.4
+		<path id="path2989" fill="#B7785C" d="M562,55.2v100.9l80.7-40.4
 			V14.8L562,55.2z"/>
-		<path id="path2991" sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" fill="#8E5B42" d="M562,55.2v100.9l-80.7-40.4
+		<path id="path2991" fill="#8E5B42" d="M562,55.2v100.9l-80.7-40.4
 			V14.8L562,55.2z"/>
-		<path id="path2993" inkscape:connector-curvature="0" fill="none" stroke="#231F20" stroke-width="5" d="M562-25.5l-80.7,40.4
+		<path id="path2993" fill="none" stroke="#231F20" stroke-width="5" d="M562-25.5l-80.7,40.4
 			v100.9l80.7,40.4l80.7-40.4V14.9L562-25.5z"/>
 	</g>
 </g>
