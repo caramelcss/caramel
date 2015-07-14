@@ -4,10 +4,10 @@
 
 	@include border-radius(4px);
 	@include clearfix();
-}
 
-.nav.no-round {
-    @include border-radius(4px);
+	&.no-round {
+	    @include border-radius(4px);
+	}
 }
 
 .nav input[type=text],
@@ -18,7 +18,7 @@
     margin: 2px;
     padding: 0 15px;
     height: 33px;
-    
+
     @media (max-width: $breakpoint-width) {
         margin: 5px 20px;
         height: 35px;
@@ -61,7 +61,7 @@
 }
 
 .nav li > ul {
-	background: $light;		
+	background: $light;
 	border: 1px solid darken($light, 5);
 }
 
@@ -70,7 +70,7 @@
 
 .nav a {
 	display: block;
-	padding: 10px 20px;
+	padding: 10px 18px 8px;
 	color: $default;
 	white-space: nowrap;
 
@@ -134,7 +134,7 @@
 	border: 1px solid darken($light, 5);
 	@include border-radius-top(4px);
 }
-.nav.btn.dropdown > ul.no-round {		
+.nav.btn.dropdown > ul.no-round {
     @include border-radius(4px);
 }
 
@@ -149,7 +149,7 @@
 	border-top: none;
 
 	@include border-radius-bottom(4px);
-	
+
 	@media (max-width: $breakpoint-width) {
 		position: relative;
 		max-width: 100%;
@@ -159,10 +159,12 @@
 .nav.dropdown li,
 .nav .dropdown li { display: block; }
 
+/*
 .nav.dropdown li a,
 .nav .dropdown li a {
 	@media (max-width: $breakpoint-width) { padding-left: 40px; }
 }
+*/
 
 .nav.dropdown.open,
 .nav .dropdown.open,
@@ -192,7 +194,7 @@
 }
 
 .dark li > ul {
-	background: $dark;		
+	background: $dark;
 	border: 1px solid darken($dark, 5);
 }
 
@@ -220,7 +222,7 @@
 }
 
 .header .nav li > ul {
-	background: $white;		
+	background: $white;
 	border: 1px solid darken($white, 5);
 }
 
