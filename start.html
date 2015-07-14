@@ -1,126 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-    <title>Caramel - Get Started</title>
-    <meta name="author" content="kurisubrooks">
-    <meta name="description" content="caramel, a beautiful, modern, simple website framework">
-      
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/Caramel.min.js"></script> 
-    <link href="css/Caramel.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    
-    <script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-62015739-2","auto"),ga("send","pageview");</script>
-      
-    <script>
-        (function($) {
-            $.fn.scrollToElement = function(speed) {
-                scrollTo(this, speed);
-            }
-        }(jQuery));
 
-        function scrollTo(element, speed) {
-            $('html, body').animate({
-                scrollTop: $(element).offset().top
-            }, speed);
-        }
-    </script>
-      
+    <title>Caramel - Getting Started</title>
+    <meta name="author" content="kurisubrooks">
+    <meta name="description" content="caramel is a simple, beautiful, and modern web framework.">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/caramel.min.css" rel="stylesheet" type="text/css">
+
+    <script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-62015739-2","auto"),ga("send","pageview");</script>
     <style>.click {cursor: pointer;}</style>
-      
-    <style>
-      .crumbs {
-          border-radius: 4px;
-          background-color: #FAFAFA;
-          padding: 10px 15px;
-      }
-    </style>
   </head>
 <body>
 <main>
-    
+
     <div align="center" style="margin:15px 0">
-    <a href="index.html">
-      <svg version="1.1" width="100px" height="100px" viewBox="0 0 48 48">
-        <g transform="translate(0,-1004.3622)">
-          <g transform="translate(-6,1003)">
-            <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
-            <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
-            <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
-            <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
-          </g>
-        </g>
-      </svg>
-    </a>
+        <a href="index.html">
+          <svg version="1.1" width="100px" height="100px" viewBox="0 0 48 48">
+            <g transform="translate(0,-1004.3622)">
+              <g transform="translate(-6,1003)">
+                <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
+                <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
+                <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
+                <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
+              </g>
+            </g>
+          </svg>
+        </a>
 
-        <h1 style="margin-top:0;">Caramel</h1>
+        <h2 style="margin-top:0;">Caramel</h2>
     </div>
-    
-    <hr>
-    
-    <div class="crumbs">
-        Quick Links : 
-        <a onclick='$("#download").scrollToElement(1000);' class="click">Download</a>
-        &nbsp;/&nbsp;
-        <a onclick='$("#use").scrollToElement(1000);' class="click">Usage</a>
-        
-    </div>
-    
-    <hr>
-    
-    <h2 id="download">Getting Started:</h2>
 
-    <h4>Step 1 ー Download:</h4>
-    
+    <hr>
+
+    <h3 id="download">Getting Started:</h3>
+
+    <h5>Step 1 &mdash; Download:</h5>
+
     <p>There are multiple ways to get Caramel, choose from the following for what seems the best option for you.</p>
-    
+
     <hr>
-    
+
     <div class="row">
         <div class="box col-6">
             <h3>Download</h3>
             <p>Pre-Compiled Latest Version of Caramel, includes all the bells and whistles, with some documentation thrown in for good measure.</p><br>
-            <a href="https://github.com/kurisubrooks/caramel/archive/master.zip" class="btn success"><i class="fa fa-download"></i>&nbsp;Latest Release</a>&nbsp;
-            <a href="https://github.com/kurisubrooks/caramel/archive/dev.zip" class="btn error"><i class="fa fa-download"></i>&nbsp;Latest Dev</a>
+            <a href="https://github.com/kurisubrooks/caramel/archive/master.zip" class="btn success clean"><i class="fa fa-download"></i>&nbsp;Latest Release</a>&nbsp;
+            <a href="https://github.com/kurisubrooks/caramel/archive/dev.zip" class="btn error clean"><i class="fa fa-download"></i>&nbsp;Latest Dev</a>
         </div>
-        
+
         <div class="box col-6">
             <h3>Git</h3>
             <p>Pull the latest version of Caramel, straight from it's roots.</p>
             <code>git clone git@github.com:kurisubrooks/caramel.git</code>
         </div>
     </div>
-    
+
     <hr>
-    
-    <h4 id="use">Step 2 ー Have fun!</h4>
-    
+
+    <h4 id="use">Step 2 &mdash; Have fun!</h4>
+
     <p>Now that you have Caramel at your finger tips, you should probably see what we have to offer! Available <a href="showcase.html">here</a>, is a list of all of our features. To see the code of a specific element, right click the element and click "Inspect Element". If your browser doesn't support this feature, you can right click the page and click "View Source" instead.</p>
-    
+
     <br>
-    
-    <p>Ready to get started? We've included a template that already has Caramel built-in. To access the template, locate <code>src/template.html</code>, open it in your editor of choice, and code away!</p>
-    
+
+    <p>Ready to get started? We've included a template that already has Caramel built-in. To access the template, locate <code>template.html</code>, open it in your editor of choice, and code away!</p>
+
     <br>
-    
+
     <p>If you wish to encorporate Caramel into your existing documents, paste the following lines into your document's <code>&lt;head&gt;</code> section.</p>
-    
+
     <br>
-    
+
     <div class="code">
-        &lt;link href="css/Caramel.min.css" rel="stylesheet"&gt;<br>
-        &lt;link href="css/font-awesome.min.css" rel="stylesheet"&gt;<br>
+        &lt;link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"&gt;<br>
+        &lt;link href="css/caramel.min.css" rel="stylesheet"&gt;<br>
         &lt;script src="js/jquery-2.1.3.min.js"&gt;&lt;/script&gt;<br>
-        &lt;script src="js/Caramel.js"&gt;&lt;/script&gt;
+        &lt;script src="js/caramel.js"&gt;&lt;/script&gt;
     </div>
-    
+
     <hr>
-    
+
     <footer>
-        <p>&copy; 2015 ー <a href="http://github.com/kurisubrooks/caramel">CARAMEL</a><br>
+        <p>&copy; 2015 &mdash; <a href="http://github.com/kurisubrooks/caramel">CARAMEL</a><br>
         MADE WITH <i class="fa fa-heart-o fa-fw" style="color:#D9534F;"></i> &amp; <i class="fa fa-code fa-fw" style="color:#6EC06E;font-size:16px;"></i></p>
     </footer>
 </main>

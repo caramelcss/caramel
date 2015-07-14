@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Caramel</title>
-    <meta name="author" content="kurisubrooks, caramel">
+    <meta name="author" content="kurisubrooks">
     <meta name="description" content="caramel is a simple, beautiful, and modern web framework.">
 
-    <!-- Stylesheets -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/Caramel.min.css" rel="stylesheet" type="text/css">
-    <style>#example .box{background-color:#EEE;text-align:center;border-radius:2px}.header .logo a{padding:5px 20px 0}.header .logo a:hover{background:0 0}.main .header{margin:100px 0 70px;text-align:center}.main .header h1{margin-top:0}.fa.fa-code{font-size:16px}</style>
-    
+    <link href="css/caramel.min.css" rel="stylesheet" type="text/css">
+    <style>#example .box{background-color:#EEE;text-align:center;border-radius:2px}.header .logo a{padding:5px 20px 0}.header .logo a:hover{background:0 0}.main .header{margin:100px 0 70px;text-align:center}.main .header h1{margin-top:0}.fa.fa-code{font-size:16px}lt{display:block;font-size: 60px;font-weight: 300;}</style>
+
     <script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-62015739-2","auto"),ga("send","pageview");</script>
   </head>
 <body>
@@ -21,7 +20,7 @@
             <ul>
                 <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
                 <li class="logo">
-                    <a href="#"><svg version="1.1" width="30px" height="30px" viewBox="0 0 48 48">
+                    <a href="#"><svg version="1.1" width="30px" height="27px" viewBox="0 0 48 48">
                         <g transform="translate(0,-1004.3622)">
                             <g transform="translate(-6,1003)">
                                 <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
@@ -32,6 +31,12 @@
                         </g>
                     </svg></a>
                 </li>
+                <li><a href="http://caramel.ga/">Home</a></li>
+                <li><a href="http://caramel.ga/start.html">Get Started</a></li>
+                <li><a href="http://caramel.ga/showcase.html">Showcase</a></li>
+            </ul>
+
+            <ul class="right">
                 <li class="dropdown"><a href="#" class="dropdownitem"><i class="fa fa-chevron-down fa-fw"></i></a>
                     <ul>
                         <li><a href="#buttons">Buttons</a></li>
@@ -44,23 +49,16 @@
                         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
                         <li><a href="#images">Images</a></li>
                         <li><a href="#progress-bars">Progress Bars</a></li>
-                        <li><a href="#labels">Labels</a></li>
                         <li><a href="#pagination">Pagination</a></li>
                         <li><a href="#forms">Forms</a></li>
                         <li><a href="#grid">Grid</a></li>
                     </ul>
                 </li>
-                <li><a href="http://caramel.ga/">Home</a></li>
-                <li><a href="http://caramel.ga/start.html">Get Started</a></li>
-                <li><a href="http://caramel.ga/showcase.html">Showcase</a></li>
-            </ul>
-            
-            <ul class="right">
                 <li><a href="http://github.com/kurisubrooks/caramel"><i class="fa fa-github-alt fa-fw"></i></a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main class="main">
         <div class="header">
           <svg version="1.1" width="100px" height="100px" viewBox="0 0 48 48">
@@ -74,13 +72,13 @@
             </g>
           </svg>
 
-          <h1 id="caramel">Caramel</h1>
+          <lt id="caramel">Caramel</lt>
 
         </div>
-        
+
         <hr>
-        
-        <h2 id="buttons">Buttons</h2>
+
+        <h3 id="buttons">Buttons</h3>
 
         <a href="#" class="btn default">Default</a>
         <a href="#" class="btn success">Success</a>
@@ -88,19 +86,37 @@
         <a href="#" class="btn warn">Warning</a>
         <a href="#" class="btn info">Info</a>
         <a href="#" class="btn dark">Dark</a>
-        
+
         <br>
-        
+
         <a href="#" class="btn default sml">Default</a>
         <a href="#" class="btn success sml">Success</a>
         <a href="#" class="btn error sml">Error</a>
         <a href="#" class="btn warn sml">Warning</a>
         <a href="#" class="btn info sml">Info</a>
         <a href="#" class="btn dark sml">Dark</a>
-        
+
+        <br><br>
+
+        <a href="#" class="btn default clean">Default</a>
+        <a href="#" class="btn success clean">Success</a>
+        <a href="#" class="btn error clean">Error</a>
+        <a href="#" class="btn warn clean">Warning</a>
+        <a href="#" class="btn info clean">Info</a>
+        <a href="#" class="btn dark clean">Dark</a>
+
+        <br>
+
+        <a href="#" class="btn default clean sml">Default</a>
+        <a href="#" class="btn success clean sml">Success</a>
+        <a href="#" class="btn error clean sml">Error</a>
+        <a href="#" class="btn warn clean sml">Warning</a>
+        <a href="#" class="btn info clean sml">Info</a>
+        <a href="#" class="btn dark clean sml">Dark</a>
+
         <hr>
-        
-        <h2 id="navigation">Navigation</h2>
+
+        <h3 id="navigation">Navigation</h3>
 
         <nav class="nav bar">
             <ul>
@@ -108,7 +124,7 @@
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
-                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown<i class="fa fa-angle-down"></i></a>
+                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
                     <ul>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
@@ -117,7 +133,7 @@
                 </li>
             </ul>
         </nav>
-        
+
 		<br>
 
         <nav class="nav bar dark">
@@ -126,7 +142,7 @@
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
-                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown<i class="fa fa-angle-down"></i></a>
+                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
                     <ul>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
@@ -135,123 +151,132 @@
                 </li>
             </ul>
         </nav>
-        
-        <hr>
-
-        <h2 id="button-dropdowns">Button Dropdowns</h2>
-
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem default">Default<i class="fa fa-angle-down"></i></button>
-            <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem success">Success<i class="fa fa-angle-down"></i></button>
-            <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem error">Error<i class="fa fa-angle-down"></i></button>
-            <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem warn">Warning<i class="fa fa-angle-down"></i></button>
-            <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem info">Info<i class="fa fa-angle-down"></i></button>
-            <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </div>
 
         <hr>
-        
-        <h2 id="alerts">Alerts</h2>
-        
+
+        <h3 id="button-dropdowns">Button Dropdowns</h3>
+
+        <div class="nav btn dropdown">
+            <button class="btn dropdownitem default">Default &#x25BE;</button>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="nav btn dropdown">
+            <button class="btn dropdownitem success">Success &#x25BE;</button>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="nav btn dropdown">
+            <button class="btn dropdownitem error">Error &#x25BE;</button>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="nav btn dropdown">
+            <button class="btn dropdownitem warn">Warning &#x25BE;</button>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="nav btn dropdown">
+            <button class="btn dropdownitem info">Info &#x25BE;</button>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="nav btn dropdown">
+            <button class="btn dropdownitem default clean">Clean &#x25BE;</button>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h3 id="alerts">Alerts</h3>
+
         <div class="alert default"><b>Default:</b> A little plain, isn't it?</div>
         <div class="alert success"><b>Success!</b> Congratulations, it works!</div>
         <div class="alert error"><b>Error.</b> You broke it. You have no one to blame but yourself!</div>
         <div class="alert warn"><b>Warning:</b> Something went wrong!</div>
         <div class="alert info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
         <div class="alert dark"><b>Dark:</b> Deep Space Nine.</div>
-        
+        <div class="alert default clean"><b>Clean:</b> Incase your boss says your style is 'childish', and you need more 'professionalism'.</div>
+
         <hr>
-        
-        <h2 id="notices">Notices</h2>
-        
+
+        <h3 id="notices">Notices</h3>
+
         <div class="notice default"><b>Default:</b> A little plain, isn't it?</div>
         <div class="notice success"><b>Success!</b> Congratulations, it works!</div>
         <div class="notice error"><b>Error.</b> You broke it. You have no one to blame but yourself!</div>
         <div class="notice warn"><b>Warning:</b> Something went wrong!</div>
         <div class="notice info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
         <div class="notice dark"><b>Dark:</b> Deep Space Nine.</div>
-        
+
         <hr>
-        
-        <h2 id="panels">Panels</h2>
-        
+
+        <h3 id="panels">Panels</h3>
+
         <div class="panel">
             <div class="panel-head">Default:</div>
             <div class="panel-body">
                 A little plain, isn't it?
             </div>
         </div>
-        
+
         <div class="panel success">
             <div class="panel-head">Success!</div>
             <div class="panel-body">
                 Congratulations, it works!
             </div>
         </div>
-        
+
         <div class="panel error">
             <div class="panel-head">Error.</div>
             <div class="panel-body">
                 You broke it. You have no one to blame but yourself!
             </div>
         </div>
-        
+
         <div class="panel warn">
             <div class="panel-head">Warning:</div>
             <div class="panel-body">
                 Something went wrong!
             </div>
         </div>
-        
+
         <div class="panel info">
             <div class="panel-head">Info:</div>
             <div class="panel-body">
                 Did you know, Bacon is more delicious in Canada?
             </div>
         </div>
-        
+
         <div class="panel dark">
             <div class="panel-head">Dark:</div>
             <div class="panel-body">
                 Deep Space Nine.
             </div>
         </div>
-        
+
         <hr>
 
-        <h2 id="dismissables">Dismissables</h2>
+        <h3 id="dismissables">Dismissables</h3>
 
         <div class="notice warn" id="note">
             <div class="dismiss"><i class="fa fa-close"></i></div>
@@ -275,26 +300,26 @@
         </div>
 
         <hr>
-        
-        <h2 id="breadcrumbs">Breadcrumbs</h2>
-        
+
+        <h3 id="breadcrumbs">Breadcrumbs</h3>
+
         <div class="nav bar breadcrumbs">
             <span class="disabled">Link &nbsp;/&nbsp; Link &nbsp;/&nbsp;</span> <a href="#">Link</a>
         </div>
-        
+
         <hr>
-        
-        <h2 id="images">Images</h2>
-        
+
+        <h3 id="images">Images</h3>
+
         <img src="http://placehold.it/150x150" class="img thumbnail" />
         <img src="http://placehold.it/150x150" class="img thumbnail circle" />
         <img src="http://placehold.it/150x150" class="img round" />
         <img src="http://placehold.it/150x150" class="img circle" />
-        
-        <hr> 
 
-        <h2 id="progress-bars">Progress Bars</h2>
-        
+        <hr>
+
+        <h3 id="progress-bars">Progress Bars</h3>
+
         <div class="row">
             <div class="box col-4">
                 <div class="progress default">
@@ -303,7 +328,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="box col-4">
                 <div class="progress success">
                     <div class="progress-bar" style="width:19%">
@@ -311,7 +336,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="box col-4">
                 <div class="progress error">
                     <div class="progress-bar" style="width:32%">
@@ -319,7 +344,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="box col-4">
                 <div class="progress warn">
                     <div class="progress-bar" style="width:64%">
@@ -327,15 +352,15 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="box col-4">
                 <div class="progress info">
-                    <div class="progress-bar" style="width:100%">
-                        <span id="progress">100%</span>
+                    <div class="progress-bar" style="width:48%">
+                        <span id="progress">48%</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="box col-4">
                 <div class="progress dark">
                     <div class="progress-bar" style="width:9%">
@@ -346,69 +371,9 @@
         </div>
 
         <hr>
-        
-        <h2 id="labels">Labels</h2>
-        
-        <div class="title">
-            <h1>
-                <span class="label default">Default</span>
-                <span class="label success">Success</span>
-                <span class="label error">Error</span>
-                <span class="label warn">Warn</span>
-                <span class="label info">Info</span>
-                <span class="label dark">Dark</span>
-            </h1>
 
-            <h2>
-                <span class="label default">Default</span>
-                <span class="label success">Success</span>
-                <span class="label error">Error</span>
-                <span class="label warn">Warn</span>
-                <span class="label info">Info</span>
-                <span class="label dark">Dark</span>
-            </h2>
+        <h3 id="pagination">Pagination</h3>
 
-            <h3>
-                <span class="label default">Default</span>
-                <span class="label success">Success</span>
-                <span class="label error">Error</span>
-                <span class="label warn">Warn</span>
-                <span class="label info">Info</span>
-                <span class="label dark">Dark</span>
-            </h3>
-
-            <h4>
-                <span class="label default">Default</span>
-                <span class="label success">Success</span>
-                <span class="label error">Error</span>
-                <span class="label warn">Warn</span>
-                <span class="label info">Info</span>
-                <span class="label dark">Dark</span>
-            </h4>
-
-            <h5>
-                <span class="label default">Default</span>
-                <span class="label success">Success</span>
-                <span class="label error">Error</span>
-                <span class="label warn">Warn</span>
-                <span class="label info">Info</span>
-                <span class="label dark">Dark</span>
-            </h5>
-
-            <h6>
-                <span class="label default">Default</span>
-                <span class="label success">Success</span>
-                <span class="label error">Error</span>
-                <span class="label warn">Warn</span>
-                <span class="label info">Info</span>
-                <span class="label dark">Dark</span>
-            </h6>
-        </div>
-        
-        <hr>
-        
-        <h2 id="pagination">Pagination</h2>
-        
         <nav class="nav pag">
         	<ul>
         		<li><a href="#"><i class="fa fa-caret-left"></i></a></li>
@@ -420,27 +385,21 @@
         		<li><a href="#"><i class="fa fa-caret-right"></i></a></li>
         	</ul>
         </nav>
-        
+
         <hr>
-        
-        <h2 id="forms">Forms</h2>
-        
+
+        <h3 id="forms">Forms</h3>
+
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
         <input type="submit" class="btn info"><br>
-        
-        <input type="text" placeholder="Login Successful" class="success">
-        <input type="text" placeholder="Incorrect Username" class="error">
-        <input type="text" placeholder="Password Expired" class="warn"><br>
-        
+
         <textarea placeholder="Input Text Here"></textarea>
-        
-        
-        
+
         <hr>
-        
-        <h2 id="grid">Grid</h2>
-        
+
+        <h3 id="grid">Grid</h3>
+
         <div class="row" id="example">
             <div class="box col-1">col-1</div>
             <div class="box col-1">col-1</div>
@@ -491,13 +450,13 @@
             <div class="box col-12">col-12</div>
             <br>
         </div>
-        
-        <hr> 
-        
+
+        <hr>
+
         <footer>
-            <p>&copy; 2015 ー <a href="http://github.com/kurisubrooks/caramel">CARAMEL</a><br>
-            MADE WITH 
-                <i class="fa fa-heart-o fa-fw" color="error"></i> &amp; 
+            <p>&copy; 2015 &mdash; <a href="http://github.com/kurisubrooks/caramel">CARAMEL</a><br>
+            MADE WITH
+                <i class="fa fa-heart-o fa-fw" color="error"></i> &amp;
                 <i class="fa fa-code fa-fw" color="success"></i>
             </p>
         </footer>
@@ -505,5 +464,5 @@
 </body>
 <!-- Javascript -->
 <script src="js/jquery-2.1.3.min.js"></script>
-<script src="js/Caramel.js" type="text/javascript"></script>
+<script src="js/caramel.js" type="text/javascript"></script>
 </html>
