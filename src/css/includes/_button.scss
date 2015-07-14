@@ -1,6 +1,6 @@
 .btn {
     font: inherit;
-    padding: 6px 14px;
+    padding: 5px 14px 4px;
     margin-bottom: 5px;
     vertical-align: middle;
     color: $default;
@@ -9,21 +9,38 @@
     border: 1px solid darken($light, 5);
     background: $light;
     cursor: pointer;
-    
+
     @include border-radius();
     @include inline-block();
-    
+
     &:hover,
     &:active {
         color: $default;
         border: 1px solid darken($light, 5);
         background: darken($light, 5);
     }
+
+    &.clean {
+        color: $default;
+        border: 2px solid $default;
+        background: transparent;
+        font-weight: bold;
+
+        &.no-bold {
+            font-weight: normal;
+        }
+
+        &:hover,
+        &:active {
+            color: darken($default, 10);
+            border: 2px solid darken($default, 10);
+        }
+    }
 }
 
 .btn.sml {
-    padding: 4px 10px 3px;
-    font-size: 10px;
+    padding: 2px 9px 0px;
+    font-size: 12px;
 }
 
 .dropdown {
@@ -39,12 +56,23 @@
         color: $color;
         border: 1px solid darken($color-state, 5);
         background: $color-state;
-            
+
         &:hover,
         &:active {
             border: 1px solid darken($color-state, 5);
             background: lighten($color-state, 2);
         }
-    }
 
+        &.clean {
+            color: darken($color-state, 5);
+            border: 2px solid $color-state;
+            background: transparent;
+
+            &:hover,
+            &:active {
+                color: darken($color-state, 10);
+                border: 2px solid darken($color-state, 10);
+            }
+        }
+    }
 }

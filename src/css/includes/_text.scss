@@ -3,22 +3,30 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.1;
 }
 
-h1 {font-size: 36px; margin: 16px 0;}
-h2 {font-size: 30px; margin: 12px 0;}
-h3 {font-size: 24px; margin: 10px 0;}
-h4 {font-size: 18px; margin: 8px 0;}
-h5 {font-size: 14px; margin: 6px 0;}
-h6 {font-size: 12px; margin: 4px 0;}
+h1 {font-size: 68px; font-weight: 300; margin: 16px 0;}
+h2 {font-size: 50px; font-weight: 300; margin: 12px 0;}
+h3 {font-size: 40px; font-weight: 300; margin: 10px 0;}
+h4 {font-size: 30px; font-weight: 400; margin: 8px 0;}
+h5 {font-size: 25px; font-weight: 400; margin: 6px 0;}
+h6 {font-size: 18px; font-weight: 500; margin: 4px 0;}
 
 a {
     color: $info;
     text-decoration: none;
 
-    &:hover, 
+    &:hover,
     &:focus {
        color: lighten($info, 5);
        text-decoration: none;
     }
+}
+
+blockquote {
+    border-left: 4px solid #EEE;
+    padding: 5px 30px;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 .disabled {
@@ -44,7 +52,7 @@ b, strong {
     color: $default;
     border: 1px solid darken($light, 5);
     background-color: $light;
-    
+
     @include border-radius();
 }
 
@@ -53,7 +61,7 @@ code, highlight, .highlight, {
     font-family: $font-code;
     color: $error;
     background-color: lighten($error, 40);
-    
+
     @include border-radius();
 }
 

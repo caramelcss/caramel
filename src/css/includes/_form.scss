@@ -1,5 +1,5 @@
 input {
-    font: inherit; 
+    font: inherit;
 }
 
 input[type=text],
@@ -15,8 +15,8 @@ input[type=week],
 textarea {
     min-width: 100px;
     margin: 0 5px 5px 0;
-    padding: 10px 15px;
-    font: inherit; 
+    padding: 5px 14px 4px;
+    font: inherit;
     color: inherit;
     line-height: 1.42;
     vertical-align: middle;
@@ -28,7 +28,7 @@ textarea {
 }
 
 input[type=submit] {
-    border: none; 
+    border: none;
 }
 
 textarea {
