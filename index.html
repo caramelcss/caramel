@@ -8,16 +8,57 @@
     <meta name="author" content="kurisubrooks">
     <meta name="description" content="caramel is a simple, beautiful, and modern web framework.">
 
-    <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="./css/caramel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/caramel.min.css" rel="stylesheet" type="text/css">
 
     <script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-62015739-2","auto"),ga("send","pageview");</script>
+
+    <style>
+        .center {
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            position: absolute;
+            min-width: 200px;
+            width: 100%;
+            left: 50%;
+            top: 50%;
+        }
+
+        svg {
+            height: 100px;
+            width: 100px;
+        }
+
+        @media (max-width: 500px) {
+            svg {
+                height: 80px;
+                width: 80px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            .btn {
+                font-size: 12px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
   </head>
 <body>
 
     <div class="center">
-
-        <svg version="1.1" width="100px" height="100px" viewBox="0 0 48 48">
+        <svg version="1.1" viewBox="0 0 48 48">
             <g transform="translate(0,-1004.3622)">
                 <g transform="translate(-6,1003)">
                     <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
@@ -31,19 +72,22 @@
         <h2>Caramel</h2>
         <h4>Simple, Beautiful, Modern</h4>
 
-        <br><br>
+        <br>
 
         <a href="start.html" class="btn success clean">Get Started</a>&nbsp;
         <a href="showcase.html" class="btn success clean">Showcase</a>&nbsp;
-        <a href="http://github.com/kurisubrooks/caramel" class="btn info clean"><i class="fa fa-github"></i>&nbsp;Github</a>
+        <a href="http://github.com/kurisubrooks/caramel" class="btn info clean"><i class="fa fa-github"></i></a>
 
-        <br><br>
+        <br>
 
         <footer>
-            <p>&copy; 2015 &mdash; <a href="http://github.com/kurisubrooks/caramel">CARAMEL</a> &mdash; MADE WITH <i class="fa fa-heart-o fa-fw" style="color:#D9534F;"></i> &amp; <i class="fa fa-code fa-fw" style="color:#6EC06E;font-size:16px;"></i></p>
+            <p>&copy; 2015
+                <a href="http://github.com/kurisubrooks/caramel" class="link">CARAMEL</a> &mdash;
+                 MADE WITH <i class="fa fa-heart-o fa-fw" style="color:#D9534F;"></i> &amp; <i class="fa fa-code fa-fw" style="color:#6EC06E;font-size:16px;"></i></p>
         </footer>
 
     </div>
+
 </main>
 </body>
 </html>
