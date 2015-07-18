@@ -21,6 +21,12 @@ body {
     }
 }
 
+@media (max-width: $breakpoint-width) {
+    .sidebar {
+        display: hidden;
+    }
+}
+
 .footer, footer {
     margin: 15px 0;
     padding: 5px 0;

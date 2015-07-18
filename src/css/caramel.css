@@ -43,6 +43,9 @@ body {
 @media (max-width: 800px) {
   .container, main {
     padding: 0 10px; } }
+@media (max-width: 800px) {
+  .sidebar {
+    display: hidden; } }
 .footer, footer {
   margin: 15px 0;
   padding: 5px 0; }
