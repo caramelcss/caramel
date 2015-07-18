@@ -36,7 +36,7 @@ body {
 
 .container, main {
   width: inherit;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 35px; }
 
@@ -1043,7 +1043,7 @@ b, strong {
 .code {
   width: auto;
   padding: 10px;
-  font-family: Georgia, serif;
+  font-family: monospace;
   color: #5F5F5F;
   border: 1px solid #ededed;
   background-color: #FAFAFA;
@@ -1054,9 +1054,21 @@ b, strong {
 
 code, highlight, .highlight {
   padding: 5px;
-  font-family: Georgia, serif;
+  font-family: monospace;
   color: #DC4A47;
   background-color: #fdf3f2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+pre {
+  overflow: scroll;
+  border: 1px solid #EEE;
+  background-color: #FAFAFA;
+  font-family: monospace;
+  padding: 10px 18px;
+  margin-bottom: 10px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;

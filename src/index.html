@@ -11,7 +11,7 @@
     <!-- Stylesheets -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/caramel.min.css" rel="stylesheet" type="text/css">
-    <style>#example .box{background-color:#EEE;text-align:center;border-radius:2px}.header .logo a{padding:5px 20px 0}.header .logo a:hover{background:0 0}.main .header{margin:100px 0 70px;text-align:center}.main .header h1{margin-top:0}.fa.fa-code{font-size:16px}lt{display:block;font-size: 60px;font-weight: 300;}</style>
+    <style>#example .box{background-color:#EEE;text-align:center;border-radius:2px}.header .logo a{padding:5px 20px 0}.header .logo a:hover{background:0 0}.main .header{margin:100px 0 70px;text-align:center}.main .header h1{margin-top:0}.fa.fa-code{font-size:16px}lt{display:block;font-size: 60px;font-weight: 300;}.container, main {max-width:1000px;}</style>
   </head>
 <body>
     <header class="header fixed">
@@ -47,6 +47,7 @@
                         <li><a href="#dismissables">Dismissables</a></li>
                         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
                         <li><a href="#images">Images</a></li>
+                        <li><a href="#tables">Tables</a></li>
                         <li><a href="#progress-bars">Progress Bars</a></li>
                         <li><a href="#labels">Labels</a></li>
                         <li><a href="#pagination">Pagination</a></li>
@@ -96,7 +97,9 @@
         <a href="#" class="btn info sml">Info</a>
         <a href="#" class="btn dark sml">Dark</a>
 
-        <br><br>
+        <pre>&lt;a href="#" class="btn color"&gt;Text&lt;/a&gt;<br>&lt;a href="#" class="btn color sml"&gt;Text&lt;/a&gt;</pre>
+
+        <br>
 
         <a href="#" class="btn default clean">Default</a>
         <a href="#" class="btn success clean">Success</a>
@@ -113,6 +116,8 @@
         <a href="#" class="btn warn clean sml">Warning</a>
         <a href="#" class="btn info clean sml">Info</a>
         <a href="#" class="btn dark clean sml">Dark</a>
+
+        <pre>&lt;a href="#" class="btn color clean"&gt;Text&lt;/a&gt;<br>&lt;a href="#" class="btn color clean sml"&gt;Text&lt;/a&gt;</pre>
 
         <hr>
 
@@ -151,6 +156,19 @@
                 </li>
             </ul>
         </nav>
+
+        <pre>&lt;nav class="nav bar"&gt;
+    &lt;ul&gt;
+        &lt;li class="collapse"&gt;&lt;a href="#" class="menu"&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="dropdown"&gt;&lt;a href="#" class="dropdownitem"&gt;Dropdown&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre>
 
         <hr>
 
@@ -213,6 +231,15 @@
             </ul>
         </div>
 
+        <pre>&lt;div class="nav btn dropdown"&gt;
+    &lt;button class="btn dropdownitem color"&gt;Text&lt;/button&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
+
         <hr>
 
         <h3 id="alerts">Alerts</h3>
@@ -225,6 +252,8 @@
         <div class="alert dark"><b>Dark:</b> Deep Space Nine.</div>
         <div class="alert default clean"><b>Clean:</b> Incase your boss says your style is 'childish', and you need more 'professionalism'.</div>
 
+        <pre>&lt;div class="alert color"&gt;&lt;b&gt;Title&lt;/b&gt; Text&lt;/div&gt;</pre>
+
         <hr>
 
         <h3 id="notices">Notices</h3>
@@ -235,6 +264,8 @@
         <div class="notice warn"><b>Warning:</b> Something went wrong!</div>
         <div class="notice info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
         <div class="notice dark"><b>Dark:</b> Deep Space Nine.</div>
+
+        <pre>&lt;div class="notice color"&gt;&lt;b&gt;Title&lt;/b&gt; Text&lt;/div&gt;</pre>
 
         <hr>
 
@@ -282,6 +313,11 @@
             </div>
         </div>
 
+        <pre>&lt;div class="panel color"&gt;
+    &lt;div class="panel-head"&gt;Title&lt;/div&gt;
+    &lt;div class="panel-body"&gt;Text&lt;/div&gt;
+&lt;/div&gt;</pre>
+
         <hr>
 
         <h3 id="dismissables">Dismissables</h3>
@@ -307,6 +343,11 @@
             </div>
         </div>
 
+        <pre>&lt;div class="alert color" id="note"&gt;
+    &lt;div class="dismiss"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;b&gt;Title&lt;/b&gt; Text
+&lt;/div&gt;</pre>
+
         <hr>
 
         <h3 id="breadcrumbs">Breadcrumbs</h3>
@@ -314,6 +355,10 @@
         <div class="nav bar breadcrumbs">
             <span class="disabled">Link &nbsp;/&nbsp; Link &nbsp;/&nbsp;</span> <a href="#">Link</a>
         </div>
+
+        <pre>&lt;div class="nav bar breadcrumbs"&gt;
+    &lt;span class="disabled"&gt;Link / Link / &lt;/span&gt;&lt;a href="#"&gt;Link&lt;/a&gt;
+&lt;/div&gt;</pre>
 
         <hr>
 
@@ -323,6 +368,11 @@
         <img src="http://placehold.it/150x150" class="img thumbnail circle" />
         <img src="http://placehold.it/150x150" class="img round" />
         <img src="http://placehold.it/150x150" class="img circle" />
+
+        <br>
+
+        <pre>&lt;img src="#" class="img thumbnail"&gt;
+&lt;img src="#" class="img thumbnail circle"&gt;</pre>
 
         <hr>
 
@@ -386,6 +436,15 @@
             </tr>
         </table>
 
+        <pre>&lt;table class="table"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Head&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Content&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
         <hr>
 
         <h3 id="progress-bars">Progress Bars</h3>
@@ -440,6 +499,12 @@
             </div>
         </div>
 
+        <pre>&lt;div class="progress color"&gt;
+    &lt;div class="progress-bar" style="width:100%"&gt;
+        &lt;span id="progress"&gt;100%&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
         <hr>
 
         <h3 id="pagination">Pagination</h3>
@@ -456,6 +521,14 @@
         	</ul>
         </nav>
 
+        <pre>&lt;nav class="nav pag"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
         <hr>
 
         <h3 id="forms">Forms</h3>
@@ -465,6 +538,9 @@
         <input type="submit" class="btn info"><br>
 
         <textarea placeholder="Input Text Here"></textarea>
+
+        <pre>&lt;input type="text"&gt;
+&lt;input type="submit" class="btn color"&gt;</pre>
 
         <hr>
 
@@ -520,6 +596,11 @@
             <div class="box col-12">col-12</div>
             <br>
         </div>
+
+        <pre>&lt;div class="row"&gt;
+    &lt;div class="box col-6"&gt;col-6&lt;/div&gt;
+    &lt;div class="box col-6"&gt;col-6&lt;/div&gt;
+&lt;/div&gt;</pre>
 
         <hr>
 

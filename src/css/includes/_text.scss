@@ -107,6 +107,17 @@ code, highlight, .highlight, {
     @include border-radius();
 }
 
+pre {
+    overflow: scroll;
+    border: 1px solid #EEE;
+    background-color: #FAFAFA;
+    font-family: $font-code;
+    padding: 10px 18px;
+
+    @include bottom-margin();
+    @include border-radius();
+}
+
 em, .italic {
     font-style: italic;
 }
