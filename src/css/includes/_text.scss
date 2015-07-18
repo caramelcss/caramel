@@ -1,8 +1,3 @@
-h1,h2,h3,h4,h5,h6 {
-    font-weight: 400;
-    line-height: 1.1;
-}
-
 h1 {font-size: 68px; font-weight: 300; margin: 16px 0;}
 h2 {font-size: 50px; font-weight: 300; margin: 12px 0;}
 h3 {font-size: 40px; font-weight: 300; margin: 10px 0;}
@@ -34,12 +29,59 @@ blockquote {
     cursor: not-allowed;
 }
 
-.color.success, [color=success] {color: $success;}
-.color.error, [color=error] {color: $error;}
-.color.info, [color=info] {color: $info;}
-.color.warn, [color=warn] {color: $warn;}
-.color.dark, [color=dark] {color: $dark;}
-.color.light, [color=light] {color: $light;}
+.color.success,
+[color=success] {
+    color: $success;
+
+    &:hover, &:active {
+        color: $success;
+    }
+}
+
+.color.error,
+[color=error] {
+    color: $error;
+
+    &:hover, &:active {
+        color: $error;
+    }
+}
+
+.color.info,
+[color=info] {
+    color: $info;
+
+    &:hover, &:active {
+        color: $info;
+    }
+}
+
+.color.warn,
+[color=warn] {
+    color: $warn;
+
+    &:hover, &:active {
+        color: $warn;
+    }
+}
+
+.color.dark,
+[color=dark] {
+    color: $dark;
+
+    &:hover, &:active {
+        color: $dark;
+    }
+}
+
+.color.light,
+[color=light] {
+    color: $light;
+
+    &:hover, &:active {
+        color: $light;
+    }
+}
 
 b, strong {
     font-weight: bold;
@@ -77,7 +119,7 @@ p {
     font-size: 80%;
 }
 
-s, .strike {
+s, .strike, .strikethrough {
     text-decoration: line-through;
 }
 

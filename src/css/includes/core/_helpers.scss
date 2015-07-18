@@ -19,6 +19,12 @@
     *display: inline;
 }
 
+// Global Bottom Margin
+
+@mixin bottom-margin() {
+    margin-bottom: 10px;
+}
+
 // Border Radius Mixin
 
 @mixin border-radius($radius: $default-radius) {

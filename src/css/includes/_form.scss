@@ -23,12 +23,16 @@ textarea {
     border: 1px solid darken($light, 5);
     background: $white;
 
+    -webkit-appearance: none;
+
     @include border-radius();
     @include inline-block();
+    @include bottom-margin();
 }
 
 input[type=submit] {
     border: none;
+    -webkit-appearance: none;
 }
 
 textarea {

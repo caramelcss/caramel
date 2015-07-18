@@ -1,0 +1,57 @@
+.table {
+    width: 100%;
+    max-width: 100%;
+
+    @include border-radius();
+    @include bottom-margin();
+
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                vertical-align: top;
+                padding: 8px;
+            }
+        }
+    }
+
+    tr {
+        border-bottom: 1px solid lightgrey;
+
+        th {
+            vertical-align: bottom;
+            margin-bottom: 0;
+            border-bottom: 2px solid lightgrey;
+
+            .align-left {text-align: left;}
+            .align-mid {text-align: center;}
+            .align-right {text-align: right;}
+        }
+
+        td {
+            vertical-align: top;
+
+            .align-left {text-align: left;}
+            .align-mid {text-align: center;}
+            .align-right {text-align: right;}
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &.invert {
+        tr {
+            &:nth-child(even) {
+                background-color: #EEE;
+            }
+        }
+    }
+}
+
+th {
+    text-align: left;
+}
