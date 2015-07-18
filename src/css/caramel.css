@@ -317,6 +317,7 @@ textarea {
   vertical-align: middle;
   border: 1px solid #ededed;
   background: #FFF;
+  -webkit-appearance: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -328,7 +329,8 @@ textarea {
   margin-bottom: 10px; }
 
 input[type=submit] {
-  border: none; }
+  border: none;
+  -webkit-appearance: none; }
 
 textarea {
   min-height: 20px; }
