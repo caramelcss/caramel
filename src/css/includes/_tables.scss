@@ -6,25 +6,34 @@
     @include border-radius();
     @include bottom-margin();
 
-    > thead,
-    > tbody,
-    > tfoot {
-        > tr {
-            > th,
-            > td {
-                vertical-align: top;
-                padding: 8px;
-            }
-        }
+    thead {
+        border-bottom: 2px solid lightgrey;
+    }
+
+    tfoot {
+        border-top: 2px solid lightgrey;
     }
 
     tr {
         border-bottom: 1px solid lightgrey;
 
+        th, td {
+            padding: 8px;
+            vertical-align: top;
+
+            &:first-of-type {
+                padding-left: 16px;
+            }
+
+            &:last-of-type {
+                padding-right: 16px;
+            }
+        }
+
         th {
             vertical-align: bottom;
+            text-align: left;
             margin-bottom: 0;
-            border-bottom: 2px solid lightgrey;
         }
 
         td {
@@ -33,32 +42,24 @@
 
         &:last-child {
             border-bottom: none;
+            @include border-radius-bottom(4px);
         }
     }
 
     &.invert {
-        tr {
-            &:nth-child(even) {
+        > tbody > tr {
+            &:nth-of-type(odd) {
                 background-color: #F7F7F7;
             }
-        }
-    }
 
-    td, th {
-        &:first-of-type {
-            padding-left: 16px;
-        }
-
-        &:last-of-type {
-            padding-right: 16px;
+            > td {
+                @include border-radius-bottom(4px);
+            }
         }
     }
 
     .align-left     {text-align: left;}
     .align-mid      {text-align: center;}
     .align-right    {text-align: right;}
-}
 
-th {
-    text-align: left;
 }

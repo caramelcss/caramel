@@ -906,39 +906,52 @@ img {
   -ms-border-radius: 4px;
   border-radius: 4px;
   margin-bottom: 10px; }
-  .table > thead > tr > th,
-  .table > thead > tr > td,
-  .table > tbody > tr > th,
-  .table > tbody > tr > td,
-  .table > tfoot > tr > th,
-  .table > tfoot > tr > td {
-    vertical-align: top;
-    padding: 8px; }
+  .table thead {
+    border-bottom: 2px solid lightgrey; }
+  .table tfoot {
+    border-top: 2px solid lightgrey; }
   .table tr {
     border-bottom: 1px solid lightgrey; }
+    .table tr th, .table tr td {
+      padding: 8px;
+      vertical-align: top; }
+      .table tr th:first-of-type, .table tr td:first-of-type {
+        padding-left: 16px; }
+      .table tr th:last-of-type, .table tr td:last-of-type {
+        padding-right: 16px; }
     .table tr th {
       vertical-align: bottom;
-      margin-bottom: 0;
-      border-bottom: 2px solid lightgrey; }
+      text-align: left;
+      margin-bottom: 0; }
     .table tr td {
       vertical-align: top; }
     .table tr:last-child {
-      border-bottom: none; }
-  .table.invert tr:nth-child(even) {
+      border-bottom: none;
+      -webkit-border-bottom-left-radius: 4px;
+      -webkit-border-bottom-right-radius: 4px;
+      -moz-border-bottom-left-radius: 4px;
+      -moz-border-bottom-right-radius: 4px;
+      -ms-border-bottom-left-radius: 4px;
+      -ms-border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
+  .table.invert > tbody > tr:nth-of-type(odd) {
     background-color: #F7F7F7; }
-  .table td:first-of-type, .table th:first-of-type {
-    padding-left: 16px; }
-  .table td:last-of-type, .table th:last-of-type {
-    padding-right: 16px; }
+  .table.invert > tbody > tr > td {
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
   .table .align-left {
     text-align: left; }
   .table .align-mid {
     text-align: center; }
   .table .align-right {
     text-align: right; }
-
-th {
-  text-align: left; }
 
 h1 {
   font-size: 68px;
