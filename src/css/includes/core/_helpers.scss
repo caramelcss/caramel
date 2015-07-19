@@ -25,7 +25,7 @@
     margin-bottom: 10px;
 }
 
-// Border Radius Mixin
+// Border Radius Mixins
 
 @mixin border-radius($radius: $default-radius) {
 
@@ -35,8 +35,6 @@
           border-radius: $radius;
 
 }
-
-// TODO: See if we can merge all border-radius mixins into single mixin.
 
 @mixin border-radius-top($radius: $default-radius) {
     -webkit-border-top-left-radius: $radius;
