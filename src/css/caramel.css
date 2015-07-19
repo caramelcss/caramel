@@ -900,6 +900,7 @@ img {
 .table {
   width: 100%;
   max-width: 100%;
+  word-wrap: break-word;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -919,24 +920,22 @@ img {
       vertical-align: bottom;
       margin-bottom: 0;
       border-bottom: 2px solid lightgrey; }
-      .table tr th .align-left {
-        text-align: left; }
-      .table tr th .align-mid {
-        text-align: center; }
-      .table tr th .align-right {
-        text-align: right; }
     .table tr td {
       vertical-align: top; }
-      .table tr td .align-left {
-        text-align: left; }
-      .table tr td .align-mid {
-        text-align: center; }
-      .table tr td .align-right {
-        text-align: right; }
     .table tr:last-child {
       border-bottom: none; }
   .table.invert tr:nth-child(even) {
-    background-color: #EEE; }
+    background-color: #F7F7F7; }
+  .table td:first-of-type, .table th:first-of-type {
+    padding-left: 24px; }
+  .table td:last-of-type, .table th:last-of-type {
+    padding-right: 24px; }
+  .table .align-left {
+    text-align: left; }
+  .table .align-mid {
+    text-align: center; }
+  .table .align-right {
+    text-align: right; }
 
 th {
   text-align: left; }

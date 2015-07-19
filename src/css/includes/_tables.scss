@@ -1,6 +1,7 @@
 .table {
     width: 100%;
     max-width: 100%;
+    word-wrap: break-word;
 
     @include border-radius();
     @include bottom-margin();
@@ -24,18 +25,10 @@
             vertical-align: bottom;
             margin-bottom: 0;
             border-bottom: 2px solid lightgrey;
-
-            .align-left {text-align: left;}
-            .align-mid {text-align: center;}
-            .align-right {text-align: right;}
         }
 
         td {
             vertical-align: top;
-
-            .align-left {text-align: left;}
-            .align-mid {text-align: center;}
-            .align-right {text-align: right;}
         }
 
         &:last-child {
@@ -46,10 +39,24 @@
     &.invert {
         tr {
             &:nth-child(even) {
-                background-color: #EEE;
+                background-color: #F7F7F7;
             }
         }
     }
+
+    td, th {
+        &:first-of-type {
+            padding-left: 24px;
+        }
+
+        &:last-of-type {
+            padding-right: 24px;
+        }
+    }
+
+    .align-left     {text-align: left;}
+    .align-mid      {text-align: center;}
+    .align-right    {text-align: right;}
 }
 
 th {
