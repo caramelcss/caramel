@@ -921,8 +921,7 @@ img {
         padding-right: 16px; }
     .table tr th {
       vertical-align: bottom;
-      text-align: left;
-      margin-bottom: 0; }
+      text-align: left; }
     .table tr td {
       vertical-align: top; }
     .table tr:last-child {
