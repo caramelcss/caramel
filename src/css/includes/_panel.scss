@@ -1,8 +1,9 @@
 .panel {
-    margin: 10px 0;
-    @include border-radius();
     border: 1px solid darken($light, 10);
     overflow: hidden;
+
+    @include border-radius();
+    @include bottom-margin();
 }
 
 .panel-head {
@@ -11,7 +12,7 @@
     background: darken($light, 5);
     font-weight: bold;
 }
-    
+
 .panel-body {
     padding: 15px 20px;
     background: $white;
