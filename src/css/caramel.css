@@ -927,9 +927,9 @@ img {
   .table.invert tr:nth-child(even) {
     background-color: #F7F7F7; }
   .table td:first-of-type, .table th:first-of-type {
-    padding-left: 24px; }
+    padding-left: 16px; }
   .table td:last-of-type, .table th:last-of-type {
-    padding-right: 24px; }
+    padding-right: 16px; }
   .table .align-left {
     text-align: left; }
   .table .align-mid {
