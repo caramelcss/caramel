@@ -20,7 +20,6 @@
 }
 
 @mixin border-radius($radius: $default-radius) {
-
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
