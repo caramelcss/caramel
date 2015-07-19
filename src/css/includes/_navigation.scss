@@ -10,6 +10,10 @@
 		vertical-align: top;
 		float: left;
 
+		li {
+			float: none;
+		}
+
 		@media (max-width: $breakpoint-width) {
 			display: none;
 			float: none;
@@ -33,6 +37,10 @@
 		list-style: none;
 
 		&.right {
+			ul {
+				right: 0;
+			}
+
 			@media (max-width: $breakpoint-width) {
 				float: none;
 			}
@@ -62,62 +70,6 @@
 		@media (max-width: $breakpoint-width) { display: block; }
 	}
 
-	ul.right ul {
-		right: 0;
-	}
-
-	&.no-round {
-	    @include border-radius(4px);
-	}
-}
-
-.nav input[type=text],
-.nav input[type=email],
-.nav input[type=password],
-.nav input[type=search],
-.nav input[type=url] {
-    margin: 2px;
-    padding: 0 15px;
-    height: 33px;
-
-    @media (max-width: $breakpoint-width) {
-        margin: 5px 20px;
-        height: 35px;
-    }
-}
-
-.nav li li,
-.nav.btn li li { float: none; }
-
-.pag {
-	width: auto;
-	@include inline-block;
-
-	li {
-		@media (max-width: $breakpoint-width) {
-			@include inline-block;
-		}
-	}
-}
-
-.breadcrumbs {
-	padding: 10px 20px;
-
-	a {
-		padding: 0;
-		color: $info;
-
-		&:hover,
-		&:focus {
-			color: $info;
-			background: none;
-		}
-
-		@include inline-block;
-	}
-}
-
-.nav {
 	&.btn {
 		position: relative;
 		padding: 0;
@@ -165,8 +117,6 @@
 			a {
 				text-align: left;
 			}
-
-			// .dropdown
 		}
 
 		.btn {
@@ -175,6 +125,10 @@
 
 		li {
 			float: none;
+
+			li {
+				float: none;
+			}
 		}
 	}
 
@@ -234,6 +188,53 @@
 				float: right;
 			}
 		}
+	}
+
+	&.no-round {
+	    @include border-radius(4px);
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=password],
+	input[type=search],
+	input[type=url] {
+	    margin: 2px;
+	    padding: 0 15px;
+	    height: 33px;
+
+	    @media (max-width: $breakpoint-width) {
+	        margin: 5px 20px;
+	        height: 35px;
+	    }
+	}
+}
+
+.pag {
+	width: auto;
+	@include inline-block;
+
+	li {
+		@media (max-width: $breakpoint-width) {
+			@include inline-block;
+		}
+	}
+}
+
+.breadcrumbs {
+	padding: 10px 20px;
+
+	a {
+		padding: 0;
+		color: $info;
+
+		&:hover,
+		&:focus {
+			color: $info;
+			background: none;
+		}
+
+		@include inline-block;
 	}
 }
 
