@@ -7,17 +7,30 @@
 $(document).ready(function() {
 
     var $nav = $('.nav');
+    var $outside = $(document);
 
     $nav.on('click', '.menu', function(e){
+        e.stopPropagation();
         e.preventDefault();
+        
         var $this = $(this);
         $this.parents($nav).toggleClass('open');
+        
+        $outside.one('click', function(e) {
+            $nav.removeClass('open');
+        });
     });
 
     $nav.on('click', '.dropdownitem', function(e){
+        e.stopPropagation();
         e.preventDefault();
+        
         var $this = $(this);
         $this.parent('.dropdown').toggleClass('open');
+        
+        $outside.one('click', function(e) {
+            $nav.removeClass('open');
+        });
     });
 
     // Alert Dismissables
