@@ -18,8 +18,6 @@ textarea {
     padding: 5px 14px 4px;
     font: inherit;
     color: inherit;
-    line-height: 1.42;
-    vertical-align: middle;
     border: 1px solid darken($light, 5);
     background: $white;
 
@@ -36,7 +34,8 @@ input[type=submit] {
 }
 
 textarea {
-    min-height: 20px;
+    min-height: 60px;
+    min-width: 150px;
 }
 
 @each $state, $color-map in $-states-map {

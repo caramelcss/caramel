@@ -153,9 +153,7 @@ table {
   font: inherit;
   padding: 5px 14px 4px;
   margin-bottom: 5px;
-  vertical-align: middle;
   color: #5F5F5F;
-  line-height: 1.42;
   text-align: center;
   border: 1px solid #ededed;
   background: #FAFAFA;
@@ -284,8 +282,6 @@ textarea {
   padding: 5px 14px 4px;
   font: inherit;
   color: inherit;
-  line-height: 1.42;
-  vertical-align: middle;
   border: 1px solid #ededed;
   background: #FFF;
   -webkit-appearance: none;
@@ -304,7 +300,8 @@ input[type=submit] {
   -webkit-appearance: none; }
 
 textarea {
-  min-height: 20px; }
+  min-height: 60px;
+  min-width: 150px; }
 
 input.success {
   border: 1px solid #5CB85C; }
