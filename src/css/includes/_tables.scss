@@ -7,15 +7,15 @@
     @include bottom-margin();
 
     thead {
-        border-bottom: 2px solid lightgrey;
+        border-bottom: 2px solid $grey;
     }
 
     tfoot {
-        border-top: 2px solid lightgrey;
+        border-top: 2px solid $grey;
     }
 
     tr {
-        border-bottom: 1px solid lightgrey;
+        border-bottom: 1px solid $grey;
 
         th, td {
             padding: 8px;

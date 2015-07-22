@@ -1,5 +1,6 @@
 $white:     #FFF;
 $black:     #000;
+$grey:      #EEE;
 $disabled:  #CCC;
 
 $default:   #5F5F5F;
@@ -18,7 +19,7 @@ $info-border:       darken($info, 5);
 $dark-border:       darken($dark, 5);
 $light-border:      darken($light, 5);
 
-$font-default: "Arial", "Helvetica" sans-serif;
+$font-default: "Arial", "Helvetica", sans-serif;
 $font-code: monospace;
 
 $breakpoint-width: 800px;

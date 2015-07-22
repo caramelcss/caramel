@@ -24,19 +24,22 @@ body {
 .center {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: absolute;
     text-align: center;
     top: 50%;
     left: 50%;
-
-    min-width: 600px;
+    min-width: 400px;
 }
 
 @media (max-width: $breakpoint-width) {
     .center {
         -webkit-transform: none;
         -moz-transform: none;
+        -ms-transform: none;
+        -ms-transform: none;
         transform: none;
         position: inherit;
         top: inherit;
@@ -46,7 +49,7 @@ body {
 
 @media (max-width: $breakpoint-width) {
     .sidebar {
-        display: hidden;
+        display: none;
     }
 }
 
@@ -55,9 +58,9 @@ body {
     padding: 5px 0;
 }
 
-.hidden {   display:none; }
-.left {     float:left; }
-.right {    float:right; }
+.hidden {   display: none; }
+.left {     float: left; }
+.right {    float: right; }
 
 hr {
     margin: 20px 0;
@@ -82,7 +85,7 @@ table {
 }
 
 .no-round {
-    @include border-radius(none);
+    @include border-radius(0);
 }
 
 .no-margin {

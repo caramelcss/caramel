@@ -2,7 +2,6 @@
     display: block;
     padding: 20px;
     font-size: 16px;
-    vertical-align: middle;
 
     border: 1px solid darken($light, 5);
     border-left-width: 5px;
@@ -14,10 +13,7 @@
 
     b, strong, h4 {
         color: $default;
-    }
-
-    h4 {
-        margin-top: 0;
+        margin: 0;
     }
 }
 

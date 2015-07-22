@@ -110,7 +110,7 @@
 				@include border-radius-top(4px);
 
 				&.no-round {
-					@include border-radius(0px);
+					@include border-radius(0);
 				}
 			}
 
@@ -120,7 +120,7 @@
 		}
 
 		.btn {
-			outline: 0;
+			outline: none;
 		}
 
 		li {
@@ -211,7 +211,6 @@
 }
 
 .pag {
-	width: auto;
 	@include inline-block;
 
 	li {
@@ -288,6 +287,7 @@
 					&.logo {
 						@media (max-width: $breakpoint-width) {
 							display: none;
+							visibility: hidden;
 						}
 					}
 				}

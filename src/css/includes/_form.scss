@@ -22,6 +22,7 @@ textarea {
     background: $white;
 
     -webkit-appearance: none;
+    -moz-appearance: none;
 
     @include border-radius();
     @include inline-block();
