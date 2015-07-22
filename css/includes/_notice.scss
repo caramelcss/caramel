@@ -1,24 +1,20 @@
 .notice {
     display: block;
-    margin-bottom: 10px;
     padding: 20px;
     font-size: 16px;
-    vertical-align: middle;
-    
+
     border: 1px solid darken($light, 5);
     border-left-width: 5px;
     border-left-color: $default;
     background-color: $white;
-    
+
     @include border-radius();
+    @include bottom-margin();
 
     b, strong, h4 {
         color: $default;
+        margin: 0;
     }
-    
-    h4 {
-        margin-top: 0;
-    }    
 }
 
 @each $state, $color-map in $-states-map {
@@ -27,7 +23,7 @@
 
     .notice.#{$state} {
         border-left-color: $color-state;
-        
+
         b, strong, h4 {
             color: darken($color-state, 5);
         }

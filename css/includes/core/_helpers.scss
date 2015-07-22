@@ -1,5 +1,3 @@
-// Clearfix Mixin
-
 @mixin clearfix() {
     &:before,
     &:after {
@@ -10,8 +8,6 @@
     &:after { clear: both; }
 }
 
-// Inline Block Mixin
-
 @mixin inline-block() {
     display: -moz-inline-stack;
     display: inline-block;
@@ -19,18 +15,17 @@
     *display: inline;
 }
 
-// Border Radius Mixin
+@mixin bottom-margin() {
+    margin-bottom: 10px;
+}
 
 @mixin border-radius($radius: $default-radius) {
-
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
 
 }
-
-// TODO: See if we can merge all border-radius mixins into single mixin.
 
 @mixin border-radius-top($radius: $default-radius) {
     -webkit-border-top-left-radius: $radius;

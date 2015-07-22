@@ -2,9 +2,7 @@
     font: inherit;
     padding: 5px 14px 4px;
     margin-bottom: 5px;
-    vertical-align: middle;
     color: $default;
-    line-height: 1.42;
     text-align: center;
     border: 1px solid darken($light, 5);
     background: $light;
@@ -39,7 +37,7 @@
 }
 
 .btn.sml {
-    padding: 2px 9px 0px;
+    padding: 2px 9px 0;
     font-size: 12px;
 }
 

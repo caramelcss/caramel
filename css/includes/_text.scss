@@ -1,14 +1,14 @@
-h1,h2,h3,h4,h5,h6 {
-    font-weight: 400;
-    line-height: 1.1;
-}
-
 h1 {font-size: 68px; font-weight: 300; margin: 16px 0;}
 h2 {font-size: 50px; font-weight: 300; margin: 12px 0;}
 h3 {font-size: 40px; font-weight: 300; margin: 10px 0;}
 h4 {font-size: 30px; font-weight: 400; margin: 8px 0;}
 h5 {font-size: 25px; font-weight: 400; margin: 6px 0;}
 h6 {font-size: 18px; font-weight: 500; margin: 4px 0;}
+
+h1.title,h2.title,h3.title,h4.title,h5.title,h6.title {
+  margin-bottom: 5px;
+  border-bottom: 1px solid $grey;
+}
 
 a {
     color: $info;
@@ -34,12 +34,59 @@ blockquote {
     cursor: not-allowed;
 }
 
-.color.success, [color=success] {color: $success;}
-.color.error, [color=error] {color: $error;}
-.color.info, [color=info] {color: $info;}
-.color.warn, [color=warn] {color: $warn;}
-.color.dark, [color=dark] {color: $dark;}
-.color.light, [color=light] {color: $light;}
+.color.success,
+[color=success] {
+    color: $success;
+
+    &:hover, &:active {
+        color: $success;
+    }
+}
+
+.color.error,
+[color=error] {
+    color: $error;
+
+    &:hover, &:active {
+        color: $error;
+    }
+}
+
+.color.info,
+[color=info] {
+    color: $info;
+
+    &:hover, &:active {
+        color: $info;
+    }
+}
+
+.color.warn,
+[color=warn] {
+    color: $warn;
+
+    &:hover, &:active {
+        color: $warn;
+    }
+}
+
+.color.dark,
+[color=dark] {
+    color: $dark;
+
+    &:hover, &:active {
+        color: $dark;
+    }
+}
+
+.color.light,
+[color=light] {
+    color: $light;
+
+    &:hover, &:active {
+        color: $light;
+    }
+}
 
 b, strong {
     font-weight: bold;
@@ -65,6 +112,17 @@ code, highlight, .highlight, {
     @include border-radius();
 }
 
+pre {
+    overflow: scroll;
+    border: 1px solid #EEE;
+    background-color: #FAFAFA;
+    font-family: $font-code;
+    padding: 10px 18px;
+
+    @include bottom-margin();
+    @include border-radius();
+}
+
 em, .italic {
     font-style: italic;
 }
@@ -77,7 +135,7 @@ p {
     font-size: 80%;
 }
 
-s, .strike {
+s, .strike, .strikethrough {
     text-decoration: line-through;
 }
 

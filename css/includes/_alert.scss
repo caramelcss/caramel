@@ -1,13 +1,12 @@
 .alert {
     display: block;
-    vertical-align: middle;
     padding: 20px;
-    margin-bottom: 10px;
     color: $default;
     border: 1px solid darken($light, 5);
     background: $light;
 
     @include border-radius();
+    @include bottom-margin();
 
     &.clean {
         color: $default;
