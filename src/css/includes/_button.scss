@@ -11,6 +11,11 @@
     @include border-radius();
     @include inline-block();
 
+    &.sml {
+        padding: 2px 9px 1px;
+        font-size: 12px;
+    }
+
     &:hover,
     &:active {
         color: $default;
@@ -34,11 +39,6 @@
             border: 2px solid darken($default, 10);
         }
     }
-}
-
-.btn.sml {
-    padding: 2px 9px 0;
-    font-size: 12px;
 }
 
 .dropdown {

@@ -169,6 +169,9 @@ table {
   display: inline-block;
   *zoom: 1;
   *display: inline; }
+  .btn.sml {
+    padding: 2px 9px 1px;
+    font-size: 12px; }
   .btn:hover, .btn:active {
     color: #5F5F5F;
     border: 1px solid #ededed;
@@ -183,10 +186,6 @@ table {
     .btn.clean:hover, .btn.clean:active {
       color: #464646;
       border: 2px solid #464646; }
-
-.btn.sml {
-  padding: 2px 9px 0;
-  font-size: 12px; }
 
 .dropdown {
   cursor: pointer; }
