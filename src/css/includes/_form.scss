@@ -21,9 +21,7 @@ textarea {
     border: 1px solid darken($light, 5);
     background: $white;
 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
+    @include no-default-appearance();
     @include border-radius();
     @include inline-block();
     @include bottom-margin();
@@ -31,7 +29,7 @@ textarea {
 
 input[type=submit] {
     border: none;
-    -webkit-appearance: none;
+    @include no-default-appearance();
 }
 
 textarea {
@@ -47,4 +45,29 @@ textarea {
         border: 1px solid $color-state;
     }
 
+}
+
+.input.dropdown {
+    width: 100px;
+    font-size: 14px;
+    border: 1px solid darken($light, 5);
+    overflow: hidden;
+    background: $white url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+
+    @include border-radius(4px);
+
+    select {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        background-image: none;
+
+
+        @include standard-padding();
+        @include no-default-appearance();
+
+        &:focus {
+            outline: none;
+        }
+    }
 }

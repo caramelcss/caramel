@@ -15,8 +15,19 @@
     *display: inline;
 }
 
+@mixin standard-padding() {
+    padding: 5px 14px;
+}
+
 @mixin bottom-margin() {
     margin-bottom: 10px;
+}
+
+@mixin no-default-appearance() {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
 }
 
 @mixin border-radius($radius: $default-radius) {

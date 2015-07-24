@@ -288,6 +288,8 @@ textarea {
   background: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -300,7 +302,10 @@ textarea {
 
 input[type=submit] {
   border: none;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none; }
 
 textarea {
   min-height: 60px;
@@ -320,6 +325,29 @@ input.info {
 
 input.dark {
   border: 1px solid #525252; }
+
+.input.dropdown {
+  width: 100px;
+  font-size: 14px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+  background: #FFF url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  .input.dropdown select {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    padding: 5px 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none; }
+    .input.dropdown select:focus {
+      outline: none; }
 
 /*  Grid contributed to Caramel by github.com/gratimax */
 .row:before, .row:after {
