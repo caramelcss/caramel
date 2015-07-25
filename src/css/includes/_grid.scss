@@ -20,11 +20,12 @@ $base-box-width: 7 / 120 * 100%;
     float: left;
     margin-left: $box-margin;
     margin-right: $box-margin;
+    @include bottom-margin();
 }
 
 @media (max-width: $breakpoint-width) {
     .box {
-        width: 100% !important; 
+        width: 100% !important;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;
