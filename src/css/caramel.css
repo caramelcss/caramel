@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * Caramel (http://caramel.ga)
  * Copyright 2015, All Rights Reserved
@@ -358,7 +359,8 @@ select.dropdown {
 .box {
   float: left;
   margin-left: 1.25%;
-  margin-right: 1.25%; }
+  margin-right: 1.25%;
+  margin-bottom: 10px; }
 
 @media (max-width: 800px) {
   .box {
@@ -646,17 +648,38 @@ img {
       *display: inline; } }
 
 .breadcrumbs {
-  padding: 10px 20px; }
-  .breadcrumbs a {
+  background: #FAFAFA;
+  border: 1px solid #ededed;
+  padding: 5px 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px; }
+  .breadcrumbs ul, .breadcrumbs ol {
     padding: 0;
-    color: #52B7D6;
-    display: -moz-inline-stack;
-    display: inline-block;
-    *zoom: 1;
-    *display: inline; }
-    .breadcrumbs a:hover, .breadcrumbs a:focus {
-      color: #52B7D6;
-      background: none; }
+    margin: 0;
+    list-style: none; }
+    .breadcrumbs ul li, .breadcrumbs ol li {
+      padding: 0;
+      color: #aeaeae;
+      display: -moz-inline-stack;
+      display: inline-block;
+      *zoom: 1;
+      *display: inline; }
+      .breadcrumbs ul li a, .breadcrumbs ol li a {
+        color: #52B7D6; }
+        .breadcrumbs ul li a:active, .breadcrumbs ol li a:active {
+          color: #3daed1; }
+      .breadcrumbs ul li.active, .breadcrumbs ol li.active {
+        color: #aeaeae; }
+      .breadcrumbs ul li:before, .breadcrumbs ol li:before {
+        content: "/ ";
+        padding: 0 5px;
+        color: #CCC; }
+      .breadcrumbs ul li:first-child::before, .breadcrumbs ol li:first-child::before {
+        content: "";
+        padding: 0; }
 
 .dark {
   background: #525252;
