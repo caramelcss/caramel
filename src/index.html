@@ -44,29 +44,29 @@
                 <li><a href="http://caramel.ga/">Home</a></li>
                 <li><a href="http://caramel.ga/start.html">Get Started</a></li>
                 <li><a href="http://caramel.ga/showcase.html">Showcase</a></li>
-            </ul>
 
-            <ul class="right">
-                <li class="dropdown"><a href="#" class="dropdownitem"><i class="fa fa-chevron-down fa-fw"></i></a>
-                    <ul>
-                        <li><a href="#buttons">Buttons</a></li>
-                        <li><a href="#navigation">Navigation</a></li>
-                        <li><a href="#button-dropdowns">Button Dropdowns</a></li>
-                        <li><a href="#alerts">Alerts</a></li>
-                        <li><a href="#notices">Notices</a></li>
-                        <li><a href="#panels">Panels</a></li>
-                        <li><a href="#dismissables">Dismissables</a></li>
-                        <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-                        <li><a href="#images">Images</a></li>
-                        <li><a href="#tables">Tables</a></li>
-                        <li><a href="#progress-bars">Progress Bars</a></li>
-                        <li><a href="#labels">Labels</a></li>
-                        <li><a href="#pagination">Pagination</a></li>
-                        <li><a href="#forms">Forms</a></li>
-                        <li><a href="#grid">Grid</a></li>
-                    </ul>
-                </li>
-                <li><a href="http://github.com/kurisubrooks/caramel"><i class="fa fa-github-alt fa-fw"></i></a></li>
+                <ul class="right">
+                    <li class="dropdown"><a href="#" class="dropdownitem"><i class="fa fa-chevron-down fa-fw"></i></a>
+                        <ul>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#navigation">Navigation</a></li>
+                            <li><a href="#button-dropdowns">Button Dropdowns</a></li>
+                            <li><a href="#alerts">Alerts</a></li>
+                            <li><a href="#notices">Notices</a></li>
+                            <li><a href="#panels">Panels</a></li>
+                            <li><a href="#dismissables">Dismissables</a></li>
+                            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                            <li><a href="#images">Images</a></li>
+                            <li><a href="#tables">Tables</a></li>
+                            <li><a href="#progress-bars">Progress Bars</a></li>
+                            <li><a href="#labels">Labels</a></li>
+                            <li><a href="#pagination">Pagination</a></li>
+                            <li><a href="#forms">Forms</a></li>
+                            <li><a href="#grid">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://github.com/kurisubrooks/caramel"><i class="fa fa-github-alt fa-fw"></i></a></li>
+                </ul>
             </ul>
         </nav>
     </header>
@@ -369,12 +369,21 @@
 
         <h3 id="breadcrumbs">Breadcrumbs</h3>
 
-        <div class="nav bar breadcrumbs">
-            <span class="disabled">Link &nbsp;/&nbsp; Link &nbsp;/&nbsp;</span> <a href="#">Link</a>
+        <div class="breadcrumbs">
+            <ol>
+                <li><a href="#">caramel</a></li>
+                <li><a href="#">src</a></li>
+                <li><a href="#">css</a></li>
+                <li class="active">caramel.scss</li>
+            </ol>
         </div>
 
-        <pre>&lt;div class="nav bar breadcrumbs"&gt;
-    &lt;span class="disabled"&gt;<span class="color error">...</span> / <span class="color error">...</span> / &lt;/span&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;
+        <pre>&lt;div class="breadcrumbs"&gt;
+    &lt;ol&gt;
+        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;<span class="color error">...</span>&lt;/li&gt;
+    &lt;/ol&gt;
 &lt;/div&gt;</pre>
 
         <hr>

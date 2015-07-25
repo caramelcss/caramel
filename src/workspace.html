@@ -12,7 +12,7 @@
     <link href="css/caramel.min.css" rel="stylesheet" type="text/css">
 
     <style>
-        body { background-color: white; margin-top: 32px; }
+        body { background-color: white; }
         table { background-color: white; }
         main { margin-top: 15px; }
     </style>
@@ -20,21 +20,30 @@
 <body>
     <main>
 
-        <select class="dropdown">
-            <option>Dropdown Input</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-        </select>
+        <nav class="nav bar">
+            <ul>
+                <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+
+                <ul class="right">
+                    <li><a href="#">something</a></li>
+                </ul>
+            </ul>
+        </nav>
 
         <br>
 
-        <input type="text" placeholder="Text Input">
+        <div class="breadcrumbs">
+            <ol>
+                <li><a href="#">caramel</a></li>
+                <li><a href="#">src</a></li>
+                <li><a href="#">css</a></li>
+                <li class="active">caramel.scss</li>
+            </ol>
+        </div>
 
-        <br>
-
-        <textarea placeholder="Text Area"></textarea>
-
-        <input type="submit" class="btn info" value="Submit">
     </main>
 </body>
 <script src="js/jquery-2.1.3.min.js"></script>
