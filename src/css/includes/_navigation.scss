@@ -21,7 +21,10 @@
 
 		&.right {
 			float: right;
-			@media (max-width: $breakpoint-width) { float: none; }
+
+			@media (max-width: $breakpoint-width) {
+				float: none;
+			}
 		}
 
 		> ul {
@@ -221,19 +224,49 @@
 }
 
 .breadcrumbs {
-	padding: 10px 20px;
+	background: $light;
+	border: 1px solid $light-border;
+	padding: 5px 14px;
 
-	a {
+	@include border-radius(4px);
+	@include bottom-margin();
+
+	ul, ol {
 		padding: 0;
-		color: $info;
+		margin: 0;
+		list-style: none;
 
-		&:hover,
-		&:focus {
-			color: $info;
-			background: none;
+		li {
+			padding: 0;
+			color: darken($grey, 25);
+			@include inline-block();
+
+			a {
+				color: $link;
+
+				&:active {
+					color: darken($link, 5);
+				}
+			}
+
+			&.active {
+				color: darken($grey, 25);
+			}
+
+			&:before {
+				$nbsp: "\00a0";
+				$separator: "/";
+				content: "#{$separator}#{$nbsp}";
+
+				padding: 0 5px;
+				color: $disabled;
+			}
+
+			&:first-child::before{
+				content: "";
+				padding: 0;
+			}
 		}
-
-		@include inline-block;
 	}
 }
 
