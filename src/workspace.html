@@ -12,7 +12,7 @@
     <link href="css/caramel.min.css" rel="stylesheet" type="text/css">
 
     <style>
-        body { background-color: white; color: black; }
+        body { background-color: white; margin-top: 32px; }
         table { background-color: white; }
         main { margin-top: 15px; }
     </style>
@@ -20,22 +20,21 @@
 <body>
     <main>
 
-        <p>Testificate</p>
-        
-        <div class="input dropdown">
-            <select>
-                <option>
-                    Option 1
-                </option>
-                <option>
-                    Option 2
-                </option>
-                <option>
-                    Option 3
-                </option>
-            </select>
-        </div>
+        <select class="dropdown">
+            <option>Dropdown Input</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </select>
 
+        <br>
+
+        <input type="text" placeholder="Text Input">
+
+        <br>
+
+        <textarea placeholder="Text Area"></textarea>
+
+        <input type="submit" class="btn info" value="Submit">
     </main>
 </body>
 <script src="js/jquery-2.1.3.min.js"></script>

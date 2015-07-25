@@ -279,9 +279,8 @@ input[type=time],
 input[type=url],
 input[type=week],
 textarea {
-  min-width: 100px;
-  margin: 0 5px 5px 0;
-  padding: 5px 14px 4px;
+  width: 152px;
+  padding: 5px 14px 5px 8px;
   font: inherit;
   color: inherit;
   border: 1px solid #ededed;
@@ -308,8 +307,9 @@ input[type=submit] {
   -o-appearance: none; }
 
 textarea {
-  min-height: 60px;
-  min-width: 150px; }
+  height: 60px;
+  width: 176px;
+  display: block; }
 
 input.success {
   border: 1px solid #5CB85C; }
@@ -326,28 +326,27 @@ input.info {
 input.dark {
   border: 1px solid #525252; }
 
-.input.dropdown {
-  width: 100px;
+select.dropdown {
+  width: 176px;
+  height: 30px;
   font-size: 14px;
+  line-height: 1.4;
+  color: #5F5F5F;
   border: 1px solid #ededed;
   overflow: hidden;
-  background: #FFF url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+  background-color: white;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  border-radius: 4px; }
-  .input.dropdown select {
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    background-image: none;
-    padding: 5px 14px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none; }
-    .input.dropdown select:focus {
-      outline: none; }
+  border-radius: 4px;
+  padding: 5px 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px; }
+  select.dropdown:focus {
+    outline: none; }
 
 /*  Grid contributed to Caramel by github.com/gratimax */
 .row:before, .row:after {
