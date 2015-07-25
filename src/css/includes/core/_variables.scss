@@ -21,6 +21,10 @@ $light-border:      darken($light, 5);
 
 $font-default: "Arial", "Helvetica", sans-serif;
 $font-code: monospace;
+$font-color: $default;
+$font-weight: 400;
+$font-size: 14px;
+$line-height: 1.4;
 
 $breakpoint-width: 800px;
 $default-radius: 4px !default;
