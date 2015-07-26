@@ -2,12 +2,12 @@
 Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
 ## Getting Started
-- [Download the latest Release](https://github.com/kurisubrooks/caramel/releases)
-- [Download the latest Development Build](https://github.com/kurisubrooks/caramel/archive/master.zip)
-- Clone the repo: ```git clone https://github.com/kurisubrooks/caramel.git```
+- [Download the latest Release](https://github.com/lumios/caramel/releases)
+- [Download the latest Development Build](https://github.com/lumios/caramel/archive/master.zip)
+- Clone the repo: ```git clone https://github.com/lumios/caramel.git```
 
 ## What's included?
-Our [public releases](https://github.com/kurisubrooks/caramel/releases) only contain the released files that are necessary for front-end use. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Builds](https://github.com/kurisubrooks/caramel/archive/master.zip), which include our compiling script, and the sass source files.
+Our [public releases](https://github.com/lumios/caramel/releases) only contain the released files that are necessary for front-end use. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Builds](https://github.com/lumios/caramel/archive/master.zip), which include our compiling script, and the sass source files.
 
 ```
 caramel/
@@ -57,4 +57,4 @@ Chrome | Firefox | Safari | Opera | Edge | IE
 ---
 
 &copy; 2015 [Lumios](http://lumios.ga) &mdash;
-Caramel is released under the [GPL2](https://github.com/kurisubrooks/caramel/blob/master/LICENSE.md) Open Source License.
+Caramel is released under the [GNU GPL2](https://github.com/lumios/caramel/blob/master/LICENSE) Open Source License.
