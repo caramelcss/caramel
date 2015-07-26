@@ -3,6 +3,9 @@
     max-width: 100%;
     word-wrap: break-word;
 
+    border-spacing: 0;
+    border-collapse: collapse;
+
     @include border-radius();
     @include bottom-margin();
 
