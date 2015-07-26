@@ -11,18 +11,18 @@ h1.title,h2.title,h3.title,h4.title,h5.title,h6.title {
 }
 
 a {
-    color: $info;
+    color: $link;
     text-decoration: none;
 
     &:hover,
     &:focus {
-       color: lighten($info, 5);
+       color: $link-active;
        text-decoration: none;
     }
 }
 
 blockquote {
-    border-left: 4px solid #EEE;
+    border-left: 4px solid $grey;
     padding: 5px 30px;
     font-weight: 300;
     font-size: 18px;
@@ -30,7 +30,7 @@ blockquote {
 }
 
 .disabled {
-    color: darken($light, 20);
+    color: $disabled;
     cursor: not-allowed;
 }
 
@@ -97,7 +97,7 @@ b, strong {
     padding: 10px;
     font-family: $font-code;
     color: $default;
-    border: 1px solid darken($light, 5);
+    border: 1px solid $light-active;
     background-color: $light;
 
     @include border-radius();
@@ -112,10 +112,10 @@ code, highlight, .highlight, {
     @include border-radius();
 }
 
-pre {
+pre, .codeblock {
     overflow: scroll;
-    border: 1px solid #EEE;
-    background-color: #FAFAFA;
+    border: 1px solid $grey;
+    background-color: $light;
     font-family: $font-code;
     padding: 10px 18px;
 

@@ -6,9 +6,9 @@ img {
     height: auto;
     padding: 4px;
     line-height: 1.42;
-    border: 1px solid darken($light, 5);
+    border: 1px solid $light-active;
     background-color: $white;
-    
+
     @include border-radius();
 }
 

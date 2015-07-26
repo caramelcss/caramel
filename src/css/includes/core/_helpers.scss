@@ -15,10 +15,6 @@
     *display: inline;
 }
 
-@mixin standard-padding() {
-    padding: 5px 14px;
-}
-
 @mixin bottom-margin() {
     margin-bottom: 10px;
 }

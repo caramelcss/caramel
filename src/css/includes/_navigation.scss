@@ -1,6 +1,6 @@
 .nav {
 	background: $light;
-	border: 1px solid darken($light, 5);
+	border: 1px solid $light-active;
 
 	@include border-radius(4px);
 	@include clearfix();
@@ -29,7 +29,7 @@
 
 		> ul {
 			background: $light;
-			border: 1px solid darken($light, 5);
+			border: 1px solid $light-active;
 		}
 
 	}
@@ -56,7 +56,7 @@
 		color: $default;
 		white-space: nowrap;
 
-		&:hover { background: darken($light, 5); }
+		&:hover { background: $light-active; }
 
 		&:hover,
 		&:focus { color: $default; }
@@ -109,7 +109,7 @@
 			> ul {
 				margin-top: -4px;
 				background: $light;
-				border: 1px solid darken($light, 5);
+				border: 1px solid $light-active;
 				@include border-radius-top(4px);
 
 				&.no-round {
@@ -225,8 +225,8 @@
 
 .breadcrumbs {
 	background: $light;
-	border: 1px solid $light-border;
-	padding: 5px 14px;
+	border: 1px solid $light-active;
+	padding: $padding-small;
 
 	@include border-radius(4px);
 	@include bottom-margin();
@@ -245,7 +245,7 @@
 				color: $link;
 
 				&:active {
-					color: darken($link, 5);
+					color: $link;
 				}
 			}
 
@@ -272,11 +272,11 @@
 
 .dark {
 	background: $dark;
-	border: 1px solid darken($dark, 5);
+	border: 1px solid $dark-active;
 
 	li > ul {
 		background: $dark;
-		border: 1px solid darken($dark, 5);
+		border: 1px solid $dark-active;
 	}
 
 	a {
@@ -284,7 +284,7 @@
 
 		&:hover,
 		&:focus { color: $white; }
-		&:hover { background: darken($dark, 5); }
+		&:hover { background: $dark-active; }
 	}
 }
 
@@ -299,19 +299,19 @@
 	.nav {
 		background: $white;
 		border: none;
-		border-bottom: 1px solid darken($light, 5);
+		border-bottom: 1px solid $light-active;
 
 		@include border-radius(0);
 
 		li > ul {
 			background: $white;
-			border: 1px solid darken($white, 5);
+			border: 1px solid $white-active;
 		}
 
 		li {
 			a {
 				&:hover {
-					background: darken($white, 5);
+					background: $white-active;
 				}
 			}
 

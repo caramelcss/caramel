@@ -1,8 +1,8 @@
 .alert {
     display: block;
-    padding: 20px;
+    padding: $padding-large;
     color: $default;
-    border: 1px solid darken($light, 5);
+    border: 1px solid $light-active;
     background: $light;
 
     @include border-radius();

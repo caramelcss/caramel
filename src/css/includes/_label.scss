@@ -1,10 +1,10 @@
 .label {
     width: auto;
-    padding: 5px 10px;
+    padding: $padding-small;
     color: $white;
     font-size: 80%;
-    background-color: lighten($default, 5);
-    
+    background-color: $default-active;
+
     @include border-radius();
     @include inline-block();
 }
