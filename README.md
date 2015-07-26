@@ -15,8 +15,7 @@ caramel/
 │
 ├── css/
 │   ├── caramel.css
-│   ├── caramel.min.css
-│   └── font-awesome.min.css
+│   └── caramel.min.css
 │
 ├── js/
 │   ├── caramel.js
