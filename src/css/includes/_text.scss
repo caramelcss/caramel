@@ -1,3 +1,4 @@
+// Header Text
 h1 {font-size: 68px; font-weight: 300; margin: 16px 0;}
 h2 {font-size: 50px; font-weight: 300; margin: 12px 0;}
 h3 {font-size: 40px; font-weight: 300; margin: 10px 0;}
@@ -10,6 +11,7 @@ h1.title,h2.title,h3.title,h4.title,h5.title,h6.title {
   border-bottom: 1px solid $grey;
 }
 
+// Links
 a {
     color: $link;
     text-decoration: none;
@@ -21,6 +23,7 @@ a {
     }
 }
 
+// Blockquotes
 blockquote {
     border-left: 4px solid $grey;
     padding: 5px 30px;
@@ -29,11 +32,13 @@ blockquote {
     margin: 10px 0;
 }
 
+// Disabled Text
 .disabled {
     color: $disabled;
     cursor: not-allowed;
 }
 
+// Inline Colours
 .color.success,
 [color=success] {
     color: $success;
@@ -88,31 +93,30 @@ blockquote {
     }
 }
 
+// Bold text
 b, strong {
     font-weight: bold;
 }
 
-.code {
-    width: auto;
-    padding: 10px;
+// Highlight
+mark {
+    padding: 2px;
+    color: black;
+    background-color: yellow;
+}
+
+// Inline Code
+code {
+    padding: 1px 8px 2px;
     font-family: $font-code;
-    color: $default;
-    border: 1px solid $light-active;
     background-color: $light;
 
+    @include inline-block();
     @include border-radius();
 }
 
-code, highlight, .highlight, {
-    padding: 5px;
-    font-family: $font-code;
-    color: $error;
-    background-color: lighten($error, 40);
-
-    @include border-radius();
-}
-
-pre, .codeblock {
+// Code Block
+pre {
     overflow: scroll;
     border: 1px solid $grey;
     background-color: $light;
@@ -123,22 +127,27 @@ pre, .codeblock {
     @include border-radius();
 }
 
+// Italic Text
 em, .italic {
     font-style: italic;
 }
 
+// Paragraph
 p {
     margin: 0 0 5px;
 }
 
+// Smaller Text
 .sml, small {
     font-size: 80%;
 }
 
+// Strikethrough Text
 s, .strike, .strikethrough {
     text-decoration: line-through;
 }
 
+// Upper/Lower Text
 sub, sup {
     position: relative;
     font-size: 75%;

@@ -1,3 +1,4 @@
+// Global Styling
 body {
     font-family: $font-default;
     font-size: $font-size;
@@ -8,6 +9,7 @@ body {
     margin: 0;
 }
 
+// Responsive Container
 .container, main {
     width: inherit;
     max-width: 1200px;
@@ -21,6 +23,7 @@ body {
     }
 }
 
+// Absolute Center
 .center {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -47,36 +50,38 @@ body {
     }
 }
 
+// Hide on Collapse (Desktop Only)
 @media (max-width: $breakpoint-width) {
-    .sidebar {
+    .collapse {
         display: none;
+        visibility: none;
     }
 }
 
-.footer, footer {
+// Footer
+footer {
     margin: 15px 0;
     padding: 5px 0;
 }
 
-.hidden {   display: none; }
+// Hidden Class
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+// Global Floats
 .left {     float: left; }
 .right {    float: right; }
 
+// Line Break with Seperator
 hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid $light-active;
 }
 
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-
-    td, th {
-        padding: 0;
-    }
-}
-
+// Dismissable
 .dismiss {
     float: right;
     position: relative;
@@ -84,6 +89,7 @@ table {
     cursor: pointer;
 }
 
+// Global Overrides
 .no-round {
     @include border-radius(0);
 }
