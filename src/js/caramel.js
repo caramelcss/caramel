@@ -1,7 +1,7 @@
 /*
- * Caramel (http://caramel.ga)
- * Copyright 2015, All Rights Reserved
- * GPL v2 License
+ *  Caramel (http://caramel.ga)
+ *  Copyright 2015, All Rights Reserved
+ *  License - GNU GPL v2
  */
 
 $(document).ready(function() {
@@ -12,10 +12,10 @@ $(document).ready(function() {
     $nav.on('click', '.menu', function(e){
         e.stopPropagation();
         e.preventDefault();
-        
+
         var $this = $(this);
         $this.parents($nav).toggleClass('open');
-        
+
         $outside.one('click', function(e) {
             $nav.removeClass('open');
         });
@@ -24,10 +24,10 @@ $(document).ready(function() {
     $nav.on('click', '.dropdownitem', function(e){
         e.stopPropagation();
         e.preventDefault();
-        
+
         var $this = $(this);
         $this.parent('.dropdown').toggleClass('open');
-        
+
         $outside.one('click', function(e) {
             $nav.removeClass('open');
         });
