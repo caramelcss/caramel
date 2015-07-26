@@ -23,7 +23,7 @@
     .alert.#{$state} {
         color: $color;
         border: 1px solid $color-state;
-        background: lighten($color-state, 5);
+        background: lighten($color-state, 3);
 
         &.clean {
             color: darken($color-state, 5);
