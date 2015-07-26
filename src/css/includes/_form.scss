@@ -1,5 +1,9 @@
 input {
     font: inherit;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 input[type=text],
@@ -35,6 +39,10 @@ textarea {
     height: 60px;
     width: 176px;
     display: block;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 @each $state, $color-map in $-states-map {
@@ -46,7 +54,6 @@ textarea {
 }
 
 select {
-
     &.dropdown {
         width: 176px;
         height: 30px;
@@ -68,5 +75,4 @@ select {
             outline: none;
         }
     }
-
 }
