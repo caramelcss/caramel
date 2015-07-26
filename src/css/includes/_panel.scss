@@ -4,20 +4,26 @@
 
     @include border-radius();
     @include bottom-margin();
+
+    .panel-head {
+        padding: 10px 20px 9px;
+        border-bottom: 1px solid $default-active;
+        background: $default;
+        font-weight: bold;
+        color: $white;
+    }
+
+    .panel-body {
+        padding: 15px 20px 14px;
+        background: $white;
+    }
+
+    p {
+        margin: 0;
+    }
 }
 
-.panel-head {
-    padding: 10px 20px;
-    border-bottom: 1px solid $default-active;
-    background: $default;
-    font-weight: bold;
-    color: $white;
-}
 
-.panel-body {
-    padding: 15px 20px 14px;
-    background: $white;
-}
 
 @each $state, $color-map in $-states-map {
 
