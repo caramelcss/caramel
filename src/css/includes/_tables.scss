@@ -48,11 +48,7 @@
     &.invert {
         > tbody > tr {
             &:nth-of-type(odd) {
-                background-color: #F7F7F7;
-            }
-
-            > td {
-                @include border-radius-bottom(4px);
+                background-color: $grey-light;
             }
         }
     }
@@ -60,5 +56,4 @@
     .align-left     {text-align: left;}
     .align-mid      {text-align: center;}
     .align-right    {text-align: right;}
-
 }
