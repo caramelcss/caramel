@@ -53,7 +53,7 @@ Chrome | Firefox | Safari | Opera | Edge | IE
 :----: | :-----: | :----: | :---: | :--: | :-:
   21+  |   28+   |   7+   | 12.1+ |  20+ | 10, 11
 
----
+### Legal
 
 &copy; 2015 [Lumios](http://lumios.ga) &mdash;
 Caramel is released under the [GNU GPL2](https://github.com/lumios/caramel/blob/master/LICENSE) Open Source License.
