@@ -1,4 +1,6 @@
 # [Caramel](http://caramel.ga)
+
+[![Join the chat at https://gitter.im/lumios/caramel](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lumios/caramel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
 ## Getting Started
