@@ -1,6 +1,8 @@
 # [Caramel](http://caramel.ga)
 
+[![Build Status](https://travis-ci.org/lumios/caramel.svg?branch=master)](https://travis-ci.org/lumios/caramel)
 [![Join the chat at https://gitter.im/lumios/caramel](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lumios/caramel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
 ## Getting Started
@@ -35,7 +37,7 @@ caramel/
 ```
 
 ## Documentation
-Stuck? We've got you covered! Go on over to our [website](http://caramel.ga/), and view the Showcase. All code usage and examples are listed on the page. If you want to see how the elements are styled on page, Right Click the page and click View Source. (Depending on whether your browser supports this feature.)
+Stuck? We've got you covered! Go on over to our [website](http://caramel.ga/), and view the Showcase. All code usage and examples are listed on the page. If you want to see how the elements are styled on page, Right Click the page and click View Source. (Depending on whether your browser supports this feature.) Need further help? [Ask the devs on Gitter](https://gitter.im/lumios/caramel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge), by clicking the link under the logo.
 
 ## Modification
 Want to make some changes to Caramel? No problem! We've included a way for you to easily modify Caramel with the use of our Build Script. Simply make your changes to the Source Code (.scss files), then run our compile script with the below command.
@@ -58,4 +60,4 @@ Chrome | Firefox | Safari | Opera | Edge | IE
 ### Legal
 
 &copy; 2015 [Lumios](http://lumios.ga) &mdash;
-Caramel is released under the [GNU GPL2](https://github.com/lumios/caramel/blob/master/LICENSE) Open Source License.
+Caramel is released under the [GNU GPLv2](https://github.com/lumios/caramel/blob/master/LICENSE) Open Source License.
