@@ -24,6 +24,7 @@
     -moz-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
+    appearance: none;
 }
 
 @mixin border-radius($radius: $default-radius) {

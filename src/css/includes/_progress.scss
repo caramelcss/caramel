@@ -9,21 +9,21 @@
     @include border-radius();
     @include bottom-margin();
 
+    .progress-bar {
+        text-align: center;
+        height: 20px;
+        color: $default;
+        background-color: $default;
+
+        #progress {
+            position: relative;
+            top: 1px;
+        }
+    }
+
     &.clean {
         border: 2px solid $default !important;
     }
-}
-
-.progress-bar {
-    text-align: center;
-    height: 20px;
-    color: $default;
-    background-color: $light-active;
-}
-
-#progress {
-    position: relative;
-    top: 1px;
 }
 
 @each $state, $color-map in $-states-map {
@@ -33,7 +33,6 @@
 
     .progress.#{$state} {
         border: 1px solid darken($color-state, 5);
-        background-color: $white;
 
         .progress-bar {
             color: $color;
@@ -44,5 +43,4 @@
             border: 2px solid $color-state !important;
         }
     }
-
 }

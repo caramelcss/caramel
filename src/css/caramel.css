@@ -288,6 +288,7 @@ textarea {
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
+  appearance: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -303,7 +304,8 @@ input[type=submit] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
-  -o-appearance: none; }
+  -o-appearance: none;
+  appearance: none; }
 
 textarea {
   height: 60px;
@@ -821,22 +823,19 @@ img {
   -ms-border-radius: 4px;
   border-radius: 4px;
   margin-bottom: 10px; }
+  .progress .progress-bar {
+    text-align: center;
+    height: 20px;
+    color: #525252;
+    background-color: #525252; }
+    .progress .progress-bar #progress {
+      position: relative;
+      top: 1px; }
   .progress.clean {
     border: 2px solid #525252 !important; }
 
-.progress-bar {
-  text-align: center;
-  height: 20px;
-  color: #525252;
-  background-color: #ededed; }
-
-#progress {
-  position: relative;
-  top: 1px; }
-
 .progress.success {
-  border: 1px solid #4cae4c;
-  background-color: #FFF; }
+  border: 1px solid #4cae4c; }
   .progress.success .progress-bar {
     color: #FFF;
     background-color: #5CB85C; }
@@ -844,8 +843,7 @@ img {
     border: 2px solid #5CB85C !important; }
 
 .progress.error {
-  border: 1px solid #d83532;
-  background-color: #FFF; }
+  border: 1px solid #d83532; }
   .progress.error .progress-bar {
     color: #FFF;
     background-color: #DC4A47; }
@@ -853,8 +851,7 @@ img {
     border: 2px solid #DC4A47 !important; }
 
 .progress.warn {
-  border: 1px solid #ee931c;
-  background-color: #FFF; }
+  border: 1px solid #ee931c; }
   .progress.warn .progress-bar {
     color: #FFF;
     background-color: #F09E34; }
@@ -862,8 +859,7 @@ img {
     border: 2px solid #F09E34 !important; }
 
 .progress.info {
-  border: 1px solid #3daed1;
-  background-color: #FFF; }
+  border: 1px solid #3daed1; }
   .progress.info .progress-bar {
     color: #FFF;
     background-color: #52B7D6; }
@@ -871,8 +867,7 @@ img {
     border: 2px solid #52B7D6 !important; }
 
 .progress.dark {
-  border: 1px solid #454545;
-  background-color: #FFF; }
+  border: 1px solid #454545; }
   .progress.dark .progress-bar {
     color: #FFF;
     background-color: #525252; }
