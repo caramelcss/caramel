@@ -58,6 +58,26 @@ Chrome | Firefox | Safari | Opera | Edge | IE
   21+  |   28+   |   7+   | 12.1+ |  20+ | 10, 11
 
 ### Legal
+```text
+Copyright (c) 2015 Lumios – All Rights Reserved.
 
-&copy; 2015 [Lumios](http://lumios.ga) &mdash;
-Caramel is released under the [GNU GPLv2](https://github.com/lumios/caramel/blob/master/LICENSE) Open Source License.
+Permission is hereby granted, free of charge, to any persons obtaining 
+a copy of this software, to deal this software within the agreed guidelines.
+
+Copying, modification, contribution, non-commercial distribution and/or 
+sub-licensing this software are allowed, so long as you are subject to the 
+following conditions:
+
+The above copyright notice and this permission notice will be included in all 
+copies, un-modified, within the Software.
+Licensing and security checks may not be removed.
+Republication of this software for personal or commercial gain is prohibited.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
