@@ -12,10 +12,10 @@ Caramel is a simple, modern, responsive website framework. Caramel is fully resp
 #### Quick Start
 Jump right into Caramel by using the included HTML5 Boilerplate. `template.html` is already set up to HTML5 standards, and has Caramel already included. All you need to do is to start writing your code!
 
-Also, check out `showcase.html`, which showcases Caramel's latest features!
+Also, check out `showcase.html`, to see Caramel's latest features!
 
 ## What's included?
-Our [public releases](https://github.com/lumios/caramel/releases) only contain the released files that are necessary for front-end use. If you'd like to develop for, or modify Caramel, we'd recommend downloading a [Development Build](https://github.com/lumios/caramel/archive/master.zip), which includes our build tool, and the sass source files.
+Our [public releases](https://github.com/lumios/caramel/releases) only contain the files that are necessary for front-end development. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Build](https://github.com/lumios/caramel/archive/master.zip), which includes our build tool, and the sass source files.
 
 ```
 caramel/
@@ -36,17 +36,16 @@ caramel/
 ```
 
 ## Documentation
-Stuck? We've got you covered! Go on over to our [website](http://caramel.ga/), and view the Showcase. All code usage and examples are listed right there on the page. If you want to see the exact syntax we use to show you the content on the page, simply right click on the page and view source (depending on whether your browser supports this feature). 
+Head on over to our [website](http://caramel.ga/), and view the Showcase. All code usage and examples are listed right there on the page! If you want to see the exact syntax we use to show you the content on the page, simply right click on the page and view source (depending on whether your browser supports this feature).
 
-Still stuck? Tweet [@kurisubrooks](https://twitter.com/kurisubrooks), and he'll try to answer any questions you may have.
+Still stuck or need further help? Tweet [@kurisubrooks](https://twitter.com/kurisubrooks), and he'll try to answer any questions you may have.
 
 ## Compiling
-Want to tinker? Great! We've included an easy and hassle free way for you to easily compile Caramel.
-Included is a build tool that you can use to compile Caramel back into CSS.
+We've included an easy and hassle free way for you to compile Caramel. We've included our own Grunt build tool, that you can use to compile Caramel.
 
 #### Required:
-Our compiler runs on [Node](https://nodejs.org/), so before you can continue, please ensure that you have it installed! (You can download it from their website).   
-Once you have Node installed, you'll need [Grunt](http://gruntjs.com/). If you already have both Node and Grunt installed, skip this step, otherwise, run the following set of commands to install Grunt:
+Our compiler runs on [Node.js](https://nodejs.org/), so before you can continue, please ensure that you have it installed.   
+Once you have Node installed, you'll need [Grunt](http://gruntjs.com/). If you already have both Node and Grunt installed, skip these steps, otherwise install [Node.js](https://nodejs.org/) from their website, then run the following command to install Grunt:
 ```
 npm i grunt -g
 ```
