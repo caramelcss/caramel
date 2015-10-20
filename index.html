@@ -17,13 +17,42 @@
     </script>
 
     <style>
+        body{overflow:hidden;}
         h2,h4 {margin: 0;}
+        h4{font-size:28px;}
         svg {height: 100px;width: 100px;margin: 0;}
-        @media (max-width: 500px) {
+
+        .center {
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          position: absolute;
+          text-align: center;
+          top: 50%;
+          left: 50%;
+          min-width: 380px;
+        }
+
+        @media (max-width: 550px) {
+          .center {
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -ms-transform: none;
+            transform: none;
+            position: inherit;
+            top: inherit;
+            left: inherit;
+          }
+        }
+
+        @media (max-width: 550px) {
             body{padding-top:10px;}
             svg {height: 80px;width: 80px;}
             h2 {font-size: 36px;}
-            h4 {font-size: 22px;}
+            h4 {font-size: 20px;}
             .btn {font-size: 12px;}
             footer {font-size: 12px;}
         }
@@ -47,10 +76,10 @@
 
         <br>
 
-        <a href="https://github.com/lumios/caramel#getting-started" class="btn success clean">Getting Started</a>&nbsp;
+        <a href="https://github.com/lumios/caramel#getting-started" class="btn success clean">Get Started</a>&nbsp;
         <a href="showcase.html" class="btn success clean">Showcase</a>&nbsp;
         <a href="http://github.com/lumios/caramel" class="btn info clean">
-            <i class="fa fa-github"></i>
+            <i class="fa fa-github"></i> GitHub
         </a>
 
         <hr>
