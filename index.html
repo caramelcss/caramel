@@ -17,51 +17,50 @@
     </script>
 
     <style>
-        body{overflow:hidden;}
+        body{overflow:hidden;padding-top:100px;}
+        header{text-align:center;}
+        footer{text-align:center;}
         h2,h4 {margin: 0;}
         h4{font-size:28px;}
-        svg {height: 100px;width: 100px;margin: 0;}
+        svg {height:100px;width:100px;margin: 0;}
 
-        .center {
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          position: absolute;
-          text-align: center;
-          top: 50%;
-          left: 50%;
-          min-width: 200px;
-        }
-
-        @media (max-width: 500px) {
-          .center {
-          }
-        }
-
-        @media (max-width: 550px) {
-            body{padding-top:10px;}
+        @media (max-width: 600px) {
             svg {height: 80px;width: 80px;}
             h2 {font-size: 36px;}
-            h4 {font-size: 20px;}
-            .btn {font-size: 10px;}
+            h4 {font-size: 22px;}
+            .btn {font-size: 12px;}
             footer {font-size: 12px;}
         }
     </style>
   </head>
 <body>
-    <div class="center">
-        <svg version="1.1" viewBox="0 0 48 48">
-            <g transform="translate(0,-1004.3622)">
-                <g transform="translate(-6,1003)">
-                    <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
-                    <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
-                    <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
-                    <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
+<main>
+    <nav class="nav bar thick fixed">
+        <ul>
+            <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
+            <li class="brand"><a href="http://caramel.ga">Caramel</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/lumios/caramel#getting-started">Get Started</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <ul class="right">
+                <li><a href="http://github.com/lumios/caramel"><i class="fa fa-github-alt fa-fw"></i></a></li>
+            </ul>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="logo">
+            <svg version="1.1" viewBox="0 0 48 48">
+                <g transform="translate(0,-1004.3622)">
+                    <g transform="translate(-6,1003)">
+                        <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
+                        <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
+                        <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
+                        <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
+                    </g>
                 </g>
-            </g>
-        </svg>
+            </svg>
+        </div>
 
         <h2>Caramel</h2>
         <h4>Simple, Modern, Responsive</h4>
@@ -73,15 +72,18 @@
         <a href="http://github.com/lumios/caramel" class="btn info clean">
             <i class="fa fa-github"></i>
         </a>
+    </header>
 
-        <hr>
+    <br><br><hr>
 
-        <footer>&copy; 2015 <a href="http://lumios.xyz">LUMIOS</a> &mdash;
-            MADE WITH
-                <i class="fa fa-heart-o fa-fw" color="error"></i> &amp;
-                <i class="fa fa-code fa-fw" color="success"></i>
-        </footer>
-    </div>
+    <footer>&copy; 2015 <a href="http://lumios.xyz">LUMIOS</a> &mdash;
+        MADE WITH
+            <i class="fa fa-heart-o fa-fw" color="error"></i> &amp;
+            <i class="fa fa-code fa-fw" color="success"></i>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/caramel.js"></script>
 </main>
 </body>
 </html>
