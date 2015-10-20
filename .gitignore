@@ -2,4 +2,9 @@
 .sass-cache
 *.css.map
 *.scssc
+*.log
+logs
+out
+bin
+node_modules
 workspace.html

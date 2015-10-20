@@ -1,6 +1,6 @@
 # [Caramel](http://caramel.ga)
 
-[![Join the chat at https://gitter.im/lumios/caramel](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lumios/caramel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![devDependency Status](https://david-dm.org/lumios/caramel/dev-status.svg)](https://david-dm.org/lumios/caramel#info=devDependencies)
 
 Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
@@ -10,11 +10,11 @@ Caramel is a simple, modern, responsive website framework. Caramel is fully resp
 - Clone the repo: ```git clone https://github.com/lumios/caramel.git```
 
 ## What's included?
-Our [public releases](https://github.com/lumios/caramel/releases) only contain the released files that are necessary for front-end use. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Builds](https://github.com/lumios/caramel/archive/master.zip), which include our compiling script, and the sass source files.
+Our [public releases](https://github.com/lumios/caramel/releases) only contain the released files that are necessary for front-end use. If you'd like to develop for, or modify Caramel, we'd recommend downloading a [Development Build](https://github.com/lumios/caramel/archive/master.zip), which includes our build tool, and the sass source files.
 
 ```
 caramel/
-├── index.html
+├── showcase.html
 │
 ├── css/
 │   ├── caramel.css
@@ -23,7 +23,7 @@ caramel/
 ├── js/
 │   ├── caramel.js
 │   ├── caramel.min.js
-│   └── jquery-2.1.3.min.js
+│   └── jquery.min.js
 │
 └── fonts/
     └── fontawesome/
@@ -36,18 +36,35 @@ caramel/
 ```
 
 ## Documentation
-Stuck? We've got you covered! Go on over to our [website](http://caramel.ga/), and view the Showcase. All code usage and examples are listed on the page. If you want to see how the elements are styled on page, Right Click the page and click View Source. (Depending on whether your browser supports this feature.) Need further help? [Ask the devs on Gitter](https://gitter.im/lumios/caramel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge), by clicking the link under the logo.
+Stuck? We've got you covered! Go on over to our [website](http://caramel.ga/), and view the Showcase. All code usage and examples are listed on the page. If you want to see how the elements are styled on page, Right Click the page and click View Source. (Depending on whether your browser supports this feature.) Need further help? Shoot an email to [kurisu@lumios.xyz](mailto:kurisu@lumios.xyz), and he'll try to get back to you as soon as he can.
 
-## Modification
-Want to make some changes to Caramel? No problem! We've included a way for you to easily modify Caramel with the use of our Build Script. Simply make your changes to the Source Code (.scss files), then run our compile script with the below command.
+## Compiling
+Want to tinker? Great! We've included an easy and hassle free way for you to easily compile Caramel.
+Included is a build tool that you can use to compile Caramel back into CSS.
 
-**Please Note:** Our compiler runs on [Ruby](https://www.ruby-lang.org/), and requires [Sass Command Line](http://sass-lang.com/install). Both must be installed for the Compiling Script to function.
-
-#### Syntax:
-
-```shell
-ruby path/to/compile.rb  path/to/caramel.scss
+#### Prerequisites
+Our compiler runs on [Node](https://nodejs.org/), so before you can continue, please ensure that you have it installed!  
+Once you have Node installed, you need [Grunt](http://gruntjs.com/). Run the following set of commands to install:
 ```
+npm i grunt -g
+```
+
+#### Installation:
+To get the latest version of Caramel and to install the build tools, run the following set of commands:
+```
+cd ~/.../caramel
+git clone https://github.com/lumios/caramel.git
+npm i
+```
+
+#### Building:
+To run the build tool, run the following set of commands:
+```
+cd ~/.../caramel
+grunt build
+```
+
+After the build is complete, the output `caramel.css`, `caramel.min.css` and `caramel.min.js` files can be found in your `./src` folder.
 
 ## Compatibility
 Caramel has been designed for any browser that natively supports [CSS3](https://html5test.com/). Caramel has been tested, and is recommended for use on:
@@ -60,14 +77,14 @@ Chrome | Firefox | Safari | Opera | Edge | IE
 ```text
 Copyright (c) 2015 Lumios – All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any persons obtaining 
+Permission is hereby granted, free of charge, to any persons obtaining
 a copy of this software, to deal this software within the agreed guidelines.
 
-Copying, modification, contribution, non-commercial distribution and/or 
-sub-licensing this software are allowed, so long as you are subject to the 
+Copying, modification, contribution, non-commercial distribution and/or
+sub-licensing this software are allowed, so long as you are subject to the
 following conditions:
 
-The above copyright notice and this permission notice will be included in all 
+The above copyright notice and this permission notice will be included in all
 copies, un-modified, within the Software.
 Licensing and security checks may not be removed.
 Republication of this software for personal or commercial gain is prohibited.

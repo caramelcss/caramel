@@ -1,9 +1,9 @@
-/*
- *  Caramel (http://caramel.ga)
- *  Copyright 2015, All Rights Reserved
- *  License - GNU GPL v2
- */
-
+/*!
+// Caramel (http://caramel.ga/)
+// Copyright 2015, All Rights Reserved
+// @version 1.4.0
+// @license SEE <LICENSE>
+*/
 $(document).ready(function() {
 
     var $nav = $('.nav');
