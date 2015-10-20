@@ -1,6 +1,7 @@
 .btn {
     font: inherit;
-    padding: $padding-small;
+    font-weight: bold;
+    padding: 6px 16px;
     margin-bottom: 5px;
     color: $default;
     text-align: center;
@@ -8,11 +9,16 @@
     background: $light;
     cursor: pointer;
 
+    -webkit-transition: background .1s;
+    -moz-transition: background .1s;
+    -o-transition: background .1s;
+    transition: background .1s;
+
     @include border-radius();
     @include inline-block();
 
     &.sml {
-        padding: 2px 9px 1px;
+        padding: 2px 9px;
         font-size: 12px;
     }
 
@@ -20,7 +26,7 @@
     &:active {
         color: $default;
         border: 1px solid $light-active;
-        background: $light-active;
+        background: lighten($light, 5);
     }
 
     &.clean {
@@ -46,7 +52,6 @@
 }
 
 @each $state, $color-map in $-states-map {
-
     $color: map-get($color-map, 'text-color');
     $color-state: map-get($color-map, 'color-state');
 
@@ -58,7 +63,7 @@
         &:hover,
         &:active {
             border: 1px solid darken($color-state, 5);
-            background: lighten($color-state, 2);
+            background: lighten($color-state, 5);
         }
 
         &.clean {
