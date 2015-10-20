@@ -5,70 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Caramel</title>
-    <meta name="author" content="kurisubrooks, caramel">
-    <meta name="description" content="caramel is a simple, beautiful, and modern web framework.">
-
+    <meta name="author" content="lumios">
+    <meta name="description" content="a simple, beautiful, modern web framework.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <link href="css/caramel.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
     <style>
-        #example .box{background-color:#EEE;text-align:center;border-radius:2px}
-        .header .logo a{padding:5px 20px 0}
-        .header .logo a:hover{background:0 0}
-        .main .header{margin:100px 0 70px;text-align:center}
-        .main .header h1{margin-top:0}
-        .fa.fa-code{font-size:16px}
+        body{font-family: 'Open Sans', sans-serif;padding-top:20px;}
+        #example .box, .full{background-color: #EEE;text-align: center;}
+        .full:nth-child(even){background-color: #DDD;}
+        .header .logo a{padding: 5px 20px 0}
+        .header .logo a:hover{background: 0 0}
+        .main .header{margin: 100px 0 70px;text-align: center}
+        .main .header h1{margin-top: 0}
+        .fa.fa-code{font-size: 16px}
         .title{display:block;font-size: 60px;font-weight: 300;}
-        .container, main {max-width:1000px;}
+        .container, main {max-width: 1000px;}
+        footer{text-align: center;}
     </style>
   </head>
 <body>
-    <header class="header fixed">
-        <nav class="nav bar">
-            <ul>
-                <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
-                <li class="logo">
-                    <a href="#"><svg version="1.1" width="30px" height="27px" viewBox="0 0 48 48">
-                        <g transform="translate(0,-1004.3622)">
-                            <g transform="translate(-6,1003)">
-                                <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
-                                <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
-                                <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
-                                <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
-                            </g>
+    <nav class="nav bar thick fixed">
+        <ul>
+            <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
+            <li class="brand">
+                <a href="#"><svg version="1.1" width="30px" height="26px" viewBox="0 0 48 48">
+                    <g transform="translate(0,-1004.3622)">
+                        <g transform="translate(-6,1003)">
+                            <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
+                            <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
+                            <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
+                            <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
                         </g>
-                    </svg></a>
+                    </g>
+                </svg></a>
+            </li>
+            <li><a href="http://caramel.ga/">Home</a></li>
+            <li><a href="http://caramel.ga/start.html">Get Started</a></li>
+            <li><a href="http://caramel.ga/showcase.html">Showcase</a></li>
+            <ul class="right">
+                <li class="dropdown"><a href="#" class="dropdownitem"><i class="fa fa-chevron-down fa-fw"></i></a>
+                    <ul>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#navigation">Navigation</a></li>
+                        <li><a href="#alerts">Alerts</a></li>
+                        <li><a href="#notices">Notices</a></li>
+                        <li><a href="#panels">Panels</a></li>
+                        <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                        <li><a href="#images">Images</a></li>
+                        <li><a href="#tables">Tables</a></li>
+                        <li><a href="#progress-bars">Progress Bars</a></li>
+                        <li><a href="#pagination">Pagination</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#grid">Grid</a></li>
+                    </ul>
                 </li>
-                <li><a href="http://caramel.ga/">Home</a></li>
-                <li><a href="http://caramel.ga/start.html">Get Started</a></li>
-                <li><a href="http://caramel.ga/showcase.html">Showcase</a></li>
-
-                <ul class="right">
-                    <li class="dropdown"><a href="#" class="dropdownitem"><i class="fa fa-chevron-down fa-fw"></i></a>
-                        <ul>
-                            <li><a href="#buttons">Buttons</a></li>
-                            <li><a href="#navigation">Navigation</a></li>
-                            <li><a href="#button-dropdowns">Button Dropdowns</a></li>
-                            <li><a href="#alerts">Alerts</a></li>
-                            <li><a href="#notices">Notices</a></li>
-                            <li><a href="#panels">Panels</a></li>
-                            <li><a href="#dismissables">Dismissables</a></li>
-                            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-                            <li><a href="#images">Images</a></li>
-                            <li><a href="#tables">Tables</a></li>
-                            <li><a href="#progress-bars">Progress Bars</a></li>
-                            <li><a href="#labels">Labels</a></li>
-                            <li><a href="#pagination">Pagination</a></li>
-                            <li><a href="#forms">Forms</a></li>
-                            <li><a href="#grid">Grid</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="http://github.com/kurisubrooks/caramel"><i class="fa fa-github-alt fa-fw"></i></a></li>
-                </ul>
+                <li><a href="http://github.com/kurisubrooks/caramel"><i class="fa fa-github-alt fa-fw"></i></a></li>
             </ul>
-        </nav>
-    </header>
+        </ul>
+    </nav>
 
     <main class="main">
         <div class="header">
@@ -135,19 +131,66 @@
 
         <h3 id="navigation">Navigation</h3>
 
-        <nav class="nav bar">
+        <h6>Thick</h6><br>
+        <nav class="nav bar thick">
             <ul>
                 <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
-                <li><a href="#">Link</a></li>
+                <li class="brand"><a href="#">Brand</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
                     <ul>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
+                    </ul>
+                </li>
+                <ul class="right">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </ul>
+        </nav>
+
+        <br>
+
+        <nav class="nav bar thick dark">
+            <ul>
+                <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
+                <li class="brand"><a href="#">Brand</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
+                    <ul>
+                        <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
                     </ul>
                 </li>
+                <ul class="right">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </ul>
+        </nav>
+
+        <br><br>
+
+        <h6>Normal</h6><br>
+        <nav class="nav bar">
+            <ul>
+                <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
+                <li class="brand"><a href="#">Brand</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </li>
+                <ul class="right">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
             </ul>
         </nav>
 
@@ -156,29 +199,43 @@
         <nav class="nav bar dark">
             <ul>
                 <li class="collapse"><a href="#" class="menu"><i class="fa fa-bars"></i></a></li>
-                <li><a href="#">Link</a></li>
+                <li class="brand"><a href="#">Brand</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
                     <ul>
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
                     </ul>
                 </li>
+                <ul class="right">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
             </ul>
         </nav>
 
-        <pre>&lt;nav class="nav bar"&gt;
+        <pre>&lt;nav class="nav bar <span class="color error">$style</span> <span class="color error">$color</span>"&gt;
     &lt;ul&gt;
         &lt;li class="collapse"&gt;&lt;a href="#" class="menu"&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+
+        // Brand or Logo
+        &lt;li class="brand"&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+
+        // Navigation Items
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+
+        // Dropdown Menu
         &lt;li class="dropdown"&gt;&lt;a href="#" class="dropdownitem"&gt;Dropdown&lt;/a&gt;
             &lt;ul&gt;
                 &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
+
+        // Right Aligned Navigation Items
+        &lt;ul class="right"&gt;
+            &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;</pre>
 
@@ -348,18 +405,7 @@
             <b>Warning:</b> Something went wrong!
         </div>
 
-        <div class="panel warn" id="note">
-            <div class="panel-head">
-                <div class="dismiss"><i class="fa fa-close"></i></div>
-                <strong>Warning:</strong>
-            </div>
-
-            <div class="panel-body">
-                <p>Something went wrong!</p>
-            </div>
-        </div>
-
-        <pre>&lt;div class="alert <span class="color error">$color</span>" id="note"&gt;
+        <pre>&lt;div class="notice <span class="color error">$color</span>" id="note"&gt;
     &lt;div class="dismiss"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/div&gt;
     <span class="color error">...</span>
 &lt;/div&gt;</pre>
@@ -418,9 +464,9 @@
                     <td><a href="http://github.com/kurisubrooks">kurisubrooks</a></td>
                 </tr>
                 <tr>
-                    <td>Kazuki</td>
-                    <td>KazukiKF</td>
-                    <td><a href="http://github.com/KazukiKF">KazukiKF</a></td>
+                    <td>Kaori</td>
+                    <td>Kaorioka</td>
+                    <td><a href="http://github.com/Kaorioka">Kaorioka</a></td>
                 </tr>
                 <tr>
                     <td>Henry</td>
@@ -447,9 +493,9 @@
                     <td><a href="http://github.com/kurisubrooks">kurisubrooks</a></td>
                 </tr>
                 <tr>
-                    <td>Kazuki</td>
-                    <td>KazukiKF</td>
-                    <td><a href="http://github.com/KazukiKF">KazukiKF</a></td>
+                    <td>Kaori</td>
+                    <td>Kaorioka</td>
+                    <td><a href="http://github.com/Kaorioka">Kaorioka</a></td>
                 </tr>
                 <tr>
                     <td>Henry</td>
@@ -478,57 +524,63 @@
 
         <div class="row">
             <div class="box col-4">
-                <div class="progress default">
-                    <div class="progress-bar" style="width:80%">
-                        <span id="progress">80%</span>
+                <div class="progress">
+                    <div class="progress-bar default" style="width:80%">
+                        <span class="progress-text">80%</span>
                     </div>
                 </div>
             </div>
 
             <div class="box col-4">
-                <div class="progress success">
-                    <div class="progress-bar" style="width:19%">
-                        <span id="progress">19%</span>
+                <div class="progress">
+                    <div class="progress-bar success" style="width:19%">
+                        <span class="progress-text">19%</span>
                     </div>
                 </div>
             </div>
 
             <div class="box col-4">
-                <div class="progress error">
-                    <div class="progress-bar" style="width:32%">
-                        <span id="progress">32%</span>
+                <div class="progress">
+                    <div class="progress-bar error" style="width:32%">
+                        <span class="progress-text">32%</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box col-4">
-                <div class="progress warn">
-                    <div class="progress-bar" style="width:64%">
-                        <span id="progress">64%</span>
+            <div class="box col-6">
+                <div class="progress">
+                    <div class="progress-bar warn" style="width:64%">
+                        <span class="progress-text">64%</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box col-4">
-                <div class="progress info">
-                    <div class="progress-bar" style="width:48%">
-                        <span id="progress">48%</span>
+            <div class="box col-6">
+                <div class="progress">
+                    <div class="progress-bar info" style="width:48%">
+                        <span class="progress-text">48%</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box col-4">
-                <div class="progress dark">
-                    <div class="progress-bar" style="width:9%">
-                        <span id="progress">9%</span>
+            <div class="box col-12">
+                <div class="progress">
+                    <div class="progress-bar success" style="width:50%">
+                        <span class="progress-text">50%</span>
+                    </div>
+                    <div class="progress-bar error" style="width:30%">
+                        <span class="progress-text">30%</span>
+                    </div>
+                    <div class="progress-bar warn" style="width:10%">
+                        <span class="progress-text">10%</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <pre>&lt;div class="progress <span class="color error">$color</span>"&gt;
-    &lt;div class="progress-bar" style="width:<span class="color error">100</span>%"&gt;
-        &lt;span id="progress"&gt;<span class="color error">100</span>%&lt;/span&gt;
+        <pre>&lt;div class="progress"&gt;
+    &lt;div class="progress-bar <span class="color error">$color</span>" style="width:<span class="color error">50</span>%"&gt;
+        &lt;span class="progress-text"&gt;<span class="color error">50</span>%&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
 
@@ -539,7 +591,7 @@
         <nav class="nav pag">
         	<ul>
         		<li><a href="#"><i class="fa fa-caret-left"></i></a></li>
-        		<li><a href="#"><b>1</b></a></li>
+        		<li><a href="#">1</a></li>
         		<li><a href="#">2</a></li>
         		<li><a href="#">3</a></li>
         		<li><a href="#">4</a></li>
@@ -564,7 +616,7 @@
         <input type="password" placeholder="Password">
         <input type="submit" class="btn info"><br>
 
-        <select class="dropdown">
+        <select>
             <option>Option 1</option>
             <option>Option 2</option>
             <option>Option 3</option>
@@ -574,9 +626,10 @@
 
         <pre>
 &lt;input type="text"&gt;
+
 &lt;input type="submit" class="btn <span class="color error">$color</span>"&gt;
 
-&lt;select class="dropdown"&gt;
+&lt;select&gt;
     &lt;option&gt;<span class="color error">...</span>&lt;/option&gt;
 &lt;/select&gt;
 
@@ -585,6 +638,9 @@
         <hr>
 
         <h3 id="grid">Grid</h3>
+        <div class="notice">
+            <b>Note:</b> You can do any combination of numbers as long as they add up to a maximum of 12.
+        </div><br>
 
         <div class="row" id="example">
             <div class="box col-1">col-1</div>
@@ -599,7 +655,7 @@
             <div class="box col-1">col-1</div>
             <div class="box col-1">col-1</div>
             <div class="box col-1">col-1</div>
-            <br><br>
+            <br>
 
             <div class="box col-2">col-2</div>
             <div class="box col-2">col-2</div>
@@ -607,31 +663,31 @@
             <div class="box col-2">col-2</div>
             <div class="box col-2">col-2</div>
             <div class="box col-2">col-2</div>
-            <br><br>
+            <br>
 
             <div class="box col-3">col-3</div>
             <div class="box col-6">col-6</div>
             <div class="box col-3">col-3</div>
-            <br><br>
+            <br>
 
             <div class="box col-3">col-3</div>
             <div class="box col-3">col-3</div>
             <div class="box col-3">col-3</div>
             <div class="box col-3">col-3</div>
-            <br><br>
+            <br>
 
             <div class="box col-4">col-4</div>
             <div class="box col-4">col-4</div>
             <div class="box col-4">col-4</div>
-            <br><br>
+            <br>
 
             <div class="box col-6">col-6</div>
             <div class="box col-6">col-6</div>
-            <br><br>
+            <br>
 
             <div class="box col-8">col-8</div>
             <div class="box col-4">col-4</div>
-            <br><br>
+            <br>
 
             <div class="box col-12">col-12</div>
             <br>
@@ -640,6 +696,40 @@
         <pre>&lt;div class="row"&gt;
     &lt;div class="box col-<span class="color error">6</span>"&gt;<span class="color error">...</span>&lt;/div&gt;
     &lt;div class="box col-<span class="color error">6</span>"&gt;<span class="color error">...</span>&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+        <br><br>
+
+        <h4>Full-Width Grid</h4><br>
+        <div class="row" id="example">
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <div class="full col-1">col-1</div>
+            <br>
+
+            <div class="full col-2">col-2</div>
+            <div class="full col-8">col-8</div>
+            <div class="full col-2">col-2</div>
+            <br>
+
+            <div class="full col-2">col-2</div>
+            <div class="full col-4">col-4</div>
+            <div class="full col-2">col-2</div>
+            <div class="full col-4">col-4</div>
+        </div>
+
+        <pre>&lt;div class="row"&gt;
+    &lt;div class="full col-<span class="color error">6</span>"&gt;<span class="color error">...</span>&lt;/div&gt;
+    &lt;div class="full col-<span class="color error">6</span>"&gt;<span class="color error">...</span>&lt;/div&gt;
 &lt;/div&gt;</pre>
 
         <hr>
