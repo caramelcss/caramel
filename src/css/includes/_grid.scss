@@ -1,19 +1,17 @@
-/*  Grid contributed to Caramel by github.com/gratimax */
-
 $sz: 12;
 $box-margin: 1/80 * 100%;
 $number-boxes: 12;
 $base-box-width: 7 / 120 * 100%;
 
 .row {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
 }
 
 .box {
@@ -35,7 +33,7 @@ $base-box-width: 7 / 120 * 100%;
 }
 
 @for $i from 1 through $sz {
-  .box.col-#{$i}{
-    width: $base-box-width * $i + $box-margin * 2 * ($i - 1);
-  }
+    .box.col-#{$i}{
+        width: $base-box-width * $i + $box-margin * 2 * ($i - 1);
+    }
 }
