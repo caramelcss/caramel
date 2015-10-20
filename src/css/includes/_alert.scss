@@ -16,14 +16,13 @@
 }
 
 @each $state, $color-map in $-states-map {
-
     $color: map-get($color-map, 'text-color');
     $color-state: map-get($color-map, 'color-state');
 
     .alert.#{$state} {
         color: $color;
         border: 1px solid $color-state;
-        background: lighten($color-state, 3);
+        background: lighten($color-state, 2);
 
         &.clean {
             color: darken($color-state, 5);
