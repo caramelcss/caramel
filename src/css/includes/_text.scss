@@ -1,17 +1,16 @@
 // Header Text
 h1 {font-size: 68px; font-weight: 300; margin: 16px 0;}
-h2 {font-size: 50px; font-weight: 300; margin: 12px 0;}
-h3 {font-size: 40px; font-weight: 300; margin: 10px 0;}
+h2 {font-size: 50px; font-weight: 300; margin: 16px 0;}
+h3 {font-size: 40px; font-weight: 300; margin: 14px 0;}
 h4 {font-size: 30px; font-weight: 400; margin: 8px 0;}
 h5 {font-size: 25px; font-weight: 400; margin: 6px 0;}
 h6 {font-size: 18px; font-weight: 500; margin: 4px 0;}
 
 h1.title,h2.title,h3.title,h4.title,h5.title,h6.title {
-  margin-bottom: 5px;
+  @include bottom-margin();
   border-bottom: 1px solid $grey;
 }
 
-// Links
 a {
     color: $link;
     text-decoration: none;
@@ -23,22 +22,19 @@ a {
     }
 }
 
-// Blockquotes
 blockquote {
     border-left: 4px solid $grey;
-    padding: 5px 30px;
+    padding: 2px 10px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px 0;
 }
 
-// Disabled Text
 .disabled {
     color: $disabled;
     cursor: not-allowed;
 }
 
-// Inline Colours
 .color.success,
 [color=success] {
     color: $success;
@@ -93,19 +89,16 @@ blockquote {
     }
 }
 
-// Bold text
 b, strong {
     font-weight: bold;
 }
 
-// Highlight
 mark {
     padding: 2px;
     color: black;
     background-color: yellow;
 }
 
-// Inline Code
 code {
     padding: 1px 8px 2px;
     font-family: $font-code;
@@ -115,39 +108,37 @@ code {
     @include border-radius();
 }
 
-// Code Block
 pre {
     overflow: scroll;
-    border: 1px solid $grey;
+    border: 1px solid $light-active;
     background-color: $light;
     font-family: $font-code;
-    padding: 10px 18px;
+    padding: $padding-medium;
 
     @include bottom-margin();
     @include border-radius();
 }
 
-// Italic Text
+pre::-webkit-scrollbar {
+    display: none;
+}
+
 em, .italic {
     font-style: italic;
 }
 
-// Paragraph
 p {
-    margin: 0 0 5px;
+    @include bottom-margin();
 }
 
-// Smaller Text
 .sml, small {
     font-size: 80%;
 }
 
-// Strikethrough Text
 s, .strike, .strikethrough {
     text-decoration: line-through;
 }
 
-// Upper/Lower Text
 sub, sup {
     position: relative;
     font-size: 75%;

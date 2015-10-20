@@ -1,4 +1,3 @@
-// Global Styling
 body {
     font-family: $font-default;
     font-size: $font-size;
@@ -9,21 +8,17 @@ body {
     margin: 0;
 }
 
-// Responsive Container
 .container, main {
     width: inherit;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 35px;
-}
 
-@media (max-width: $breakpoint-width) {
-    .container, main {
+    @media (max-width: $breakpoint-width) {
         padding: 0 10px;
     }
 }
 
-// Absolute Center
 .center {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -35,10 +30,8 @@ body {
     top: 50%;
     left: 50%;
     min-width: 400px;
-}
 
-@media (max-width: $breakpoint-width) {
-    .center {
+    @media (max-width: $breakpoint-width) {
         -webkit-transform: none;
         -moz-transform: none;
         -ms-transform: none;
@@ -50,7 +43,6 @@ body {
     }
 }
 
-// Hide on Collapse (Desktop Only)
 @media (max-width: $breakpoint-width) {
     .collapse {
         display: none;
@@ -58,30 +50,25 @@ body {
     }
 }
 
-// Footer
 footer {
     margin: 15px 0;
     padding: 5px 0;
 }
 
-// Hidden Class
 .hidden {
     display: none;
     visibility: hidden;
 }
 
-// Global Floats
-.left {     float: left; }
-.right {    float: right; }
+.left {float: left;}
+.right {float: right;}
 
-// Line Break with Seperator
 hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid $light-active;
 }
 
-// Dismissable
 .dismiss {
     float: right;
     position: relative;
@@ -89,7 +76,6 @@ hr {
     cursor: pointer;
 }
 
-// Global Overrides
 .no-round {
     @include border-radius(0);
 }
