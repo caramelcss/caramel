@@ -1,46 +1,36 @@
 .progress {
     width: 100%;
-    height: 20px;
-    background-color: $white;
-    border: 1px solid $light-active;
+    height: 25px;
+    background-color: $light;
     display: block;
     overflow: hidden;
 
-    @include border-radius();
+    @include border-radius(4px);
     @include bottom-margin();
+    @include inset-shadow();
 
     .progress-bar {
+        display: inline-block;
+        min-width: 2em;
+        height: 25px;
         text-align: center;
-        height: 20px;
-        color: $default;
         background-color: $default;
+        color: $white;
 
-        #progress {
+        .progress-text {
             position: relative;
-            top: 1px;
+            top: 2px;
         }
-    }
-
-    &.clean {
-        border: 2px solid $default !important;
     }
 }
 
 @each $state, $color-map in $-states-map {
-
     $color: map-get($color-map, 'text-color');
     $color-state: map-get($color-map, 'color-state');
 
-    .progress.#{$state} {
-        border: 1px solid darken($color-state, 5);
-
-        .progress-bar {
-            color: $color;
+    .progress {
+        .progress-bar.#{$state} {
             background-color: $color-state;
-        }
-
-        &.clean {
-            border: 2px solid $color-state !important;
         }
     }
 }
