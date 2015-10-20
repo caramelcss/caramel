@@ -18,7 +18,7 @@ input[type=url],
 input[type=week],
 textarea {
     width: 152px;
-    padding: 5px 14px 5px 8px;
+    padding: 6px 16px 6px 8px;
     font: inherit;
     color: inherit;
     border: 1px solid $light-active;
@@ -45,34 +45,23 @@ textarea {
     }
 }
 
-@each $state, $color-map in $-states-map {
-    $color-state: map-get($color-map, 'color-state');
-
-    input.#{$state} {
-        border: 1px solid $color-state;
-    }
-}
-
 select {
-    &.dropdown {
-        width: 176px;
-        height: 30px;
+    width: 178px;
+    height: 34px;
 
-        font-size: $font-size;
-        line-height: $line-height;
-        padding: $padding-small;
-        color: $font-color;
+    font-size: $font-size;
+    line-height: $line-height;
+    padding: $padding-small;
+    color: $font-color;
 
-        border: 1px solid $light-active;
-        overflow: hidden;
-        background-color: white;
+    border: 1px solid $light-active;
+    overflow: hidden;
+    background-color: white;
 
-        @include border-radius(4px);
-        @include border-radius(4px);
-        @include bottom-margin();
+    @include border-radius();
+    @include bottom-margin();
 
-        &:focus {
-            outline: none;
-        }
+    &:focus {
+        outline: none;
     }
 }
