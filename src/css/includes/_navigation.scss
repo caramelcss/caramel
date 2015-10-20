@@ -1,9 +1,14 @@
 .nav {
 	background: $light;
-	border: 1px solid $light-active;
-
-	@include border-radius(4px);
 	@include clearfix();
+
+	.container {
+		width: inherit;
+		margin: 0 auto;
+		padding: 0 35px;
+
+		@media (max-width: $breakpoint-width) {padding: 0;}
+	}
 
 	li {
 		position: relative;
@@ -52,14 +57,67 @@
 
 	a {
 		display: block;
-		padding: 10px 18px 8px;
+		padding: 10px 18px;
 		color: $default;
+		cursor: pointer !important;
 		white-space: nowrap;
 
-		&:hover { background: $light-active; }
+		.fa {
+			font-size: 16px;
+		}
 
+		&:hover { background: $light-active; }
 		&:hover,
 		&:focus { color: $default; }
+	}
+
+	&.thick {
+		a {
+			padding: 13px 18px !important;
+		}
+
+		.brand {
+			@media (max-width: $breakpoint-width) {
+				visibility: hidden;
+		        display: none;
+		        height: 0px !important;
+			}
+
+			a {
+				font-size: 18px;
+				padding: 9px 24px 0 !important;
+
+				&:hover {
+					background: inherit !important;
+				}
+			}
+		}
+	}
+
+	.brand {
+		a {
+			font-size: 16px;
+			padding: 7px 18px 0 !important;
+
+			&:hover {
+				background: inherit !important;
+			}
+		}
+
+		@media (max-width: $breakpoint-width) {
+			visibility: hidden;
+		    display: none;
+		    height: 0px !important;
+		}
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		border-bottom: 1px solid $grey;
 	}
 
 	.open li {
@@ -74,6 +132,7 @@
 	}
 
 	&.btn {
+		font-weight: 400;
 		position: relative;
 		padding: 0;
 		border: none;
@@ -225,10 +284,9 @@
 
 .breadcrumbs {
 	background: $light;
-	border: 1px solid $light-active;
-	padding: $padding-small;
+	padding: 10px 16px;
 
-	@include border-radius(4px);
+	@include border-radius();
 	@include bottom-margin();
 
 	ul, ol {
@@ -251,18 +309,19 @@
 
 			&.active {
 				color: darken($grey, 25);
+				cursor: not-allowed;
 			}
 
-			&:before {
+			&:after {
 				$nbsp: "\00a0";
 				$separator: "/";
-				content: "#{$separator}#{$nbsp}";
+				content: "#{$nbsp}#{$separator}";
 
 				padding: 0 5px;
 				color: $disabled;
 			}
 
-			&:first-child::before{
+			&:last-child::after{
 				content: "";
 				padding: 0;
 			}
@@ -289,7 +348,7 @@
 }
 
 .header {
-	.fixed {
+	&.fixed {
 		position: fixed;
 		top: 0;
 		width: 100%;
