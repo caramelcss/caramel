@@ -32,20 +32,20 @@
 			}
 		}
 
-		> ul {
+		> ul, > ol {
 			background: $light;
 			border: 1px solid $light-active;
 		}
 
 	}
 
-	ul {
+	ul, ol {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 
 		&.right {
-			ul {
+			ul, ol {
 				right: 0;
 			}
 
@@ -178,7 +178,7 @@
 					@include inline-block;
 				}
 
-				> ul {
+				> ul, > ol {
 					display: block;
 
 					@media (max-width: $breakpoint-width) {
@@ -187,19 +187,19 @@
 				}
 
 				&:hover {
-					> ul {
+					> ul, > ol {
 						display: block;
 					}
 				}
 			}
 
 			&:hover {
-				> ul {
+				> ul, > ol {
 					display: none;
 				}
 			}
 
-			> ul {
+			> ul, > ol {
 				margin-top: -4px;
 				background: $light;
 				border: 1px solid $light-active;
@@ -228,55 +228,7 @@
 		}
 	}
 
-	&.dropdown > ul,
-	.dropdown > ul {
-		display: none;
-		position: absolute;
-		min-width: 150px;
-		z-index: 2;
-		border-top: none;
-
-		@include border-radius-bottom(4px);
-
-		@media (max-width: $breakpoint-width) {
-			position: relative;
-			max-width: 100%;
-		}
-	}
-
-	&.dropdown li,
-	.dropdown li {
-		display: block;
-
-		/*
-		a {
-			@media (max-width: $breakpoint-width) {
-				padding-left: 40px;
-			}
-		}
-		*/
-	}
-
-	&.dropdown.open,
-	.dropdown.open,
-	&.dropdown.open:hover > ul,
-	.dropdown.open:hover > ul {
-		@media (max-width: $breakpoint-width) {
-			display: block;
-			border-bottom: none;
-		}
-	}
-
-	&.dropdown:hover > ul,
-	.dropdown:hover > ul {
-		display: block;
-		@media (max-width: $breakpoint-width) {
-			display: none;
-		}
-	}
-
-	&.dropdown,
-	.dropdown {
+	&.dropdown, .dropdown {
 		.fa-angle-down {
 			padding-left: 10px;
 
@@ -284,10 +236,39 @@
 				float: right;
 			}
 		}
-	}
 
-	&.no-round {
-	    @include border-radius(4px);
+		> ul, > ol {
+			display: none;
+			position: absolute;
+			min-width: 150px;
+			z-index: 2;
+			border-top: none;
+
+			@include border-radius-bottom(4px);
+
+			@media (max-width: $breakpoint-width) {
+				position: relative;
+				max-width: 100%;
+			}
+		}
+
+		li {
+			display: block;
+		}
+
+		&.open, &.open:hover > ul {
+			@media (max-width: $breakpoint-width) {
+				display: block;
+				border-bottom: none;
+			}
+		}
+
+		&:hover > ul {
+			display: block;
+			@media (max-width: $breakpoint-width) {
+				display: none;
+			}
+		}
 	}
 }
 
