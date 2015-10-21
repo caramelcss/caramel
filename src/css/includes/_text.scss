@@ -1,14 +1,48 @@
-// Header Text
-h1 {font-size: 68px; font-weight: 300; margin: 16px 0;}
-h2 {font-size: 50px; font-weight: 300; margin: 16px 0;}
-h3 {font-size: 40px; font-weight: 300; margin: 14px 0;}
-h4 {font-size: 30px; font-weight: 400; margin: 8px 0;}
-h5 {font-size: 25px; font-weight: 400; margin: 6px 0;}
-h6 {font-size: 18px; font-weight: 500; margin: 4px 0;}
+h1 {
+    font-size: 68px;
+    font-weight: 300;
+    margin: 16px 0;
+}
 
-h1.title,h2.title,h3.title,h4.title,h5.title,h6.title {
-  @include bottom-margin();
-  border-bottom: 1px solid $grey;
+h2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 16px 0;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 14px 0;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+}
+
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title {
+    padding-bottom: .3em;
+    @include bottom-margin();
+    border-bottom: 1px solid $grey;
 }
 
 a {
