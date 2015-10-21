@@ -3,5 +3,6 @@ $-states-map:(
     error: (color-state: $error, text-color: $white),
     warn: (color-state: $warn, text-color: $white),
     info: (color-state: $info, text-color: $white),
+    //light: (color-state: $light, text-color: $dark),
     dark: (color-state: $dark, text-color: $white)
 );
