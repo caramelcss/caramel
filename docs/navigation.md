@@ -36,10 +36,10 @@ Nav bars have multiple advanced options. Some of which include the following:
 `Brand`, `Dropdown`, `Input`, `Right Aligned`.
 
 - `Brand` is useful for including your company/project logo or name. It automatically hides on collapse and has no hover feature.
-    - Note: If you are using a logo, depending on it's size, you might have to adjust the padding of the brand class. You can do this by changing the padding of `.brand a`
+    - Note: If you are using a logo image, depending on it's size, you might have to adjust the padding of the brand class. You can do this by changing the padding of `.brand a`
 - `Dropdowns` enable you to have dropdown menus from nav items.
 - `Inputs` let you have inline forms, such as text fields and form submission buttons inline. These are already styled to fit in with the nav bar.
-- `Right Aligned` items will be positioned on the right side of the nav bar, rather than being defaultly on the left.
+- `Right Aligned` items will be positioned on the right side of the nav bar.
 
 Some of these do not have simple classes that you can add on to enable, but require more than 1 line of code to be used. Please see the syntax below to see how you can encorporate each of these advanced styles.
 
