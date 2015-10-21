@@ -5,7 +5,6 @@
 // @license SEE <LICENSE>
 */
 $(document).ready(function() {
-
     var $nav = $('.nav');
     var $outside = $(document);
 
@@ -35,11 +34,11 @@ $(document).ready(function() {
 
     // Alert Dismissables
     $(".dismiss").click(function() {
-        $(this).closest("#note").fadeOut(500, function() {
+        $(this).closest("#close").fadeOut(300, function() {
             $(this).remove();
         });
     });
 
-    //Force a resize to init.
+    // Force a resize to init.
     $(window).resize();
 });
