@@ -35,10 +35,6 @@
         background: transparent;
         font-weight: bold;
 
-        &.no-bold {
-            font-weight: normal;
-        }
-
         &:hover,
         &:active {
             color: $default-active;
