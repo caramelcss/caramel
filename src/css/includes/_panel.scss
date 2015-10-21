@@ -1,5 +1,5 @@
 .panel {
-    border: 1px solid $default-active;
+    border: 1px solid $light-active;
     overflow: hidden;
 
     @include border-radius();
@@ -7,10 +7,10 @@
 
     .panel-head {
         padding: 10px 20px 9px;
-        border-bottom: 1px solid $default-active;
-        background: $default;
+        border-bottom: 1px solid darken($light-active, 3);
+        background: $light-dark;
         font-weight: bold;
-        color: $white;
+        color: $font-color;
     }
 
     .panel-body {
@@ -34,6 +34,7 @@
         border: 1px solid darken($color-state, 5);
 
         .panel-head {
+            color: $white;
             background: $color-state;
             border-bottom: 1px solid darken($color-state, 5);
         }
