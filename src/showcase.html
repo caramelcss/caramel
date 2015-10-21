@@ -55,14 +55,11 @@
                     <ul>
                         <li><a href="#buttons">Buttons</a></li>
                         <li><a href="#navigation">Navigation</a></li>
-                        <li><a href="#alerts">Alerts</a></li>
-                        <li><a href="#notices">Notices</a></li>
+                        <li><a href="#banners">Banners</a></li>
                         <li><a href="#panels">Panels</a></li>
-                        <li><a href="#breadcrumbs">Breadcrumbs</a></li>
                         <li><a href="#images">Images</a></li>
                         <li><a href="#tables">Tables</a></li>
                         <li><a href="#progress-bars">Progress Bars</a></li>
-                        <li><a href="#pagination">Pagination</a></li>
                         <li><a href="#forms">Forms</a></li>
                         <li><a href="#grid">Grid</a></li>
                     </ul>
@@ -316,9 +313,71 @@
     &lt;/ul&gt;
 &lt;/nav&gt;</pre>
 
+        <br>
+
+        <h5 id="breadcrumbs">Breadcrumbs</h5>
+
+        <div class="breadcrumbs">
+            <ol>
+                <li><a href="#">caramel</a></li>
+                <li><a href="#">src</a></li>
+                <li><a href="#">css</a></li>
+                <li class="active">caramel.scss</li>
+            </ol>
+        </div>
+
+        <pre>&lt;div class="breadcrumbs"&gt;
+    &lt;ol&gt;
+        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;<span class="color error">...</span>&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</pre>
+
+        <br>
+
+        <h5 id="pagination">Pagination</h5>
+
+        <nav class="nav pag">
+        	<ul>
+        		<li><a href="#"><i class="fa fa-caret-left"></i></a></li>
+        		<li><a href="#">1</a></li>
+        		<li><a href="#">2</a></li>
+        		<li><a href="#">3</a></li>
+        		<li><a href="#">4</a></li>
+        		<li><a href="#">5</a></li>
+        		<li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+        	</ul>
+        </nav>
+
+        <pre>&lt;nav class="nav pag"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
         <hr>
 
-        <h3 id="alerts">Alerts</h3>
+        <h3 id="banners">Banners</h3>
+
+        <h5>Notices</h5><br>
+
+        <div class="notice default"><b>Default:</b> A little plain, isn't it?</div>
+        <div class="notice success"><b>Success!</b> Congratulations, it works!</div>
+        <div class="notice error"><b>Error.</b> You broke it. You have no one to blame but yourself!</div>
+        <div class="notice warn"><b>Warning:</b> Something went wrong!</div>
+        <div class="notice info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
+        <div class="notice dark"><b>Dark:</b> Deep Space Nine.</div>
+
+        <pre>&lt;div class="notice <span class="color error">$color</span>"&gt;
+    <span class="color error">...</span>
+&lt;/div&gt;</pre>
+
+        <br>
+
+        <h5>Alerts</h5><br>
 
         <div class="alert default"><b>Default:</b> A little plain, isn't it?</div>
         <div class="alert success"><b>Success!</b> Congratulations, it works!</div>
@@ -329,21 +388,6 @@
         <div class="alert default clean"><b>Clean:</b> Incase your boss says your style is 'childish', and you need more 'professionalism'.</div>
 
         <pre>&lt;div class="alert <span class="color error">$color</span>"&gt;
-    <span class="color error">...</span>
-&lt;/div&gt;</pre>
-
-        <hr>
-
-        <h3 id="notices">Notices</h3>
-
-        <div class="notice default"><b>Default:</b> A little plain, isn't it?</div>
-        <div class="notice success"><b>Success!</b> Congratulations, it works!</div>
-        <div class="notice error"><b>Error.</b> You broke it. You have no one to blame but yourself!</div>
-        <div class="notice warn"><b>Warning:</b> Something went wrong!</div>
-        <div class="notice info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
-        <div class="notice dark"><b>Dark:</b> Deep Space Nine.</div>
-
-        <pre>&lt;div class="notice <span class="color error">$color</span>"&gt;
     <span class="color error">...</span>
 &lt;/div&gt;</pre>
 
@@ -402,40 +446,19 @@
 
         <h3 id="dismissables">Dismissables</h3>
 
-        <div class="notice warn" id="note">
+        <div class="notice error" id="close">
             <div class="dismiss"><i class="fa fa-close"></i></div>
-            <b>Warning:</b> Something went wrong!
+            <b>Error:</b> Couldn't establish a connection to the server!
         </div>
 
-        <div class="alert warn" id="note">
+        <div class="alert error" id="close">
             <div class="dismiss"><i class="fa fa-close"></i></div>
-            <b>Warning:</b> Something went wrong!
+            <b>Error:</b> Incorrect Username / Password!
         </div>
 
-        <pre>&lt;div class="notice <span class="color error">$color</span>" id="note"&gt;
+        <pre>&lt;div class="<span class="color error">$element</span> <span class="color error">$color</span>" id="close"&gt;
     &lt;div class="dismiss"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/div&gt;
     <span class="color error">...</span>
-&lt;/div&gt;</pre>
-
-        <hr>
-
-        <h3 id="breadcrumbs">Breadcrumbs</h3>
-
-        <div class="breadcrumbs">
-            <ol>
-                <li><a href="#">caramel</a></li>
-                <li><a href="#">src</a></li>
-                <li><a href="#">css</a></li>
-                <li class="active">caramel.scss</li>
-            </ol>
-        </div>
-
-        <pre>&lt;div class="breadcrumbs"&gt;
-    &lt;ol&gt;
-        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;li class="active"&gt;<span class="color error">...</span>&lt;/li&gt;
-    &lt;/ol&gt;
 &lt;/div&gt;</pre>
 
         <hr>
@@ -593,30 +616,6 @@
 
         <hr>
 
-        <h3 id="pagination">Pagination</h3>
-
-        <nav class="nav pag">
-        	<ul>
-        		<li><a href="#"><i class="fa fa-caret-left"></i></a></li>
-        		<li><a href="#">1</a></li>
-        		<li><a href="#">2</a></li>
-        		<li><a href="#">3</a></li>
-        		<li><a href="#">4</a></li>
-        		<li><a href="#">5</a></li>
-        		<li><a href="#"><i class="fa fa-caret-right"></i></a></li>
-        	</ul>
-        </nav>
-
-        <pre>&lt;nav class="nav pag"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</pre>
-
-        <hr>
-
         <h3 id="forms">Forms</h3>
 
         <input type="text" placeholder="Username">
@@ -707,7 +706,7 @@
 
         <br><br>
 
-        <h4>Full-Width Grid</h4><br>
+        <h5>Full-Width</h5><br>
         <div class="row" id="example">
             <div class="full col-1">col-1</div>
             <div class="full col-1">col-1</div>
