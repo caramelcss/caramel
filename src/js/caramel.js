@@ -8,7 +8,7 @@ $(document).ready(function() {
     var $nav = $('.nav');
     var $outside = $(document);
 
-    $nav.on('click', '.menu', function(e){
+    $nav.on('click', '.collapse', function(e){
         e.stopPropagation();
         e.preventDefault();
 
