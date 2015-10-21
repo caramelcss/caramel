@@ -92,6 +92,23 @@
 				}
 			}
 		}
+
+		input[type=text],
+		input[type=email],
+		input[type=password],
+		input[type=search],
+		input[type=url] {
+			border: none;
+			margin: 2px 0;
+		    padding: 0 15px;
+		    height: 42px;
+		    @include border-radius(0);
+
+		    @media (max-width: $breakpoint-width) {
+		        margin: 8px 18px;
+	        	height: 35px;
+		    }
+		}
 	}
 
 	.brand {
@@ -109,6 +126,23 @@
 		    display: none;
 		    height: 0px !important;
 		}
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=password],
+	input[type=search],
+	input[type=url] {
+		border: none;
+		margin: 2px 0;
+	    padding: 0 15px;
+	    height: 37px;
+	    @include border-radius(0);
+
+	    @media (max-width: $breakpoint-width) {
+	        margin: 8px 18px;
+	        height: 35px;
+	    }
 	}
 
 	&.fixed {
@@ -254,21 +288,6 @@
 
 	&.no-round {
 	    @include border-radius(4px);
-	}
-
-	input[type=text],
-	input[type=email],
-	input[type=password],
-	input[type=search],
-	input[type=url] {
-	    margin: 2px;
-	    padding: 0 15px;
-	    height: 33px;
-
-	    @media (max-width: $breakpoint-width) {
-	        margin: 5px 20px;
-	        height: 35px;
-	    }
 	}
 }
 

@@ -766,6 +766,32 @@ img {
   background: inherit !important;
 }
 
+.nav.thick input[type=text],
+.nav.thick input[type=email],
+.nav.thick input[type=password],
+.nav.thick input[type=search],
+.nav.thick input[type=url] {
+  border: none;
+  margin: 2px 0;
+  padding: 0 15px;
+  height: 42px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 800px) {
+  .nav.thick input[type=text],
+  .nav.thick input[type=email],
+  .nav.thick input[type=password],
+  .nav.thick input[type=search],
+  .nav.thick input[type=url] {
+    margin: 8px 18px;
+    height: 35px;
+  }
+}
+
 .nav .brand a {
   font-size: 16px;
   padding: 7px 18px 0 !important;
@@ -780,6 +806,32 @@ img {
     visibility: hidden;
     display: none;
     height: 0px !important;
+  }
+}
+
+.nav input[type=text],
+.nav input[type=email],
+.nav input[type=password],
+.nav input[type=search],
+.nav input[type=url] {
+  border: none;
+  margin: 2px 0;
+  padding: 0 15px;
+  height: 37px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 800px) {
+  .nav input[type=text],
+  .nav input[type=email],
+  .nav input[type=password],
+  .nav input[type=search],
+  .nav input[type=url] {
+    margin: 8px 18px;
+    height: 35px;
   }
 }
 
@@ -956,27 +1008,6 @@ img {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-}
-
-.nav input[type=text],
-.nav input[type=email],
-.nav input[type=password],
-.nav input[type=search],
-.nav input[type=url] {
-  margin: 2px;
-  padding: 0 15px;
-  height: 33px;
-}
-
-@media (max-width: 800px) {
-  .nav input[type=text],
-  .nav input[type=email],
-  .nav input[type=password],
-  .nav input[type=search],
-  .nav input[type=url] {
-    margin: 5px 20px;
-    height: 35px;
-  }
 }
 
 .pag {
