@@ -256,14 +256,14 @@
 			display: block;
 		}
 
-		&.open, &.open:hover > ul {
+		&.open, &.open:hover > ul, &.open:hover > ol {
 			@media (max-width: $breakpoint-width) {
 				display: block;
 				border-bottom: none;
 			}
 		}
 
-		&:hover > ul {
+		&:hover > ul, &:hover > ol {
 			display: block;
 			@media (max-width: $breakpoint-width) {
 				display: none;
@@ -333,7 +333,7 @@
 	background: $dark;
 	border: 1px solid $dark-active;
 
-	li > ul {
+	li > ul, li > ol {
 		background: $dark;
 		border: 1px solid $dark-active;
 	}
@@ -362,7 +362,7 @@
 
 		@include border-radius(0);
 
-		li > ul {
+		li > ul, li > ol {
 			background: $white;
 			border: 1px solid $white-active;
 		}

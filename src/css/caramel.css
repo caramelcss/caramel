@@ -233,10 +233,6 @@ hr {
   font-weight: bold;
 }
 
-.btn.clean.no-bold {
-  font-weight: normal;
-}
-
 .btn.clean:hover,
 .btn.clean:active {
   color: #454545;
@@ -703,23 +699,23 @@ img {
   }
 }
 
-.nav li > ul {
+.nav li > ul, .nav li > ol {
   background: #FCFCFC;
   border: 1px solid #f7f7f7;
 }
 
-.nav ul {
+.nav ul, .nav ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.nav ul.right ul {
+.nav ul.right ul, .nav ul.right ol, .nav ol.right ul, .nav ol.right ol {
   right: 0;
 }
 
 @media (max-width: 800px) {
-  .nav ul.right {
+  .nav ul.right, .nav ol.right {
     float: none;
   }
 }
@@ -877,25 +873,25 @@ img {
   }
 }
 
-.nav.btn.dropdown.open > ul {
+.nav.btn.dropdown.open > ul, .nav.btn.dropdown.open > ol {
   display: block;
 }
 
 @media (max-width: 800px) {
-  .nav.btn.dropdown.open > ul {
+  .nav.btn.dropdown.open > ul, .nav.btn.dropdown.open > ol {
     position: absolute;
   }
 }
 
-.nav.btn.dropdown.open:hover > ul {
+.nav.btn.dropdown.open:hover > ul, .nav.btn.dropdown.open:hover > ol {
   display: block;
 }
 
-.nav.btn.dropdown:hover > ul {
+.nav.btn.dropdown:hover > ul, .nav.btn.dropdown:hover > ol {
   display: none;
 }
 
-.nav.btn.dropdown > ul {
+.nav.btn.dropdown > ul, .nav.btn.dropdown > ol {
   margin-top: -4px;
   background: #FCFCFC;
   border: 1px solid #f7f7f7;
@@ -909,7 +905,7 @@ img {
   border-top-right-radius: 4px;
 }
 
-.nav.btn.dropdown > ul.no-round {
+.nav.btn.dropdown > ul.no-round, .nav.btn.dropdown > ol.no-round {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -932,8 +928,17 @@ img {
   float: none;
 }
 
-.nav.dropdown > ul,
-.nav .dropdown > ul {
+.nav.dropdown .fa-angle-down, .nav .dropdown .fa-angle-down {
+  padding-left: 10px;
+}
+
+@media (max-width: 800px) {
+  .nav.dropdown .fa-angle-down, .nav .dropdown .fa-angle-down {
+    float: right;
+  }
+}
+
+.nav.dropdown > ul, .nav.dropdown > ol, .nav .dropdown > ul, .nav .dropdown > ol {
   display: none;
   position: absolute;
   min-width: 150px;
@@ -950,64 +955,31 @@ img {
 }
 
 @media (max-width: 800px) {
-  .nav.dropdown > ul,
-  .nav .dropdown > ul {
+  .nav.dropdown > ul, .nav.dropdown > ol, .nav .dropdown > ul, .nav .dropdown > ol {
     position: relative;
     max-width: 100%;
   }
 }
 
-.nav.dropdown li,
-.nav .dropdown li {
+.nav.dropdown li, .nav .dropdown li {
   display: block;
-  /*
-		a {
-			@media (max-width: $breakpoint-width) {
-				padding-left: 40px;
-			}
-		}
-		*/
 }
 
 @media (max-width: 800px) {
-  .nav.dropdown.open,
-  .nav .dropdown.open,
-  .nav.dropdown.open:hover > ul,
-  .nav .dropdown.open:hover > ul {
+  .nav.dropdown.open, .nav.dropdown.open:hover > ul, .nav.dropdown.open:hover > ol, .nav .dropdown.open, .nav .dropdown.open:hover > ul, .nav .dropdown.open:hover > ol {
     display: block;
     border-bottom: none;
   }
 }
 
-.nav.dropdown:hover > ul,
-.nav .dropdown:hover > ul {
+.nav.dropdown:hover > ul, .nav.dropdown:hover > ol, .nav .dropdown:hover > ul, .nav .dropdown:hover > ol {
   display: block;
 }
 
 @media (max-width: 800px) {
-  .nav.dropdown:hover > ul,
-  .nav .dropdown:hover > ul {
+  .nav.dropdown:hover > ul, .nav.dropdown:hover > ol, .nav .dropdown:hover > ul, .nav .dropdown:hover > ol {
     display: none;
   }
-}
-
-.nav.dropdown .fa-angle-down,
-.nav .dropdown .fa-angle-down {
-  padding-left: 10px;
-}
-
-@media (max-width: 800px) {
-  .nav.dropdown .fa-angle-down,
-  .nav .dropdown .fa-angle-down {
-    float: right;
-  }
-}
-
-.nav.no-round {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
 }
 
 .pag {
@@ -1080,7 +1052,7 @@ img {
   border: 1px solid #454545;
 }
 
-.dark li > ul {
+.dark li > ul, .dark li > ol {
   background: #525252;
   border: 1px solid #454545;
 }
@@ -1115,7 +1087,7 @@ img {
   border-radius: 0;
 }
 
-.header .nav li > ul {
+.header .nav li > ul, .header .nav li > ol {
   background: #FFF;
   border: 1px solid #f2f2f2;
 }
@@ -1429,7 +1401,13 @@ h6 {
   margin: 4px 0;
 }
 
-h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title {
+  padding-bottom: .3em;
   margin-bottom: 10px;
   border-bottom: 1px solid #EEE;
 }
