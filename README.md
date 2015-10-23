@@ -41,13 +41,13 @@ Head on over to our [website](http://caramel.ga/), and view the Showcase. All co
 Still stuck or need further help? Tweet [@kurisubrooks](https://twitter.com/kurisubrooks), and he'll try to answer any questions you may have.
 
 ## Compiling
-We've included an easy and hassle free way for you to compile Caramel. We've included our own Grunt build tool, that you can use to compile Caramel.
+We've included an easy and hassle free way for you to compile Caramel. We've included our own Gulp build tool, that you can use to compile Caramel.
 
 #### Required:
 Our compiler runs on [Node.js](https://nodejs.org/), so before you can continue, please ensure that you have it installed.   
-Once you have Node installed, you'll need [Grunt](http://gruntjs.com/). If you already have both Node and Grunt installed, skip these steps, otherwise install [Node.js](https://nodejs.org/) from their website, then run the following command to install Grunt:
+Once you have Node installed, you'll need [Gulp](http://gulpjs.com/). If you already have both Node and Gulp installed, skip these steps, otherwise install [Node.js](https://nodejs.org/) from their website, then run the following command to install Gulp:
 ```
-npm i grunt -g
+npm i gulp -g
 ```
 
 #### Install:
@@ -61,10 +61,10 @@ npm i
 #### Usage:
 To run the build tool, run the following command:
 ```
-grunt build
+gulp
 ```
 
-After the build is complete, the output `caramel.css`, `caramel.min.css` and `caramel.min.js` files can be found in your `./src` folder.
+After the build is complete, the output `caramel.css`, `caramel.min.css` and `caramel.min.js` files can be found in your `./src/css` and `./src/js` folders respectively.
 
 ## Compatibility
 Caramel has been designed for any browser that supports [CSS3](https://html5test.com/). Caramel has been tested, and is recommended for use on:
