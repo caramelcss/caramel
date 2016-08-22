@@ -1,9 +1,9 @@
 {
-  "name": "Caramel",
-  "version": "1.5.1",
-  "description": "A simple, modern, responsive website framework",
+  "name": "caramel",
+  "version": "1.6.0",
+  "description": "simple, modern, responsive website design framework",
   "homepage": "http://caramel.ga/",
-  "author": "Lumios",
+  "author": "lumios",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -14,8 +14,7 @@
     "framework",
     "frontend",
     "design",
-    "bootstrap",
-    "semantic"
+    "css"
   ],
   "bugs": {
     "url": "https://github.com/lumios/caramel/issues"
