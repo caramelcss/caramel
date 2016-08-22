@@ -11,6 +11,7 @@
 
     .progress-bar {
         display: inline-block;
+        float: left;
         min-width: 2em;
         height: 25px;
         text-align: center;
@@ -19,14 +20,14 @@
 
         .progress-text {
             position: relative;
-            top: 2px;
+            top: 2.5px;
         }
     }
 }
 
 @each $state, $color-map in $-states-map {
-    $color: map-get($color-map, 'text-color');
-    $color-state: map-get($color-map, 'color-state');
+    $color: map-get($color-map, "text-color");
+    $color-state: map-get($color-map, "color-state");
 
     .progress {
         .progress-bar.#{$state} {
