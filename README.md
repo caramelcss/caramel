@@ -44,18 +44,19 @@ Still stuck or need further help? Tweet [@kurisubrooks](https://twitter.com/kuri
 We've included an easy and hassle free way for you to compile Caramel. We've included our own Gulp build tool, that you can use to compile Caramel.
 
 #### Required:
-Our compiler runs on [Node.js](https://nodejs.org/), so before you can continue, please ensure that you have it installed.   
+Our compiler runs on [Node.js](https://nodejs.org/), so before you can continue, please ensure that you have it installed.
 Once you have Node installed, you'll need [Gulp](http://gulpjs.com/). If you already have both Node and Gulp installed, skip these steps, otherwise install [Node.js](https://nodejs.org/) from their website, then run the following command to install Gulp:
 ```
-npm i gulp -g
+npm install gulp --global
 ```
+**Note: You may need to run this command with sudo on macOS**
 
 #### Install:
 To get the latest version of Caramel and to install the build tools, run the following set of commands:
 ```
 cd ~/.../caramel
 git clone https://github.com/lumios/caramel.git
-npm i
+npm install
 ```
 
 #### Usage:
@@ -75,7 +76,7 @@ Chrome | Firefox | Safari | Opera | Edge | IE
 
 ### Legal
 ```
-Copyright (c) 2015 Lumios – All Rights Reserved.
+Copyright (c) 2016 Lumios – All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any persons obtaining
 a copy of this software, to deal this software within the agreed guidelines.
