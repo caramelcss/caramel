@@ -19,7 +19,7 @@
 
 @each $state, $color-map in $-states-map {
 
-    $color-state: map-get($color-map, 'color-state');
+    $color-state: map-get($color-map, "color-state");
 
     .notice.#{$state} {
         border-left-color: $color-state;

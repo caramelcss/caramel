@@ -27,8 +27,8 @@
 
 @each $state, $color-map in $-states-map {
 
-    $color: map-get($color-map, 'text-color');
-    $color-state: map-get($color-map, 'color-state');
+    $color: map-get($color-map, "text-color");
+    $color-state: map-get($color-map, "color-state");
 
     .panel.#{$state} {
         border: 1px solid darken($color-state, 5);
