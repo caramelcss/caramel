@@ -36,8 +36,8 @@ input[type=submit] {
 }
 
 textarea {
-    height: 60px;
-    width: 176px;
+    min-height: 100px;
+    min-width: 200px;
     display: block;
 
     &:focus {
