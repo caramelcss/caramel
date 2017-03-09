@@ -5,6 +5,7 @@
   "homepage": "http://caramel.ga/",
   "author": "lumios",
   "main": "index.js",
+  "sass": "src/css/caramel.scss"
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lumios/caramel.git"
