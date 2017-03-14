@@ -1,14 +1,14 @@
 {
   "name": "caramel",
-  "version": "1.6.0",
-  "description": "simple, modern, responsive website design framework",
-  "homepage": "http://caramel.ga/",
-  "author": "lumios",
-  "main": "index.js",
-  "sass": "src/css/caramel.scss",
+  "version": "2.0.0",
+  "description": "Simple, Modern, Responsive Website Design Framework",
+  "homepage": "http://kurisubrooks.com/caramel",
+  "author": "kurisubrooks",
+  "main": "gulpfile.js",
+  "sass": "sass/caramel.scss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lumios/caramel.git"
+    "url": "git+https://github.com/kurisubrooks/caramel.git"
   },
   "keywords": [
     "website",
@@ -18,7 +18,7 @@
     "css"
   ],
   "bugs": {
-    "url": "https://github.com/lumios/caramel/issues"
+    "url": "https://github.com/kurisubrooks/caramel/issues"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

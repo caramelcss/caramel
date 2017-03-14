@@ -1,0 +1,64 @@
+$white:     #FFF;
+$black:     #000;
+$grey:      #EEE;
+$disabled:  #CCC;
+$default:   #525252;
+$success:   #52C652;
+$error:     #E93F3C;
+$warn:      #F5AD1E;
+$info:      #52B7D6;
+$dark:      #525252;
+$light:     #FCFCFC;
+$link:      darken($info, 5);
+
+$font-default: "Open Sans", "Arial", "Helvetica", sans-serif;
+$font-code: monospace;
+$font-color: $default;
+$font-weight: 400;
+$font-size: 14px;
+$line-height: 1.4;
+$breakpoint-width: 800px;
+$default-radius: 2px !default;
+
+$padding-large: 16px 20px;
+$padding-medium: 13px 18px;
+$padding-small: 5px 14px;
+
+$white-light: darken($white, 5);
+$black-light: lighten($black, 5);
+$grey-light: lighten($grey, 5);
+$disabled-light: lighten($disabled, 5);
+$default-light: lighten($default, 5);
+$success-light: lighten($success, 5);
+$error-light: lighten($error, 5);
+$warn-light: lighten($warn, 5);
+$info-light: lighten($info, 5);
+$dark-light: lighten($dark, 5);
+$light-light: lighten($light, 5);
+$link-light: lighten($link, 5);
+
+$white-dark: darken($white, 5);
+$black-dark: lighten($black, 5);
+$grey-dark: darken($grey, 5);
+$disabled-dark: darken($disabled, 5);
+$default-dark: darken($default, 5);
+$success-dark: darken($success, 5);
+$error-dark: darken($error, 5);
+$warn-dark: darken($warn, 5);
+$info-dark: darken($info, 5);
+$dark-dark: darken($dark, 5);
+$light-dark: darken($light, 2);
+$link-dark: darken($link, 5);
+
+$white-active:      $white-dark;
+$black-active:      $black-light;
+$grey-active:       $grey-dark;
+$disabled-active:   $disabled-dark;
+$default-active:    $default-dark;
+$success-active:    $success-dark;
+$error-active:      $error-dark;
+$warn-active:       $warn-dark;
+$info-active:       $info-dark;
+$dark-active:       $dark-dark;
+$light-active:      $light-dark;
+$link-active:       $link-dark;

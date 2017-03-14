@@ -1,0 +1,77 @@
+.btn {
+    font: inherit;
+    font-weight: bold;
+    padding: 6px 16px;
+    margin-bottom: 5px;
+    color: $default;
+    text-align: center;
+    border: 1px solid $light-active;
+    background: $light;
+    cursor: pointer;
+
+    -webkit-transition: background .1s;
+    -moz-transition: background .1s;
+    -o-transition: background .1s;
+    transition: background .1s;
+
+    @include border-radius();
+    @include inline-block();
+
+    &.sml {
+        padding: 4px 9px 3px;
+        font-size: 12px;
+    }
+
+    &:hover,
+    &:active {
+        color: $default;
+        border: 1px solid $light-active;
+        background: lighten($light, 5);
+    }
+
+    &.clean {
+        color: $default;
+        border: 2px solid $default;
+        background: transparent;
+        font-weight: bold;
+
+        &:hover,
+        &:active {
+            color: $default-active;
+            border: 2px solid $default-active;
+        }
+    }
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+@each $state, $color-map in $-states-map {
+    $color: map-get($color-map, "text-color");
+    $color-state: map-get($color-map, "color-state");
+
+    .btn.#{$state} {
+        color: $color;
+        border: 1px solid darken($color-state, 5);
+        background: $color-state;
+
+        &:hover,
+        &:active {
+            border: 1px solid darken($color-state, 5);
+            background: lighten($color-state, 5);
+        }
+
+        &.clean {
+            color: darken($color-state, 5);
+            border: 2px solid $color-state;
+            background: transparent;
+
+            &:hover,
+            &:active {
+                color: darken($color-state, 5);
+                border: 2px solid darken($color-state, 5);
+            }
+        }
+    }
+}
