@@ -36,7 +36,7 @@ caramel/
 ```
 
 ## Documentation
-Head on over to our [website](http://caramel.ga/), and view the Showcase. All code usage and examples are listed right there on the page! If you want to see the exact syntax we use to show you the content on the page, simply right click on the page and view source (depending on whether your browser supports this feature).
+Head on over to our [website](http://kurisubrooks.com/caramel), and view the Showcase. All code usage and examples are listed right there on the page! If you want to see the exact syntax we use to show you the content on the page, simply right click on the page and view source (depending on whether your browser supports this feature).
 
 Still stuck or need further help? Tweet [@kurisubrooks](https://twitter.com/kurisubrooks), and he'll try to answer any questions you may have.
 
