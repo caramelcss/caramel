@@ -1,13 +1,13 @@
-# [Caramel](http://caramel.ga)
+# [Caramel](http://kurisubrooks.com/caramel/)
 
-[![devDependency Status](https://david-dm.org/lumios/caramel/dev-status.svg)](https://david-dm.org/lumios/caramel#info=devDependencies)
+[![devDependency Status](https://david-dm.org/kurisubrooks/caramel/dev-status.svg)](https://david-dm.org/kurisubrooks/caramel#info=devDependencies)
 
 Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
 ## Getting Started
-- [Download the latest Release](https://github.com/lumios/caramel/releases)
-- [Download the latest Development Build](https://github.com/lumios/caramel/archive/master.zip)
-- Clone the repo: ```git clone https://github.com/lumios/caramel.git```
+- [Download the latest Release](https://github.com/kurisubrooks/caramel/releases)
+- [Download the latest Development Build](https://github.com/kurisubrooks/caramel/archive/master.zip)
+- Clone the repo: ```git clone https://github.com/kurisubrooks/caramel.git```
 
 #### Quick Start
 Jump right into Caramel by using the included HTML5 Boilerplate. `template.html` is already set up to HTML5 standards, and has Caramel already included. All you need to do is to start writing your code!
@@ -15,7 +15,7 @@ Jump right into Caramel by using the included HTML5 Boilerplate. `template.html`
 Also, check out `showcase.html`, to see Caramel's latest features!
 
 ## What's included?
-Our [public releases](https://github.com/lumios/caramel/releases) only contain the files that are necessary for front-end development. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Build](https://github.com/lumios/caramel/archive/master.zip), which includes our build tool, and the sass source files.
+Our [public releases](https://github.com/kurisubrooks/caramel/releases) only contain the files that are necessary for front-end development. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Build](https://github.com/kurisubrooks/caramel/archive/master.zip), which includes our build tool, and the sass source files.
 
 ```
 caramel/
@@ -55,7 +55,7 @@ npm install gulp --global
 To get the latest version of Caramel and to install the build tools, run the following set of commands:
 ```
 cd ~/.../caramel
-git clone https://github.com/lumios/caramel.git
+git clone https://github.com/kurisubrooks/caramel.git
 npm install
 ```
 
@@ -76,7 +76,7 @@ Chrome | Firefox | Safari | Opera | Edge | IE
 
 ### Legal
 ```
-Copyright (c) 2016 Lumios – All Rights Reserved.
+Copyright (c) 2017 kurisubrooks – All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any persons obtaining
 a copy of this software, to deal this software within the agreed guidelines.
