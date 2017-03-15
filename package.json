@@ -4,6 +4,7 @@
   "description": "Simple, Modern, Responsive Website Design Framework",
   "homepage": "http://kurisubrooks.com/caramel",
   "author": "kurisubrooks",
+  "license": "GPLv3",
   "main": "gulpfile.js",
   "sass": "sass/caramel.scss",
   "repository": {
