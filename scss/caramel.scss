@@ -4,20 +4,30 @@
 // Caramel (http://kurisubrooks.com/caramel)
 // Copyright 2017, All Rights Reserved
 // @version 2.0.0
-// @license SEE <LICENSE>
+// @license GNU GPL v3
 */
 
-@import "includes/core";
-@import "includes/base";
-@import "includes/alert";
-@import "includes/button";
-@import "includes/form";
-@import "includes/grid";
-@import "includes/image";
-@import "includes/label";
-@import "includes/navigation";
-@import "includes/notice";
-@import "includes/panel";
-@import "includes/progress";
-@import "includes/tables";
-@import "includes/text";
+// Core
+@import "scss/base/variables.scss";
+@import "scss/base/maps.scss";
+@import "scss/base/helpers.scss";
+
+// Base
+@import "scss/base/base.scss";
+@import "scss/base/typography.scss";
+@import "scss/layout/grid.scss";
+
+// Components
+@import "scss/components/alert.scss";
+@import "scss/components/navigation.scss";
+@import "scss/components/notice.scss";
+@import "scss/components/panel.scss";
+@import "scss/components/tables.scss";
+
+// Elements
+@import "scss/elements/badge.scss";
+@import "scss/elements/button.scss";
+@import "scss/elements/form.scss";
+@import "scss/elements/image.scss";
+@import "scss/elements/label.scss";
+@import "scss/elements/progress.scss";
