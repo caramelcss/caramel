@@ -1,0 +1,36 @@
+.progress {
+    width: 100%;
+    height: 25px;
+    float: left;
+    background-color: $light;
+    display: block;
+    overflow: hidden;
+
+    @include border-radius(4px);
+    @include bottom-margin();
+    @include inset-shadow();
+
+    .progress-bar {
+        display: inline-block;
+        float: left;
+        min-width: 2em;
+        height: 25px;
+        text-align: center;
+        background-color: $default;
+        color: $white;
+
+        .progress-text {
+            position: relative;
+            top: 2.5px;
+        }
+    }
+}
+
+@each $state, $color-map in $-states-map {
+    $color: map-get($color-map, "text-color");
+    $color-state: map-get($color-map, "color-state");
+
+    .progress {
+        .progress-bar.#{$state} { background-color: $color-state; }
+    }
+}

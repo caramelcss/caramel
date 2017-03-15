@@ -1,0 +1,59 @@
+input,
+textarea,
+button,
+select {
+    font: inherit;
+    color: inherit;
+
+    &:focus { outline: none; }
+}
+
+input[type=text],
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
+    width: 152px;
+    padding: 6px 16px 6px 8px;
+    border: 1px solid $light-active;
+    background: $white;
+
+    @include no-default-appearance();
+    @include border-radius();
+    @include inline-block();
+    @include bottom-margin();
+}
+
+input[type=submit] {
+    border: none;
+    @include no-default-appearance();
+}
+
+textarea {
+    min-height: 100px;
+    min-width: 200px;
+    display: block;
+}
+
+select {
+    width: 178px;
+    height: 34px;
+
+    font-size: $font-size;
+    line-height: $line-height;
+    padding: $padding-small;
+    color: $font-color;
+
+    border: 1px solid $light-active;
+    overflow: hidden;
+    background-color: white;
+
+    @include border-radius();
+    @include bottom-margin();
+}
