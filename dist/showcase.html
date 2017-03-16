@@ -36,21 +36,21 @@
             background: 0 0;
         }
 
-        .main .header {
+        main {
+            max-width: 1000px;
+        }
+
+        main .header {
             margin: 100px 0 70px;
             text-align: center;
         }
 
-        .main .header h1 {
+        main .header h1 {
             margin-top: 0;
         }
 
         .fa.fa-code {
             font-size: 16px;
-        }
-
-        .container, main {
-            max-width: 1000px;
         }
 
         @media (max-width: 800px) {
@@ -61,19 +61,30 @@
     </style>
 </head>
 <body>
-    <nav class="nav bar thick fixed">
+    <nav class="bar fixed">
         <ul>
-            <li class="collapse"><a href="#"><i class="fa fa-bars"></i></a></li>
+            <li class="collapse">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </li>
             <li class="brand">
                 <a href="http://kurisubrooks.com/caramel">
                     <img src="logo.svg" width="30px" height="26px">
                 </a>
             </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://github.com/kurisubrooks/caramel#getting-started">Get Started</a></li>
-            <li><a href="showcase.html">Showcase</a></li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="https://github.com/kurisubrooks/caramel#getting-started">Get Started</a>
+            </li>
+            <li>
+                <a href="showcase.html">Showcase</a>
+            </li>
             <ul class="right">
-                <li class="dropdown"><a href="#" class="dropdownitem"><i class="fa fa-chevron-down fa-fw"></i></a>
+                <li class="dropdown">
+                    <a href="#" class="dropdownitem">
+                        <i class="fa fa-chevron-down fa-fw"></i>
+                    </a>
                     <ul>
                         <li><a href="#buttons">Buttons</a></li>
                         <li><a href="#navigation">Navigation</a></li>
@@ -86,12 +97,16 @@
                         <li><a href="#grid">Grid</a></li>
                     </ul>
                 </li>
-                <li><a href="http://github.com/kurisubrooks/caramel"><i class="fa fa-github fa-fw"></i></a></li>
+                <li>
+                    <a href="http://github.com/kurisubrooks/caramel">
+                        <i class="fa fa-github fa-fw"></i>
+                    </a>
+                </li>
             </ul>
         </ul>
     </nav>
 
-    <main class="main">
+    <main>
         <div class="header">
             <img src="logo.svg" width="100px" height="100px">
         </div>
@@ -140,7 +155,7 @@
 
         <pre>&lt;button class="<span class="color error">$style</span> clean"&gt;<span class="color error">...</span>&lt;/button&gt;<br>&lt;button class="<span class="color error">$style</span> clean sml"&gt;<span class="color error">...</span>&lt;/button&gt;</pre>
 
-        <br>
+        <!--<br>
 
         <div class="nav dropdown">
             <button class="dropdownitem default">Default &#x25BE;</button>
@@ -206,98 +221,80 @@
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;</pre>-->
 
         <hr>
 
         <h3 id="navigation">Navigation</h3>
 
-        <h6>Thick</h6><br>
-        <nav class="nav bar thick">
-            <ol>
-                <li class="collapse"><a><i class="fa fa-bars"></i></a></li>
-                <li class="brand"><a href="#">Brand</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
-                    <ol>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ol>
+        <nav class="bar">
+            <ul>
+                <li class="collapse">
+                    <a><i class="fa fa-bars"></i></a>
                 </li>
-                <ol class="right">
-                    <li><input type="text" placeholder="Search"></li>
-                    <li><a href="#">Submit</a></li>
-                </ol>
-            </ol>
+                <li class="brand">
+                    <a href="#">Brand</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdownitem">Dropdown &#x25BE;</a>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </li>
+                <ul class="right">
+                    <li>
+                        <input type="text" placeholder="Search">
+                    </li>
+                    <li>
+                        <a href="#">Submit</a>
+                    </li>
+                </ul>
+            </ul>
         </nav>
 
         <br>
 
-        <nav class="nav bar thick dark">
-            <ol>
-                <li class="collapse"><a><i class="fa fa-bars"></i></a></li>
-                <li class="brand"><a href="#">Brand</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
-                    <ol>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ol>
+        <nav class="bar dark">
+            <ul>
+                <li class="collapse">
+                    <a><i class="fa fa-bars"></i></a>
                 </li>
-                <ol class="right">
-                    <li><input type="text" placeholder="Search"></li>
-                    <li><a href="#">Submit</a></li>
-                </ol>
-            </ol>
+                <li class="brand">
+                    <a href="#">Brand</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdownitem">Dropdown &#x25BE;</a>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </li>
+                <ul class="right">
+                    <li>
+                        <input type="text" placeholder="Search">
+                    </li>
+                    <li>
+                        <a href="#">Submit</a>
+                    </li>
+                </ul>
+            </ul>
         </nav>
 
-        <br><br>
-
-        <h6>Normal</h6><br>
-        <nav class="nav bar">
-            <ol>
-                <li class="collapse"><a><i class="fa fa-bars"></i></a></li>
-                <li class="brand"><a href="#">Brand</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
-                    <ol>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ol>
-                </li>
-                <ol class="right">
-                    <li><input type="text" placeholder="Search"></li>
-                    <li><a href="#">Submit</a></li>
-                </ol>
-            </ol>
-        </nav>
-
-        <br>
-
-        <nav class="nav bar dark">
-            <ol>
-                <li class="collapse"><a><i class="fa fa-bars"></i></a></li>
-                <li class="brand"><a href="#">Brand</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown"><a href="#" class="dropdownitem">Dropdown &#x25BE;</a>
-                    <ol>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ol>
-                </li>
-                <ol class="right">
-                    <li><input type="text" placeholder="Search"></li>
-                    <li><a href="#">Submit</a></li>
-                </ol>
-            </ol>
-        </nav>
-
-        <pre>&lt;nav class="nav bar <span class="color error">$style</span> <span class="color error">$style</span>"&gt;
-    &lt;ol&gt;
+        <pre>&lt;nav class="bar <span class="color error">$style</span>"&gt;
+    &lt;ul&gt;
         &lt;li class="collapse"&gt;&lt;a&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 
         // Brand or Logo
@@ -307,20 +304,21 @@
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
 
         // Dropdown Menu
-        &lt;li class="dropdown"&gt;&lt;a href="#" class="dropdownitem"&gt;Dropdown&lt;/a&gt;
-            &lt;ol&gt;
+        &lt;li class="dropdown"&gt;
+            &lt;a class="dropdownitem"&gt;Dropdown&lt;/a&gt;
+            &lt;ul&gt;
                 &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
-            &lt;/ol&gt;
+            &lt;/ul&gt;
         &lt;/li&gt;
 
         // Right Aligned Navigation Items
-        &lt;ol class="right"&gt;
+        &lt;ul class="right"&gt;
             &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
+        &lt;/ul&gt;
 
         // Inline Form Inputs
         &lt;li&gt;&lt;input type="<span class="color error">$type</span>"&gt;&lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;/ul&gt;
 &lt;/nav&gt;</pre>
 
         <br>
@@ -328,27 +326,27 @@
         <h5 id="breadcrumbs">Breadcrumbs</h5>
 
         <div class="breadcrumbs">
-            <ol>
+            <ul>
                 <li><a href="#">caramel</a></li>
                 <li><a href="#">src</a></li>
                 <li><a href="#">css</a></li>
                 <li class="active">caramel.scss</li>
-            </ol>
+            </ul>
         </div>
 
         <pre>&lt;div class="breadcrumbs"&gt;
-    &lt;ol&gt;
+    &lt;ul&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li class="active"&gt;<span class="color error">...</span>&lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;/ul&gt;
 &lt;/div&gt;</pre>
 
         <br>
 
         <h5 id="pagination">Pagination</h5>
 
-        <nav class="nav pag">
+        <nav class="pag">
             <ul>
                 <li><a href="#"><i class="fa fa-caret-left"></i></a></li>
                 <li><a href="#">1</a></li>
@@ -360,7 +358,7 @@
             </ul>
         </nav>
 
-        <pre>&lt;nav class="nav pag"&gt;
+        <pre>&lt;nav class="pag"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
@@ -374,83 +372,83 @@
 
         <h5>Notices</h5><br>
 
-        <div class="notice default"><b>Default:</b> A little plain, isn't it?</div>
-        <div class="notice success"><b>Success!</b> Congratulations, it works!</div>
-        <div class="notice error"><b>Error.</b> You broke it. You have no one to blame but yourself!</div>
-        <div class="notice warn"><b>Warning:</b> Something went wrong!</div>
-        <div class="notice info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
-        <div class="notice dark"><b>Dark:</b> Deep Space Nine.</div>
+        <notice class="default"><b>Default:</b> A little plain, isn't it?</notice>
+        <notice class="success"><b>Success!</b> Congratulations, it works!</notice>
+        <notice class="error"><b>Error.</b> You broke it. You have no one to blame but yourself!</notice>
+        <notice class="warn"><b>Warning:</b> Something went wrong!</notice>
+        <notice class="info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</notice>
+        <notice class="dark"><b>Dark:</b> Deep Space Nine.</notice>
 
-        <pre>&lt;div class="notice <span class="color error">$style</span>"&gt;
+        <pre>&lt;notice class="<span class="color error">$style</span>"&gt;
     <span class="color error">...</span>
-&lt;/div&gt;</pre>
+&lt;/notice&gt;</pre>
 
         <br>
 
         <h5>Alerts</h5><br>
 
-        <div class="alert default"><b>Default:</b> A little plain, isn't it?</div>
-        <div class="alert success"><b>Success!</b> Congratulations, it works!</div>
-        <div class="alert error"><b>Error.</b> You broke it. You have no one to blame but yourself!</div>
-        <div class="alert warn"><b>Warning:</b> Something went wrong!</div>
-        <div class="alert info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
-        <div class="alert dark"><b>Dark:</b> Deep Space Nine.</div>
-        <div class="alert default clean"><b>Clean:</b> Incase your boss says your style is 'childish', and you need more 'professionalism'.</div>
+        <alert class="default"><b>Default:</b> A little plain, isn't it?</alert>
+        <alert class="success"><b>Success!</b> Congratulations, it works!</alert>
+        <alert class="error"><b>Error.</b> You broke it. You have no one to blame but yourself!</alert>
+        <alert class="warn"><b>Warning:</b> Something went wrong!</alert>
+        <alert class="info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</alert>
+        <alert class="dark"><b>Dark:</b> Deep Space Nine.</alert>
+        <alert class="default clean"><b>Clean:</b> Incase your boss says your style is 'childish', and you need more 'professionalism'.</alert>
 
-        <pre>&lt;div class="alert <span class="color error">$style</span>"&gt;
+        <pre>&lt;alert class="<span class="color error">$style</span>"&gt;
     <span class="color error">...</span>
-&lt;/div&gt;</pre>
+&lt;/alert&gt;</pre>
 
         <hr>
 
         <h3 id="panels">Panels</h3>
 
-        <div class="panel">
+        <panel>
             <div class="head">Default:</div>
             <div class="body">
                 A little plain, isn't it?
             </div>
-        </div>
+        </panel>
 
-        <div class="panel success">
+        <panel class="success">
             <div class="head">Success!</div>
             <div class="body">
                 Congratulations, it works!
             </div>
-        </div>
+        </panel>
 
-        <div class="panel error">
+        <panel class="error">
             <div class="head">Error.</div>
             <div class="body">
                 You broke it. You have no one to blame but yourself!
             </div>
-        </div>
+        </panel>
 
-        <div class="panel warn">
+        <panel class="warn">
             <div class="head">Warning:</div>
             <div class="body">
                 Something went wrong!
             </div>
-        </div>
+        </panel>
 
-        <div class="panel info">
+        <panel class="info">
             <div class="head">Info:</div>
             <div class="body">
                 Did you know, Bacon is more delicious in Canada?
             </div>
-        </div>
+        </panel>
 
-        <div class="panel dark">
+        <panel class="dark">
             <div class="head">Dark:</div>
             <div class="body">
                 Deep Space Nine.
             </div>
-        </div>
+        </panel>
 
-        <pre>&lt;div class="panel <span class="color error">$style</span>"&gt;
+        <pre>&lt;panel class="<span class="color error">$style</span>"&gt;
     &lt;div class="head"&gt;<span class="color error">...</span>&lt;/div&gt;
     &lt;div class="body"&gt;<span class="color error">...</span>&lt;/div&gt;
-&lt;/div&gt;</pre>
+&lt;/panel&gt;</pre>
 
         <hr>
 
@@ -466,10 +464,10 @@
             <b>Error:</b> Incorrect Username / Password!
         </div>
 
-        <pre>&lt;div class="<span class="color error">$element</span> <span class="color error">$style</span>" id="close"&gt;
+        <pre>&lt;<span class="color error">$element</span> class="<span class="color error">$style</span>" id="close"&gt;
     &lt;div class="dismiss"&gt;&#xD7;&lt;/div&gt;
     <span class="color error">...</span>
-&lt;/div&gt;</pre>
+&lt;/<span class="color error">$element</span>&gt;</pre>
 
         <hr>
 
@@ -565,63 +563,61 @@
         <div class="row">
             <div class="box col-4">
                 <div class="progress">
-                    <div class="progress-bar default" style="width:80%">
-                        <span class="progress-text">80%</span>
+                    <div class="bar default" style="width:80%">
+                        <span>80%</span>
                     </div>
                 </div>
             </div>
 
             <div class="box col-4">
                 <div class="progress">
-                    <div class="progress-bar success" style="width:19%">
-                        <span class="progress-text">19%</span>
+                    <div class="bar success" style="width:19%">
+                        <span>19%</span>
                     </div>
                 </div>
             </div>
 
             <div class="box col-4">
                 <div class="progress">
-                    <div class="progress-bar error" style="width:32%">
-                        <span class="progress-text">32%</span>
+                    <div class="bar error" style="width:32%">
+                        <span>32%</span>
                     </div>
                 </div>
             </div>
 
             <div class="box col-6">
                 <div class="progress">
-                    <div class="progress-bar warn" style="width:64%">
-                        <span class="progress-text">64%</span>
+                    <div class="bar warn" style="width:64%">
+                        <span>64%</span>
                     </div>
                 </div>
             </div>
 
             <div class="box col-6">
                 <div class="progress">
-                    <div class="progress-bar info" style="width:48%">
-                        <span class="progress-text">48%</span>
+                    <div class="bar info" style="width:48%">
+                        <span>48%</span>
                     </div>
                 </div>
             </div>
 
             <div class="box col-12">
                 <div class="progress">
-                    <div class="progress-bar success" style="width: 50%">
-                        <span class="progress-text">50%</span>
+                    <div class="bar success" style="width: 50%">
+                        <span>50%</span>
                     </div>
-                    <div class="progress-bar error" style="width: 30%">
-                        <span class="progress-text">30%</span>
+                    <div class="bar error" style="width: 30%">
+                        <span>30%</span>
                     </div>
-                    <div class="progress-bar warn" style="width: 20%">
-                        <span class="progress-text">20%</span>
+                    <div class="bar warn" style="width: 20%">
+                        <span>20%</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <pre>&lt;div class="progress"&gt;
-    &lt;div class="progress-bar <span class="color error">$style</span>" style="width: <span class="color error">50</span>%"&gt;
-        &lt;span class="progress-text"&gt;<span class="color error">50</span>%&lt;/span&gt;
-    &lt;/div&gt;
+    &lt;div class="bar <span class="color error">$style</span>" style="width: <span class="color error">50</span>%"&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
 
         <hr>
@@ -643,7 +639,7 @@
         <pre>
 &lt;input type="text"&gt;
 
-&lt;input type="submit" class="btn <span class="color error">$style</span>"&gt;
+&lt;input type="submit" class="<span class="color error">$style</span>"&gt;
 
 &lt;select&gt;
     &lt;option&gt;<span class="color error">...</span>&lt;/option&gt;
