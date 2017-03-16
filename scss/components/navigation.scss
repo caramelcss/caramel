@@ -1,3 +1,4 @@
+nav,
 .nav {
     background: $light;
     @include clearfix();
@@ -62,7 +63,7 @@
 
     a {
         display: block;
-        padding: 10px 18px;
+        padding: 13px 18px;
         color: $default;
         cursor: pointer !important;
         white-space: nowrap;
@@ -71,7 +72,9 @@
             font-size: 16px;
         }
 
-        &:hover { background: $light-active; }
+        &:hover {
+            background: $light-active;
+        }
 
         &:hover,
         &:focus {
@@ -79,55 +82,14 @@
         }
     }
 
-    &.thick {
-        a { padding: 13px 18px !important; }
-
-        .brand {
-            @media (max-width: $breakpoint-width) {
-                visibility: hidden;
-                display: none;
-                height: 0px !important;
-            }
-
-            a {
-                font-size: 18px;
-                padding: 10px 24px 0 !important;
-
-                &:hover { background: inherit !important; }
-            }
-        }
-
-        input[type=text],
-        input[type=email],
-        input[type=password],
-        input[type=search],
-        input[type=url] {
-            background: transparent;
-            border: none;
-            margin: 2px 0;
-            padding: 0 15px;
-            height: 42px;
-
-            @include border-radius(0);
-
-            @media (max-width: $breakpoint-width) {
-                margin: 8px 18px;
-                height: 35px;
-            }
-
-            &:active,
-            &:focus {
-                background: #FFF;
-            }
-        }
-    }
-
     .brand {
         a {
-            font-size: 16px;
-            padding: 8px 18px 0 !important;
+            font-size: 18px;
+            padding: 10px 24px 0 !important;
 
-            &:hover { background: inherit !important; }
+            &:hover {
+                background: inherit !important;
+            }
         }
 
         @media (max-width: $breakpoint-width) {
@@ -144,9 +106,9 @@
     input[type=url] {
         background: transparent;
         border: none;
-        margin: 2px 0;
+        margin: 2px;
         padding: 0 15px;
-        height: 37px;
+        height: 41px;
 
         @include border-radius(0);
 
@@ -225,6 +187,25 @@
             float: none;
 
             li { float: none; }
+        }
+    }
+
+    &.dark {
+        background: $dark;
+        border: 1px solid $dark-active;
+
+        li > ul,
+        li > ol {
+            background: $dark;
+            border: 1px solid $dark-active;
+        }
+
+        a {
+            color: $white;
+
+            &:hover,
+            &:focus { color: $white; }
+            &:hover { background: $dark-active; }
         }
     }
 
@@ -323,25 +304,6 @@
                 padding: 0;
             }
         }
-    }
-}
-
-.dark {
-    background: $dark;
-    border: 1px solid $dark-active;
-
-    li > ul,
-    li > ol {
-        background: $dark;
-        border: 1px solid $dark-active;
-    }
-
-    a {
-        color: $white;
-
-        &:hover,
-        &:focus { color: $white; }
-        &:hover { background: $dark-active; }
     }
 }
 
