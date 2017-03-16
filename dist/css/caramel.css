@@ -1556,14 +1556,13 @@ button.dropdown > ul,
 input[type=button].dropdown > ul,
 input[type=submit].dropdown > ul {
   display: none;
+  position: absolute;
   list-style: none;
   min-width: 150px;
-  text-align: left;
   padding: 0;
   margin: 8px 0 0 -17px;
+  text-align: left;
   background: #FCFCFC;
-  position: absolute;
-  z-index: 2;
   border: 1px solid #efefef;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;

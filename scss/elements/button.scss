@@ -82,14 +82,13 @@ input[type=submit] {
 
         > ul {
             display: none;
+            position: absolute;
             list-style: none;
             min-width: 150px;
-            text-align: left;
             padding: 0;
             margin: 8px 0 0 -17px;
+            text-align: left;
             background: $light;
-            position: absolute;
-            z-index: 2;
             border: 1px solid darken($light, 5);
             @include border-radius();
 
