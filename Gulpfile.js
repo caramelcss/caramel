@@ -6,10 +6,14 @@ const uglify = require("gulp-uglify");
 
 gulp.task("js", () =>
     gulp.src("./js/caramel.js")
-        .pipe(babel({ presets: ["es2015"] }))
+        .pipe(babel({ presets: [["es2015", { "modules": false }]] }))
         .pipe(gulp.dest("./dist/js"))
         .pipe(uglify({ preserveComments: "license" }))
         .pipe(rename("caramel.min.js"))
+        .on("error", function(error) {
+            console.error(error);
+            this.emit("end"); // eslint-disable-line no-invalid-this
+        })
         .pipe(gulp.dest("./dist/js")));
 
 gulp.task("sass", () =>
