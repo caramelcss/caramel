@@ -5,7 +5,9 @@
         display: table;
     }
 
-    &:after { clear: both; }
+    &:after {
+        clear: both;
+        }
 }
 
 @mixin inline-block() {
@@ -35,6 +37,12 @@
     -webkit-transition: $element $transition;
        -moz-transition: $element $transition;
             transition: $element $transition;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+       -moz-transform: $transform;
+            transform: $transform;
 }
 
 @mixin border-radius($radius: $default-radius) {
