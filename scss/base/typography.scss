@@ -51,7 +51,7 @@ a {
 
     &:hover,
     &:focus {
-       color: $link-active;
+       color: darken($link, 5);
        text-decoration: none;
     }
 }
@@ -83,7 +83,7 @@ blockquote {
 b,
 bold,
 strong {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 mark,
@@ -105,7 +105,7 @@ code {
 
 pre {
     overflow: scroll;
-    border: 1px solid $light-active;
+    border: 1px solid darken($light, 5);
     background-color: $light;
     font-family: $font-code;
     padding: $padding-medium;

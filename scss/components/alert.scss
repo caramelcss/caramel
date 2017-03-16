@@ -3,7 +3,7 @@ alert,
     display: block;
     padding: $padding-large;
     color: $default;
-    border: 1px solid $light-active;
+    border: 1px solid darken($light, 5);
     background: $light;
 
     @include border-radius();

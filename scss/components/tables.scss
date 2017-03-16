@@ -53,7 +53,7 @@ table,
     &.invert {
         > tbody > tr {
             &:nth-of-type(odd) {
-                background-color: $grey-light;
+                background-color: lighten($grey, 5);
             }
         }
     }

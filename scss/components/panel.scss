@@ -1,7 +1,7 @@
 panel,
 .panel {
     display: block;
-    border: 1px solid $light-active;
+    border: 1px solid darken($light, 5);
 
     @include border-radius();
     @include bottom-margin();
@@ -10,8 +10,8 @@ panel,
         padding: 10px 20px;
         font-weight: 500;
         color: $font-color;
-        border-bottom: 1px solid darken($light-active, 3);
-        background: $light-dark;
+        border-bottom: 1px solid darken($light, 8);
+        background: darken($light, 5);
     }
 
     .body {

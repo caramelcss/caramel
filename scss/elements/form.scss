@@ -22,8 +22,8 @@ input[type=url],
 input[type=week],
 textarea {
     width: 152px;
-    padding: 6px 16px 6px 8px;
-    border: 1px solid $light-active;
+    padding: $padding-form;
+    border: 1px solid darken($light, 5);
     background: $white;
 
     @include no-default-appearance();
@@ -44,10 +44,10 @@ select {
 
     font-size: $font-size;
     line-height: $line-height;
-    padding: $padding-small;
+    padding: $padding-form;
     color: $font-color;
 
-    border: 1px solid $light-active;
+    border: 1px solid darken($light, 5);
     overflow: hidden;
     background-color: white;
 

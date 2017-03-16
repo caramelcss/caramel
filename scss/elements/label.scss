@@ -1,16 +1,18 @@
 .label {
     width: auto;
-    padding: $padding-small;
+    padding: $padding-button-sml;
     color: $white;
     font-size: 80%;
-    background-color: $default-active;
+    background-color: darken($default, 5);
 
     @include border-radius();
     @include inline-block();
-}
 
-@each $state, $color-map in $-states-map {
-    $color-state: map-get($color-map, "color-state");
+    @each $state, $color-map in $-states-map {
+        $color-state: map-get($color-map, "color-state");
 
-    .label.#{$state} { background-color: $color-state; }
+        &.#{$state} {
+            background-color: $color-state;
+        }
+    }
 }

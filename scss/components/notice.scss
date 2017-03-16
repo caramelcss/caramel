@@ -4,7 +4,7 @@ notice,
     padding: $padding-large;
     font-size: 16px;
 
-    border: 1px solid $light-active;
+    border: 1px solid darken($light, 5);
     border-left-width: 5px;
     border-left-color: $default;
     background-color: $white;
