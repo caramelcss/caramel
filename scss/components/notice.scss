@@ -1,3 +1,4 @@
+notice,
 .notice {
     display: block;
     padding: $padding-large;
@@ -17,18 +18,22 @@
         color: $default;
         margin: 0;
     }
-}
 
-@each $state, $color-map in $-states-map {
-    $color-state: map-get($color-map, "color-state");
+    .dismiss {
+        font-size: 22px;
+    }
 
-    .notice.#{$state} {
-        border-left-color: $color-state;
+    @each $state, $color-map in $-states-map {
+        $color-state: map-get($color-map, "color-state");
 
-        b,
-        strong,
-        h4 {
-            color: darken($color-state, 5);
+        &.#{$state} {
+            border-left-color: $color-state;
+
+            b,
+            strong,
+            h4 {
+                color: darken($color-state, 5);
+            }
         }
     }
 }

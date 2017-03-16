@@ -1,3 +1,4 @@
+table,
 .table {
     width: 100%;
     max-width: 100%;
@@ -9,8 +10,13 @@
     @include border-radius();
     @include bottom-margin();
 
-    thead { border-bottom: 2px solid $grey; }
-    tfoot { border-top: 2px solid $grey; }
+    thead {
+        border-bottom: 2px solid $grey;
+    }
+
+    tfoot {
+        border-top: 2px solid $grey;
+    }
 
     tr {
         border-bottom: 1px solid $grey;
@@ -20,8 +26,13 @@
             padding: 8px;
             vertical-align: top;
 
-            &:first-of-type { padding-left: 16px; }
-            &:last-of-type { padding-right: 16px; }
+            &:first-of-type {
+                padding-left: 16px;
+            }
+
+            &:last-of-type {
+                padding-right: 16px;
+            }
         }
 
         th {
@@ -29,7 +40,9 @@
             text-align: left;
         }
 
-        td { vertical-align: top; }
+        td {
+            vertical-align: top;
+        }
 
         &:last-child {
             border-bottom: none;
@@ -39,11 +52,21 @@
 
     &.invert {
         > tbody > tr {
-            &:nth-of-type(odd) { background-color: $grey-light; }
+            &:nth-of-type(odd) {
+                background-color: $grey-light;
+            }
         }
     }
 
-    .align-left { text-align: left; }
-    .align-mid { text-align: center; }
-    .align-right { text-align: right; }
+    .align-left {
+        text-align: left;
+    }
+
+    .align-mid {
+        text-align: center;
+    }
+
+    .align-right {
+        text-align: right;
+    }
 }
