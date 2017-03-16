@@ -1,42 +1,40 @@
 .btn,
 button,
-*[type=button],
-*[type=submit] {
+input[type=button],
+input[type=submit] {
     font: inherit;
     text-align: center;
-    padding: 6px 16px;
-    margin-bottom: 5px;
+    padding: $padding-button;
     color: $default;
-    border: 1px solid $light-active;
+    border: 1px solid darken($light, 5);
     background: $light;
     cursor: pointer;
 
     @include no-default-appearance();
+    @include bottom-margin();
     @include border-radius();
     @include inline-block();
 
-    &.sml {
-        font-size: 12px;
-        padding: 4px 9px 3px;
-    }
-
-    &:hover,
-    &:active {
+    &:hover, &:active, &.active {
         color: $default;
-        border: 1px solid $light-active;
+        border: 1px solid darken($light, 5);
         background: darken($light, 1);
     }
 
+    &.sml {
+        font-size: 12px;
+        padding: $padding-button-sml;
+    }
+
     &.clean {
-        color: $light;
-        border: 2px solid $light;
+        color: $default;
+        border: 2px solid $default;
         background: transparent;
 
-        &:hover,
-        &:active {
-            color: $default;
-            border: 2px solid darken($light-active, 2);
-            background: darken($light, 1);
+        &:hover, &:active, &.active {
+            color: $white;
+            border: 2px solid lighten($default, 2);
+            background: lighten($default, 5);
         }
 
         @each $state, $color-map in $-states-map {
@@ -48,8 +46,7 @@ button,
                 border: 2px solid $color-state;
                 background: transparent;
 
-                &:hover,
-                &:active {
+                &:hover, &:active, &.active {
                     color: $white;
                     border: 2px solid $color-state;
                     background: $color-state;
@@ -67,15 +64,57 @@ button,
             border: 1px solid darken($color-state, 5);
             background: $color-state;
 
-            &:hover,
-            &:active {
+            &:hover, &:active, &.active {
                 border: 1px solid darken($color-state, 5);
                 background: lighten($color-state, 5);
             }
         }
     }
-}
 
-.dropdown {
-    cursor: pointer;
+    &.dropdown {
+        cursor: pointer;
+
+        > span {
+            &::after {
+                content: " ▾";
+            }
+        }
+
+        > ul {
+            display: none;
+            list-style: none;
+            min-width: 150px;
+            text-align: left;
+            padding: 0;
+            margin: 8px 0 0 -17px;
+            background: $light;
+            position: absolute;
+            z-index: 2;
+            border: 1px solid darken($light, 5);
+            @include border-radius();
+
+            li {
+                padding: $padding-nav-item;
+
+                a {
+                    color: $default;
+                }
+                
+                &:hover, &:active {
+                    color: $default;
+                    background: darken($light, 1);
+                }
+            }
+        }
+
+        &.open > ul {
+            display: block;
+        }
+
+        &:hover, &:active {
+            > ul {
+                display: block;
+            }
+        }
+    }
 }
