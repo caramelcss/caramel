@@ -1,35 +1,35 @@
 h1 {
-    font-size: 68px;
-    font-weight: 300;
+    font-size: 2.5em;
+    font-weight: 400;
     margin: 16px 0;
 }
 
 h2 {
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 2em;
+    font-weight: 400;
     margin: 16px 0;
 }
 
 h3 {
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 1.75em;
+    font-weight: 400;
     margin: 14px 0;
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: 400;
     margin: 8px 0;
 }
 
 h5 {
-    font-size: 25px;
+    font-size: 1.25em;
     font-weight: 400;
     margin: 6px 0;
 }
 
 h6 {
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 500;
     margin: 4px 0;
 }
@@ -57,11 +57,11 @@ a {
 }
 
 blockquote {
-    border-left: 4px solid $grey;
     padding: 2px 10px;
+    margin: 10px 0;
     font-weight: 300;
     font-size: 16px;
-    margin: 10px 0;
+    border-left: 4px solid $grey;
 }
 
 .disabled {
@@ -69,71 +69,26 @@ blockquote {
     cursor: not-allowed;
 }
 
-.color.success,
-[color=success] {
-    color: $success;
+.color {
+    @each $state, $color-map in $-states-map {
+        $color: map-get($color-map, "text-color");
+        $color-state: map-get($color-map, "color-state");
 
-    &:hover,
-    &:active {
-        color: $success;
+        &.#{$state} {
+            color: $color-state;
+        }
     }
 }
 
-.color.error,
-[color=error] {
-    color: $error;
-
-    &:hover,
-    &:active {
-        color: $error;
-    }
-}
-
-.color.info,
-[color=info] {
-    color: $info;
-
-    &:hover,
-    &:active {
-        color: $info;
-    }
-}
-
-.color.warn,
-[color=warn] {
-    color: $warn;
-
-    &:hover,
-    &:active {
-        color: $warn;
-    }
-}
-
-.color.dark,
-[color=dark] {
-    color: $dark;
-
-    &:hover,
-    &:active {
-        color: $dark;
-    }
-}
-
-.color.light,
-[color=light] {
-    color: $light;
-
-    &:hover,
-    &:active {
-        color: $light;
-    }
-}
-
-b, strong {
+b,
+bold,
+strong {
     font-weight: bold;
 }
 
-mark {
+mark,
+marker,
+highlight {
     padding: 2px;
     color: black;
     background-color: yellow;
@@ -172,8 +127,8 @@ p {
     @include bottom-margin();
 }
 
-.sml,
-small {
+small,
+.sml {
     font-size: 80%;
 }
 
