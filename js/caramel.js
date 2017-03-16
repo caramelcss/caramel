@@ -1,29 +1,33 @@
+/* eslint-disable no-invalid-this */
 const $ = window.$ || window.jQuery;
 
-document.addEventListener("DOMContentLoaded", () => {
-    const nav = $("nav");
-    const context = $(document);
+$(document).ready(() => {
+    const $nav = $("nav");
+    const $global = $(document);
 
-    nav.on("click", ".collapse", event => {
+    $nav.on("click", ".collapse", function(event) {
         event.stopPropagation();
         event.preventDefault();
 
-        $(this).parents(nav).toggleClass("open");
-
-        context.one("click", () => nav.removeClass("open"));
+        $(this).parent($nav).toggleClass("open");
+        $global.one("click", () => $nav.removeClass("open"));
     });
 
-    nav.on("click", ".dropdownitem", event => {
+    $(".dropdown").on("click", function(event) {
         event.stopPropagation();
         event.preventDefault();
 
-        $(this).parent(".dropdown").toggleClass("open");
-
-        context.one("click", () => nav.removeClass("open"));
+        const $self = $(this);
+        $self.toggleClass("open");
+        $global.one("click", () => $self.removeClass("open"));
     });
 
     // Alert Dismissables
-    $(".dismiss").click(() => $(this).closest("#close").fadeOut(300, () => $(this).remove()));
+    $(".dismiss").click(function() {
+        $(this).closest("#close").fadeOut(300, function() {
+            $(this).remove();
+        });
+    });
 
     $(window).resize();
 });
