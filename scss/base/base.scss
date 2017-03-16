@@ -1,14 +1,17 @@
 body {
+    margin: 0;
+    padding: 0;
+    border: none;
     font-family: $font-default;
     font-size: $font-size;
     font-weight: $font-weight;
     line-height: $line-height;
-    background-color: $white;
     color: $font-color;
-    margin: 0;
+    background-color: $white;
 }
 
-.container, main {
+main,
+.container {
     width: inherit;
     max-width: 1200px;
     margin: 0 auto;
@@ -20,19 +23,16 @@ body {
 }
 
 .center {
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    min-width: 400px;
     position: absolute;
     text-align: center;
     top: 50%;
     left: 50%;
-    min-width: 400px;
+
+    @include transform(translate(-50%, -50%));
 
     @media (max-width: $breakpoint-width) {
-        -webkit-transform: none;
-        -moz-transform: none;
-        transform: none;
+        @include transform(none);
         position: inherit;
         top: inherit;
         left: inherit;
@@ -56,9 +56,6 @@ footer {
     visibility: hidden;
 }
 
-.left {float: left;}
-.right {float: right;}
-
 hr {
     margin: 20px 0;
     border: 0;
@@ -66,10 +63,20 @@ hr {
 }
 
 .dismiss {
-    float: right;
+    line-height: 1em;
     position: relative;
+    top: 0;
     right: 0;
+    float: right;
     cursor: pointer;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 .no-round {
