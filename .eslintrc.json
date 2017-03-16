@@ -27,7 +27,7 @@
         "dot-notation": "error",
         "eol-last": "error",
         "eqeqeq": "error",
-        "func-names": "error",
+        "func-names": 0,
         "func-style": [ "error", "declaration", { "allowArrowFunctions": true } ],
         "handle-callback-err": "error",
         "id-length": [ "error", { "exceptions": [ "$", "_", "a", "b" ] } ],
