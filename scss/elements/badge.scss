@@ -9,7 +9,7 @@
     white-space: nowrap;
     vertical-align: baseline;
     background-color: #777;
-    
+
     @include border-radius(10px);
     @include inline-block();
 }
