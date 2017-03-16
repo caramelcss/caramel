@@ -4,13 +4,9 @@
   "description": "Simple, Modern, Responsive Website Design Framework",
   "homepage": "http://kurisubrooks.com/caramel",
   "author": "kurisubrooks",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "main": "gulpfile.js",
-  "sass": "sass/caramel.scss",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kurisubrooks/caramel.git"
-  },
+  "sass": "scss/caramel.scss",
   "keywords": [
     "website",
     "framework",
@@ -18,10 +14,19 @@
     "design",
     "css"
   ],
+  "scripts": {
+    "watch": "./node_modules/.bin/gulp watch",
+    "build": "./node_modules/.bin/gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurisubrooks/caramel.git"
+  },
   "bugs": {
     "url": "https://github.com/kurisubrooks/caramel/issues"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.2",
     "gulp-rename": "^1.2.2",
