@@ -9,22 +9,54 @@
     <meta name="description" content="a simple, beautiful, modern web framework.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link href="css/caramel.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="css/caramel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/caramel.js"></script>
+
     <style>
-        body{font-family: 'Open Sans', sans-serif;padding-top:20px;}
-        #example .box, .full{background-color: #EEE;text-align: center;}
-        .full:nth-child(even){background-color: #DDD;}
-        .header .logo a{padding: 5px 20px 0}
-        .header .logo a:hover{background: 0 0}
-        .main .header{margin: 100px 0 70px;text-align: center}
-        .main .header h1{margin-top: 0}
-        .fa.fa-code{font-size: 16px}
-        .title{display:block;font-size: 60px;font-weight: 300;}
-        .container, main {max-width: 1000px;}
+        body {
+            padding-top:20px;
+        }
+
+        #example .box, .full {
+            background-color: #EEE;
+            text-align: center;
+        }
+
+        .full:nth-child(even) {
+            background-color: #DDD;
+        }
+        
+        .header .logo a {
+            padding: 5px 20px 0;
+        }
+
+        .header .logo a:hover {
+            background: 0 0;
+        }
+
+        .main .header {
+            margin: 100px 0 70px;
+            text-align: center;
+        }
+
+        .main .header h1 {
+            margin-top: 0;
+        }
+
+        .fa.fa-code {
+            font-size: 16px;
+        }
+
+        .container, main {
+            max-width: 1000px;
+        }
 
         @media (max-width: 800px) {
-            .title{font-size:50px;}
+            .title {
+                font-size:50px;
+            }
         }
     </style>
 </head>
@@ -34,16 +66,7 @@
             <li class="collapse"><a href="#"><i class="fa fa-bars"></i></a></li>
             <li class="brand">
                 <a href="http://kurisubrooks.com/caramel">
-                    <svg version="1.1" width="30px" height="26px" viewBox="0 0 48 48">
-                        <g transform="translate(0,-1004.3622)">
-                            <g transform="translate(-6,1003)">
-                                <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
-                                <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
-                                <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
-                                <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
-                            </g>
-                        </g>
-                    </svg>
+                    <img src="logo.svg" width="30px" height="26px">
                 </a>
             </li>
             <li><a href="index.html">Home</a></li>
@@ -70,117 +93,105 @@
 
     <main class="main">
         <div class="header">
-          <svg version="1.1" width="100px" height="100px" viewBox="0 0 48 48">
-            <g transform="translate(0,-1004.3622)">
-              <g transform="translate(-6,1003)">
-                <path fill="#B7806C" d="M30,2.518l-20,10l20,10l20-10 L30,2.518z"/>
-                <path fill="#B7785C" d="M30,22.362v25l20-10v-25 L30,22.362z"/>
-                <path fill="#8E5B42" d="M30,22.362v25l-20-10v-25 L30,22.362z"/>
-                <path fill="none" stroke="#4D4D4D" d="M30,2.375l-20,10v25l20,10l20-10v-25 L30,2.375z"/>
-              </g>
-            </g>
-          </svg>
-
-          <div class="title" id="caramel">Caramel</div>
-
+            <img src="logo.svg" width="100px" height="100px">
         </div>
 
         <hr>
 
         <h3 id="buttons">Buttons</h3>
 
-        <button class="btn default">Default</button>
-        <button class="btn success">Success</button>
-        <button class="btn error">Error</button>
-        <button class="btn warn">Warning</button>
-        <button class="btn info">Info</button>
-        <button class="btn dark">Dark</button>
+        <button class="default">Default</button>
+        <button class="success">Success</button>
+        <button class="error">Error</button>
+        <button class="warn">Warning</button>
+        <button class="info">Info</button>
+        <button class="dark">Dark</button>
 
         <br>
 
-        <button class="btn default sml">Default</button>
-        <button class="btn success sml">Success</button>
-        <button class="btn error sml">Error</button>
-        <button class="btn warn sml">Warning</button>
-        <button class="btn info sml">Info</button>
-        <button class="btn dark sml">Dark</button>
+        <button class="default sml">Default</button>
+        <button class="success sml">Success</button>
+        <button class="error sml">Error</button>
+        <button class="warn sml">Warning</button>
+        <button class="info sml">Info</button>
+        <button class="dark sml">Dark</button>
 
         <pre>
-&lt;button class="btn <span class="color error">$color</span>"&gt;<span class="color error">...</span>&lt;/button&gt;
-&lt;button class="btn <span class="color error">$color</span> sml"&gt;<span class="color error">...</span>&lt;/button&gt;</pre>
+&lt;button class="<span class="color error">$style</span>"&gt;<span class="color error">...</span>&lt;/button&gt;
+&lt;button class="<span class="color error">$style</span> sml"&gt;<span class="color error">...</span>&lt;/button&gt;</pre>
 
         <br>
 
-        <button class="btn default clean">Default</button>
-        <button class="btn success clean">Success</button>
-        <button class="btn error clean">Error</button>
-        <button class="btn warn clean">Warning</button>
-        <button class="btn info clean">Info</button>
-        <button class="btn dark clean">Dark</button>
+        <button class="default clean">Default</button>
+        <button class="success clean">Success</button>
+        <button class="error clean">Error</button>
+        <button class="warn clean">Warning</button>
+        <button class="info clean">Info</button>
+        <button class="dark clean">Dark</button>
 
         <br>
 
-        <button class="btn default clean sml">Default</button>
-        <button class="btn success clean sml">Success</button>
-        <button class="btn error clean sml">Error</button>
-        <button class="btn warn clean sml">Warning</button>
-        <button class="btn info clean sml">Info</button>
-        <button class="btn dark clean sml">Dark</button>
+        <button class="default clean sml">Default</button>
+        <button class="success clean sml">Success</button>
+        <button class="error clean sml">Error</button>
+        <button class="warn clean sml">Warning</button>
+        <button class="info clean sml">Info</button>
+        <button class="dark clean sml">Dark</button>
 
-        <pre>&lt;button class="btn <span class="color error">$color</span> clean"&gt;<span class="color error">...</span>&lt;/button&gt;<br>&lt;button class="btn <span class="color error">$color</span> clean sml"&gt;<span class="color error">...</span>&lt;/button&gt;</pre>
+        <pre>&lt;button class="<span class="color error">$style</span> clean"&gt;<span class="color error">...</span>&lt;/button&gt;<br>&lt;button class="<span class="color error">$style</span> clean sml"&gt;<span class="color error">...</span>&lt;/button&gt;</pre>
 
         <br>
 
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem default">Default &#x25BE;</button>
+        <div class="nav dropdown">
+            <button class="dropdownitem default">Default &#x25BE;</button>
             <ul>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
             </ul>
         </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem success">Success &#x25BE;</button>
+        <div class="nav dropdown">
+            <button class="dropdownitem success">Success &#x25BE;</button>
             <ul>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
             </ul>
         </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem error">Error &#x25BE;</button>
+        <div class="nav dropdown">
+            <button class="dropdownitem error">Error &#x25BE;</button>
             <ul>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
             </ul>
         </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem warn">Warning &#x25BE;</button>
+        <div class="nav dropdown">
+            <button class="dropdownitem warn">Warning &#x25BE;</button>
             <ul>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
             </ul>
         </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem info">Info &#x25BE;</button>
+        <div class="nav dropdown">
+            <button class="dropdownitem info">Info &#x25BE;</button>
             <ul>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
             </ul>
         </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem dark">Dark &#x25BE;</button>
+        <div class="nav dropdown">
+            <button class="dropdownitem dark">Dark &#x25BE;</button>
             <ul>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
             </ul>
         </div>
-        <div class="nav btn dropdown">
-            <button class="btn dropdownitem default clean">Clean &#x25BE;</button>
+        <div class="nav dropdown">
+            <button class="dropdownitem default clean">Clean &#x25BE;</button>
             <ul>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
@@ -188,8 +199,8 @@
             </ul>
         </div>
 
-        <pre>&lt;div class="nav btn dropdown"&gt;
-    &lt;button class="btn dropdownitem <span class="color error">$color</span>"&gt;<span class="color error">...</span>&lt;/button&gt;
+        <pre>&lt;div class="nav dropdown"&gt;
+    &lt;button class="dropdownitem <span class="color error">$style</span>"&gt;<span class="color error">...</span>&lt;/button&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
@@ -264,7 +275,7 @@
             </ol>
         </nav>
 
-		<br>
+        <br>
 
         <nav class="nav bar dark">
             <ol>
@@ -285,7 +296,7 @@
             </ol>
         </nav>
 
-        <pre>&lt;nav class="nav bar <span class="color error">$style</span> <span class="color error">$color</span>"&gt;
+        <pre>&lt;nav class="nav bar <span class="color error">$style</span> <span class="color error">$style</span>"&gt;
     &lt;ol&gt;
         &lt;li class="collapse"&gt;&lt;a&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 
@@ -338,15 +349,15 @@
         <h5 id="pagination">Pagination</h5>
 
         <nav class="nav pag">
-        	<ul>
-        		<li><a href="#"><i class="fa fa-caret-left"></i></a></li>
-        		<li><a href="#">1</a></li>
-        		<li><a href="#">2</a></li>
-        		<li><a href="#">3</a></li>
-        		<li><a href="#">4</a></li>
-        		<li><a href="#">5</a></li>
-        		<li><a href="#"><i class="fa fa-caret-right"></i></a></li>
-        	</ul>
+            <ul>
+                <li><a href="#"><i class="fa fa-caret-left"></i></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+            </ul>
         </nav>
 
         <pre>&lt;nav class="nav pag"&gt;
@@ -370,7 +381,7 @@
         <div class="notice info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</div>
         <div class="notice dark"><b>Dark:</b> Deep Space Nine.</div>
 
-        <pre>&lt;div class="notice <span class="color error">$color</span>"&gt;
+        <pre>&lt;div class="notice <span class="color error">$style</span>"&gt;
     <span class="color error">...</span>
 &lt;/div&gt;</pre>
 
@@ -386,7 +397,7 @@
         <div class="alert dark"><b>Dark:</b> Deep Space Nine.</div>
         <div class="alert default clean"><b>Clean:</b> Incase your boss says your style is 'childish', and you need more 'professionalism'.</div>
 
-        <pre>&lt;div class="alert <span class="color error">$color</span>"&gt;
+        <pre>&lt;div class="alert <span class="color error">$style</span>"&gt;
     <span class="color error">...</span>
 &lt;/div&gt;</pre>
 
@@ -395,50 +406,50 @@
         <h3 id="panels">Panels</h3>
 
         <div class="panel">
-            <div class="panel-head">Default:</div>
-            <div class="panel-body">
+            <div class="head">Default:</div>
+            <div class="body">
                 A little plain, isn't it?
             </div>
         </div>
 
         <div class="panel success">
-            <div class="panel-head">Success!</div>
-            <div class="panel-body">
+            <div class="head">Success!</div>
+            <div class="body">
                 Congratulations, it works!
             </div>
         </div>
 
         <div class="panel error">
-            <div class="panel-head">Error.</div>
-            <div class="panel-body">
+            <div class="head">Error.</div>
+            <div class="body">
                 You broke it. You have no one to blame but yourself!
             </div>
         </div>
 
         <div class="panel warn">
-            <div class="panel-head">Warning:</div>
-            <div class="panel-body">
+            <div class="head">Warning:</div>
+            <div class="body">
                 Something went wrong!
             </div>
         </div>
 
         <div class="panel info">
-            <div class="panel-head">Info:</div>
-            <div class="panel-body">
+            <div class="head">Info:</div>
+            <div class="body">
                 Did you know, Bacon is more delicious in Canada?
             </div>
         </div>
 
         <div class="panel dark">
-            <div class="panel-head">Dark:</div>
-            <div class="panel-body">
+            <div class="head">Dark:</div>
+            <div class="body">
                 Deep Space Nine.
             </div>
         </div>
 
-        <pre>&lt;div class="panel <span class="color error">$color</span>"&gt;
-    &lt;div class="panel-head"&gt;<span class="color error">...</span>&lt;/div&gt;
-    &lt;div class="panel-body"&gt;<span class="color error">...</span>&lt;/div&gt;
+        <pre>&lt;div class="panel <span class="color error">$style</span>"&gt;
+    &lt;div class="head"&gt;<span class="color error">...</span>&lt;/div&gt;
+    &lt;div class="body"&gt;<span class="color error">...</span>&lt;/div&gt;
 &lt;/div&gt;</pre>
 
         <hr>
@@ -446,17 +457,17 @@
         <h3 id="dismissables">Dismissables</h3>
 
         <div class="notice error" id="close">
-            <div class="dismiss"><i class="fa fa-close"></i></div>
+            <div class="dismiss">&#xD7;</div>
             <b>Error:</b> Couldn't establish a connection to the server!
         </div>
 
         <div class="alert error" id="close">
-            <div class="dismiss"><i class="fa fa-close"></i></div>
+            <div class="dismiss">&#xD7;</div>
             <b>Error:</b> Incorrect Username / Password!
         </div>
 
-        <pre>&lt;div class="<span class="color error">$element</span> <span class="color error">$color</span>" id="close"&gt;
-    &lt;div class="dismiss"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/div&gt;
+        <pre>&lt;div class="<span class="color error">$element</span> <span class="color error">$style</span>" id="close"&gt;
+    &lt;div class="dismiss"&gt;&#xD7;&lt;/div&gt;
     <span class="color error">...</span>
 &lt;/div&gt;</pre>
 
@@ -464,77 +475,77 @@
 
         <h3 id="images">Images</h3>
 
-        <img src="http://placehold.it/150x150" class="img thumbnail" />
-        <img src="http://placehold.it/150x150" class="img thumbnail circle" />
-        <img src="http://placehold.it/150x150" class="img round" />
-        <img src="http://placehold.it/150x150" class="img circle" />
+        <img src="http://placehold.it/150x150" class="thumbnail" />
+        <img src="http://placehold.it/150x150" class="thumbnail circle" />
+        <img src="http://placehold.it/150x150" class="round" />
+        <img src="http://placehold.it/150x150" class="circle" />
 
         <br>
 
-        <pre>&lt;img src="<span class="color error">#</span>" class="img thumbnail"&gt;
-&lt;img src="<span class="color error">#</span>" class="img thumbnail circle"&gt;</pre>
+        <pre>&lt;img src="<span class="color error">#</span>" class="thumbnail"&gt;
+&lt;img src="<span class="color error">#</span>" class="thumbnail circle"&gt;</pre>
 
         <hr>
 
         <h3 id="tables">Tables</h3>
 
-        <table class="table">
+        <table>
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Alias</th>
-                    <th>GitHub User</th>
+                    <th>Age</th>
+                    <th>Favourite Food</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td>Justin</td>
+                    <td>15</td>
+                    <td>Rice</td>
+                </tr>
+                <tr>
                     <td>Kurisu</td>
-                    <td>kurisubrooks</td>
-                    <td><a href="http://github.com/kurisubrooks">kurisubrooks</a></td>
+                    <td>18</td>
+                    <td>Pizza</td>
                 </tr>
                 <tr>
-                    <td>Kaori</td>
-                    <td>Kaorioka</td>
-                    <td><a href="http://github.com/Kaorioka">Kaorioka</a></td>
-                </tr>
-                <tr>
-                    <td>Henry</td>
-                    <td>SkylordRedstone</td>
-                    <td><a href="http://github.com/hedgehog1029">offbeatwitch</a></td>
+                    <td>Alice</td>
+                    <td>20</td>
+                    <td>Ramen</td>
                 </tr>
             </tbody>
         </table>
 
         <br>
 
-        <table class="table invert">
+        <table class="invert">
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Alias</th>
-                    <th>GitHub User</th>
+                    <th>Age</th>
+                    <th>Favourite Food</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td>Justin</td>
+                    <td>15</td>
+                    <td>Rice</td>
+                </tr>
+                <tr>
                     <td>Kurisu</td>
-                    <td>kurisubrooks</td>
-                    <td><a href="http://github.com/kurisubrooks">kurisubrooks</a></td>
+                    <td>18</td>
+                    <td>Pizza</td>
                 </tr>
                 <tr>
-                    <td>Kaori</td>
-                    <td>Kaorioka</td>
-                    <td><a href="http://github.com/Kaorioka">Kaorioka</a></td>
-                </tr>
-                <tr>
-                    <td>Henry</td>
-                    <td>SkylordRedstone</td>
-                    <td><a href="http://github.com/hedgehog1029">offbeatwitch</a></td>
+                    <td>Alice</td>
+                    <td>20</td>
+                    <td>Ramen</td>
                 </tr>
             </tbody>
         </table>
 
-        <pre>&lt;table class="table"&gt;
+        <pre>&lt;table class="<span class="color error">$style</span>"&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;th&gt;<span class="color error">...</span>&lt;/th&gt;
@@ -594,21 +605,21 @@
 
             <div class="box col-12">
                 <div class="progress">
-                    <div class="progress-bar success" style="width:50%">
+                    <div class="progress-bar success" style="width: 50%">
                         <span class="progress-text">50%</span>
                     </div>
-                    <div class="progress-bar error" style="width:30%">
+                    <div class="progress-bar error" style="width: 30%">
                         <span class="progress-text">30%</span>
                     </div>
-                    <div class="progress-bar warn" style="width:10%">
-                        <span class="progress-text">10%</span>
+                    <div class="progress-bar warn" style="width: 20%">
+                        <span class="progress-text">20%</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <pre>&lt;div class="progress"&gt;
-    &lt;div class="progress-bar <span class="color error">$color</span>" style="width: <span class="color error">50</span>%"&gt;
+    &lt;div class="progress-bar <span class="color error">$style</span>" style="width: <span class="color error">50</span>%"&gt;
         &lt;span class="progress-text"&gt;<span class="color error">50</span>%&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
@@ -632,7 +643,7 @@
         <pre>
 &lt;input type="text"&gt;
 
-&lt;input type="submit" class="btn <span class="color error">$color</span>"&gt;
+&lt;input type="submit" class="btn <span class="color error">$style</span>"&gt;
 
 &lt;select&gt;
     &lt;option&gt;<span class="color error">...</span>&lt;/option&gt;
@@ -770,8 +781,5 @@
             </p>
         </footer>
     </main>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/caramel.js"></script>
 </body>
 </html>
