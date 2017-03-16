@@ -5,7 +5,9 @@ select {
     font: inherit;
     color: inherit;
 
-    &:focus { outline: none; }
+    &:focus {
+        outline: none;
+    }
 }
 
 input[type=text],
@@ -28,11 +30,6 @@ textarea {
     @include border-radius();
     @include inline-block();
     @include bottom-margin();
-}
-
-input[type=submit] {
-    border: none;
-    @include no-default-appearance();
 }
 
 textarea {
