@@ -7,15 +7,15 @@ panel,
     @include bottom-margin();
 
     .head {
-        padding: 10px 20px 9px;
+        padding: 10px 20px;
+        font-weight: 500;
+        color: $font-color;
         border-bottom: 1px solid darken($light-active, 3);
         background: $light-dark;
-        font-weight: bold;
-        color: $font-color;
     }
 
     .body {
-        padding: 15px 20px 14px;
+        padding: 15px 20px;
         background: $white;
     }
 
@@ -28,12 +28,12 @@ panel,
         $color-state: map-get($color-map, "color-state");
 
         &.#{$state} {
-            border: 1px solid darken($color-state, 5);
+            border-color: darken($color-state, 5);
 
             .head {
                 color: $white;
                 background: $color-state;
-                border-bottom: 1px solid darken($color-state, 5);
+                border-color: darken($color-state, 5);
             }
         }
     }

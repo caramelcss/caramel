@@ -12,7 +12,6 @@ button,
     cursor: pointer;
 
     @include no-default-appearance();
-    @include transition(background, .1s);
     @include border-radius();
     @include inline-block();
 
@@ -25,18 +24,19 @@ button,
     &:active {
         color: $default;
         border: 1px solid $light-active;
-        background: lighten($light, 5);
+        background: darken($light, 1);
     }
 
     &.clean {
-        color: $default;
-        border: 2px solid $default;
+        color: $light;
+        border: 2px solid $light;
         background: transparent;
 
         &:hover,
         &:active {
-            color: $default-active;
-            border: 2px solid $default-active;
+            color: $default;
+            border: 2px solid darken($light-active, 2);
+            background: darken($light, 1);
         }
 
         @each $state, $color-map in $-states-map {
@@ -50,8 +50,9 @@ button,
 
                 &:hover,
                 &:active {
-                    color: darken($color-state, 5);
-                    border: 2px solid darken($color-state, 5);
+                    color: $white;
+                    border: 2px solid $color-state;
+                    background: $color-state;
                 }
             }
         }

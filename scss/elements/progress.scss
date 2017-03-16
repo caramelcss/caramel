@@ -10,7 +10,7 @@
     @include bottom-margin();
     @include inset-shadow();
 
-    .progress-bar {
+    .bar {
         display: inline-block;
         float: left;
         min-width: 2em;
@@ -19,18 +19,16 @@
         background-color: $default;
         color: $white;
 
-        .progress-text {
+        span {
             position: relative;
             top: 2.5px;
         }
-    }
-}
 
-@each $state, $color-map in $-states-map {
-    $color: map-get($color-map, "text-color");
-    $color-state: map-get($color-map, "color-state");
+        @each $state, $color-map in $-states-map {
+            $color: map-get($color-map, "text-color");
+            $color-state: map-get($color-map, "color-state");
 
-    .progress {
-        .progress-bar.#{$state} { background-color: $color-state; }
+            &.#{$state} { background-color: $color-state; }
+        }
     }
 }
