@@ -1,0 +1,34 @@
+.progress
+    display: block
+    width: 100%
+    height: 25px
+    float: left
+    background-color: darken($light, 5)
+    overflow: hidden
+
+    @include border-radius(4px)
+    @include bottom-margin()
+    @include inset-shadow()
+
+    &.round
+        @include border-radius(12px)
+
+    .bar
+        display: inline-block
+        float: left
+        min-width: 2em
+        height: 25px
+        text-align: center
+        background-color: $default
+        color: $white
+
+        span
+            position: relative
+            top: 2.5px
+
+        @each $state, $color-map in $-states-map
+            $color: map-get($color-map, "text-color")
+            $color-state: map-get($color-map, "color-state")
+
+            &.#{$state}
+                background-color: $color-state

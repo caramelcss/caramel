@@ -2029,11 +2029,11 @@ img.circle {
 }
 
 .progress {
+  display: block;
   width: 100%;
   height: 25px;
   float: left;
-  background-color: #FCFCFC;
-  display: block;
+  background-color: #efefef;
   overflow: hidden;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2042,6 +2042,12 @@ img.circle {
   -webkit-box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
+}
+
+.progress.round {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
 }
 
 .progress .bar {
