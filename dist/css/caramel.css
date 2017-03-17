@@ -5,6 +5,12 @@
 // @version 2.0.0
 // @license GNU GPL v3
 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -115,37 +121,37 @@ hr {
 h1 {
   font-size: 2.5em;
   font-weight: 400;
-  margin: 16px 0;
+  margin: 1.5em 0;
 }
 
 h2 {
   font-size: 2em;
   font-weight: 400;
-  margin: 16px 0;
+  margin: 1.25em 0;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  margin: 14px 0;
+  margin: 1em 0;
 }
 
 h4 {
   font-size: 1.5em;
   font-weight: 400;
-  margin: 8px 0;
+  margin: 0.8em 0;
 }
 
 h5 {
   font-size: 1.25em;
   font-weight: 400;
-  margin: 6px 0;
+  margin: 0.5em 0;
 }
 
 h6 {
   font-size: 1em;
   font-weight: 500;
-  margin: 4px 0;
+  margin: 0.25em 0;
 }
 
 h1.title,
@@ -534,6 +540,11 @@ nav .container,
   }
 }
 
+nav.bar,
+.nav.bar {
+  border-bottom: 1px solid #efefef;
+}
+
 nav li,
 .nav li {
   position: relative;
@@ -675,26 +686,35 @@ nav input[type=url],
   }
 }
 
-nav input[type=text]:active, nav input[type=text]:focus,
+nav input[type=text]:hover, nav input[type=text]:active, nav input[type=text]:focus,
+nav input[type=email]:hover,
 nav input[type=email]:active,
 nav input[type=email]:focus,
+nav input[type=password]:hover,
 nav input[type=password]:active,
 nav input[type=password]:focus,
+nav input[type=search]:hover,
 nav input[type=search]:active,
 nav input[type=search]:focus,
+nav input[type=url]:hover,
 nav input[type=url]:active,
 nav input[type=url]:focus,
+.nav input[type=text]:hover,
 .nav input[type=text]:active,
 .nav input[type=text]:focus,
+.nav input[type=email]:hover,
 .nav input[type=email]:active,
 .nav input[type=email]:focus,
+.nav input[type=password]:hover,
 .nav input[type=password]:active,
 .nav input[type=password]:focus,
+.nav input[type=search]:hover,
 .nav input[type=search]:active,
 .nav input[type=search]:focus,
+.nav input[type=url]:hover,
 .nav input[type=url]:active,
 .nav input[type=url]:focus {
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 nav.fixed,
@@ -704,7 +724,6 @@ nav.fixed,
   left: 0;
   right: 0;
   z-index: 9999;
-  border-bottom: 1px solid #EEE;
 }
 
 @media (max-width: 800px) {
@@ -729,6 +748,10 @@ nav .collapse,
 nav.dark,
 .nav.dark {
   background: #3F3F3F;
+}
+
+nav.dark.bar,
+.nav.dark.bar {
   border-color: #323232;
 }
 
@@ -739,19 +762,19 @@ nav.dark li > ul, nav.dark li > ol,
   border-color: #323232;
 }
 
-nav.dark a,
-.nav.dark a {
+nav.dark li a,
+.nav.dark li a {
   color: #FFF;
 }
 
-nav.dark a:hover, nav.dark a:focus,
-.nav.dark a:hover,
-.nav.dark a:focus {
+nav.dark li a:hover, nav.dark li a:focus,
+.nav.dark li a:hover,
+.nav.dark li a:focus {
   color: #FFF;
 }
 
-nav.dark a:hover,
-.nav.dark a:hover {
+nav.dark li a:hover,
+.nav.dark li a:hover {
   background: #323232;
 }
 
@@ -960,7 +983,7 @@ notice h4,
 
 notice .dismiss,
 .notice .dismiss {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 notice.success,
@@ -1128,6 +1151,7 @@ table,
   width: 100%;
   max-width: 100%;
   word-wrap: break-word;
+  background: #FFF;
   border-spacing: 0;
   border-collapse: collapse;
   -webkit-border-radius: 2px;
@@ -1155,7 +1179,7 @@ table tr th,
 table tr td,
 .table tr th,
 .table tr td {
-  padding: 8px;
+  padding: 10px 16px;
   vertical-align: top;
 }
 
@@ -1232,16 +1256,17 @@ table .align-right,
 }
 
 .btn,
+.button,
 button,
 input[type=button],
 input[type=submit] {
   font: inherit;
+  cursor: pointer;
   text-align: center;
   padding: 6px 16px;
   color: #3F3F3F;
   border: 1px solid #efefef;
-  background: #FCFCFC;
-  cursor: pointer;
+  background: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1255,7 +1280,37 @@ input[type=submit] {
   *display: inline;
 }
 
+.btn:disabled,
+.button:disabled,
+button:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled {
+  cursor: not-allowed;
+  color: #e3e3e3;
+  background: white;
+}
+
+.btn:disabled:hover, .btn:disabled:active, .btn:disabled.active,
+.button:disabled:hover,
+.button:disabled:active,
+.button:disabled.active,
+button:disabled:hover,
+button:disabled:active,
+button:disabled.active,
+input[type=button]:disabled:hover,
+input[type=button]:disabled:active,
+input[type=button]:disabled.active,
+input[type=submit]:disabled:hover,
+input[type=submit]:disabled:active,
+input[type=submit]:disabled.active {
+  color: #e3e3e3;
+  background: inherit;
+}
+
 .btn:hover, .btn:active, .btn.active,
+.button:hover,
+.button:active,
+.button.active,
 button:hover,
 button:active,
 button.active,
@@ -1266,28 +1321,79 @@ input[type=submit]:hover,
 input[type=submit]:active,
 input[type=submit].active {
   color: #3F3F3F;
-  border: 1px solid #efefef;
-  background: #f9f9f9;
+  border-color: #efefef;
+  background: #f7f7f7;
 }
 
-.btn.sml,
-button.sml,
-input[type=button].sml,
-input[type=submit].sml {
-  font-size: 12px;
+.btn.small,
+.button.small,
+button.small,
+input[type=button].small,
+input[type=submit].small {
+  font-size: 0.85em;
   padding: 3px 14px;
 }
 
+.btn.large,
+.button.large,
+button.large,
+input[type=button].large,
+input[type=submit].large {
+  font-size: 1.2em;
+  padding: 9px 20px 8px;
+}
+
+.btn.block,
+.button.block,
+button.block,
+input[type=button].block,
+input[type=submit].block {
+  display: block;
+  width: 100%;
+}
+
 .btn.clean,
+.button.clean,
 button.clean,
 input[type=button].clean,
 input[type=submit].clean {
   color: #3F3F3F;
-  border: 2px solid #3F3F3F;
-  background: transparent;
+  border: 2px solid #efefef;
+  background: #FFF;
+}
+
+.btn.clean:disabled,
+.button.clean:disabled,
+button.clean:disabled,
+input[type=button].clean:disabled,
+input[type=submit].clean:disabled {
+  cursor: not-allowed;
+  color: #e3e3e3;
+  border-color: #e3e3e3;
+  background: white;
+}
+
+.btn.clean:disabled:hover, .btn.clean:disabled:active, .btn.clean:disabled.active,
+.button.clean:disabled:hover,
+.button.clean:disabled:active,
+.button.clean:disabled.active,
+button.clean:disabled:hover,
+button.clean:disabled:active,
+button.clean:disabled.active,
+input[type=button].clean:disabled:hover,
+input[type=button].clean:disabled:active,
+input[type=button].clean:disabled.active,
+input[type=submit].clean:disabled:hover,
+input[type=submit].clean:disabled:active,
+input[type=submit].clean:disabled.active {
+  color: #e3e3e3;
+  background: inherit;
 }
 
 .btn.clean:hover, .btn.clean:active, .btn.clean.active,
+.button.clean:hover,
+.button.clean:active,
+.button.clean.active,
 button.clean:hover,
 button.clean:active,
 button.clean.active,
@@ -1297,21 +1403,24 @@ input[type=button].clean.active,
 input[type=submit].clean:hover,
 input[type=submit].clean:active,
 input[type=submit].clean.active {
-  color: #FFF;
-  border: 2px solid #444444;
-  background: #4c4c4c;
+  border-color: #e3e3e3;
+  background: #f7f7f7;
 }
 
 .btn.clean.success,
+.button.clean.success,
 button.clean.success,
 input[type=button].clean.success,
 input[type=submit].clean.success {
   color: #3fbf3f;
-  border: 2px solid #52C652;
-  background: transparent;
+  border-color: #52C652;
+  background: #FFF;
 }
 
 .btn.clean.success:hover, .btn.clean.success:active, .btn.clean.success.active,
+.button.clean.success:hover,
+.button.clean.success:active,
+.button.clean.success.active,
 button.clean.success:hover,
 button.clean.success:active,
 button.clean.success.active,
@@ -1327,15 +1436,19 @@ input[type=submit].clean.success.active {
 }
 
 .btn.clean.error,
+.button.clean.error,
 button.clean.error,
 input[type=button].clean.error,
 input[type=submit].clean.error {
   color: #e62825;
-  border: 2px solid #E93F3C;
-  background: transparent;
+  border-color: #E93F3C;
+  background: #FFF;
 }
 
 .btn.clean.error:hover, .btn.clean.error:active, .btn.clean.error.active,
+.button.clean.error:hover,
+.button.clean.error:active,
+.button.clean.error.active,
 button.clean.error:hover,
 button.clean.error:active,
 button.clean.error.active,
@@ -1351,15 +1464,19 @@ input[type=submit].clean.error.active {
 }
 
 .btn.clean.warn,
+.button.clean.warn,
 button.clean.warn,
 input[type=button].clean.warn,
 input[type=submit].clean.warn {
   color: #efa20b;
-  border: 2px solid #F5AD1E;
-  background: transparent;
+  border-color: #F5AD1E;
+  background: #FFF;
 }
 
 .btn.clean.warn:hover, .btn.clean.warn:active, .btn.clean.warn.active,
+.button.clean.warn:hover,
+.button.clean.warn:active,
+.button.clean.warn.active,
 button.clean.warn:hover,
 button.clean.warn:active,
 button.clean.warn.active,
@@ -1375,15 +1492,19 @@ input[type=submit].clean.warn.active {
 }
 
 .btn.clean.info,
+.button.clean.info,
 button.clean.info,
 input[type=button].clean.info,
 input[type=submit].clean.info {
   color: #3daed1;
-  border: 2px solid #52B7D6;
-  background: transparent;
+  border-color: #52B7D6;
+  background: #FFF;
 }
 
 .btn.clean.info:hover, .btn.clean.info:active, .btn.clean.info.active,
+.button.clean.info:hover,
+.button.clean.info:active,
+.button.clean.info.active,
 button.clean.info:hover,
 button.clean.info:active,
 button.clean.info.active,
@@ -1399,15 +1520,19 @@ input[type=submit].clean.info.active {
 }
 
 .btn.clean.dark,
+.button.clean.dark,
 button.clean.dark,
 input[type=button].clean.dark,
 input[type=submit].clean.dark {
   color: #323232;
-  border: 2px solid #3F3F3F;
-  background: transparent;
+  border-color: #3F3F3F;
+  background: #FFF;
 }
 
 .btn.clean.dark:hover, .btn.clean.dark:active, .btn.clean.dark.active,
+.button.clean.dark:hover,
+.button.clean.dark:active,
+.button.clean.dark.active,
 button.clean.dark:hover,
 button.clean.dark:active,
 button.clean.dark.active,
@@ -1423,15 +1548,19 @@ input[type=submit].clean.dark.active {
 }
 
 .btn.success,
+.button.success,
 button.success,
 input[type=button].success,
 input[type=submit].success {
   color: #FFF;
-  border: 1px solid #3fbf3f;
+  border-color: #3fbf3f;
   background: #52C652;
 }
 
 .btn.success:hover, .btn.success:active, .btn.success.active,
+.button.success:hover,
+.button.success:active,
+.button.success.active,
 button.success:hover,
 button.success:active,
 button.success.active,
@@ -1441,20 +1570,51 @@ input[type=button].success.active,
 input[type=submit].success:hover,
 input[type=submit].success:active,
 input[type=submit].success.active {
-  border: 1px solid #3fbf3f;
+  border-color: #52C652;
+  border-color: #65cc65;
   background: #65cc65;
 }
 
+.btn.success:disabled,
+.button.success:disabled,
+button.success:disabled,
+input[type=button].success:disabled,
+input[type=submit].success:disabled {
+  color: #fcfcfc;
+  border-color: #65cc65;
+  background: #78d378;
+}
+
+.btn.success:disabled:hover, .btn.success:disabled:active, .btn.success:disabled.active,
+.button.success:disabled:hover,
+.button.success:disabled:active,
+.button.success:disabled.active,
+button.success:disabled:hover,
+button.success:disabled:active,
+button.success:disabled.active,
+input[type=button].success:disabled:hover,
+input[type=button].success:disabled:active,
+input[type=button].success:disabled.active,
+input[type=submit].success:disabled:hover,
+input[type=submit].success:disabled:active,
+input[type=submit].success:disabled.active {
+  background: #78d378;
+}
+
 .btn.error,
+.button.error,
 button.error,
 input[type=button].error,
 input[type=submit].error {
   color: #FFF;
-  border: 1px solid #e62825;
+  border-color: #e62825;
   background: #E93F3C;
 }
 
 .btn.error:hover, .btn.error:active, .btn.error.active,
+.button.error:hover,
+.button.error:active,
+.button.error.active,
 button.error:hover,
 button.error:active,
 button.error.active,
@@ -1464,20 +1624,51 @@ input[type=button].error.active,
 input[type=submit].error:hover,
 input[type=submit].error:active,
 input[type=submit].error.active {
-  border: 1px solid #e62825;
+  border-color: #E93F3C;
+  border-color: #ec5653;
   background: #ec5653;
 }
 
+.btn.error:disabled,
+.button.error:disabled,
+button.error:disabled,
+input[type=button].error:disabled,
+input[type=submit].error:disabled {
+  color: #fcfcfc;
+  border-color: #ec5653;
+  background: #ee6c6a;
+}
+
+.btn.error:disabled:hover, .btn.error:disabled:active, .btn.error:disabled.active,
+.button.error:disabled:hover,
+.button.error:disabled:active,
+.button.error:disabled.active,
+button.error:disabled:hover,
+button.error:disabled:active,
+button.error:disabled.active,
+input[type=button].error:disabled:hover,
+input[type=button].error:disabled:active,
+input[type=button].error:disabled.active,
+input[type=submit].error:disabled:hover,
+input[type=submit].error:disabled:active,
+input[type=submit].error:disabled.active {
+  background: #ee6c6a;
+}
+
 .btn.warn,
+.button.warn,
 button.warn,
 input[type=button].warn,
 input[type=submit].warn {
   color: #FFF;
-  border: 1px solid #efa20b;
+  border-color: #efa20b;
   background: #F5AD1E;
 }
 
 .btn.warn:hover, .btn.warn:active, .btn.warn.active,
+.button.warn:hover,
+.button.warn:active,
+.button.warn.active,
 button.warn:hover,
 button.warn:active,
 button.warn.active,
@@ -1487,20 +1678,51 @@ input[type=button].warn.active,
 input[type=submit].warn:hover,
 input[type=submit].warn:active,
 input[type=submit].warn.active {
-  border: 1px solid #efa20b;
+  border-color: #F5AD1E;
+  border-color: #f6b636;
   background: #f6b636;
 }
 
+.btn.warn:disabled,
+.button.warn:disabled,
+button.warn:disabled,
+input[type=button].warn:disabled,
+input[type=submit].warn:disabled {
+  color: #fcfcfc;
+  border-color: #f6b636;
+  background: #f7bf4f;
+}
+
+.btn.warn:disabled:hover, .btn.warn:disabled:active, .btn.warn:disabled.active,
+.button.warn:disabled:hover,
+.button.warn:disabled:active,
+.button.warn:disabled.active,
+button.warn:disabled:hover,
+button.warn:disabled:active,
+button.warn:disabled.active,
+input[type=button].warn:disabled:hover,
+input[type=button].warn:disabled:active,
+input[type=button].warn:disabled.active,
+input[type=submit].warn:disabled:hover,
+input[type=submit].warn:disabled:active,
+input[type=submit].warn:disabled.active {
+  background: #f7bf4f;
+}
+
 .btn.info,
+.button.info,
 button.info,
 input[type=button].info,
 input[type=submit].info {
   color: #FFF;
-  border: 1px solid #3daed1;
+  border-color: #3daed1;
   background: #52B7D6;
 }
 
 .btn.info:hover, .btn.info:active, .btn.info.active,
+.button.info:hover,
+.button.info:active,
+.button.info.active,
 button.info:hover,
 button.info:active,
 button.info.active,
@@ -1510,20 +1732,51 @@ input[type=button].info.active,
 input[type=submit].info:hover,
 input[type=submit].info:active,
 input[type=submit].info.active {
-  border: 1px solid #3daed1;
+  border-color: #52B7D6;
+  border-color: #67c0db;
   background: #67c0db;
 }
 
+.btn.info:disabled,
+.button.info:disabled,
+button.info:disabled,
+input[type=button].info:disabled,
+input[type=submit].info:disabled {
+  color: #fcfcfc;
+  border-color: #67c0db;
+  background: #7bc8e0;
+}
+
+.btn.info:disabled:hover, .btn.info:disabled:active, .btn.info:disabled.active,
+.button.info:disabled:hover,
+.button.info:disabled:active,
+.button.info:disabled.active,
+button.info:disabled:hover,
+button.info:disabled:active,
+button.info:disabled.active,
+input[type=button].info:disabled:hover,
+input[type=button].info:disabled:active,
+input[type=button].info:disabled.active,
+input[type=submit].info:disabled:hover,
+input[type=submit].info:disabled:active,
+input[type=submit].info:disabled.active {
+  background: #7bc8e0;
+}
+
 .btn.dark,
+.button.dark,
 button.dark,
 input[type=button].dark,
 input[type=submit].dark {
   color: #FFF;
-  border: 1px solid #323232;
+  border-color: #323232;
   background: #3F3F3F;
 }
 
 .btn.dark:hover, .btn.dark:active, .btn.dark.active,
+.button.dark:hover,
+.button.dark:active,
+.button.dark.active,
 button.dark:hover,
 button.dark:active,
 button.dark.active,
@@ -1533,11 +1786,39 @@ input[type=button].dark.active,
 input[type=submit].dark:hover,
 input[type=submit].dark:active,
 input[type=submit].dark.active {
-  border: 1px solid #323232;
+  border-color: #3F3F3F;
+  border-color: #4c4c4c;
   background: #4c4c4c;
 }
 
+.btn.dark:disabled,
+.button.dark:disabled,
+button.dark:disabled,
+input[type=button].dark:disabled,
+input[type=submit].dark:disabled {
+  color: #fcfcfc;
+  border-color: #4c4c4c;
+  background: #595959;
+}
+
+.btn.dark:disabled:hover, .btn.dark:disabled:active, .btn.dark:disabled.active,
+.button.dark:disabled:hover,
+.button.dark:disabled:active,
+.button.dark:disabled.active,
+button.dark:disabled:hover,
+button.dark:disabled:active,
+button.dark:disabled.active,
+input[type=button].dark:disabled:hover,
+input[type=button].dark:disabled:active,
+input[type=button].dark:disabled.active,
+input[type=submit].dark:disabled:hover,
+input[type=submit].dark:disabled:active,
+input[type=submit].dark:disabled.active {
+  background: #595959;
+}
+
 .btn.dropdown,
+.button.dropdown,
 button.dropdown,
 input[type=button].dropdown,
 input[type=submit].dropdown {
@@ -1545,6 +1826,7 @@ input[type=submit].dropdown {
 }
 
 .btn.dropdown > span::after,
+.button.dropdown > span::after,
 button.dropdown > span::after,
 input[type=button].dropdown > span::after,
 input[type=submit].dropdown > span::after {
@@ -1552,6 +1834,7 @@ input[type=submit].dropdown > span::after {
 }
 
 .btn.dropdown > ul,
+.button.dropdown > ul,
 button.dropdown > ul,
 input[type=button].dropdown > ul,
 input[type=submit].dropdown > ul {
@@ -1570,6 +1853,7 @@ input[type=submit].dropdown > ul {
 }
 
 .btn.dropdown > ul li,
+.button.dropdown > ul li,
 button.dropdown > ul li,
 input[type=button].dropdown > ul li,
 input[type=submit].dropdown > ul li {
@@ -1577,6 +1861,7 @@ input[type=submit].dropdown > ul li {
 }
 
 .btn.dropdown > ul li a,
+.button.dropdown > ul li a,
 button.dropdown > ul li a,
 input[type=button].dropdown > ul li a,
 input[type=submit].dropdown > ul li a {
@@ -1584,6 +1869,8 @@ input[type=submit].dropdown > ul li a {
 }
 
 .btn.dropdown > ul li:hover, .btn.dropdown > ul li:active,
+.button.dropdown > ul li:hover,
+.button.dropdown > ul li:active,
 button.dropdown > ul li:hover,
 button.dropdown > ul li:active,
 input[type=button].dropdown > ul li:hover,
@@ -1595,6 +1882,7 @@ input[type=submit].dropdown > ul li:active {
 }
 
 .btn.dropdown.open > ul,
+.button.dropdown.open > ul,
 button.dropdown.open > ul,
 input[type=button].dropdown.open > ul,
 input[type=submit].dropdown.open > ul {
@@ -1602,6 +1890,8 @@ input[type=submit].dropdown.open > ul {
 }
 
 .btn.dropdown:hover > ul, .btn.dropdown:active > ul,
+.button.dropdown:hover > ul,
+.button.dropdown:active > ul,
 button.dropdown:hover > ul,
 button.dropdown:active > ul,
 input[type=button].dropdown:hover > ul,
