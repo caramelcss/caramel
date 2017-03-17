@@ -8,6 +8,9 @@ body {
     line-height: $line-height;
     color: $font-color;
     background-color: $white;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 main,
