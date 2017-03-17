@@ -13,6 +13,10 @@ nav,
         }
     }
 
+    &.bar {
+        border-bottom: 1px solid darken($light, 5);
+    }
+
     li {
         position: relative;
         vertical-align: top;
@@ -140,24 +144,27 @@ nav,
 
     &.dark {
         background: $dark;
-        border-color: darken($dark, 5);
+
+        &.bar {
+            border-color: darken($dark, 10);
+        }
 
         li {
             > ul, > ol {
-                 background: $dark;
+                background: $dark;
                 border-color: darken($dark, 5);
             }
-        }
 
-        a {
-            color: $white;
-
-            &:hover, &:focus {
+            a {
                 color: $white;
-            }
 
-            &:hover {
-                background: darken($dark, 5);
+                &:hover, &:focus {
+                    color: $white;
+                }
+
+                &:hover {
+                    background: darken($dark, 5);
+                }
             }
         }
     }
