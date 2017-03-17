@@ -1,0 +1,134 @@
+.btn,
+.button,
+button,
+input[type=button],
+input[type=submit]
+    font: inherit
+    cursor: pointer
+    text-align: center
+    padding: $padding-button
+    color: $default
+    border: 1px solid darken($light, 5)
+    background: $white
+
+    @include no-default-appearance()
+    @include bottom-margin()
+    @include border-radius()
+    @include inline-block()
+
+    &:disabled
+        cursor: not-allowed
+        color: darken($light, 10)
+        background: lighten($light, 5)
+
+        &:hover, &:active, &.active
+            color: darken($light, 10)
+            background: inherit
+
+    &:hover, &:active, &.active
+        color: $default
+        border-color: darken($light, 5)
+        background: darken($white, 3)
+
+    &.small
+        font-size: 0.85em
+        padding: $padding-button-small
+
+    &.large
+        font-size: 1.2em
+        padding: $padding-button-large
+    
+    &.block
+        display: block
+        width: 100%
+
+    &.clean
+        color: $default
+        border: 2px solid darken($light, 5)
+        background: $white
+
+        &:disabled
+            cursor: not-allowed
+            color: darken($light, 10)
+            border-color: darken($light, 10)
+            background: lighten($light, 5)
+
+            &:hover, &:active, &.active
+                color: darken($light, 10)
+                background: inherit
+
+        &:hover, &:active, &.active
+            border-color: darken($light, 10)
+            background: darken($white, 3)
+
+        @each $state, $color-map in $-states-map
+            $color: map-get($color-map, "text-color")
+            $color-state: map-get($color-map, "color-state")
+
+            &.#{$state}
+                color: darken($color-state, 5)
+                border-color: $color-state
+                background: $white
+
+                &:hover, &:active, &.active
+                    color: $white
+                    border: 2px solid $color-state
+                    background: $color-state
+
+    @each $state, $color-map in $-states-map
+        $color: map-get($color-map, "text-color")
+        $color-state: map-get($color-map, "color-state")
+
+        &.#{$state}
+            color: $color
+            border-color: darken($color-state, 5)
+            background: $color-state
+
+            &:hover, &:active, &.active
+                border-color: $color-state
+                border-color: lighten($color-state, 5)
+                background: lighten($color-state, 5)
+
+            &:disabled
+                color: darken($color, 1)
+                border-color: lighten($color-state, 5)
+                background: lighten($color-state, 10)
+
+                &:hover, &:active, &.active
+                    background: lighten($color-state, 10)
+
+    &.dropdown
+        cursor: pointer
+
+        > span
+            &::after
+                content: " ▾"
+
+        > ul
+            display: none
+            position: absolute
+            list-style: none
+            min-width: 150px
+            padding: 0
+            margin: 8px 0 0 -17px
+            text-align: left
+            background: $light
+            border: 1px solid darken($light, 5)
+            @include border-radius()
+
+            li
+                padding: $padding-nav-item
+
+                a
+                    color: $default
+
+                &:hover, &:active 
+                    color: $default
+                    background: darken($light, 1)
+
+        &.open > ul
+            display: block
+
+        &:hover, &:active
+            > ul
+                display: block
