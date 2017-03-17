@@ -114,8 +114,8 @@ nav,
             height: 35px;
         }
 
-        &:active, &:focus {
-            background: #FFF;
+        &:hover, &:active, &:focus {
+            background: rgba(255, 255, 255, 0.05);
         }
     }
 
@@ -125,7 +125,6 @@ nav,
         left: 0;
         right: 0;
         z-index: 9999;
-        border-bottom: 1px solid $grey;
     }
 
     .open li {
@@ -146,7 +145,7 @@ nav,
         background: $dark;
 
         &.bar {
-            border-color: darken($dark, 10);
+            border-color: darken($dark, 5);
         }
 
         li {
