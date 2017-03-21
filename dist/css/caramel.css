@@ -545,43 +545,84 @@ nav.bar,
   border-bottom: 1px solid #efefef;
 }
 
-nav li,
-.nav li {
-  position: relative;
-  vertical-align: top;
-  float: left;
-}
-
-nav li li,
-.nav li li {
-  float: none;
-}
-
-@media (max-width: 800px) {
-  nav li,
-  .nav li {
-    display: none;
-    float: none;
-  }
-}
-
-nav li.right,
-.nav li.right {
-  float: right;
-}
-
-@media (max-width: 800px) {
-  nav li.right,
-  .nav li.right {
-    float: none;
-  }
-}
-
-nav li > ul, nav li > ol,
-.nav li > ul,
-.nav li > ol {
-  background: #FCFCFC;
+nav.pag,
+.nav.pag {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 10px;
   border: 1px solid #efefef;
+}
+
+@media (max-width: 800px) {
+  nav.pag li,
+  .nav.pag li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+  }
+}
+
+nav.crumb,
+.nav.crumb {
+  background: #FCFCFC;
+  padding: 9px 20px;
+  border: 1px solid #efefef;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+nav.crumb li,
+.nav.crumb li {
+  color: #aeaeae;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+nav.crumb li a,
+.nav.crumb li a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  color: #3daed1;
+  padding: 0;
+}
+
+nav.crumb li a:hover, nav.crumb li a:active, nav.crumb li a.active,
+.nav.crumb li a:hover,
+.nav.crumb li a:active,
+.nav.crumb li a.active {
+  color: #3daed1;
+  background: inherit;
+}
+
+nav.crumb li.active,
+.nav.crumb li.active {
+  color: #aeaeae;
+  cursor: not-allowed;
+}
+
+nav.crumb li:after,
+.nav.crumb li:after {
+  content: " /";
+  padding: 0 8px 0 6px;
+  color: #CCC;
+}
+
+nav.crumb li:last-child::after,
+.nav.crumb li:last-child::after {
+  content: "";
+  padding: 0;
 }
 
 nav ul, nav ol,
@@ -608,8 +649,23 @@ nav ul.right ul, nav ul.right ol, nav ol.right ul, nav ol.right ol,
   }
 }
 
-nav a,
-.nav a {
+nav ul li, nav ol li,
+.nav ul li,
+.nav ol li {
+  position: relative;
+  vertical-align: top;
+  float: left;
+}
+
+nav ul li li, nav ol li li,
+.nav ul li li,
+.nav ol li li {
+  float: none;
+}
+
+nav ul li a, nav ol li a,
+.nav ul li a,
+.nav ol li a {
   display: block;
   padding: 13px 18px;
   color: #3F3F3F;
@@ -617,16 +673,53 @@ nav a,
   white-space: nowrap;
 }
 
-nav a .fa,
-.nav a .fa {
+nav ul li a .fa, nav ul li a .material-icons, nav ol li a .fa, nav ol li a .material-icons,
+.nav ul li a .fa,
+.nav ul li a .material-icons,
+.nav ol li a .fa,
+.nav ol li a .material-icons {
   font-size: 16px;
 }
 
-nav a:hover, nav a:focus,
-.nav a:hover,
-.nav a:focus {
+nav ul li a:hover, nav ul li a:focus, nav ol li a:hover, nav ol li a:focus,
+.nav ul li a:hover,
+.nav ul li a:focus,
+.nav ol li a:hover,
+.nav ol li a:focus {
   color: #3F3F3F;
   background: #efefef;
+}
+
+@media (max-width: 800px) {
+  nav ul li, nav ol li,
+  .nav ul li,
+  .nav ol li {
+    display: none;
+    float: none;
+  }
+}
+
+nav ul li.right, nav ol li.right,
+.nav ul li.right,
+.nav ol li.right {
+  float: right;
+}
+
+@media (max-width: 800px) {
+  nav ul li.right, nav ol li.right,
+  .nav ul li.right,
+  .nav ol li.right {
+    float: none;
+  }
+}
+
+nav ul li > ul, nav ul li > ol, nav ol li > ul, nav ol li > ol,
+.nav ul li > ul,
+.nav ul li > ol,
+.nav ol li > ul,
+.nav ol li > ol {
+  background: #FCFCFC;
+  border: 1px solid #efefef;
 }
 
 nav .brand a,
@@ -850,77 +943,6 @@ nav.dropdown:hover > ul, nav.dropdown:hover > ol, nav .dropdown:hover > ul, nav 
   .nav .dropdown:hover > ol {
     display: none;
   }
-}
-
-.pag {
-  display: -moz-inline-stack;
-  display: inline-block;
-  *zoom: 1;
-  *display: inline;
-}
-
-@media (max-width: 800px) {
-  .pag li {
-    display: -moz-inline-stack;
-    display: inline-block;
-    *zoom: 1;
-    *display: inline;
-  }
-}
-
-.breadcrumbs {
-  background: #FCFCFC;
-  padding: 10px 16px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  margin-bottom: 10px;
-}
-
-.breadcrumbs ul,
-.breadcrumbs ol {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.breadcrumbs ul li,
-.breadcrumbs ol li {
-  padding: 0;
-  color: #aeaeae;
-  display: -moz-inline-stack;
-  display: inline-block;
-  *zoom: 1;
-  *display: inline;
-}
-
-.breadcrumbs ul li a,
-.breadcrumbs ol li a {
-  color: #3daed1;
-}
-
-.breadcrumbs ul li a:active,
-.breadcrumbs ol li a:active {
-  color: #3daed1;
-}
-
-.breadcrumbs ul li.active,
-.breadcrumbs ol li.active {
-  color: #aeaeae;
-  cursor: not-allowed;
-}
-
-.breadcrumbs ul li:after,
-.breadcrumbs ol li:after {
-  content: " /";
-  padding: 0 5px;
-  color: #CCC;
-}
-
-.breadcrumbs ul li:last-child::after,
-.breadcrumbs ol li:last-child::after {
-  content: "";
-  padding: 0;
 }
 
 .header.fixed {
@@ -1286,7 +1308,8 @@ button:disabled,
 input[type=button]:disabled,
 input[type=submit]:disabled {
   cursor: not-allowed;
-  color: #e3e3e3;
+  color: #CCC;
+  border-color: #efefef;
   background: white;
 }
 
@@ -1303,7 +1326,7 @@ input[type=button]:disabled.active,
 input[type=submit]:disabled:hover,
 input[type=submit]:disabled:active,
 input[type=submit]:disabled.active {
-  color: #e3e3e3;
+  color: #CCC;
   background: inherit;
 }
 
@@ -1368,8 +1391,8 @@ button.clean:disabled,
 input[type=button].clean:disabled,
 input[type=submit].clean:disabled {
   cursor: not-allowed;
-  color: #e3e3e3;
-  border-color: #e3e3e3;
+  color: #CCC;
+  border-color: #efefef;
   background: white;
 }
 
@@ -1386,7 +1409,8 @@ input[type=button].clean:disabled.active,
 input[type=submit].clean:disabled:hover,
 input[type=submit].clean:disabled:active,
 input[type=submit].clean:disabled.active {
-  color: #e3e3e3;
+  color: #CCC;
+  boroder-color: #efefef;
   background: inherit;
 }
 
@@ -1403,7 +1427,7 @@ input[type=button].clean.active,
 input[type=submit].clean:hover,
 input[type=submit].clean:active,
 input[type=submit].clean.active {
-  border-color: #e3e3e3;
+  border-color: #efefef;
   background: #f7f7f7;
 }
 
