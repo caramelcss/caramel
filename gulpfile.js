@@ -17,7 +17,7 @@ gulp.task("js", () =>
         .pipe(gulp.dest("./dist/js")));
 
 gulp.task("sass", () =>
-    gulp.src("./scss/caramel.scss")
+    gulp.src("./s*ss/caramel.s*ss")
         .pipe(sass().on("error", sass.logError))
         .pipe(sass({ outputStyle: "expanded" }))
         .pipe(rename("caramel.css"))
