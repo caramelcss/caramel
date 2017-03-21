@@ -1,0 +1,33 @@
+panel,
+.panel
+    display: block
+    border: 1px solid darken($light, 5)
+
+    @include border-radius()
+    @include bottom-margin()
+
+    .head
+        padding: 10px 20px
+        font-weight: 500
+        color: $font-color
+        border-bottom: 1px solid darken($light, 8)
+        background: darken($light, 5)
+
+    .body
+        padding: 15px 20px
+        background: $white
+
+    p
+        margin: 0
+
+    @each $state, $color-map in $-states-map
+        $color: map-get($color-map, "text-color")
+        $color-state: map-get($color-map, "color-state")
+
+        &.#{$state}
+            border-color: darken($color-state, 5)
+
+            .head
+                color: $white
+                background: $color-state
+                border-color: darken($color-state, 5)

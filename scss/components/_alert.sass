@@ -1,0 +1,36 @@
+alert,
+.alert
+    display: block
+    padding: $padding-large
+    color: $default
+    border: 1px solid darken($light, 5)
+    background: $light
+
+    @include border-radius()
+    @include bottom-margin()
+
+    .dismiss
+        font-size: 18px
+
+    &.clean
+        color: $default
+        border: 2px solid $default
+        background: transparent
+
+        @each $state, $color-map in $-states-map
+            $color: map-get($color-map, "text-color")
+            $color-state: map-get($color-map, "color-state")
+
+            &.#{$state}
+                color: darken($color-state, 5)
+                border: 2px solid $default
+                background: transparent
+
+    @each $state, $color-map in $-states-map
+        $color: map-get($color-map, "text-color")
+        $color-state: map-get($color-map, "color-state")
+
+        &.#{$state}
+            color: $color
+            border: 1px solid $color-state
+            background: lighten($color-state, 2)

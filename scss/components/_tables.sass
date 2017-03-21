@@ -1,0 +1,56 @@
+table,
+.table
+    width: 100%
+    max-width: 100%
+    word-wrap: break-word
+    background: $white
+
+    border-spacing: 0
+    border-collapse: collapse
+
+    @include border-radius()
+    @include bottom-margin()
+
+    thead
+        border-bottom: 2px solid $grey
+
+    tfoot
+        border-top: 2px solid $grey
+
+    tr
+        border-bottom: 1px solid $grey
+
+        th, td
+            padding: $padding-table
+            vertical-align: top
+
+            &:first-of-type
+                padding-left: 16px
+
+            &:last-of-type
+                padding-right: 16px
+
+        th
+            vertical-align: bottom
+            text-align: left
+
+        td
+            vertical-align: top
+
+        &:last-child
+            border-bottom: none
+            @include border-radius-bottom(4px)
+
+    &.invert
+        > tbody > tr
+            &:nth-of-type(odd)
+                background-color: lighten($grey, 5)
+
+    .align-left
+        text-align: left
+
+    .align-mid
+        text-align: center
+
+    .align-right
+        text-align: right

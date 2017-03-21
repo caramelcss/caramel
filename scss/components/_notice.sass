@@ -1,0 +1,31 @@
+notice,
+.notice
+    display: block
+    padding: $padding-large
+    font-size: 16px
+
+    border: 1px solid darken($light, 5)
+    border-left-width: 5px
+    border-left-color: $default
+    background-color: $white
+
+    @include border-radius()
+    @include bottom-margin()
+
+    > span, b,
+    strong, h4
+        color: $default
+        margin: 0
+
+    .dismiss
+        font-size: 18px
+
+    @each $state, $color-map in $-states-map
+        $color-state: map-get($color-map, "color-state")
+
+        &.#{$state}
+            border-left-color: $color-state
+
+            > span, b,
+            strong, h4
+                color: darken($color-state, 5)
