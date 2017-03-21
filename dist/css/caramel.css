@@ -1881,23 +1881,23 @@ input[type=submit].dropdown > ul li:active {
   background: #f9f9f9;
 }
 
-.btn.dropdown.open > ul,
-.button.dropdown.open > ul,
-button.dropdown.open > ul,
-input[type=button].dropdown.open > ul,
-input[type=submit].dropdown.open > ul {
+.btn.dropdown:not(:disabled).open > ul,
+.button.dropdown:not(:disabled).open > ul,
+button.dropdown:not(:disabled).open > ul,
+input[type=button].dropdown:not(:disabled).open > ul,
+input[type=submit].dropdown:not(:disabled).open > ul {
   display: block;
 }
 
-.btn.dropdown:hover > ul, .btn.dropdown:active > ul,
-.button.dropdown:hover > ul,
-.button.dropdown:active > ul,
-button.dropdown:hover > ul,
-button.dropdown:active > ul,
-input[type=button].dropdown:hover > ul,
-input[type=button].dropdown:active > ul,
-input[type=submit].dropdown:hover > ul,
-input[type=submit].dropdown:active > ul {
+.btn.dropdown:not(:disabled):hover > ul, .btn.dropdown:not(:disabled):active > ul,
+.button.dropdown:not(:disabled):hover > ul,
+.button.dropdown:not(:disabled):active > ul,
+button.dropdown:not(:disabled):hover > ul,
+button.dropdown:not(:disabled):active > ul,
+input[type=button].dropdown:not(:disabled):hover > ul,
+input[type=button].dropdown:not(:disabled):active > ul,
+input[type=submit].dropdown:not(:disabled):hover > ul,
+input[type=submit].dropdown:not(:disabled):active > ul {
   display: block;
 }
 
