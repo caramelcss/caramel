@@ -112,9 +112,8 @@ nav,
                 border: 1px solid darken($light, 5)
 
             &.dropdown
-                > span
-                    &::after
-                        content: " ▾"
+                > span::after
+                    content: " ▾"
 
     .brand
         > span, a
@@ -147,7 +146,7 @@ nav,
             margin: 8px 18px
             height: 35px
 
-        &:hover, &:active, &:focus
+        &:hover, &:active, &:focus, &.focus
             background: $grey
 
     &.fixed
@@ -180,7 +179,7 @@ nav,
         input[type=url]
             color: $white
 
-            &:hover, &:active, &:focus
+            &:hover, &:active, &:focus, &.focus
                 background: darken($dark, 5)
 
         li
