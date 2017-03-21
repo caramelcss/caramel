@@ -17,31 +17,62 @@ nav,
         border-bottom: 1px solid darken($light, 5);
     }
 
-    li {
-        position: relative;
-        vertical-align: top;
-        float: left;
+    &.pag {
+        @include inline-block();
+        @include border-radius();
+        @include bottom-margin();
+
+        border: 1px solid darken($light, 5);
 
         li {
-            float: none;
-        }
-
-        @media (max-width: $breakpoint-width) {
-            display: none;
-            float: none;
-        }
-
-        &.right {
-            float: right;
-
             @media (max-width: $breakpoint-width) {
-                float: none;
+                @include inline-block;
             }
         }
+    }
 
-        > ul, > ol {
-            background: $light;
-            border: 1px solid darken($light, 5);
+    &.crumb {
+        background: $light;
+        padding: 9px 20px;
+        border: 1px solid darken($light, 5);
+
+        @include border-radius();
+        @include bottom-margin();
+
+       li {
+            color: darken($grey, 25);
+            
+            @include inline-block();
+
+            a {
+                @include inline-block();
+                color: $link;
+                padding: 0;
+
+                &:hover, &:active, &.active {
+                    color: $link;
+                    background: inherit;
+                }
+            }
+
+            &.active {
+                color: darken($grey, 25);
+                cursor: not-allowed;
+            }
+
+            &:after {
+                $nbsp: "\00a0";
+                $separator: "/";
+                content: "#{$nbsp}#{$separator}";
+
+                padding: 0 8px 0 6px;
+                color: $disabled;
+            }
+
+            &:last-child::after {
+                content: "";
+                padding: 0;
+            }
         }
     }
 
@@ -59,22 +90,50 @@ nav,
                 float: none;
             }
         }
-    }
 
-    a {
-        display: block;
-        padding: $padding-nav-item;
-        color: $default;
-        cursor: pointer !important;
-        white-space: nowrap;
+        li {
+            position: relative;
+            vertical-align: top;
+            float: left;
 
-        .fa {
-            font-size: 16px;
-        }
+            li {
+                float: none;
+            }
 
-        &:hover, &:focus {
-            color: $default;
-            background: darken($light, 5);
+            a {
+                display: block;
+                padding: $padding-nav-item;
+                color: $default;
+                cursor: pointer !important;
+                white-space: nowrap;
+
+                .fa, .material-icons {
+                    font-size: 16px;
+                }
+
+                &:hover, &:focus {
+                    color: $default;
+                    background: darken($light, 5);
+                }
+            }
+
+            @media (max-width: $breakpoint-width) {
+                display: none;
+                float: none;
+            }
+
+            &.right {
+                float: right;
+
+                @media (max-width: $breakpoint-width) {
+                    float: none;
+                }
+            }
+
+            > ul, > ol {
+                background: $light;
+                border: 1px solid darken($light, 5);
+            }
         }
     }
 
@@ -214,64 +273,6 @@ nav,
                 @media (max-width: $breakpoint-width) {
                     display: none;
                 }
-            }
-        }
-    }
-}
-
-.pag {
-    @include inline-block;
-
-    li {
-        @media (max-width: $breakpoint-width) {
-            @include inline-block;
-        }
-    }
-}
-
-.breadcrumbs {
-    background: $light;
-    padding: 10px 16px;
-
-    @include border-radius();
-    @include bottom-margin();
-
-    ul,
-    ol {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-
-        li {
-            padding: 0;
-            color: darken($grey, 25);
-            @include inline-block();
-
-            a {
-                color: $link;
-
-                &:active {
-                    color: $link;
-                }
-            }
-
-            &.active {
-                color: darken($grey, 25);
-                cursor: not-allowed;
-            }
-
-            &:after {
-                $nbsp: "\00a0";
-                $separator: "/";
-                content: "#{$nbsp}#{$separator}";
-
-                padding: 0 5px;
-                color: $disabled;
-            }
-
-            &:last-child::after{
-                content: "";
-                padding: 0;
             }
         }
     }
