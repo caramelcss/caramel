@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+body
+    margin: 0
+    padding: 0
+    border: none
+    font-family: $font-default
+    font-size: $font-size
+    font-weight: $font-weight
+    line-height: $line-height
+    color: $font-color
+    background-color: $white
+
+main,
+.container {
+    width: inherit
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 35px
+
+    @media (max-width: $breakpoint-width)
+        padding: 0 10px
+
+.center {
+    min-width: 400px
+    position: absolute
+    text-align: center
+    top: 50%
+    left: 50%
+
+    @include transform(translate(-50%, -50%))
+
+    @media (max-width: $breakpoint-width)
+        @include transform(none)
+        position: inherit
+        top: inherit
+        left: inherit
+
+@media (max-width: $breakpoint-width)
+    .collapse
+        display: none
+        visibility: none
+
+footer
+    margin: 15px 0
+    padding: 5px 0
+
+.hidden
+    display: none
+    visibility: hidden
+
+hr
+    margin: 20px 0
+    border: 0
+    border-top: 1px solid darken($light, 2)
+
+.dismiss
+    line-height: 1em
+    position: relative
+    top: 0
+    right: 0
+    float: right
+    cursor: pointer
+
+.left
+    float: left
+
+.right
+    float: right
+
+.no-round
+    @include border-radius(0)
+
+.no-margin
+    margin: 0 !important
+
+.no-border
+    border: none !important
+
+.border-thick
+    border: 2px solid !important
