@@ -545,8 +545,8 @@ nav.bar,
   border-bottom: 1px solid #efefef;
 }
 
-nav.pag,
-.nav.pag {
+nav.pagination,
+.nav.pagination {
   display: -moz-inline-stack;
   display: inline-block;
   *zoom: 1;
@@ -559,8 +559,8 @@ nav.pag,
 }
 
 @media (max-width: 800px) {
-  nav.pag li,
-  .nav.pag li {
+  nav.pagination li,
+  .nav.pagination li {
     display: -moz-inline-stack;
     display: inline-block;
     *zoom: 1;
@@ -568,8 +568,8 @@ nav.pag,
   }
 }
 
-nav.crumb,
-.nav.crumb {
+nav.breadcrumbs,
+.nav.breadcrumbs {
   background: #FCFCFC;
   padding: 9px 20px;
   border: 1px solid #efefef;
@@ -579,8 +579,8 @@ nav.crumb,
   margin-bottom: 10px;
 }
 
-nav.crumb li,
-.nav.crumb li {
+nav.breadcrumbs li,
+.nav.breadcrumbs li {
   color: #aeaeae;
   display: -moz-inline-stack;
   display: inline-block;
@@ -588,8 +588,8 @@ nav.crumb li,
   *display: inline;
 }
 
-nav.crumb li a,
-.nav.crumb li a {
+nav.breadcrumbs li a,
+.nav.breadcrumbs li a {
   display: -moz-inline-stack;
   display: inline-block;
   *zoom: 1;
@@ -598,29 +598,29 @@ nav.crumb li a,
   padding: 0;
 }
 
-nav.crumb li a:hover, nav.crumb li a:active, nav.crumb li a.active,
-.nav.crumb li a:hover,
-.nav.crumb li a:active,
-.nav.crumb li a.active {
+nav.breadcrumbs li a:hover, nav.breadcrumbs li a:active, nav.breadcrumbs li a.active,
+.nav.breadcrumbs li a:hover,
+.nav.breadcrumbs li a:active,
+.nav.breadcrumbs li a.active {
   color: #3daed1;
   background: inherit;
 }
 
-nav.crumb li.active,
-.nav.crumb li.active {
+nav.breadcrumbs li.active,
+.nav.breadcrumbs li.active {
   color: #aeaeae;
   cursor: not-allowed;
 }
 
-nav.crumb li:after,
-.nav.crumb li:after {
+nav.breadcrumbs li:after,
+.nav.breadcrumbs li:after {
   content: " /";
   padding: 0 8px 0 6px;
   color: #CCC;
 }
 
-nav.crumb li:last-child::after,
-.nav.crumb li:last-child::after {
+nav.breadcrumbs li:last-child::after,
+.nav.breadcrumbs li:last-child::after {
   content: "";
   padding: 0;
 }
@@ -663,8 +663,10 @@ nav ul li li, nav ol li li,
   float: none;
 }
 
-nav ul li a, nav ol li a,
+nav ul li > span, nav ul li a, nav ol li > span, nav ol li a,
+.nav ul li > span,
 .nav ul li a,
+.nav ol li > span,
 .nav ol li a {
   display: block;
   padding: 13px 18px;
@@ -673,17 +675,25 @@ nav ul li a, nav ol li a,
   white-space: nowrap;
 }
 
-nav ul li a .fa, nav ul li a .material-icons, nav ol li a .fa, nav ol li a .material-icons,
+nav ul li > span .fa, nav ul li > span .material-icons, nav ul li a .fa, nav ul li a .material-icons, nav ol li > span .fa, nav ol li > span .material-icons, nav ol li a .fa, nav ol li a .material-icons,
+.nav ul li > span .fa,
+.nav ul li > span .material-icons,
 .nav ul li a .fa,
 .nav ul li a .material-icons,
+.nav ol li > span .fa,
+.nav ol li > span .material-icons,
 .nav ol li a .fa,
 .nav ol li a .material-icons {
   font-size: 16px;
 }
 
-nav ul li a:hover, nav ul li a:focus, nav ol li a:hover, nav ol li a:focus,
+nav ul li > span:hover, nav ul li > span:focus, nav ul li a:hover, nav ul li a:focus, nav ol li > span:hover, nav ol li > span:focus, nav ol li a:hover, nav ol li a:focus,
+.nav ul li > span:hover,
+.nav ul li > span:focus,
 .nav ul li a:hover,
 .nav ul li a:focus,
+.nav ol li > span:hover,
+.nav ol li > span:focus,
 .nav ol li a:hover,
 .nav ol li a:focus {
   color: #3F3F3F;
@@ -722,14 +732,22 @@ nav ul li > ul, nav ul li > ol, nav ol li > ul, nav ol li > ol,
   border: 1px solid #efefef;
 }
 
-nav .brand a,
+nav ul li.dropdown > span::after, nav ol li.dropdown > span::after,
+.nav ul li.dropdown > span::after,
+.nav ol li.dropdown > span::after {
+  content: " ▾";
+}
+
+nav .brand > span, nav .brand a,
+.nav .brand > span,
 .nav .brand a {
   font-size: 18px;
   padding: 10px 24px 0;
   line-height: 25px;
 }
 
-nav .brand a:hover,
+nav .brand > span:hover, nav .brand a:hover,
+.nav .brand > span:hover,
 .nav .brand a:hover {
   background: inherit;
 }
@@ -855,19 +873,18 @@ nav.dark li > ul, nav.dark li > ol,
   border-color: #323232;
 }
 
-nav.dark li a,
+nav.dark li > span, nav.dark li a,
+.nav.dark li > span,
 .nav.dark li a {
   color: #FFF;
 }
 
-nav.dark li a:hover, nav.dark li a:focus,
+nav.dark li > span:hover, nav.dark li > span:focus, nav.dark li a:hover, nav.dark li a:focus,
+.nav.dark li > span:hover,
+.nav.dark li > span:focus,
 .nav.dark li a:hover,
 .nav.dark li a:focus {
   color: #FFF;
-}
-
-nav.dark li a:hover,
-.nav.dark li a:hover {
   background: #323232;
 }
 
@@ -993,9 +1010,9 @@ notice,
   margin-bottom: 10px;
 }
 
-notice b,
-notice strong,
-notice h4,
+notice > span, notice b,
+notice strong, notice h4,
+.notice > span,
 .notice b,
 .notice strong,
 .notice h4 {
@@ -1013,9 +1030,9 @@ notice.success,
   border-left-color: #52C652;
 }
 
-notice.success b,
-notice.success strong,
-notice.success h4,
+notice.success > span, notice.success b,
+notice.success strong, notice.success h4,
+.notice.success > span,
 .notice.success b,
 .notice.success strong,
 .notice.success h4 {
@@ -1027,9 +1044,9 @@ notice.error,
   border-left-color: #E93F3C;
 }
 
-notice.error b,
-notice.error strong,
-notice.error h4,
+notice.error > span, notice.error b,
+notice.error strong, notice.error h4,
+.notice.error > span,
 .notice.error b,
 .notice.error strong,
 .notice.error h4 {
@@ -1041,9 +1058,9 @@ notice.warn,
   border-left-color: #F5AD1E;
 }
 
-notice.warn b,
-notice.warn strong,
-notice.warn h4,
+notice.warn > span, notice.warn b,
+notice.warn strong, notice.warn h4,
+.notice.warn > span,
 .notice.warn b,
 .notice.warn strong,
 .notice.warn h4 {
@@ -1055,9 +1072,9 @@ notice.info,
   border-left-color: #52B7D6;
 }
 
-notice.info b,
-notice.info strong,
-notice.info h4,
+notice.info > span, notice.info b,
+notice.info strong, notice.info h4,
+.notice.info > span,
 .notice.info b,
 .notice.info strong,
 .notice.info h4 {
@@ -1069,9 +1086,9 @@ notice.dark,
   border-left-color: #3F3F3F;
 }
 
-notice.dark b,
-notice.dark strong,
-notice.dark h4,
+notice.dark > span, notice.dark b,
+notice.dark strong, notice.dark h4,
+.notice.dark > span,
 .notice.dark b,
 .notice.dark strong,
 .notice.dark h4 {
@@ -1197,23 +1214,20 @@ table tr,
   border-bottom: 1px solid #EEE;
 }
 
-table tr th,
-table tr td,
+table tr th, table tr td,
 .table tr th,
 .table tr td {
   padding: 10px 16px;
   vertical-align: top;
 }
 
-table tr th:first-of-type,
-table tr td:first-of-type,
+table tr th:first-of-type, table tr td:first-of-type,
 .table tr th:first-of-type,
 .table tr td:first-of-type {
   padding-left: 16px;
 }
 
-table tr th:last-of-type,
-table tr td:last-of-type,
+table tr th:last-of-type, table tr td:last-of-type,
 .table tr th:last-of-type,
 .table tr td:last-of-type {
   padding-right: 16px;
