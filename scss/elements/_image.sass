@@ -1,0 +1,16 @@
+img
+    margin: 0
+
+    &.thumbnail
+        height: auto
+        padding: 4px
+        line-height: 1.42
+        border: 1px solid darken($light, 5)
+        background-color: $white
+        @include border-radius()
+
+    &.round
+        @include border-radius(10%)
+
+    &.circle
+        @include border-radius(50%)

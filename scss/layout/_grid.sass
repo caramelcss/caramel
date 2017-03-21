@@ -1,0 +1,39 @@
+$count: 12
+
+$box-width: 7 / 120 * 100%
+$box-margin: 1 / 80 * 100%
+
+$full-width: 25 / 3 / 100 * 100%
+$full-margin: 0
+
+.row
+    @include clearfix()
+
+.box
+    float: left
+    margin-left: $box-margin
+    margin-right: $box-margin
+    @include bottom-margin()
+
+    @media (max-width: $breakpoint-width)
+        width: 100% !important
+        margin-left: auto
+        margin-right: auto
+        display: block
+        float: none
+
+.full
+    float: left
+    @include bottom-margin()
+
+    @media (max-width: $breakpoint-width)
+        width: 100% !important
+        display: block
+        float: none
+
+@for $i from 1 through $count
+    .box.col-#{$i}
+        width: $box-width * $i + $box-margin * 2 * ($i - 1)
+
+    .full.col-#{$i}
+        width: $full-width * $i + $full-margin * 2 * ($i - 1)
