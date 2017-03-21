@@ -30,8 +30,11 @@ select
     @include inline-block()
     @include bottom-margin()
 
-    &:hover, &:active, &.active
+    &:hover
         border-color: darken($light, 10)
+
+    &:active, &:focus, &.active
+        border-color: darken($light, 20)
 
     @each $state, $color-map in $-states-map
         $color: map-get($color-map, "text-color")
@@ -40,18 +43,21 @@ select
         &.#{$state}
             border-color: $color-state
 
-            &:hover, &:active, &.active
-                border-color: $color-state
+            &:hover
+                border-color: darken($color-state, 5)
+
+            &:active, &:focus, &.active
+                border-color: darken($color-state, 1)
 
 textarea
     min-height: 100px
     min-width: 250px
     display: block
 
-    &:hover, &:active, &.active
-        border-color: darken($light, 10)
-
 select
     width: 181px
+    color: lighten($default, 20)
+    background: transparent url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 49%;
 
-
+    &:focus, &:active
+        color: $default

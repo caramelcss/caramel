@@ -1964,41 +1964,56 @@ select {
   margin-bottom: 10px;
 }
 
-input[type=text]:hover, input[type=text]:active, input[type=text].active,
+input[type=text]:hover,
 input[type=date]:hover,
-input[type=date]:active,
-input[type=date].active,
 input[type=email]:hover,
-input[type=email]:active,
-input[type=email].active,
 input[type=number]:hover,
-input[type=number]:active,
-input[type=number].active,
 input[type=password]:hover,
-input[type=password]:active,
-input[type=password].active,
 input[type=search]:hover,
-input[type=search]:active,
-input[type=search].active,
 input[type=tel]:hover,
-input[type=tel]:active,
-input[type=tel].active,
 input[type=time]:hover,
-input[type=time]:active,
-input[type=time].active,
 input[type=url]:hover,
-input[type=url]:active,
-input[type=url].active,
 input[type=week]:hover,
-input[type=week]:active,
-input[type=week].active,
 textarea:hover,
-textarea:active,
-textarea.active,
-select:hover,
-select:active,
-select.active {
+select:hover {
   border-color: #e3e3e3;
+}
+
+input[type=text]:active, input[type=text]:focus, input[type=text].active,
+input[type=date]:active,
+input[type=date]:focus,
+input[type=date].active,
+input[type=email]:active,
+input[type=email]:focus,
+input[type=email].active,
+input[type=number]:active,
+input[type=number]:focus,
+input[type=number].active,
+input[type=password]:active,
+input[type=password]:focus,
+input[type=password].active,
+input[type=search]:active,
+input[type=search]:focus,
+input[type=search].active,
+input[type=tel]:active,
+input[type=tel]:focus,
+input[type=tel].active,
+input[type=time]:active,
+input[type=time]:focus,
+input[type=time].active,
+input[type=url]:active,
+input[type=url]:focus,
+input[type=url].active,
+input[type=week]:active,
+input[type=week]:focus,
+input[type=week].active,
+textarea:active,
+textarea:focus,
+textarea.active,
+select:active,
+select:focus,
+select.active {
+  border-color: #c9c9c9;
 }
 
 input[type=text].success,
@@ -2016,41 +2031,56 @@ select.success {
   border-color: #52C652;
 }
 
-input[type=text].success:hover, input[type=text].success:active, input[type=text].success.active,
+input[type=text].success:hover,
 input[type=date].success:hover,
-input[type=date].success:active,
-input[type=date].success.active,
 input[type=email].success:hover,
-input[type=email].success:active,
-input[type=email].success.active,
 input[type=number].success:hover,
-input[type=number].success:active,
-input[type=number].success.active,
 input[type=password].success:hover,
-input[type=password].success:active,
-input[type=password].success.active,
 input[type=search].success:hover,
-input[type=search].success:active,
-input[type=search].success.active,
 input[type=tel].success:hover,
-input[type=tel].success:active,
-input[type=tel].success.active,
 input[type=time].success:hover,
-input[type=time].success:active,
-input[type=time].success.active,
 input[type=url].success:hover,
-input[type=url].success:active,
-input[type=url].success.active,
 input[type=week].success:hover,
-input[type=week].success:active,
-input[type=week].success.active,
 textarea.success:hover,
+select.success:hover {
+  border-color: #3fbf3f;
+}
+
+input[type=text].success:active, input[type=text].success:focus, input[type=text].success.active,
+input[type=date].success:active,
+input[type=date].success:focus,
+input[type=date].success.active,
+input[type=email].success:active,
+input[type=email].success:focus,
+input[type=email].success.active,
+input[type=number].success:active,
+input[type=number].success:focus,
+input[type=number].success.active,
+input[type=password].success:active,
+input[type=password].success:focus,
+input[type=password].success.active,
+input[type=search].success:active,
+input[type=search].success:focus,
+input[type=search].success.active,
+input[type=tel].success:active,
+input[type=tel].success:focus,
+input[type=tel].success.active,
+input[type=time].success:active,
+input[type=time].success:focus,
+input[type=time].success.active,
+input[type=url].success:active,
+input[type=url].success:focus,
+input[type=url].success.active,
+input[type=week].success:active,
+input[type=week].success:focus,
+input[type=week].success.active,
 textarea.success:active,
+textarea.success:focus,
 textarea.success.active,
-select.success:hover,
 select.success:active,
+select.success:focus,
 select.success.active {
-  border-color: #52C652;
+  border-color: #4ec54e;
 }
 
 input[type=text].error,
@@ -2068,41 +2098,56 @@ select.error {
   border-color: #E93F3C;
 }
 
-input[type=text].error:hover, input[type=text].error:active, input[type=text].error.active,
+input[type=text].error:hover,
 input[type=date].error:hover,
-input[type=date].error:active,
-input[type=date].error.active,
 input[type=email].error:hover,
-input[type=email].error:active,
-input[type=email].error.active,
 input[type=number].error:hover,
-input[type=number].error:active,
-input[type=number].error.active,
 input[type=password].error:hover,
-input[type=password].error:active,
-input[type=password].error.active,
 input[type=search].error:hover,
-input[type=search].error:active,
-input[type=search].error.active,
 input[type=tel].error:hover,
-input[type=tel].error:active,
-input[type=tel].error.active,
 input[type=time].error:hover,
-input[type=time].error:active,
-input[type=time].error.active,
 input[type=url].error:hover,
-input[type=url].error:active,
-input[type=url].error.active,
 input[type=week].error:hover,
-input[type=week].error:active,
-input[type=week].error.active,
 textarea.error:hover,
+select.error:hover {
+  border-color: #e62825;
+}
+
+input[type=text].error:active, input[type=text].error:focus, input[type=text].error.active,
+input[type=date].error:active,
+input[type=date].error:focus,
+input[type=date].error.active,
+input[type=email].error:active,
+input[type=email].error:focus,
+input[type=email].error.active,
+input[type=number].error:active,
+input[type=number].error:focus,
+input[type=number].error.active,
+input[type=password].error:active,
+input[type=password].error:focus,
+input[type=password].error.active,
+input[type=search].error:active,
+input[type=search].error:focus,
+input[type=search].error.active,
+input[type=tel].error:active,
+input[type=tel].error:focus,
+input[type=tel].error.active,
+input[type=time].error:active,
+input[type=time].error:focus,
+input[type=time].error.active,
+input[type=url].error:active,
+input[type=url].error:focus,
+input[type=url].error.active,
+input[type=week].error:active,
+input[type=week].error:focus,
+input[type=week].error.active,
 textarea.error:active,
+textarea.error:focus,
 textarea.error.active,
-select.error:hover,
 select.error:active,
+select.error:focus,
 select.error.active {
-  border-color: #E93F3C;
+  border-color: #e83a37;
 }
 
 input[type=text].warn,
@@ -2120,41 +2165,56 @@ select.warn {
   border-color: #F5AD1E;
 }
 
-input[type=text].warn:hover, input[type=text].warn:active, input[type=text].warn.active,
+input[type=text].warn:hover,
 input[type=date].warn:hover,
-input[type=date].warn:active,
-input[type=date].warn.active,
 input[type=email].warn:hover,
-input[type=email].warn:active,
-input[type=email].warn.active,
 input[type=number].warn:hover,
-input[type=number].warn:active,
-input[type=number].warn.active,
 input[type=password].warn:hover,
-input[type=password].warn:active,
-input[type=password].warn.active,
 input[type=search].warn:hover,
-input[type=search].warn:active,
-input[type=search].warn.active,
 input[type=tel].warn:hover,
-input[type=tel].warn:active,
-input[type=tel].warn.active,
 input[type=time].warn:hover,
-input[type=time].warn:active,
-input[type=time].warn.active,
 input[type=url].warn:hover,
-input[type=url].warn:active,
-input[type=url].warn.active,
 input[type=week].warn:hover,
-input[type=week].warn:active,
-input[type=week].warn.active,
 textarea.warn:hover,
+select.warn:hover {
+  border-color: #efa20b;
+}
+
+input[type=text].warn:active, input[type=text].warn:focus, input[type=text].warn.active,
+input[type=date].warn:active,
+input[type=date].warn:focus,
+input[type=date].warn.active,
+input[type=email].warn:active,
+input[type=email].warn:focus,
+input[type=email].warn.active,
+input[type=number].warn:active,
+input[type=number].warn:focus,
+input[type=number].warn.active,
+input[type=password].warn:active,
+input[type=password].warn:focus,
+input[type=password].warn.active,
+input[type=search].warn:active,
+input[type=search].warn:focus,
+input[type=search].warn.active,
+input[type=tel].warn:active,
+input[type=tel].warn:focus,
+input[type=tel].warn.active,
+input[type=time].warn:active,
+input[type=time].warn:focus,
+input[type=time].warn.active,
+input[type=url].warn:active,
+input[type=url].warn:focus,
+input[type=url].warn.active,
+input[type=week].warn:active,
+input[type=week].warn:focus,
+input[type=week].warn.active,
 textarea.warn:active,
+textarea.warn:focus,
 textarea.warn.active,
-select.warn:hover,
 select.warn:active,
+select.warn:focus,
 select.warn.active {
-  border-color: #F5AD1E;
+  border-color: #f5ab19;
 }
 
 input[type=text].info,
@@ -2172,41 +2232,56 @@ select.info {
   border-color: #52B7D6;
 }
 
-input[type=text].info:hover, input[type=text].info:active, input[type=text].info.active,
+input[type=text].info:hover,
 input[type=date].info:hover,
-input[type=date].info:active,
-input[type=date].info.active,
 input[type=email].info:hover,
-input[type=email].info:active,
-input[type=email].info.active,
 input[type=number].info:hover,
-input[type=number].info:active,
-input[type=number].info.active,
 input[type=password].info:hover,
-input[type=password].info:active,
-input[type=password].info.active,
 input[type=search].info:hover,
-input[type=search].info:active,
-input[type=search].info.active,
 input[type=tel].info:hover,
-input[type=tel].info:active,
-input[type=tel].info.active,
 input[type=time].info:hover,
-input[type=time].info:active,
-input[type=time].info.active,
 input[type=url].info:hover,
-input[type=url].info:active,
-input[type=url].info.active,
 input[type=week].info:hover,
-input[type=week].info:active,
-input[type=week].info.active,
 textarea.info:hover,
+select.info:hover {
+  border-color: #3daed1;
+}
+
+input[type=text].info:active, input[type=text].info:focus, input[type=text].info.active,
+input[type=date].info:active,
+input[type=date].info:focus,
+input[type=date].info.active,
+input[type=email].info:active,
+input[type=email].info:focus,
+input[type=email].info.active,
+input[type=number].info:active,
+input[type=number].info:focus,
+input[type=number].info.active,
+input[type=password].info:active,
+input[type=password].info:focus,
+input[type=password].info.active,
+input[type=search].info:active,
+input[type=search].info:focus,
+input[type=search].info.active,
+input[type=tel].info:active,
+input[type=tel].info:focus,
+input[type=tel].info.active,
+input[type=time].info:active,
+input[type=time].info:focus,
+input[type=time].info.active,
+input[type=url].info:active,
+input[type=url].info:focus,
+input[type=url].info.active,
+input[type=week].info:active,
+input[type=week].info:focus,
+input[type=week].info.active,
 textarea.info:active,
+textarea.info:focus,
 textarea.info.active,
-select.info:hover,
 select.info:active,
+select.info:focus,
 select.info.active {
-  border-color: #52B7D6;
+  border-color: #4eb5d5;
 }
 
 input[type=text].dark,
@@ -2224,41 +2299,56 @@ select.dark {
   border-color: #3F3F3F;
 }
 
-input[type=text].dark:hover, input[type=text].dark:active, input[type=text].dark.active,
+input[type=text].dark:hover,
 input[type=date].dark:hover,
-input[type=date].dark:active,
-input[type=date].dark.active,
 input[type=email].dark:hover,
-input[type=email].dark:active,
-input[type=email].dark.active,
 input[type=number].dark:hover,
-input[type=number].dark:active,
-input[type=number].dark.active,
 input[type=password].dark:hover,
-input[type=password].dark:active,
-input[type=password].dark.active,
 input[type=search].dark:hover,
-input[type=search].dark:active,
-input[type=search].dark.active,
 input[type=tel].dark:hover,
-input[type=tel].dark:active,
-input[type=tel].dark.active,
 input[type=time].dark:hover,
-input[type=time].dark:active,
-input[type=time].dark.active,
 input[type=url].dark:hover,
-input[type=url].dark:active,
-input[type=url].dark.active,
 input[type=week].dark:hover,
-input[type=week].dark:active,
-input[type=week].dark.active,
 textarea.dark:hover,
+select.dark:hover {
+  border-color: #323232;
+}
+
+input[type=text].dark:active, input[type=text].dark:focus, input[type=text].dark.active,
+input[type=date].dark:active,
+input[type=date].dark:focus,
+input[type=date].dark.active,
+input[type=email].dark:active,
+input[type=email].dark:focus,
+input[type=email].dark.active,
+input[type=number].dark:active,
+input[type=number].dark:focus,
+input[type=number].dark.active,
+input[type=password].dark:active,
+input[type=password].dark:focus,
+input[type=password].dark.active,
+input[type=search].dark:active,
+input[type=search].dark:focus,
+input[type=search].dark.active,
+input[type=tel].dark:active,
+input[type=tel].dark:focus,
+input[type=tel].dark.active,
+input[type=time].dark:active,
+input[type=time].dark:focus,
+input[type=time].dark.active,
+input[type=url].dark:active,
+input[type=url].dark:focus,
+input[type=url].dark.active,
+input[type=week].dark:active,
+input[type=week].dark:focus,
+input[type=week].dark.active,
 textarea.dark:active,
+textarea.dark:focus,
 textarea.dark.active,
-select.dark:hover,
 select.dark:active,
+select.dark:focus,
 select.dark.active {
-  border-color: #3F3F3F;
+  border-color: #3c3c3c;
 }
 
 textarea {
@@ -2267,12 +2357,14 @@ textarea {
   display: block;
 }
 
-textarea:hover, textarea:active, textarea.active {
-  border-color: #e3e3e3;
-}
-
 select {
   width: 181px;
+  color: #727272;
+  background: transparent url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 49%;
+}
+
+select:focus, select:active {
+  color: #3F3F3F;
 }
 
 img {
