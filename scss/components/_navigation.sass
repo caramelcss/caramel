@@ -137,9 +137,9 @@ nav,
     input[type=url]
         background: transparent
         border: none
-        margin: 2px
+        margin: 0 2px
         padding: 0 15px
-        height: 41px
+        height: 45px
 
         @include border-radius(0)
 
@@ -148,7 +148,7 @@ nav,
             height: 35px
 
         &:hover, &:active, &:focus
-            background: rgba(255, 255, 255, 0.05)
+            background: $grey
 
     &.fixed
         position: fixed
@@ -172,6 +172,16 @@ nav,
 
         &.bar
             border-color: darken($dark, 5)
+
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=search],
+        input[type=url]
+            color: $white
+
+            &:hover, &:active, &:focus
+                background: darken($dark, 5)
 
         li
             > ul, > ol
