@@ -6,7 +6,7 @@
   "author": "kurisubrooks",
   "license": "GPL-3.0",
   "main": "gulpfile.js",
-  "sass": "scss/caramel.scss",
+  "sass": "sass/caramel.scss",
   "keywords": [
     "website",
     "framework",
