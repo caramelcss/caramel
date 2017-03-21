@@ -125,10 +125,11 @@ input[type=submit]
                 &:hover, &:active 
                     color: $default
                     background: darken($light, 1)
-
-        &.open > ul
-            display: block
-
-        &:hover, &:active
-            > ul
+        
+        &:not(:disabled)
+            &.open > ul
                 display: block
+
+            &:hover, &:active
+                > ul
+                    display: block
