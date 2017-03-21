@@ -403,7 +403,7 @@
         <notice class="info"><b>Info:</b> Did you know, Bacon is more delicious in Canada?</notice>
         <notice class="dark"><b>Dark:</b> Deep Space Nine.</notice>
 
-        <pre>&lt;notice class="<span class="color error">$style</span>"&gt;
+        <pre>&lt;notice class="<span class="color error">$colour</span>"&gt;
     <span class="color error">...</span>
 &lt;/notice&gt;</pre>
 
@@ -421,7 +421,7 @@
         <alert class="dark"><b>Dark:</b> Deep Space Nine.</alert>
         <alert class="default clean"><b>Clean:</b> Incase your boss says your style is 'childish', and you need more 'professionalism'.</alert>
 
-        <pre>&lt;alert class="<span class="color error">$style</span>"&gt;
+        <pre>&lt;alert class="<span class="color error">$colour</span>"&gt;
     <span class="color error">...</span>
 &lt;/alert&gt;</pre>
 
@@ -471,7 +471,7 @@
             </div>
         </panel>
 
-        <pre>&lt;panel class="<span class="color error">$style</span>"&gt;
+        <pre>&lt;panel class="<span class="color error">$colour</span>"&gt;
     &lt;div class="head"&gt;<span class="color error">...</span>&lt;/div&gt;
     &lt;div class="body"&gt;<span class="color error">...</span>&lt;/div&gt;
 &lt;/panel&gt;</pre>
@@ -490,7 +490,7 @@
             <b>Error:</b> Incorrect Username / Password!
         </div>
 
-        <pre>&lt;<span class="color error">$element</span> class="<span class="color error">$style</span>" id="close"&gt;
+        <pre>&lt;<span class="color error">$element</span> class="<span class="color error">$colour</span>" id="close"&gt;
     &lt;div class="dismiss"&gt;&#xD7;&lt;/div&gt;
     <span class="color error">...</span>
 &lt;/<span class="color error">$element</span>&gt;</pre>
@@ -652,7 +652,7 @@
 
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
-        <input type="submit" class="btn info"><br>
+        <input type="submit" class="success"><br>
 
         <select>
             <option>Option 1</option>
@@ -663,15 +663,15 @@
         <textarea placeholder="Input Text Here"></textarea>
 
         <pre>
-&lt;input type="text"&gt;
+&lt;input type="text" class="<span class="color error">$colour</span>"&gt;
 
-&lt;input type="submit" class="<span class="color error">$style</span>"&gt;
+&lt;input type="submit" class="<span class="color error">$colour</span>"&gt;
 
-&lt;select&gt;
+&lt;select class="<span class="color error">$colour</span>"&gt;
     &lt;option&gt;<span class="color error">...</span>&lt;/option&gt;
 &lt;/select&gt;
 
-&lt;textarea&gt;<span class="color error">...</span>&lt;/textarea&gt;</pre>
+&lt;textarea class="<span class="color error">$colour</span>"&gt;<span class="color error">...</span>&lt;/textarea&gt;</pre>
 
         <hr>
 

@@ -1,0 +1,57 @@
+input,
+textarea,
+button,
+select
+    font: inherit
+    color: inherit
+
+    &:focus
+        outline: none
+
+input[type=text],
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea,
+select
+    min-width: 160px
+    padding: $padding-button
+    border: 1px solid darken($light, 5)
+    background: $white
+
+    @include no-default-appearance()
+    @include border-radius()
+    @include inline-block()
+    @include bottom-margin()
+
+    &:hover, &:active, &.active
+        border-color: darken($light, 10)
+
+    @each $state, $color-map in $-states-map
+        $color: map-get($color-map, "text-color")
+        $color-state: map-get($color-map, "color-state")
+
+        &.#{$state}
+            border-color: $color-state
+
+            &:hover, &:active, &.active
+                border-color: $color-state
+
+textarea
+    min-height: 100px
+    min-width: 250px
+    display: block
+
+    &:hover, &:active, &.active
+        border-color: darken($light, 10)
+
+select
+    width: 181px
+
+
