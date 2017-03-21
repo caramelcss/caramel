@@ -26,5 +26,5 @@ gulp.task("sass", () =>
         .pipe(rename("caramel.min.css"))
         .pipe(gulp.dest("./dist/css")));
 
-gulp.task("watch", () => gulp.watch(["./scss/**/*.s*ss", "./js/**/*.js"], ["sass", "js"]));
+gulp.task("watch", () => gulp.watch(["./s*ss/**/*.s*ss", "./js/**/*.js"], ["sass", "js"]));
 gulp.task("build", ["sass", "js"]);
