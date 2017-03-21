@@ -36,7 +36,7 @@
             background: 0 0;
         }
 
-        main {
+        main, nav .container {
             max-width: 1100px;
         }
 
@@ -62,54 +62,61 @@
 </head>
 <body>
     <nav class="bar fixed">
-        <ul>
-            <li class="collapse">
-                <a href="#"><i class="fa fa-bars"></i></a>
-            </li>
-            <li class="brand">
-                <a href="http://kurisubrooks.com/caramel">
-                    <img src="logo.svg" width="30px" height="26px">
-                </a>
-            </li>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="https://github.com/kurisubrooks/caramel#getting-started">Get Started</a>
-            </li>
-            <li>
-                <a href="showcase.html">Showcase</a>
-            </li>
-            <ul class="right">
-                <li class="dropdown">
-                    <a href="#" class="dropdownitem">
-                        <i class="fa fa-chevron-down fa-fw"></i>
+        <div class="container">
+            <ul>
+                <li class="collapse">
+                    <a href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li class="brand">
+                    <a href="http://kurisubrooks.com/caramel">
+                        <img src="logo.svg" width="30px" height="26px">
                     </a>
-                    <ul>
-                        <li><a href="#buttons">Buttons</a></li>
-                        <li><a href="#navigation">Navigation</a></li>
-                        <li><a href="#banners">Banners</a></li>
-                        <li><a href="#panels">Panels</a></li>
-                        <li><a href="#images">Images</a></li>
-                        <li><a href="#tables">Tables</a></li>
-                        <li><a href="#progress-bars">Progress Bars</a></li>
-                        <li><a href="#forms">Forms</a></li>
-                        <li><a href="#grid">Grid</a></li>
-                    </ul>
                 </li>
                 <li>
-                    <a href="https://github.com/kurisubrooks/caramel">
-                        <i class="fa fa-github fa-fw"></i>
-                    </a>
+                    <a href="index.html">Home</a>
                 </li>
+                <li>
+                    <a href="https://github.com/kurisubrooks/caramel#getting-started">Get Started</a>
+                </li>
+                <li>
+                    <a href="showcase.html">Showcase</a>
+                </li>
+                <ul class="right">
+                    <li class="dropdown">
+                        <span><i class="fa fa-chevron-down fa-fw"></i></span>
+                        <ul>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#navigation">Navigation</a></li>
+                            <li><a href="#banners">Banners</a></li>
+                            <li><a href="#panels">Panels</a></li>
+                            <li><a href="#images">Images</a></li>
+                            <li><a href="#tables">Tables</a></li>
+                            <li><a href="#progress-bars">Progress Bars</a></li>
+                            <li><a href="#forms">Forms</a></li>
+                            <li><a href="#grid">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kurisubrooks/caramel">
+                            <i class="fa fa-github fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
             </ul>
-        </ul>
+        </div>
     </nav>
 
     <main>
         <div class="header">
             <img src="logo.svg" width="100px" height="100px">
         </div>
+
+        <!--
+        <hr>
+
+        <chip>Example Chip</chip>
+        <label>Label</label>
+        -->
 
         <hr>
 
@@ -246,32 +253,26 @@
 
         <nav class="bar">
             <ul>
-                <li class="collapse">
-                    <a><i class="fa fa-bars"></i></a>
-                </li>
+                <li class="collapse"><span><i class="fa fa-bars"></i></span></li>
                 <li class="brand">
-                    <a href="#">Brand</a>
+                    <span>Brand</span>
                 </li>
                 <li>
-                    <a href="#">Link</a>
+                    <span>Link</span>
                 </li>
                 <li>
-                    <a href="#">Link</a>
+                    <span>Link</span>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdownitem">Dropdown &#x25BE;</a>
+                    <span>Dropdown</span>
                     <ul>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li><span>Link</span></li>
+                        <li><span>Link</span></li>
                     </ul>
                 </li>
                 <ul class="right">
-                    <li>
-                        <input type="text" placeholder="Search">
-                    </li>
-                    <li>
-                        <a href="#">Submit</a>
-                    </li>
+                    <li><input type="text" placeholder="Search"></li>
+                    <li><span>Submit</span></li>
                 </ul>
             </ul>
         </nav>
@@ -280,60 +281,58 @@
 
         <nav class="bar dark">
             <ul>
-                <li class="collapse">
-                    <a><i class="fa fa-bars"></i></a>
-                </li>
+                <li class="collapse"><span><i class="fa fa-bars"></i></span></li>
                 <li class="brand">
-                    <a href="#">Brand</a>
+                    <span>Brand</span>
                 </li>
                 <li>
-                    <a href="#">Link</a>
+                    <span>Link</span>
                 </li>
                 <li>
-                    <a href="#">Link</a>
+                    <span>Link</span>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdownitem">Dropdown &#x25BE;</a>
+                    <span>Dropdown</span>
                     <ul>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li><span>Link</span></li>
+                        <li><span>Link</span></li>
                     </ul>
                 </li>
                 <ul class="right">
-                    <li>
-                        <input type="text" placeholder="Search">
-                    </li>
-                    <li>
-                        <a href="#">Submit</a>
-                    </li>
+                    <li><input type="text" placeholder="Search"></li>
+                    <li><span>Submit</span></li>
                 </ul>
             </ul>
         </nav>
 
         <pre>&lt;nav class="bar <span class="color error">$style</span>"&gt;
     &lt;ul&gt;
-        &lt;li class="collapse"&gt;&lt;a&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        <b>&lt;!-- Collapse Item (Required) --&gt;</b>
+        &lt;li class="collapse"&gt;&lt;span&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
 
-        // Brand or Logo
-        &lt;li class="brand"&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
+        <b>&lt;!-- Brand or Logo --&gt;</b>
+        &lt;li class="brand"&gt;&lt;span&gt;<span class="color error">...</span>&lt;/span&gt;&lt;/li&gt;
 
-        // Navigation Items
+        <b>&lt;!-- Left Aligned Items --&gt;</b>
+        &lt;li&gt;&lt;span&gt;<span class="color error">...</span>&lt;/span&gt;/li&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
 
-        // Dropdown Menu
+        <b>&lt;!-- Dropdown Menu --&gt;</b>
         &lt;li class="dropdown"&gt;
-            &lt;a class="dropdownitem"&gt;Dropdown&lt;/a&gt;
+            &lt;span&gt;<span class="color error">Dropdown</span>&lt;/span&gt;
             &lt;ul&gt;
+                &lt;li&gt;&lt;span&gt;<span class="color error">...</span>&lt;/span&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
 
-        // Right Aligned Navigation Items
+        <b>&lt;!-- Right Aligned Items --&gt;</b>
         &lt;ul class="right"&gt;
+            &lt;li&gt;&lt;span&gt;<span class="color error">...</span>&lt;/span&gt;/li&gt;
             &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
 
-        // Inline Form Inputs
+        <b>&lt;!-- Inline Forms --&gt;</b>
         &lt;li&gt;&lt;input type="<span class="color error">$type</span>"&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;</pre>
@@ -344,7 +343,7 @@
 
         <br>
 
-        <nav class="crumb">
+        <nav class="breadcrumbs">
             <ul>
                 <li><a href="#">caramel</a></li>
                 <li><a href="#">dist</a></li>
@@ -352,7 +351,7 @@
             </ul>
         </nav>
 
-        <pre>&lt;nav class="crumb"&gt;
+        <pre>&lt;nav class="breadcrumbs"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
@@ -366,19 +365,21 @@
 
         <br>
 
-        <nav class="pag">
-            <ul>
-                <li><a href="#"><i class="fa fa-caret-left"></i></a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#"><i class="fa fa-caret-right"></i></a></li>
-            </ul>
-        </nav>
+        <div align="center">
+            <nav class="pagination">
+                <ul>
+                    <li><a href="#"><i class="fa fa-caret-left"></i></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <pre>&lt;nav class="pag"&gt;
+        <pre>&lt;nav class="pagination"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;&lt;i class="fa fa-caret-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="<span class="color error">#</span>"&gt;<span class="color error">...</span>&lt;/a&gt;&lt;/li&gt;
@@ -499,10 +500,12 @@
 
         <h3 id="images">Images</h3>
 
-        <img src="https://placehold.it/150x150" class="thumbnail" />
-        <img src="https://placehold.it/150x150" class="thumbnail circle" />
-        <img src="https://placehold.it/150x150" class="round" />
-        <img src="https://placehold.it/150x150" class="circle" />
+        <div align="center">
+            <img src="https://placehold.it/150x150" class="thumbnail" />
+            <img src="https://placehold.it/150x150" class="thumbnail circle" />
+            <img src="https://placehold.it/150x150" class="round" />
+            <img src="https://placehold.it/150x150" class="circle" />
+        </div>
 
         <br>
 
