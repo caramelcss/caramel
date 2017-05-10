@@ -1,0 +1,6 @@
+{
+  "name": "caramel",
+  "version": "1.6.0",
+  "description": "simple, modern, responsive website design framework",
+  "main": "src/css/caramel.scss"
+}
