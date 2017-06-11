@@ -2,8 +2,6 @@
 
 > Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
-[![devDependency Status](https://david-dm.org/kurisubrooks/caramel/dev-status.svg)](https://david-dm.org/kurisubrooks/caramel#info=devDependencies)
-
 ## Getting Started
 - [Download the latest Release](https://github.com/kurisubrooks/caramel/releases)
 - [Download the latest Development Build](https://github.com/kurisubrooks/caramel/archive/master.zip)
