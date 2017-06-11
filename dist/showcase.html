@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Caramel</title>
+    <title>Caramel - Showcase</title>
     <meta name="author" content="kurisubrooks">
     <meta name="description" content="a simple to use, easy to remember css framework">
 
@@ -28,8 +28,7 @@
     <script src="js/caramel.js"></script>
 
     <style>
-        #example .box,
-        .full {
+        #example .box, .full {
             background-color: #EEE;
             text-align: center;
         }
@@ -38,20 +37,17 @@
             background-color: #DDD;
         }
 
-        main,
-        nav .container {
+        main, nav .container {
             max-width: 1100px;
         }
 
-        body > .header {
-            margin-bottom: 60px;
-            padding: 150px 0 120px;
-            text-align: center;
+        .hero {
+            padding-top: 150px;
             background: #c69c6d;
             background: -moz-linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
             background: -webkit-linear-gradient(25deg, #c69c6d 0%,#a67c52 100%);
             background: linear-gradient(25deg, #c69c6d 0%,#a67c52 100%);
-            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+            margin-bottom: 50px;
         }
     </style>
 </head>
@@ -93,23 +89,13 @@
         </div>
     </nav>
 
-    <div class="header">
+    <div class="hero">
         <img class="logo" src="assets/logo_clear.svg" height="128px" width="128px">
     </div>
 
     <main>
 
         <h3 id="buttons">Buttons</h3>
-
-        <button class="default large">Default</button>
-        <button class="success large">Success</button>
-        <button class="error large">Error</button>
-        <button class="warn large">Warning</button>
-        <button class="info large">Info</button>
-        <button class="dark large">Dark</button>
-        <button class="large" disabled>Disabled</button>
-
-        <br>
 
         <button class="default">Default</button>
         <button class="success">Success</button>
@@ -118,16 +104,6 @@
         <button class="info">Info</button>
         <button class="dark">Dark</button>
         <button disabled>Disabled</button>
-
-        <br>
-
-        <button class="default small">Default</button>
-        <button class="success small">Success</button>
-        <button class="error small">Error</button>
-        <button class="warn small">Warning</button>
-        <button class="info small">Info</button>
-        <button class="dark small">Dark</button>
-        <button class="small" disabled>Disabled</button>
 
         <pre>
 &lt;button class="<span class="color error">$colour</span>"&gt;<span class="color error">...</span>&lt;/button&gt;</pre>
