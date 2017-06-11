@@ -38,10 +38,16 @@ input[type=submit]
     &.large
         font-size: 1.2em
         padding: $padding-button-large
-    
+
     &.block
         display: block
         width: 100%
+
+    &.round
+        @include border-radius(25px)
+
+    &.square
+        @include border-radius(0)
 
     &.clean
         color: $default
