@@ -118,11 +118,11 @@ nav,
     .brand
         > span, a
             font-size: 18px
-            padding: 10px 24px 0
+            padding: 10px 24px 3px
             line-height: 25px
 
             &:hover
-                background: inherit
+                background: inherit !important
 
         @media (max-width: $breakpoint-width)
             visibility: hidden
@@ -204,7 +204,7 @@ nav,
         background: transparentize($dark, 0.8)
 
         &.bar
-            border-color: transparent
+            border-color: transparentize($dark, 0.95)
 
         input[type=text],
         input[type=email],
@@ -218,15 +218,15 @@ nav,
 
         li
             > ul, > ol
-                background: $dark
-                border-color: darken($dark, 5)
+                background: transparentize($dark, 0.8)
+                border-color: transparentize($dark, 0.95)
 
             > span, a
                 color: $white
 
                 &:hover, &:focus
                     color: $white
-                    background: darken($dark, 5)
+                    background: transparentize($dark, 0.8)
 
     &.dropdown, .dropdown
         .fa-angle-down

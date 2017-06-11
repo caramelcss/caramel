@@ -754,14 +754,14 @@ nav .brand > span, nav .brand a,
 .nav .brand > span,
 .nav .brand a {
   font-size: 18px;
-  padding: 10px 24px 0;
+  padding: 10px 24px 3px;
   line-height: 25px;
 }
 
 nav .brand > span:hover, nav .brand a:hover,
 .nav .brand > span:hover,
 .nav .brand a:hover {
-  background: inherit;
+  background: inherit !important;
 }
 
 @media (max-width: 800px) {
@@ -977,7 +977,7 @@ nav.transparent,
 
 nav.transparent.bar,
 .nav.transparent.bar {
-  border-color: transparent;
+  border-color: rgba(63, 63, 63, 0.05);
 }
 
 nav.transparent input[type=text],
@@ -1036,8 +1036,8 @@ nav.transparent input[type=url].focus,
 nav.transparent li > ul, nav.transparent li > ol,
 .nav.transparent li > ul,
 .nav.transparent li > ol {
-  background: #3F3F3F;
-  border-color: #323232;
+  background: rgba(63, 63, 63, 0.2);
+  border-color: rgba(63, 63, 63, 0.05);
 }
 
 nav.transparent li > span, nav.transparent li a,
@@ -1052,7 +1052,7 @@ nav.transparent li > span:hover, nav.transparent li > span:focus, nav.transparen
 .nav.transparent li a:hover,
 .nav.transparent li a:focus {
   color: #FFF;
-  background: #323232;
+  background: rgba(63, 63, 63, 0.2);
 }
 
 nav.dropdown .fa-angle-down, nav .dropdown .fa-angle-down,
