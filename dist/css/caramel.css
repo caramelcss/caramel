@@ -422,22 +422,69 @@ sup {
 
 .layout {
   display: flex;
-  min-height: 100%;
 }
 
 .layout .sidebar {
   flex: 1;
+  height: 100%;
   min-width: 300px;
   max-width: 300px;
   width: 300px;
   border-right: 1px solid #eee;
-  min-height: 100%;
+  overflow-y: auto;
+  padding: 1em 0 2em;
+}
+
+.layout .sidebar ul, .layout .sidebar ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layout .sidebar ul li, .layout .sidebar ol li {
+  padding: 12px 2em;
+  cursor: pointer;
+}
+
+.layout .sidebar ul li.title, .layout .sidebar ol li.title {
+  padding: 1em 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: default;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.layout .sidebar ul li.title:hover, .layout .sidebar ol li.title:hover {
+  background: inherit;
+}
+
+.layout .sidebar ul li.active, .layout .sidebar ul li:hover, .layout .sidebar ol li.active, .layout .sidebar ol li:hover {
+  background: #fbfbfb;
+}
+
+.layout .sidebar ul li.separator, .layout .sidebar ol li.separator {
+  height: 24px;
+  cursor: default;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.layout .sidebar ul li.separator:hover, .layout .sidebar ol li.separator:hover {
+  background: inherit;
 }
 
 .layout .content {
   flex: 2;
   width: 100%;
-  padding: 2em 2em 0;
+  height: 100%;
+  padding: 1em 2em 0;
+}
+
+.footer {
+  padding: 3em 0;
+  background: #EEE;
+  border-top: 2px solid rgba(225, 225, 225, 0.2);
 }
 
 alert,
