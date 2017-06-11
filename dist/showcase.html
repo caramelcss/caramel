@@ -7,7 +7,20 @@
     <title>Caramel</title>
     <meta name="author" content="kurisubrooks">
     <meta name="description" content="a simple to use, easy to remember css framework">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#A67C52">
+
+    <meta name="theme-color" content="#F1F1F1">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Caramel">
+    <meta property="og:title" content="Caramel">
+    <meta property="og:description" content="a simple to use, easy to remember css framework">
+    <meta property="og:url" content="https://kurisubrooks.com/caramel">
+    <meta property="og:image" content="https://kurisubrooks.com/caramel/assets/header.png">
 
     <link href="css/caramel.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -15,11 +28,8 @@
     <script src="js/caramel.js"></script>
 
     <style>
-        body {
-            padding-top: 20px;
-        }
-
-        #example .box, .full {
+        #example .box,
+        .full {
             background-color: #EEE;
             text-align: center;
         }
@@ -27,60 +37,37 @@
         .full:nth-child(even) {
             background-color: #DDD;
         }
-        
-        .header .logo a {
-            padding: 5px 20px 0;
-        }
 
-        .header .logo a:hover {
-            background: 0 0;
-        }
-
-        main, nav .container {
+        main,
+        nav .container {
             max-width: 1100px;
         }
 
-        main .header {
-            margin: 100px 0 70px;
+        body > .header {
+            margin-bottom: 60px;
+            padding: 150px 0 120px;
             text-align: center;
-        }
-
-        main .header h1 {
-            margin-top: 0;
-        }
-
-        .fa.fa-code {
-            font-size: 16px;
-        }
-
-        @media (max-width: 800px) {
-            .title {
-                font-size: 50px;
-            }
+            background: #c69c6d;
+            background: -moz-linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
+            background: -webkit-linear-gradient(25deg, #c69c6d 0%,#a67c52 100%);
+            background: linear-gradient(25deg, #c69c6d 0%,#a67c52 100%);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
 <body>
-    <nav class="bar fixed">
+    <nav class="bar fixed transparent">
         <div class="container">
             <ul>
-                <li class="collapse">
-                    <a href="#"><i class="fa fa-bars"></i></a>
-                </li>
+                <li class="collapse"><a href="#"><i class="fa fa-bars"></i></a></li>
                 <li class="brand">
-                    <a href="http://kurisubrooks.com/caramel">
-                        <img src="logo.svg" width="30px" height="26px">
+                    <a href="https://kurisubrooks.com/caramel">
+                        <img src="assets/logo_clear.svg" width="30px" height="26px">
                     </a>
                 </li>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="https://github.com/kurisubrooks/caramel#getting-started">Get Started</a>
-                </li>
-                <li>
-                    <a href="showcase.html">Showcase</a>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://github.com/kurisubrooks/caramel#getting-started">Get Started</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
                 <ul class="right">
                     <li class="dropdown">
                         <span>Jump</span>
@@ -106,19 +93,11 @@
         </div>
     </nav>
 
+    <div class="header">
+        <img class="logo" src="assets/logo_clear.svg" height="128px" width="128px">
+    </div>
+
     <main>
-        <div class="header">
-            <img src="logo.svg" width="100px" height="100px">
-        </div>
-
-        <!--
-        <hr>
-
-        <chip>Example Chip</chip>
-        <label>Label</label>
-        -->
-
-        <hr>
 
         <h3 id="buttons">Buttons</h3>
 
@@ -655,7 +634,7 @@
 
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
-        <input type="submit" class="success"><br>
+        <input type="submit" class="success" value="Submit"><br>
 
         <select>
             <option>Option 1</option>
