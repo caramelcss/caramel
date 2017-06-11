@@ -413,6 +413,33 @@ sup {
   width: 100%;
 }
 
+.hero {
+  padding: 120px 0;
+  text-align: center;
+  background: #EEE;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.layout {
+  display: flex;
+  min-height: 100%;
+}
+
+.layout .sidebar {
+  flex: 1;
+  min-width: 300px;
+  max-width: 300px;
+  width: 300px;
+  border-right: 1px solid #eee;
+  min-height: 100%;
+}
+
+.layout .content {
+  flex: 2;
+  width: 100%;
+  padding: 2em 2em 0;
+}
+
 alert,
 .alert {
   display: block;
@@ -862,8 +889,7 @@ nav.static,
 .nav.static {
   position: absolute;
   z-index: 9999;
-  left: 0;
-  right: 0;
+  width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -1539,6 +1565,26 @@ input[type=button].block,
 input[type=submit].block {
   display: block;
   width: 100%;
+}
+
+.btn.round,
+.button.round,
+button.round,
+input[type=button].round,
+input[type=submit].round {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.btn.square,
+.button.square,
+button.square,
+input[type=button].square,
+input[type=submit].square {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 .btn.clean,
