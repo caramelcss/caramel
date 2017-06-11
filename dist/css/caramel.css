@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-  Caramel (http://kurisubrooks.com/caramel)
-  Copyright 2017, All Rights Reserved
-  @version 2.0.0
-  @license GNU GPL v3
+    Caramel (http://kurisubrooks.com/caramel)
+    Copyright 2017, All Rights Reserved
+    @version 2.0.0
+    @license GNU GPL v3
  */
 *,
 *::before,
@@ -508,6 +508,19 @@ alert.dark,
   background: #444444;
 }
 
+card,
+.card {
+  display: block;
+  padding: 16px 20px;
+  color: #3F3F3F;
+  border: 1px solid #efefef;
+  background: #FCFCFC;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
 nav,
 .nav {
   background: #FCFCFC;
@@ -945,6 +958,91 @@ nav.dark li > span:hover, nav.dark li > span:focus, nav.dark li a:hover, nav.dar
 .nav.dark li > span:focus,
 .nav.dark li a:hover,
 .nav.dark li a:focus {
+  color: #FFF;
+  background: #323232;
+}
+
+nav.transparent,
+.nav.transparent {
+  background: rgba(63, 63, 63, 0.2);
+}
+
+nav.transparent.bar,
+.nav.transparent.bar {
+  border-color: transparent;
+}
+
+nav.transparent input[type=text],
+nav.transparent input[type=email],
+nav.transparent input[type=password],
+nav.transparent input[type=search],
+nav.transparent input[type=url],
+.nav.transparent input[type=text],
+.nav.transparent input[type=email],
+.nav.transparent input[type=password],
+.nav.transparent input[type=search],
+.nav.transparent input[type=url] {
+  color: #FFF;
+}
+
+nav.transparent input[type=text]:hover, nav.transparent input[type=text]:active, nav.transparent input[type=text]:focus, nav.transparent input[type=text].focus,
+nav.transparent input[type=email]:hover,
+nav.transparent input[type=email]:active,
+nav.transparent input[type=email]:focus,
+nav.transparent input[type=email].focus,
+nav.transparent input[type=password]:hover,
+nav.transparent input[type=password]:active,
+nav.transparent input[type=password]:focus,
+nav.transparent input[type=password].focus,
+nav.transparent input[type=search]:hover,
+nav.transparent input[type=search]:active,
+nav.transparent input[type=search]:focus,
+nav.transparent input[type=search].focus,
+nav.transparent input[type=url]:hover,
+nav.transparent input[type=url]:active,
+nav.transparent input[type=url]:focus,
+nav.transparent input[type=url].focus,
+.nav.transparent input[type=text]:hover,
+.nav.transparent input[type=text]:active,
+.nav.transparent input[type=text]:focus,
+.nav.transparent input[type=text].focus,
+.nav.transparent input[type=email]:hover,
+.nav.transparent input[type=email]:active,
+.nav.transparent input[type=email]:focus,
+.nav.transparent input[type=email].focus,
+.nav.transparent input[type=password]:hover,
+.nav.transparent input[type=password]:active,
+.nav.transparent input[type=password]:focus,
+.nav.transparent input[type=password].focus,
+.nav.transparent input[type=search]:hover,
+.nav.transparent input[type=search]:active,
+.nav.transparent input[type=search]:focus,
+.nav.transparent input[type=search].focus,
+.nav.transparent input[type=url]:hover,
+.nav.transparent input[type=url]:active,
+.nav.transparent input[type=url]:focus,
+.nav.transparent input[type=url].focus {
+  background: #323232;
+}
+
+nav.transparent li > ul, nav.transparent li > ol,
+.nav.transparent li > ul,
+.nav.transparent li > ol {
+  background: #3F3F3F;
+  border-color: #323232;
+}
+
+nav.transparent li > span, nav.transparent li a,
+.nav.transparent li > span,
+.nav.transparent li a {
+  color: #FFF;
+}
+
+nav.transparent li > span:hover, nav.transparent li > span:focus, nav.transparent li a:hover, nav.transparent li a:focus,
+.nav.transparent li > span:hover,
+.nav.transparent li > span:focus,
+.nav.transparent li a:hover,
+.nav.transparent li a:focus {
   color: #FFF;
   background: #323232;
 }

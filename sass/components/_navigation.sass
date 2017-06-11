@@ -193,6 +193,34 @@ nav,
                 &:hover, &:focus
                     color: $white
                     background: darken($dark, 5)
+    
+    &.transparent
+        background: transparentize($dark, 0.8)
+
+        &.bar
+            border-color: transparent
+
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=search],
+        input[type=url]
+            color: $white
+
+            &:hover, &:active, &:focus, &.focus
+                background: darken($dark, 5)
+
+        li
+            > ul, > ol
+                background: $dark
+                border-color: darken($dark, 5)
+
+            > span, a
+                color: $white
+
+                &:hover, &:focus
+                    color: $white
+                    background: darken($dark, 5)
 
     &.dropdown, .dropdown
         .fa-angle-down
