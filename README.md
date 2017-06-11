@@ -1,6 +1,11 @@
-# [Caramel](http://kurisubrooks.com/caramel/)
+<center>
+    <img src="https://user-images.githubusercontent.com/6291467/27007335-23a941e0-4e93-11e7-961a-cd42b89ff4a9.png" height="200px"><br>
+    <a href="https://david-dm.org/kurisubrooks/caramel#info=devDependencies">
+        <img src="https://david-dm.org/kurisubrooks/caramel/dev-status.svg">
+    </a>
+</center>
 
-[![devDependency Status](https://david-dm.org/kurisubrooks/caramel/dev-status.svg)](https://david-dm.org/kurisubrooks/caramel#info=devDependencies)
+<br><br>
 
 Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
@@ -10,9 +15,32 @@ Caramel is a simple, modern, responsive website framework. Caramel is fully resp
 - Clone the repo: ```git clone https://github.com/kurisubrooks/caramel.git```
 
 #### Quick Start
-Jump right into Caramel by using the included HTML5 Boilerplate. `template.html` is already set up to HTML5 standards, and has Caramel already included. All you need to do is to start writing your code!
+Jump right into Caramel by using the following HTML5 Boilerplate.
 
-Also, check out `showcase.html`, to see Caramel's latest features!
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Caramel</title>
+    <link href="./caramel.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <h1>Welcome to Caramel!</h1>
+        <p>Your code goes down here!</p>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="./caramel.min.js"></script>
+
+</body>
+</html>
+```
 
 ## What's included?
 Our [public releases](https://github.com/kurisubrooks/caramel/releases) only contain the files that are necessary for front-end development. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Build](https://github.com/kurisubrooks/caramel/archive/master.zip), which includes our build tool, and the sass source files.
@@ -20,23 +48,18 @@ Our [public releases](https://github.com/kurisubrooks/caramel/releases) only con
 ```
 caramel/
 ├── showcase.html
-├── template.html
 │
 ├── css/
 │   ├── caramel.css
 │   └── caramel.min.css
 │
-├── js/
-│   ├── caramel.js
-│   ├── caramel.min.js
-│   └── jquery.min.js
-│
-└── fonts/
-    └── fontawesome/
+└── js/
+    ├── caramel.js
+    └── caramel.min.js
 ```
 
 ## Documentation
-Head on over to our [website](http://kurisubrooks.com/caramel), and view the Showcase. All code usage and examples are listed right there on the page! If you want to see the exact syntax we use to show you the content on the page, simply right click on the page and view source (depending on whether your browser supports this feature).
+Head on over to our [website](https://kurisubrooks.com/caramel), and view the Showcase. All code usage and examples are listed right there on the page! If you want to see the exact syntax we use to show you the content on the page, simply right click on the page and view source (depending on whether your browser supports this feature).
 
 Still stuck or need further help? Tweet [@kurisubrooks](https://twitter.com/kurisubrooks), and he'll try to answer any questions you may have.
 
@@ -65,7 +88,7 @@ To run the build tool, run the following command:
 gulp
 ```
 
-After the build is complete, the output `caramel.css`, `caramel.min.css` and `caramel.min.js` files can be found in your `./src/css` and `./src/js` folders respectively.
+After the build is complete, the output `caramel.css`, `caramel.min.css` and `caramel.min.js` files can be found in your `./dist/css` and `./dist/js` folders respectively.
 
 ## Compatibility
 Caramel has been designed for any browser that supports [CSS3](https://html5test.com/). Caramel has been tested, and is recommended for use on:
