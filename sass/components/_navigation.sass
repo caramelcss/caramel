@@ -156,6 +156,12 @@ nav,
         right: 0
         z-index: 9999
 
+    &.static
+        position: absolute
+        z-index: 9999
+        left: 0;
+        right: 0;
+
     .open li
         @media (max-width: $breakpoint-width)
             display: block
@@ -264,6 +270,10 @@ nav,
         position: fixed
         top: 0
         width: 100%
+        z-index: 5
+    
+    &.static
+        position: absolute
         z-index: 5
 
     .nav

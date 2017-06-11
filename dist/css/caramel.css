@@ -858,6 +858,14 @@ nav.fixed,
   z-index: 9999;
 }
 
+nav.static,
+.nav.static {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
+
 @media (max-width: 800px) {
   nav .open li,
   .nav .open li {
@@ -1125,6 +1133,11 @@ nav.dropdown:hover > ul, nav.dropdown:hover > ol, nav .dropdown:hover > ul, nav 
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 5;
+}
+
+.header.static {
+  position: absolute;
   z-index: 5;
 }
 
