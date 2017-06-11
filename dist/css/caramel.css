@@ -1473,7 +1473,7 @@ input[type=submit] {
 button:disabled,
 input[type=button]:disabled,
 input[type=submit]:disabled {
-  cursor: not-allowed;
+  cursor: not-allowed !important;
   color: #CCC;
   border-color: #efefef;
   background: white;
