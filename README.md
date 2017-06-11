@@ -1,13 +1,8 @@
-<center>
-    <img src="https://user-images.githubusercontent.com/6291467/27007335-23a941e0-4e93-11e7-961a-cd42b89ff4a9.png" height="200px"><br>
-    <a href="https://david-dm.org/kurisubrooks/caramel#info=devDependencies">
-        <img src="https://david-dm.org/kurisubrooks/caramel/dev-status.svg">
-    </a>
-</center>
+# [![Caramel](dist/assets/header2.png)](https://kurisubrooks.com/caramel)
 
-<br><br>
+> Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
-Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
+[![devDependency Status](https://david-dm.org/kurisubrooks/caramel/dev-status.svg)](https://david-dm.org/kurisubrooks/caramel#info=devDependencies)
 
 ## Getting Started
 - [Download the latest Release](https://github.com/kurisubrooks/caramel/releases)
@@ -77,8 +72,8 @@ npm install gulp --global
 #### Install:
 To get the latest version of Caramel and to install the build tools, run the following set of commands:
 ```
-cd ~/.../caramel
 git clone https://github.com/kurisubrooks/caramel.git
+cd ./caramel
 npm install
 ```
 
