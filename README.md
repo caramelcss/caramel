@@ -1,5 +1,7 @@
 # [![Caramel](dist/assets/header2.png)](https://kurisubrooks.com/caramel)
 
+[![Join us on Discord](https://discordapp.com/api/guilds/292970618834649088/embed.png)](https://discord.gg/jD5V5EH)
+
 > Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
 ## Getting Started
