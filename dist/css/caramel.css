@@ -428,7 +428,7 @@ sup {
 
 .layout .sidebar {
   flex: 1;
-  height: 100%;
+  min-height: 100%;
   min-width: 300px;
   max-width: 300px;
   width: 300px;
