@@ -120,6 +120,15 @@ hr {
   border: none !important;
 }
 
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
 .border-thick,
 .border-thicc {
   border: 2px solid !important;
