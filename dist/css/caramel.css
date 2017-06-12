@@ -505,6 +505,18 @@ sup {
   border-top: 2px solid rgba(225, 225, 225, 0.2);
 }
 
+.footer .links a:not(:last-of-type) {
+  padding-right: 2em;
+}
+
+.footer .links a:hover {
+  text-decoration: underline;
+}
+
+.footer.centered {
+  text-align: center;
+}
+
 alert,
 .alert {
   display: block;

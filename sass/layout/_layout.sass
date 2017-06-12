@@ -54,3 +54,14 @@
     padding: 3em 6em
     background: $grey
     border-top: 2px solid transparentize(darken($grey, 5), 0.8)
+
+    .links
+        a
+            &:not(:last-of-type)
+                padding-right: 2em
+
+            &:hover
+                text-decoration: underline
+    
+    &.centered
+        text-align: center
