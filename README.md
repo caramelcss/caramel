@@ -16,11 +16,10 @@ Jump right into Caramel by using the following HTML5 Boilerplate.
 <!doctype html>
 <html lang="en">
 <head>
+    <title>Caramel</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Caramel</title>
     <link href="./caramel.min.css" rel="stylesheet">
 </head>
 <body>
