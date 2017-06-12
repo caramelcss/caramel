@@ -6,6 +6,6 @@
 logs
 out
 bin
+dist/docs
 node_modules
-workspace.html
 .vscode

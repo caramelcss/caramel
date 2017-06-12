@@ -1,0 +1,7 @@
+site_name: Caramel
+theme: null
+theme_dir: "docs/_layout"
+site_dir: dist/docs
+pages:
+    - Home: introduction/get-started.md
+    - Usage: introduction/usage.md

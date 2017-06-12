@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
+    <meta name="author" content="kurisubrooks">
+    <meta name="description" content="a simple to use, easy to remember css framework">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#A67C52">
+
+    <meta name="theme-color" content="#F1F1F1">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Caramel">
+    <meta property="og:title" content="Caramel">
+    <meta property="og:description" content="a simple to use, easy to remember css framework">
+    <meta property="og:url" content="https://kurisubrooks.com/caramel">
+    <meta property="og:image" content="assets/header.png">
+
+    <link href="{{ base_url }}/../css/caramel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="{{ base_url }}/../js/caramel.js"></script>
+
+    <style>
+        .hero {
+            padding-top: 150px;
+            background: #c69c6d;
+            background: linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
+            background: -moz-linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
+            background: -webkit-linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
+        }
+
+        h1.title {
+            margin: .4em 0 1em;
+            padding-bottom: 1em;
+        }
+
+        .content {
+            font-size: 16px;
+        }
+
+        pre {
+            font-size: 14px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bar static transparent">
+        <ul>
+            <li class="collapse"><a href="#"><i class="fa fa-bars"></i></a></li>
+            <li class="brand">
+                <a href="https://kurisubrooks.com/caramel">
+                    <img src="{{ base_url }}/../assets/logo_clear.svg" width="30px" height="26px">
+                </a>
+            </li>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://github.com/kurisubrooks/caramel#getting-started">Get Started</a></li>
+            <li><a href="/docs/">Documentation</a></li>
+                <ul class="right">
+                    <li>
+                        <a href="https://github.com/kurisubrooks/caramel">
+                            <i class="fa fa-github fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+    </nav>
+
+    <div class="hero">
+        <img class="logo" src="{{ base_url }}/../assets/logo_clear.svg" height="128px" width="128px">
+    </div>
+
+    <div class="layout">
+        <div class="sidebar">
+            {% if nav|length>1 %}
+                <ul>
+                {% for nav_item in nav %}
+                    {% if nav_item.children %}
+                        <li>{{ nav_item.title }}
+                            <ul>
+                            {% for nav_item in nav_item.children %}
+                                <a href="{{ nav_item.url }}"><li class="{% if nav_item.active%}current{%endif%}">
+                                    {{ nav_item.title }}
+                                </li></a>
+                            {% endfor %}
+                            </ul>
+                        </li>
+                    {% else %}
+                        <a href="{{ nav_item.url }}"><li class="{% if nav_item.active%}current{%endif%}">
+                            {{ nav_item.title }}
+                        </li></a>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            {% endif %}
+            <!--<ul>
+                <li class="title">Introduction</li>
+                <li>Usage</li>
+                <li>Colours</li>
+                <li>Helpers</li>
+                <li class="separator"></li>
+                <li class="title">Core</li>
+                <li>Typography</li>
+                <li>Media</li>
+                <li class="separator"></li>
+                <li class="title">Components</li>
+                <li>Alerts</li>
+                <li>Cards</li>
+                <li>Navigation</li>
+                <li>Notices</li>
+                <li>Panels</li>
+                <li>Tables</li>
+                <li class="separator"></li>
+                <li class="title">Elements</li>
+                <li>Buttons</li>
+                <li>Chips</li>
+                <li>Forms</li>
+                <li>Labels</li>
+                <li>Progress Bars</li>
+                <li class="separator"></li>
+                <li class="title">Layout</li>
+                <li>Grid</li>
+                <li>Hero</li>
+            </ul>-->
+        </div>
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+
+    <div class="footer">
+        Caramel is a project by Kurisu Brooks and the Open Source Community on GitHub.
+    </div>
+</body>
+</html>
