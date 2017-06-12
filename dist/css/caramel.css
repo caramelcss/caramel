@@ -2222,6 +2222,10 @@ select:focus {
   outline: none;
 }
 
+input[type=submit] {
+  padding: 8px 18px !important;
+}
+
 input[type=text],
 input[type=date],
 input[type=email],
@@ -2234,8 +2238,9 @@ input[type=url],
 input[type=week],
 textarea,
 select {
+  width: 280px;
   min-width: 160px;
-  padding: 6px 16px;
+  padding: 8px 18px;
   border: 1px solid #efefef;
   background: #FFF;
   -webkit-appearance: none;
@@ -2645,13 +2650,7 @@ textarea {
 }
 
 select {
-  width: 181px;
-  color: #727272;
   background: transparent url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 49%;
-}
-
-select:focus, select:active {
-  color: #3F3F3F;
 }
 
 img {

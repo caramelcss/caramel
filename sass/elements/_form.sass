@@ -8,6 +8,9 @@ select
     &:focus
         outline: none
 
+input[type=submit]
+    padding: $padding-form !important
+
 input[type=text],
 input[type=date],
 input[type=email],
@@ -20,8 +23,9 @@ input[type=url],
 input[type=week],
 textarea,
 select
+    width: 280px
     min-width: 160px
-    padding: $padding-button
+    padding: $padding-form
     border: 1px solid darken($light, 5)
     background: $white
 
@@ -55,9 +59,4 @@ textarea
     display: block
 
 select
-    width: 181px
-    color: lighten($default, 20)
     background: transparent url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 49%;
-
-    &:focus, &:active
-        color: $default
