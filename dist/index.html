@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caramel</title>
+    <meta name="author" content="kurisubrooks">
+    <meta name="description" content="a simple to use, easy to remember css framework">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#A67C52">
+
+    <meta name="theme-color" content="#F1F1F1">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Caramel">
+    <meta property="og:title" content="Caramel">
+    <meta property="og:description" content="a simple to use, easy to remember css framework">
+    <meta property="og:url" content="https://kurisubrooks.com/caramel">
+    <meta property="og:image" content="assets/header.png">
+
+    <link href="css/caramel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="js/caramel.js"></script>
+
+    <style>
+        main, .container {
+            max-width: 1100px;
+        }
+
+        main {
+            margin-bottom: 5em;
+        }
+
+        .hero {
+            color: #ffffff;
+            text-align: center;
+            padding-top: 150px;
+            background: #c69c6d;
+            background: linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
+            background: -moz-linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
+            background: -webkit-linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
+            margin-bottom: 50px;
+        }
+
+        .hero pre {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
+        h5 {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bar static transparent">
+        <div class="container">
+            <ul>
+                <li class="collapse"><a href="#"><i class="fa fa-bars"></i></a></li>
+                <li class="brand">
+                    <a href="https://kurisubrooks.com/caramel">
+                        <img src="assets/logo_clear.svg" width="30px" height="26px">
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="docs.html">Documentation</a></li>
+                <ul class="right">
+                    <li>
+                        <a href="https://github.com/kurisubrooks/caramel">
+                            <i class="fa fa-github fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <img class="logo" src="assets/logo_clear.svg" height="128px" width="128px"><br><br>
+            <pre class="round color dark">$ diamond install caramel</pre>
+        </div>
+    </div>
+
+    <main>
+
+        <h5 id="buttons">Buttons</h5>
+
+        <button class="default">Default</button>
+        <button class="success">Success</button>
+        <button class="error">Error</button>
+        <button class="warn">Warning</button>
+        <button class="info">Info</button>
+        <button class="dark">Dark</button>
+        <button class="dark dropdown">
+            <span>Dropdown</span>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </button>
+        <button class="dark clean">Clean</button>
+        <button disabled>Disabled</button>
+
+        <hr>
+
+        <h5 id="navigation">Navigation</h5>
+
+        <nav class="bar">
+            <ul>
+                <li class="collapse"><span><i class="fa fa-bars"></i></span></li>
+                <li class="brand"><span>Brand</span></li>
+                <li><span>Link</span></li>
+                <li><span>Link</span></li>
+                <li class="dropdown">
+                    <span>Dropdown</span>
+                    <ul>
+                        <li><span>Link</span></li>
+                        <li><span>Link</span></li>
+                    </ul>
+                </li>
+                <ul class="right">
+                    <li><input type="text" placeholder="Search"></li>
+                    <li><span>Submit</span></li>
+                </ul>
+            </ul>
+        </nav>
+
+        <br>
+
+        <nav class="bar dark">
+            <ul>
+                <li class="collapse"><span><i class="fa fa-bars"></i></span></li>
+                <li class="brand"><span>Brand</span></li>
+                <li><span>Link</span></li>
+                <li><span>Link</span></li>
+                <li class="dropdown">
+                    <span>Dropdown</span>
+                    <ul>
+                        <li><span>Link</span></li>
+                        <li><span>Link</span></li>
+                    </ul>
+                </li>
+                <ul class="right">
+                    <li><input type="text" placeholder="Search"></li>
+                    <li><span>Submit</span></li>
+                </ul>
+            </ul>
+        </nav>
+
+        <br>
+
+        <nav class="breadcrumbs no-margin">
+            <ul>
+                <li><a href="#">caramel</a></li>
+                <li><a href="#">dist</a></li>
+                <li class="active">showcase.html</li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <nav class="pagination">
+            <ul>
+                <li><a href="#"><i class="fa fa-caret-left"></i></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <h5>Notices</h5>
+
+        <div class="row">
+            <div class="box col-6">
+                <notice><b>Default:</b> How boring...</notice>
+            </div>
+            <div class="box col-6">
+                <notice class="dark"><b>Dark:</b> Spooky...</notice>
+            </div>
+            <div class="box col-6">
+                <notice class="success"><b>Success!</b> It works!</notice>
+            </div>
+            <div class="box col-6">
+                <notice class="error"><b>Error:</b> Catastrophic.</notice>
+            </div>
+            <div class="box col-6">
+                <notice class="warn"><b>Warning:</b> Something went wrong!</notice>
+            </div>
+            <div class="box col-6">
+                <notice class="info"><b>Info:</b> Stuff happened!</notice>
+            </div>
+            <div class="box col-12">
+                <notice class="error" id="close">
+                    <div class="dismiss">&#xD7;</div>
+                    <b>Error:</b> Couldn't establish a connection to the server!
+                </notice>
+            </div>
+        </div>
+
+        <h5>Alerts</h5>
+
+        <div class="row">
+            <div class="box col-6">
+                <alert><b>Default:</b> How boring...</alert>
+            </div>
+            <div class="box col-6">
+                <alert class="dark"><b>Dark:</b> Spooky...</alert>
+            </div>
+            <div class="box col-6">
+                <alert class="success"><b>Success!</b> It works!</alert>
+            </div>
+            <div class="box col-6">
+                <alert class="error"><b>Error:</b> Catastrophic.</alert>
+            </div>
+            <div class="box col-6">
+                <alert class="warn"><b>Warning:</b> Something went wrong!</alert>
+            </div>
+            <div class="box col-6">
+                <alert class="info"><b>Info:</b> Stuff happened!</alert>
+            </div>
+
+            <div class="box col-12">
+                <alert class="error" id="close">
+                    <div class="dismiss">&#xD7;</div>
+                    <b>Error:</b> Incorrect Username / Password!
+                </alert>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5 id="panels">Panels</h5>
+
+        <div class="row">
+            <div class="box col-6">
+                <panel>
+                    <div class="head">Default:</div>
+                    <div class="body">
+                        How boring...
+                    </div>
+                </panel>
+            </div>
+            <div class="box col-6">
+                <panel class="dark">
+                    <div class="head">Dark:</div>
+                    <div class="body">
+                        Spooky
+                    </div>
+                </panel>
+            </div>
+            <div class="box col-6">
+                <panel class="success">
+                    <div class="head">Success!</div>
+                    <div class="body">
+                        It works!
+                    </div>
+                </panel>
+            </div>
+            <div class="box col-6">
+                 <panel class="error">
+                    <div class="head">Error:</div>
+                    <div class="body">
+                        Catastrophic.
+                    </div>
+                </panel>
+            </div>
+            <div class="box col-6">
+                 <panel class="warn">
+                    <div class="head">Warning:</div>
+                    <div class="body">
+                        Something went wrong!
+                    </div>
+                </panel>
+            </div>
+            <div class="box col-6">
+                 <panel class="info">
+                    <div class="head">Info:</div>
+                    <div class="body">
+                        Stuff happened!
+                    </div>
+                </panel>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5 id="images">Media</h5>
+
+        <img src="https://placehold.it/150x150" class="thumbnail" />
+        <img src="https://placehold.it/150x150" class="thumbnail circle" />
+        <img src="https://placehold.it/150x150" class="round" />
+        <img src="https://placehold.it/150x150" class="circle" />
+
+        <hr>
+
+        <h5 id="tables">Tables</h5>
+
+        <div class="row">
+            <div class="box col-6">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Favourite Food</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Justin</td>
+                            <td>15</td>
+                            <td>Sushi</td>
+                        </tr>
+                        <tr>
+                            <td>Kurisu</td>
+                            <td>18</td>
+                            <td>Pizza</td>
+                        </tr>
+                        <tr>
+                            <td>Alice</td>
+                            <td>20</td>
+                            <td>Ramen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box col-6">
+                <table class="invert">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Favourite Food</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Justin</td>
+                            <td>15</td>
+                            <td>Sushi</td>
+                        </tr>
+                        <tr>
+                            <td>Kurisu</td>
+                            <td>18</td>
+                            <td>Pizza</td>
+                        </tr>
+                        <tr>
+                            <td>Alice</td>
+                            <td>20</td>
+                            <td>Ramen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5 id="progress-bars">Progress Bars</h5>
+
+        <div class="row">
+            <div class="box col-4">
+                <div class="progress round">
+                    <div class="bar default" style="width:80%">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box col-4">
+                <div class="progress round">
+                    <div class="bar success" style="width:19%">
+                        <span>19%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box col-4">
+                <div class="progress round">
+                    <div class="bar error" style="width:32%">
+                        <span>32%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box col-6">
+                <div class="progress">
+                    <div class="bar warn" style="width:64%">
+                        <span>64%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box col-6">
+                <div class="progress">
+                    <div class="bar info" style="width:48%">
+                        <span>48%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box col-12">
+                <div class="progress">
+                    <div class="bar success" style="width: 50%">
+                        <span>50%</span>
+                    </div>
+                    <div class="bar error" style="width: 30%">
+                        <span>30%</span>
+                    </div>
+                    <div class="bar warn" style="width: 20%">
+                        <span>20%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5 id="forms">Forms</h5>
+
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="submit" class="success" value="Submit"><br>
+
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </select><br>
+
+        <textarea placeholder="Input Text Here"></textarea>
+    </main>
+
+    <div class="footer">
+        <div class="container">
+            Hello!
+        </div>
+    </div>
+</body>
+</html>
