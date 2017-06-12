@@ -36,20 +36,26 @@
             margin-bottom: 5em;
         }
 
-        .hero {
-            color: #ffffff;
+        .header.hero {
             text-align: center;
-            padding-top: 150px;
+            padding: 150px 0;
             background: #c69c6d;
             background: linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
             background: -moz-linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
             background: -webkit-linear-gradient(25deg, #c69c6d 0%, #a67c52 100%);
-            margin-bottom: 50px;
+            /*margin-bottom: 50px;*/
         }
 
-        .hero pre {
+        .header.hero pre {
             margin: 0 auto;
             max-width: 300px;
+        }
+
+        .cellar {
+            padding: 3em 0 2em;
+            text-align: center;
+            background: #fafafa;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         }
 
         h5 {
@@ -72,7 +78,7 @@
                 <li><a href="docs.html">Documentation</a></li>
                 <ul class="right">
                     <li>
-                        <a href="https://github.com/kurisubrooks/caramel">
+                        <a href="https://github.com/kurisubrooks/caramel" target="_blank">
                             <i class="fa fa-github fa-fw"></i>
                         </a>
                     </li>
@@ -81,14 +87,33 @@
         </div>
     </nav>
 
-    <div class="hero">
+    <div class="header hero">
         <div class="container">
-            <img class="logo" src="assets/logo_clear.svg" height="128px" width="128px"><br><br>
-            <pre class="round color dark">$ diamond install caramel</pre>
+            <img class="logo" src="assets/logo_clear.svg" height="128px" width="128px">
+            <br>
+            <br>
+            <pre class="round color dark">$ <a href="https://diamondpkg.org/#/package/caramel" target="_blank">diamond</a> install caramel</pre>
+        </div>
+    </div>
+
+    <div class="cellar row">
+        <div class="full col-4">
+            <img src="assets/cellar1.svg">
+            <h4>Simple to Use</h4>
+        </div>
+        <div class="full col-4">
+            <img src="assets/cellar2.svg">
+            <h4>Easy to Remember</h4>
+        </div>
+        <div class="full col-4">
+            <img src="assets/cellar3.svg">
+            <h4>Fully Responsive</h4>
         </div>
     </div>
 
     <main>
+
+        <br><br><br>
 
         <h5 id="buttons">Buttons</h5>
 
@@ -438,9 +463,23 @@
         </div>
     </main>
 
+    <hr>
+
+    <br><br><br>
+    <p align="center">
+        ...and much much more!
+        <br>
+        Still interested? Check out the documentation to find out more!
+        <br><br>
+        <a href="./docs.html" class="button clean large success">Let's Get Started &gt;&gt;</a>
+    </p>
+    <br><br><br><br>
+    
     <div class="footer">
         <div class="container">
-            Hello!
+            <p>
+                &copy; 2017 Kurisu Brooks
+            </p>
         </div>
     </div>
 </body>
