@@ -441,6 +441,12 @@ sup {
   display: flex;
 }
 
+@media (max-width: 800px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+
 .layout .sidebar {
   flex: 1;
   min-height: 100%;
@@ -450,6 +456,16 @@ sup {
   border-right: 1px solid #eee;
   overflow-y: auto;
   padding: 1em 0 2em;
+}
+
+@media (max-width: 800px) {
+  .layout .sidebar {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
 }
 
 .layout .sidebar ul, .layout .sidebar ol {
@@ -495,7 +511,13 @@ sup {
   flex: 2;
   width: 100%;
   height: 100%;
-  padding: 2em 3em 0;
+  padding: 2em 3em;
+}
+
+@media (max-width: 800px) {
+  .layout .content {
+    padding: 2em 2em;
+  }
 }
 
 .footer {
@@ -505,8 +527,20 @@ sup {
   border-top: 2px solid rgba(225, 225, 225, 0.2);
 }
 
+@media (max-width: 800px) {
+  .footer {
+    padding: 3em 1em;
+  }
+}
+
 .footer .links a:not(:last-of-type) {
-  padding-right: 2em;
+  margin-right: 2em;
+}
+
+@media (max-width: 800px) {
+  .footer .links a:not(:last-of-type) {
+    margin-right: 1em;
+  }
 }
 
 .footer .links a:hover {
