@@ -21,6 +21,8 @@ body {
   line-height: 1.4em;
   color: #3F3F3F;
   background-color: #FFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main,
