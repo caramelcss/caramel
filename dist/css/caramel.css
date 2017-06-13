@@ -21,8 +21,6 @@ body {
   line-height: 1.4em;
   color: #3F3F3F;
   background-color: #FFF;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 main,
@@ -651,14 +649,70 @@ alert.dark,
 card,
 .card {
   display: block;
-  padding: 16px 20px;
+  width: 100%;
+  max-width: 520px;
   color: #3F3F3F;
   border: 1px solid #efefef;
-  background: #FCFCFC;
+  background: #FFF;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   margin-bottom: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 800px) {
+  card,
+  .card {
+    max-width: 100%;
+  }
+}
+
+card.block,
+.card.block {
+  max-width: 100%;
+  width: 100%;
+}
+
+card .media img,
+.card .media img {
+  width: 100%;
+  max-width: 520px;
+  border-bottom: 1px solid #efefef;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+@media (max-width: 800px) {
+  card .media img,
+  .card .media img {
+    max-width: 100%;
+  }
+}
+
+card .content,
+.card .content {
+  padding: 16px 20px;
+}
+
+card .content > b,
+.card .content > b {
+  font-size: 16px;
+}
+
+card .content p,
+.card .content p {
+  margin: 1em 0 0;
+}
+
+card .content .links,
+.card .content .links {
+  margin: 2em 0 0;
+}
+
+card .content .links a:not(:last-of-type),
+.card .content .links a:not(:last-of-type) {
+  margin-right: 10px;
 }
 
 nav,
@@ -2791,8 +2845,6 @@ label.dark,
   -moz-border-radius: 2px;
   border-radius: 2px;
   margin-bottom: 10px;
-  -webkit-box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
 }
 

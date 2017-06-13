@@ -1,10 +1,45 @@
 card,
 .card
     display: block
-    padding: $padding-large
+    width: 100%
+    max-width: 520px
     color: $default
     border: 1px solid darken($light, 5)
-    background: $light
+    background: $white
 
     @include border-radius()
     @include bottom-margin()
+    @include box-shadow()
+
+    @media (max-width: $breakpoint-width)
+        max-width: 100%
+
+    &.block
+        max-width: 100%
+        width: 100%
+
+    .media
+        img
+            width: 100%
+            max-width: 520px
+            border-bottom: 1px solid darken($light, 5)
+            @include border-radius-top()
+
+            @media (max-width: $breakpoint-width)
+                max-width: 100%
+
+
+    .content
+        padding: $padding-large
+
+        > b
+            font-size: 16px
+
+        p
+            margin: 1em 0 0
+
+        .links
+            margin: 2em 0 0
+
+            a:not(:last-of-type)
+                margin-right: 10px
