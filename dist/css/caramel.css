@@ -172,7 +172,6 @@ h6 {
 
 h1, h2, h3,
 h4, h5, h6 {
-  margin: 0;
   padding-bottom: .3em;
   margin-bottom: 10px;
 }
@@ -180,11 +179,13 @@ h4, h5, h6 {
 h1.title, h2.title, h3.title,
 h4.title, h5.title, h6.title {
   font-size: 2em;
+  margin: 0;
 }
 
 h1.subtitle, h2.subtitle, h3.subtitle,
 h4.subtitle, h5.subtitle, h6.subtitle {
   font-size: 1.25em;
+  margin: 0;
 }
 
 a {
@@ -438,19 +439,31 @@ sup {
 
 .hero {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 120px 0;
   text-align: center;
   background: #EEE;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-  align-items: center;
 }
 
-.hero.full-height {
+.hero.--full-height {
   min-height: 100vh;
 }
 
+.hero > main,
 .hero > .container {
   flex: 1;
+}
+
+.hero footer,
+.hero .footer {
+  font: inherit;
+  padding: 0;
+  background: transparent;
+  border: none;
+  flex: 0;
 }
 
 .layout {
@@ -755,7 +768,9 @@ nav:after,
   clear: both;
 }
 
+nav main,
 nav .container,
+.nav main,
 .nav .container {
   width: inherit;
   margin: 0 auto;
@@ -763,7 +778,9 @@ nav .container,
 }
 
 @media (max-width: 800px) {
+  nav main,
   nav .container,
+  .nav main,
   .nav .container {
     padding: 0;
   }
