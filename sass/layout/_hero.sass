@@ -1,5 +1,13 @@
 .hero
+    display: flex
     padding: 120px 0
     text-align: center
     background: $grey
     border-bottom: 2px solid rgba(0, 0, 0, 0.05)
+    align-items: center
+
+    &.full-height
+        min-height: 100vh
+
+    > .container
+        flex: 1

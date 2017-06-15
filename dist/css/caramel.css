@@ -437,10 +437,20 @@ sup {
 }
 
 .hero {
+  display: flex;
   padding: 120px 0;
   text-align: center;
   background: #EEE;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  align-items: center;
+}
+
+.hero.full-height {
+  min-height: 100vh;
+}
+
+.hero > .container {
+  flex: 1;
 }
 
 .layout {
