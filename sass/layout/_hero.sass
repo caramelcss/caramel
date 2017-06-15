@@ -1,13 +1,51 @@
 .hero
     display: flex
-    padding: 120px 0
+    flex-direction: column
+    justify-content: center
+    align-items: center
     text-align: center
     background: $grey
     border-bottom: 2px solid rgba(0, 0, 0, 0.05)
-    align-items: center
 
-    &.full-height
+    &.--full
         min-height: 100vh
 
+    &.--large
+        min-height: 750px
+
+    &.--medium
+        min-height: 500px
+
+    &.--small
+        min-height: 200px
+
+    > main,
     > .container
-        flex: 1
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        flex-grow: 1
+        height: auto
+
+    header,
+    .header
+        display: block
+        width: 100%
+        align-self: flex-start
+        flex-grow: 0
+
+        nav,
+        .nav
+            position: relative
+
+    footer,
+    .footer
+        display: block
+        width: 100%
+        align-self: flex-end
+        font: inherit
+        padding: 0
+        background: transparent
+        border: none
+        flex-grow: 0

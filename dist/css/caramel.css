@@ -440,30 +440,64 @@ sup {
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 120px 0;
   text-align: center;
   background: #EEE;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
-.hero.--full-height {
+.hero.--full {
   min-height: 100vh;
+}
+
+.hero.--large {
+  min-height: 750px;
+}
+
+.hero.--medium {
+  min-height: 500px;
+}
+
+.hero.--small {
+  min-height: 200px;
 }
 
 .hero > main,
 .hero > .container {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: auto;
+}
+
+.hero header,
+.hero .header {
+  display: block;
+  width: 100%;
+  align-self: flex-start;
+  flex-grow: 0;
+}
+
+.hero header nav,
+.hero header .nav,
+.hero .header nav,
+.hero .header .nav {
+  position: relative;
 }
 
 .hero footer,
 .hero .footer {
+  display: block;
+  width: 100%;
+  align-self: flex-end;
   font: inherit;
   padding: 0;
   background: transparent;
   border: none;
-  flex: 0;
+  flex-grow: 0;
 }
 
 .layout {
