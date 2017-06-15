@@ -1,4 +1,5 @@
 $-states-map: (
+    primary: (color-state: $primary, text-color: $white),
     success: (color-state: $success, text-color: $white),
     error: (color-state: $error, text-color: $white),
     warn: (color-state: $warn, text-color: $white),

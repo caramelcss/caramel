@@ -210,6 +210,10 @@ blockquote {
   cursor: not-allowed;
 }
 
+.color.primary {
+  color: #0174DF;
+}
+
 .color.success {
   color: #52C652;
 }
@@ -646,6 +650,13 @@ alert.clean,
   background: transparent;
 }
 
+alert.clean.primary,
+.alert.clean.primary {
+  color: #0167c6;
+  border: 2px solid #3F3F3F;
+  background: transparent;
+}
+
 alert.clean.success,
 .alert.clean.success {
   color: #3fbf3f;
@@ -679,6 +690,13 @@ alert.clean.dark,
   color: #323232;
   border: 2px solid #3F3F3F;
   background: transparent;
+}
+
+alert.primary,
+.alert.primary {
+  color: #FFF;
+  border: 1px solid #0174DF;
+  background: #0179e9;
 }
 
 alert.success,
@@ -1464,6 +1482,20 @@ notice .dismiss,
   font-size: 18px;
 }
 
+notice.primary,
+.notice.primary {
+  border-left-color: #0174DF;
+}
+
+notice.primary > span, notice.primary b,
+notice.primary strong, notice.primary h4,
+.notice.primary > span,
+.notice.primary b,
+.notice.primary strong,
+.notice.primary h4 {
+  color: #0167c6;
+}
+
 notice.success,
 .notice.success {
   border-left-color: #52C652;
@@ -1562,6 +1594,18 @@ panel .body,
 panel p,
 .panel p {
   margin: 0;
+}
+
+panel.primary,
+.panel.primary {
+  border-color: #0167c6;
+}
+
+panel.primary .head,
+.panel.primary .head {
+  color: #FFF;
+  background: #0174DF;
+  border-color: #0167c6;
 }
 
 panel.success,
@@ -1884,6 +1928,34 @@ input[type=submit].clean.active {
   background: #f7f7f7;
 }
 
+.btn.clean.primary,
+.button.clean.primary,
+button.clean.primary,
+input[type=button].clean.primary,
+input[type=submit].clean.primary {
+  color: #0167c6;
+  border-color: #0174DF;
+  background: #FFF;
+}
+
+.btn.clean.primary:hover, .btn.clean.primary:active, .btn.clean.primary.active,
+.button.clean.primary:hover,
+.button.clean.primary:active,
+.button.clean.primary.active,
+button.clean.primary:hover,
+button.clean.primary:active,
+button.clean.primary.active,
+input[type=button].clean.primary:hover,
+input[type=button].clean.primary:active,
+input[type=button].clean.primary.active,
+input[type=submit].clean.primary:hover,
+input[type=submit].clean.primary:active,
+input[type=submit].clean.primary.active {
+  color: #FFF;
+  border: 2px solid #0174DF;
+  background: #0174DF;
+}
+
 .btn.clean.success,
 .button.clean.success,
 button.clean.success,
@@ -2022,6 +2094,59 @@ input[type=submit].clean.dark.active {
   color: #FFF;
   border: 2px solid #3F3F3F;
   background: #3F3F3F;
+}
+
+.btn.primary,
+.button.primary,
+button.primary,
+input[type=button].primary,
+input[type=submit].primary {
+  color: #FFF;
+  border-color: #0167c6;
+  background: #0174DF;
+}
+
+.btn.primary:hover, .btn.primary:active, .btn.primary.active,
+.button.primary:hover,
+.button.primary:active,
+.button.primary.active,
+button.primary:hover,
+button.primary:active,
+button.primary.active,
+input[type=button].primary:hover,
+input[type=button].primary:active,
+input[type=button].primary.active,
+input[type=submit].primary:hover,
+input[type=submit].primary:active,
+input[type=submit].primary.active {
+  border-color: #0181f8;
+  background: #0181f8;
+}
+
+.btn.primary:disabled,
+.button.primary:disabled,
+button.primary:disabled,
+input[type=button].primary:disabled,
+input[type=submit].primary:disabled {
+  color: #fcfcfc;
+  border-color: #0181f8;
+  background: #158efe;
+}
+
+.btn.primary:disabled:hover, .btn.primary:disabled:active, .btn.primary:disabled.active,
+.button.primary:disabled:hover,
+.button.primary:disabled:active,
+.button.primary:disabled.active,
+button.primary:disabled:hover,
+button.primary:disabled:active,
+button.primary:disabled.active,
+input[type=button].primary:disabled:hover,
+input[type=button].primary:disabled:active,
+input[type=button].primary:disabled.active,
+input[type=submit].primary:disabled:hover,
+input[type=submit].primary:disabled:active,
+input[type=submit].primary:disabled.active {
+  background: #158efe;
 }
 
 .btn.success,
@@ -2474,6 +2599,73 @@ select.active {
   border-color: #c9c9c9;
 }
 
+input[type=text].primary,
+input[type=date].primary,
+input[type=email].primary,
+input[type=number].primary,
+input[type=password].primary,
+input[type=search].primary,
+input[type=tel].primary,
+input[type=time].primary,
+input[type=url].primary,
+input[type=week].primary,
+textarea.primary,
+select.primary {
+  border-color: #0174DF;
+}
+
+input[type=text].primary:hover,
+input[type=date].primary:hover,
+input[type=email].primary:hover,
+input[type=number].primary:hover,
+input[type=password].primary:hover,
+input[type=search].primary:hover,
+input[type=tel].primary:hover,
+input[type=time].primary:hover,
+input[type=url].primary:hover,
+input[type=week].primary:hover,
+textarea.primary:hover,
+select.primary:hover {
+  border-color: #0167c6;
+}
+
+input[type=text].primary:active, input[type=text].primary:focus, input[type=text].primary.active,
+input[type=date].primary:active,
+input[type=date].primary:focus,
+input[type=date].primary.active,
+input[type=email].primary:active,
+input[type=email].primary:focus,
+input[type=email].primary.active,
+input[type=number].primary:active,
+input[type=number].primary:focus,
+input[type=number].primary.active,
+input[type=password].primary:active,
+input[type=password].primary:focus,
+input[type=password].primary.active,
+input[type=search].primary:active,
+input[type=search].primary:focus,
+input[type=search].primary.active,
+input[type=tel].primary:active,
+input[type=tel].primary:focus,
+input[type=tel].primary.active,
+input[type=time].primary:active,
+input[type=time].primary:focus,
+input[type=time].primary.active,
+input[type=url].primary:active,
+input[type=url].primary:focus,
+input[type=url].primary.active,
+input[type=week].primary:active,
+input[type=week].primary:focus,
+input[type=week].primary.active,
+textarea.primary:active,
+textarea.primary:focus,
+textarea.primary.active,
+select.primary:active,
+select.primary:focus,
+select.primary.active {
+  border-color: #0171da;
+}
+
 input[type=text].success,
 input[type=date].success,
 input[type=email].success,
@@ -2881,6 +3073,10 @@ img.circle {
   top: 2.5px;
 }
 
+.progress .bar.primary {
+  background-color: #0174DF;
+}
+
 .progress .bar.success {
   background-color: #52C652;
 }
@@ -2925,6 +3121,12 @@ tag.square,
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+}
+
+tag.primary,
+.tag.primary {
+  color: #FFF;
+  background: #0174DF;
 }
 
 tag.success,
