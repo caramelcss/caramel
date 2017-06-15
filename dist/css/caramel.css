@@ -179,13 +179,13 @@ h4, h5, h6 {
 h1.title, h2.title, h3.title,
 h4.title, h5.title, h6.title {
   font-size: 2em;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 h1.subtitle, h2.subtitle, h3.subtitle,
 h4.subtitle, h5.subtitle, h6.subtitle {
   font-size: 1.25em;
-  margin: 0;
+  margin-top: 0;
 }
 
 a {
