@@ -5,9 +5,9 @@
 > Caramel is a simple, modern, responsive website framework. Caramel is fully responsive, meaning you only need to write code once, to have the same results across multiple platforms. Created by [kurisubrooks](https://kurisubrooks.com), Caramel is being developed with help from the open-source community on GitHub.
 
 ## Getting Started
-- [Download the latest Release](https://github.com/kurisubrooks/caramel/releases)
-- [Download the latest Development Build](https://github.com/kurisubrooks/caramel/archive/master.zip)
-- Clone the repo: ```git clone https://github.com/kurisubrooks/caramel.git```
+- [Download the latest Release](https://github.com/caramelcss/caramel/releases)
+- [Download the latest Development Build](https://github.com/caramelcss/caramel/archive/master.zip)
+- Clone the repo: ```git clone https://github.com/caramelcss/caramel.git```
 
 #### Quick Start
 Jump right into Caramel by using the following HTML5 Boilerplate.
@@ -37,7 +37,7 @@ Jump right into Caramel by using the following HTML5 Boilerplate.
 ```
 
 ## What's included?
-Our [public releases](https://github.com/kurisubrooks/caramel/releases) only contain the files that are necessary for front-end development. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Build](https://github.com/kurisubrooks/caramel/archive/master.zip), which includes our build tool, and the sass source files.
+Our [public releases](https://github.com/caramelcss/caramel/releases) only contain the files that are necessary for front-end development. If you'd like to develop for, or modify Caramel, we'd recommend downloading the [Development Build](https://github.com/caramelcss/caramel/archive/master.zip), which includes our build tool, and the sass source files.
 
 ```
 caramel/
@@ -71,7 +71,7 @@ npm install gulp --global
 #### Install:
 To get the latest version of Caramel and to install the build tools, run the following set of commands:
 ```
-git clone https://github.com/kurisubrooks/caramel.git
+git clone https://github.com/caramelcss/caramel.git
 cd ./caramel
 npm install
 ```
