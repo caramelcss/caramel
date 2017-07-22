@@ -1,5 +1,3 @@
-<h1 class="title">Usage</h1>
-
 Caramel makes use of both CSS3 and JavaScript to bring you the best experience possible. Both files, `caramel.css` and `caramel.js` are required for caramel to function correctly. Caramel can run without the js file being included, but you may find that navigation and buttons may not work as expected. On top of this, jQuery is also required for caramel to function.
 
 We've provided a few ways for you to install Caramel, so you can choose whichever option suits your own workflow.

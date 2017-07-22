@@ -1,1 +1,1 @@
-<h1 class="title">Getting Started</h1>
+Getting started foo bar baz
